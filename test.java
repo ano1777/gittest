@@ -4,7 +4,7 @@ public class test extends Karel{
 	public void run(){
 		move();
 		turnLeft();
-		turnLef();
+		turnLeft();
 		move();
 		move();
 	}

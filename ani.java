@@ -3,10 +3,15 @@
 public class ani extends karel{
 public void run(){
 	move();
-	pickbeeper();
+	pickBeeper();
 	turnLeft();
 	turnLeft();
 	putBeeper();
+}
+
+private void pickBeeper() {
+	// TODO Auto-generated method stub
+	
 }
 
 private void putBeeper() {

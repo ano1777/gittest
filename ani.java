@@ -8,4 +8,24 @@ public void run(){
 	turnLeft();
 	putBeeper();
 }
+
+private void putBeeper() {
+	// TODO Auto-generated method stub
+	
+}
+
+private void turnLeft() {
+	// TODO Auto-generated method stub
+	
+}
+
+private void pickbeeper() {
+	// TODO Auto-generated method stub
+	
+}
+
+private void move() {
+	// TODO Auto-generated method stub
+	
+}
 }

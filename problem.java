@@ -12,7 +12,7 @@ public class problem extends Karel {
 	 move();
 	 move();
 	 move();
-	 pickBeeper() int{;
+	 pickBeeper();
 	 move();
 	 putBeeper();
 	 turnRight();

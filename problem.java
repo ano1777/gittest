@@ -28,7 +28,7 @@ public class problem extends Karel {
 	 move();
 	 pick10();
 	 move();
-	 putBeeper();
+	 put2();
 	 move();
 	 turnRight();
    

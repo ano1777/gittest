@@ -1,4 +1,9 @@
-
-public class karel2 {
-
+import stanford.karel.*;
+public class karel2 extends Karel{
+public void run(){
+	while(frontIsClear()){
+		putBeeper();
+		move();
+	}
+}
 }

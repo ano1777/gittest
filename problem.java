@@ -26,9 +26,14 @@ public class problem extends Karel {
 	 move();
 	 move();
 	 move();
-	 pick10();
+	 for(int i=0; i<10; i++){
+		 pickBeeper();
+	 }
 	 move();
-	 put2();
+	 for (int i=0; i<10; i++){
+		 putBeeper();
+	 }
+		 
 	 move();
 	 turnRight();
    

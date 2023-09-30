@@ -4,9 +4,7 @@ public class problem extends Karel {
 		turnLeft();
 		turnLeft();
 		turnLeft();
-		
 	}
-}
  public void run(){
 	 move();
 	 move();
@@ -16,8 +14,6 @@ public class problem extends Karel {
 	 move();
 	 putBeeper();
 	 turnRight();
-	
-	 
    
  }
 	 

@@ -1,4 +1,8 @@
-
-public class karel1 {
-
+import stanford.karel.*;
+public class karel1 extends Karel{
+ public void run(){
+	if (frontIsClear()){
+		move();
+	}
+}
 }

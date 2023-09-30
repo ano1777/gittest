@@ -5,5 +5,9 @@ public void run(){
 		putBeeper();
 		move();
 	}
+	while(beepersPresent()){
+		move();
+	}
+		
 }
 }

@@ -5,12 +5,28 @@ public class problem extends Karel {
 		turnLeft();
 		turnLeft();
 	}
+	void pick10(){
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+		pickBeeper();
+	}
+	void put2(){
+		putBeeper();
+		putBeeper();
+	}
  public void run(){
 	 move();
 	 move();
 	 move();
 	 move();
-	 pickBeeper();
+	 pick10();
 	 move();
 	 putBeeper();
 	 turnRight();

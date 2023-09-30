@@ -4,12 +4,9 @@ public class problem extends Karel {
 	 move();
 	 move();
 	 pickBeeper();
-	 turnLeft();
-	 turnLeft();
 	 move();
 	 putBeeper();
-	 
-	 
+	
 		 
  }
 }

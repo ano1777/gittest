@@ -6,7 +6,6 @@ public void run(){
 	}
 	while(noBeepersPresent()){
 		putBeeper();
-		move();
 	}
 		
  }

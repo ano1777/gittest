@@ -4,8 +4,10 @@ public void run(){
 	while(frontIsClear()){
 		move();
 	}
-	while (noBeepersPresent()){
+	if (noBeepersPresent()){
 		putBeeper();
+		move();
+	} else{
 		move();
 	}
 		

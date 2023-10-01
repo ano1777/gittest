@@ -6,16 +6,19 @@ import stanford.karel.Karel;
       		turnLeft();
       	}
      public void run(){
-    	
+    
     	while (frontIsClear()){
     		putBeeper();
     		move();
     	}
     	
      while (frontIsBlocked()){
+    	    putBeeper();
 			turnRight();
 			move();
+			putBeeper();
 			turnRight();
+			
     	
     	
      }

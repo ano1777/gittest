@@ -5,6 +5,7 @@ public class karel1 extends Karel{
 		move();
 	}while (noBeepersPresent()){
 		putBeeper();
+		move();
 	}
 }
 }

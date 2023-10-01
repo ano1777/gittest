@@ -17,7 +17,7 @@ import stanford.karel.Karel;
 				move();
 				turnRight();
 		 }
-    	}
+    	
     	   while(facingSouth()){
     		putBeeper();
     	    move();
@@ -28,7 +28,7 @@ import stanford.karel.Karel;
     			 move();
     			 turnLeft();
     		 
-    		 
+    		 } 
     	 }
     	}		
 	

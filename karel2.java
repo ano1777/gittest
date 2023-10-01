@@ -8,6 +8,7 @@ import stanford.karel.Karel;
 				move();
 			} else{
 				move();
+     }
+	}
  }
-}
 }

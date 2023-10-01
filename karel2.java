@@ -7,7 +7,6 @@ public void run(){
 		move();
 	} else{
 		move();
-	}
-		
+	}for (int i=0; i<)
  }
 }

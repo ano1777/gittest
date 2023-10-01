@@ -4,7 +4,10 @@ public void run(){
 	while(beepersPresent()){
 		move();
 	}
-
+	while (noBeepersPresent()){
+		putBeeper();
+		move();
+	}
 	
 		
  }

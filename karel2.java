@@ -4,8 +4,7 @@ public void run(){
 	while (noBeepersPresent()){
 		putBeeper();
 		move();
-	}
-	while (beepersPresent()){
+	}while (beepersPresent()){
 		move();
 	}
 	

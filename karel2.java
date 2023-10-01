@@ -12,7 +12,7 @@ import stanford.karel.Karel;
     		putBeeper();
     		move();
     	
-    		while(facingNorth()){
+    	
     			if(frontIsBlocked()){
 	    	    putBeeper();
 				turnRight();
@@ -20,12 +20,16 @@ import stanford.karel.Karel;
 				putBeeper();
 				turnRight();
 		 }
-    			}
+    	}
+    	   while(facingSouth())
+    		putBeeper();
+    	    move();
+    	
     		 if (frontIsBlocked()){
     			 turnLeft();
     			 move();
     		 
-    		 }
+    		 
     	 }
     	}		
 	

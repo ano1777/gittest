@@ -8,8 +8,9 @@ import stanford.karel.Karel;
      public void run(){
     
     	while (facingNorth()){
-    		
+    		if (noBeepersPresent()){
     		putBeeper();
+    		}
     		move();
     			if(frontIsBlocked()){
 	    	    putBeeper();
@@ -19,8 +20,10 @@ import stanford.karel.Karel;
 		 }
     	
     	   while(facingSouth()){
-    		putBeeper();
-    	    move();
+    		if (noBeepersPresent()){
+    			putBeeper();
+    		}
+    	        move();
     	
     		 if (frontIsBlocked()){
     			 putBeeper();

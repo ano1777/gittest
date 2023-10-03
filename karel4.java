@@ -8,6 +8,7 @@ public void run() {
 		pickBeeper();
 		move();
 		putBeeper();
+		putBeeper();
 		turnLeft();
 		turnLeft();
 		move();

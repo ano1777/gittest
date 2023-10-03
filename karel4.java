@@ -5,6 +5,7 @@ public void run() {
 	while(beepersPresent()){
 		pickBeeper();
 		move();
+		pickBeeper();
 		move();
 		putBeeper();
 		turnLeft();
@@ -15,7 +16,7 @@ public void run() {
 		turnLeft();
 		
 	}
-	move();
+
 		
 		}
 	}

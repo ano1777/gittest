@@ -22,6 +22,8 @@ public void run() {
 		turnLeft();
 		turnLeft();
 		move();
+		turnLeft();
+		turnLeft();
 	}
 
 		

@@ -26,11 +26,33 @@ public void run(){
 			turnRight();
 			move();
 			turnRight();
-		
+
 			}
-		}
 	}
 	
+	}
+	
+}
+	
+	while(frontIsBlocked()){
+	 if (facingEast()){
+		 pickBeeper();
+		 turnLeft();
+		 move();
+	 }
+	 if (facingWest()){
+		 pickBeeper();
+		 turnRight();
+		 move();
+	 }
+	}
+	while(frontIsClear()){
+		move();
+	}
+	
+	while (beepersPresent()){
+		pickBeeper();
+		move();
 	}
 	
 }

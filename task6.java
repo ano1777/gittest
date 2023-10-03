@@ -13,8 +13,10 @@ public void run(){
 		move();
 		putBeeper2();
 	    turnLeft();
+	    turnLeft();
 	    move();
-	    
+	    turnLeft();
+	    turnLeft();
 	}
 }
 }

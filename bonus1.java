@@ -35,16 +35,12 @@ public void run(){
 }
 	
 	while(frontIsBlocked()){
-	 if (facingEast()){
-		 pickBeeper();
-		 turnLeft();
-		 move();
-	 }
-	 if (facingWest()){
+	 if (facingNorth()){
 		 pickBeeper();
 		 turnRight();
 		 move();
 	 }
+	 
 	}
 	while(frontIsClear()){
 		move();

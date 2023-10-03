@@ -7,10 +7,11 @@ public class bonus1 extends Karel{
 	
 	}
 public void run(){
+	
 	while(frontIsClear()){
 		putBeeper();
 		move();
-	}
+	
 	while(frontIsBlocked()){
 		if (facingEast()){
 			putBeeper();
@@ -28,6 +29,7 @@ public void run(){
 			putBeeper();
 			}
 		}
+	}
 	
 	}
 	

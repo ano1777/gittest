@@ -9,6 +9,10 @@ public void run() {
 		putBeeper();
 		turnLeft();
 		turnLeft();
+		move();
+		move();
+		turnLeft();
+		turnLeft();
 	}
 		
 		}

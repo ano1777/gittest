@@ -13,13 +13,18 @@ public void run(){
 	}
 	while(facingEast()){
 		if (frontIsBlocked()){
+			putBeeper();
 			turnLeft();
 			move();
 			turnLeft();
 		}
-		if (facingWest()){
+		while (facingWest()){
+			if(frontIsBlocked()){
+			putBeeper();
 			turnRight();
 			move();
+			turnRight();
+			}
 		}
 		
 	}

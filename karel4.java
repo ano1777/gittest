@@ -21,6 +21,7 @@ public void run() {
 		pickBeeper();
 		move();
 		pickBeeper();
+		pickBeeper();
 		turnaround();
 		move();
 		

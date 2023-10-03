@@ -17,7 +17,8 @@ public void run() {
   }
   
   turnLeft();
-  
+  turnLeft();
+  turnLeft();
   move();
   while(beepersPresent()){
 	  pickBeeper();

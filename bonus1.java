@@ -30,7 +30,7 @@ public void run(){
 			}
 	}
 	}
-	}
+	
 	
 	while (beepersPresent()){
 		if (frontIsBlocked()){
@@ -44,6 +44,6 @@ public void run(){
 		move();
 	}
 	}
-	
+}
 
 }

@@ -11,16 +11,16 @@ public void run(){
 		putBeeper();
 		move();
 	}
-	while(facingEast()){
-		if (frontIsBlocked()){
+	while(frontIsBlocked()){
+		if (facingEast()){
 			putBeeper();
 			turnLeft();
 			move();
 			turnLeft();
 			putBeeper();
 		}
-		while (facingWest()){
-			if(frontIsBlocked()){
+		while (frontIsBlocked()){
+			if(facingWest()){
 			putBeeper();
 			turnRight();
 			move();

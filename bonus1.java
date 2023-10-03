@@ -32,23 +32,17 @@ public void run(){
 	
 	}
 	
-}
-	
-	while(frontIsBlocked()){
-	 if (facingNorth()){
-		 pickBeeper();
-		 turnRight();
-		 move();
-	 }
-	 
-	}
-	while(frontIsClear()){
-		move();
-	}
-	
 	while (beepersPresent()){
+		if (frontIsBlocked()){
+			turnRight();
+		}
 		pickBeeper();
 		move();
+	}
+	while(frontIsClear()){
+		pickBeeper();
+		move();
+	}
 	}
 	
 }

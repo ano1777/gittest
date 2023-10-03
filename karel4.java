@@ -1,32 +1,19 @@
 import stanford.karel.Karel;
-public class karel4  extends Karel {
+public class karel4 extends Karel{
+	void turnaround(){
+		turnLeft();
+		turnLeft();
+	}
 public void run() {
-	move();
+  move();
 	while(beepersPresent()){
-		pickBeeper();
-		move();
-		move();
-		putBeeper();
-		turnLeft();
-		turnLeft();
-		move();
-		move();
-		turnLeft();
-		turnLeft();		
+	 pickBeeper();
+	 move();
+	 move();
+	 putBeeper();
+	 turnaround();
+	 move();
+	 move();
 	}
-	move();
-	while (beepersPresent()){
-		pickBeeper();
-		move();
-		putBeeper();
-		turnLeft();
-		turnLeft();
-		move();
-		turnLeft();
-		turnLeft();
-	}
-
-		
 		}
-	}
-
+		}

@@ -17,7 +17,7 @@ public void run(){
 		putBeeper2();
 	    turnAround();
 	    move();
-	    turnAround();
+	    
 	}
 }
 }

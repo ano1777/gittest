@@ -4,10 +4,7 @@ public class task6 extends Karel{
 		putBeeper();
 		putBeeper();
 	}
-	private void turnAround(){
-		turnLeft();
-		turnLeft();
-	}
+	
 public void run(){
 	move();
 	while (beepersPresent()){
@@ -15,7 +12,7 @@ public void run(){
 		turnLeft();
 		move();
 		putBeeper2();
-	    turnAround();
+	    turnLeft();
 	    move();
 	    
 	}

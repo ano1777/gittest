@@ -13,6 +13,7 @@ public void run() {
 	  putBeeper();
 	  turnaround();
 	  move();
+	  turnaround();
   }
   turnLeft();
   move();

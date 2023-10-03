@@ -5,17 +5,23 @@ public void run() {
 	while(beepersPresent()){
 		pickBeeper();
 		move();
+		move();
+		putBeeper();
+		turnLeft();
+		turnLeft();
+		move();
+		move();
+		turnLeft();
+		turnLeft();		
+	}
+	move();
+	while (beepersPresent()){
 		pickBeeper();
 		move();
 		putBeeper();
-		putBeeper();
 		turnLeft();
 		turnLeft();
 		move();
-		move();
-		turnLeft();
-		turnLeft();
-		
 	}
 
 		

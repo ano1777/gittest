@@ -14,6 +14,8 @@ public void run() {
 	 turnaround();
 	 move();
 	 move();
+	 turnaround();
+	 
 	}
 		}
 		}

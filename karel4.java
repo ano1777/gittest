@@ -6,6 +6,24 @@ public class karel4 extends Karel{
 	}
 public void run() {
   move();
+  while (beepersPresent()){
+	  pickBeeper();
+	  turnLeft();
+	  move();
+	  putBeeper();
+	  turnaround();
+	  move();
+  }
+  turnLeft();
+  move();
+  while(beepersPresent()){
+	  pickBeeper();
+	  turnLeft();
+	  move();
+	  putBeeper();
+	  turnaround();
+	  move();
+  }
 	while(beepersPresent()){
 	 pickBeeper();
 	 move();

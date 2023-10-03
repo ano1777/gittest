@@ -24,6 +24,7 @@ public void run() {
 	  putBeeper();
 	  turnaround();
 	  move();
+	  turnaround();
   }
 	while(beepersPresent()){
 	 pickBeeper();

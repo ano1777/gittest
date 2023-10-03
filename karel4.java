@@ -13,8 +13,9 @@ public void run() {
 		move();
 		turnLeft();
 		turnLeft();
-		move();
+		
 	}
+	move();
 		
 		}
 	}

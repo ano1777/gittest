@@ -15,7 +15,16 @@ public void run() {
 	 move();
 	 move();
 	 turnaround();
-	 
+	 }
+	move();
+	while (beepersPresent()){
+		pickBeeper();
+		move();
+		pickBeeper();
+		turnaround();
+		move();
+		
+	}
 	}
 		}
-		}
+		

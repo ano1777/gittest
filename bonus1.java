@@ -18,7 +18,7 @@ public void run(){
 			turnLeft();
 			move();
 			turnLeft();
-			putBeeper();
+		
 		}
 		while (frontIsBlocked()){
 			if(facingWest()){
@@ -26,7 +26,7 @@ public void run(){
 			turnRight();
 			move();
 			turnRight();
-			putBeeper();
+		
 			}
 		}
 	}

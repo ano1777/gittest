@@ -9,29 +9,6 @@ public class karel5 extends SuperKarel{
 		
 	}
 	
-	private void goBackAndPutBeepersBack2() {
-		turnLeft();
-		move();
-	    
-		    
- }
-	
-	private void goBackAndPutBeepersBack1() {
-		turnLeft();
-		move();
-
-		while(beepersPresent()){
-			pickBeeper();
-			turnAround();
-			move();
-			putBeeper();
-			turnAround();
-			move();
-			
-		}
-		goBackAndPutBeepersBack2();
-		
-	}	
 	
 
 	private void backupBeepersOnTheSecondPile() {

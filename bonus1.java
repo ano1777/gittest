@@ -1,49 +1,25 @@
-import stanford.karel.*;
-public class bonus1 extends Karel{
-	void turnRight(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	
-	}
-public void run(){
-	
-	while(frontIsClear()){
-		putBeeper();
+import stanford.karel.SuperKarel;
+
+public class bonus1 extends SuperKarel{
+	public void run(){
 		move();
-	
-	while(frontIsBlocked()){
-		if (facingEast()){
-			putBeeper();
-			turnLeft();
-			move();
-			turnLeft();
+		backupBeeperson1Pile();
+		goBack();
+		backupBeepersOn2Pile();
+		goBack();
 		
+			
 		}
-		while (frontIsBlocked()){
-			if(facingWest()){
-			putBeeper();
-			turnRight();
+
+	private void backupBeeperson1Pile() {
+		while(beepersPresent()){
+			pickBeeper();
+			turnLeft();
 			move();
-			turnRight();
-
-			}
-	}
-	}
-	
-	
-	while (beepersPresent()){
-		if (frontIsBlocked()){
-			turnRight();
-		}
-		pickBeeper();
-		move();
-	}
-	while(frontIsClear()){
-		pickBeeper();
-		move();
+			putBeeper();
+		
 	}
 	}
 }
 
-}
+

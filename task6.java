@@ -10,7 +10,7 @@ public class task6 extends SuperKarel{
 	private void jumpOverTheWall(){
 		while(frontIsBlocked()){
 		turnLeft();
-		}
+		
 		while(rightIsBlocked()){
 			move();
 		}
@@ -20,7 +20,7 @@ public class task6 extends SuperKarel{
 		decend();
 		turnLeft();
         }
-
+	}
 	private void decend(){
 		while (frontIsClear()){
 			move();

@@ -11,18 +11,17 @@ public class karel5 extends SuperKarel{
 	}
 	
 	private void goBackAndPutBeepersBack2() {
-		turnAround();
+		turnLeft();
 		move();
 		while(beepersPresent()){
-		turnRight();
-		move();
 		pickBeeper();
-		turnAround();
+		turnLeft();
 		move();
 		putBeeper();
 		turnAround();
-		
-	}
+		move();
+		turnLeft();
+		}
 
 	private void goBackAndPutBeepersBack1() {
 		turnLeft();

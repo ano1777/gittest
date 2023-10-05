@@ -21,8 +21,8 @@ public class karel5 extends SuperKarel{
 		turnAround();
 		move();
 		turnLeft();
-		}
-
+}
+}
 	private void goBackAndPutBeepersBack1() {
 		turnLeft();
 		move();

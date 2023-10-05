@@ -36,6 +36,8 @@ public class karel5 extends SuperKarel{
 			move();
 			
 		}
+		goBackAndPutBeepersBack2();
+		
      		
 	}
 

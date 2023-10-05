@@ -5,10 +5,7 @@ public class task6 extends SuperKarel{
 			move();	
 		}
 		jumpOverTheWall();
-		while (facingNorth()){
-				if (frontIsBlocked()){
-				
-				}
+		
 	}
 	
 	private void jumpOverTheWall(){

@@ -1,30 +1,31 @@
-import stanford.karel.*;
-public class karel5 extends Karel{
-	void turnaround(){
-		turnLeft();
-		turnLeft();
+import stanford.karel.SuperKarel;
+public class karel5 extends SuperKarel{
+	public void run(){
+		move();
+		backupBeepers();
+		//backupBeepersOnTheSecondPile
+		//goBackAndPutBeepersBack
+		
+	
 	}
-public void run(){
-	move();
-	while (beepersPresent()){
-		pickBeeper();
-		move();
-		move();
-		putBeeper();
-		turnaround();
-		move();
-		move();
-		turnaround();
-	}
-	move();
-	while (beepersPresent()){
-		pickBeeper();
-		move();
-		putBeeper();
-		turnaround();
-		move();
-		turnaround();
-	}
+	
+	private void backupBeepers(){
+		while(beepersPresent()){
+			pickBeeper();
+			turnLeft();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			turnLeft();
+			move();
+			move();
+			putBeeper();
+			turnAround();
+			move();
+			move();
+			turnAround();
+		}
 	
 }
 }

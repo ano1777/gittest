@@ -3,9 +3,9 @@ public class task6 extends SuperKarel{
 	public void run(){
 		for(int i=0;i<7;i++){
 			move();	
-		}
-		jumpOverTheWall();
 		
+		jumpOverTheWall();
+		}
 	}
 	
 	private void jumpOverTheWall(){

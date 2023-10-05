@@ -5,7 +5,7 @@ public class task6 extends SuperKarel{
 		while(frontIsClear()){
 			move();
 			putBeeper();
-		}
+		
 		while(frontIsBlocked()){
 			turnAround();
 			goBack();
@@ -13,7 +13,7 @@ public class task6 extends SuperKarel{
 			move();
 			turnRight();
 		}
-		
+		}
 	}
 
 	private void goBack() {

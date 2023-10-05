@@ -4,8 +4,8 @@ public class karel5 extends SuperKarel{
 		move();
 		backupBeepers();
 		backupBeepersOnTheSecondPile();
-		goBackAndPutBeepersBack1();
-		goBackAndPutBeepersBack2();
+		//goBackAndPutBeepersBack1();
+		//goBackAndPutBeepersBack2();
 		
 	}
 	

@@ -1,5 +1,5 @@
-import stanford.karel.Karel;
-public class task6 extends Karel{
+import stanford.karel.SuperKarel;
+public class task6 extends SuperKarel{
 	public void run(){
 		for(int i=0;i<8;i++){
 			move();
@@ -19,12 +19,8 @@ public class task6 extends Karel{
 		turnRight();
 		decend();
 		turnLeft();
-	}
-	private void turnRight(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	}
+        }
+
 	private void decend(){
 		while (frontIsClear()){
 			move();
@@ -32,5 +28,5 @@ public class task6 extends Karel{
 		}
 	}
 	
-
 }
+

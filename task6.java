@@ -1,7 +1,7 @@
 import stanford.karel.SuperKarel;
 public class task6 extends SuperKarel{
 	public void run(){
-		for(int i=0;i<8;i++)
+		for(int i=0;i<8;i++){
 		moveTowards();
 		makeOperation();
 			
@@ -13,7 +13,7 @@ public class task6 extends SuperKarel{
 	}
 
 	private void moveTowards() {
-		while(frontIsClear()){
+		 while(frontIsClear()){
 			move();
 			while(frontIsBlocked()){
 				makeOperation();

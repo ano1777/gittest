@@ -27,6 +27,7 @@ public class task6 extends Karel{
 	private void decend(){
 		while (frontIsClear()){
 			move();
+			turnLeft();
 		}
 	}
 	

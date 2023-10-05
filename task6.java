@@ -12,8 +12,10 @@ public class task6 extends SuperKarel{
 			turnRight();
 			move();
 			turnRight();
+			putBeeper();
 		}
 		}
+		
 	}
 
 	private void goBack() {

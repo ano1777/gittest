@@ -27,12 +27,15 @@ public class karel5 extends SuperKarel{
 	private void goBackAndPutBeepersBack1() {
 		turnLeft();
 		move();
+
 		while(beepersPresent()){
 			pickBeeper();
 			turnAround();
 			move();
 			putBeeper();
 			turnAround();
+			move();
+			
 		}
      		
 	}

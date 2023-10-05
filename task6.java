@@ -13,10 +13,9 @@ public class task6 extends SuperKarel{
 	private void moveTowards() {
 		 for (int i=0;i<8;i++){
 			if (frontIsClear()){
-		 
-			move();
+		        move();
 			}else{
-				move();
+				makeOperation();
 			
 			}
 		}

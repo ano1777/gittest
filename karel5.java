@@ -20,7 +20,7 @@ public class karel5 extends SuperKarel{
 		turnAround();
 		move();
 		putBeeper();
-		turnRight();
+		turnAround();
 		
 	}
 
@@ -32,7 +32,7 @@ public class karel5 extends SuperKarel{
 			turnAround();
 			move();
 			putBeeper();
-			turnLeft();
+			turnAround();
 		}
      		
 	}

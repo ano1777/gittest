@@ -19,7 +19,7 @@ public class karel5 extends SuperKarel{
 		putBeeper();
 		turnAround();
 		move();
-		turnLeft();
+		turnAround();
 }
 }
 	private void goBackAndPutBeepersBack1() {

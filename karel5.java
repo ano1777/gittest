@@ -7,7 +7,6 @@ public class karel5 extends SuperKarel{
 		goBackAndPutBeepersBack1();
 		goBackAndPutBeepersBack2();
 		
-	
 	}
 	
 	private void goBackAndPutBeepersBack2() {

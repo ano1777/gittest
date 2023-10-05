@@ -12,9 +12,9 @@ public class karel5 extends SuperKarel{
 	
 
 	private void backupBeepersOnTheSecondPile() {
-		turnAround();
-		move();
-		turnRight();
+		    turnAround();
+		    move();
+		    turnRight();
 		while(beepersPresent()){
 			pickBeeper();
 			turnLeft();

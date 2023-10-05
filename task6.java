@@ -4,13 +4,15 @@ public class task6 extends Karel{
 		for(int i=0;i<8;i++){
 			move();
 		}
-		while(frontIsBlocked()){
+		
 			jumpOverTheWall();
 		}
-	}
+	
 	
 	private void jumpOverTheWall(){
+		while(frontIsBlocked()){
 		turnLeft();
+		}
 		while(rightIsBlocked()){
 			move();
 		}

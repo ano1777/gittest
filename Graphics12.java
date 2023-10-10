@@ -1,7 +1,11 @@
 
+
+import java.awt.Color;
+
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
+
 
 public class Graphics12 extends GraphicsProgram{
 	public void run(){
@@ -14,7 +18,7 @@ public class Graphics12 extends GraphicsProgram{
 		
 		add (myOval);
 		myOval.setFilled(true);
-		myOval.setColor(getBackground());
+		myOval.setColor(Color.RED);
 	
 	}
 

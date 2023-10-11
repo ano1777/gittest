@@ -30,11 +30,11 @@ public class Graphics12 extends GraphicsProgram{
         add (GLine1,450,200);
         
         /*draws windows*/
-        GRect GRect1=new GRect(60,120);
-        add (GRect1,260,220);
+        GRect GRect1=new GRect(70,100);
+        add (GRect1,270,220);
         
-        GRect GRect2=new GRect(60,120);
-        add (GRect2,330,220);
+        GRect GRect2=new GRect(70,100);
+        add (GRect2,360,220);
 	
 	}
 	

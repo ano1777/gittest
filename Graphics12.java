@@ -53,8 +53,8 @@ public class Graphics12 extends GraphicsProgram{
         add (Door,305,340);
         
         /*draws chimney*/
-        GRect chimney=new GRect(20,50);
-        add (chimney,380,150);
+        GRect chimney=new GRect(20,40);
+        add (chimney,380,130);
 	
 	}
 	

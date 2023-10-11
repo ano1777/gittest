@@ -23,6 +23,9 @@ public class Graphics12 extends GraphicsProgram{
 		
         GLine myGLine=new GLine(250,200,350,100);
         add (myGLine,250,200);
+        
+        GLine GLine1=new GLine(250,450,350,100);
+        add (GLine1,250,450);
 	
 	}
 	

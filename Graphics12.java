@@ -50,7 +50,8 @@ public class Graphics12 extends GraphicsProgram{
         
         /*draws door*/
         GRect Door=new GRect(90,160);
-        add (Door,305,330);
+        add (Door,305,340);
+        
         
        
 	

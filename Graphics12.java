@@ -2,6 +2,8 @@
 
 import java.awt.Color;
 
+import acm.graphics.GLine;
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
@@ -20,10 +22,12 @@ public class Graphics12 extends GraphicsProgram{
 		myOval.setFilled(true);
 		myOval.setColor(Color.YELLOW);
 		
-		GLine myGLine=new GRect(250,270,200,330);
-		add (myGLine(200,330));
+		GLine myGLine=new GRect (270,270);
+		add (myGLine,200,330);
 	
 	}
+
+	
 
 	
 	}

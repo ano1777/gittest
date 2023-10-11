@@ -21,14 +21,11 @@ public class Graphics12 extends GraphicsProgram{
 		myOval.setFilled(true);
 		myOval.setColor(Color.yellow);
 		
-        GLine myGLine=new GLine(200,400,300,350);
-		add (myGLine,200,400);
+        GLine myGLine=new GLine
 	
 	}
-
 	
 
 	
 	}
-
 

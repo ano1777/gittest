@@ -20,10 +20,10 @@ public class Graphics12 extends GraphicsProgram{
 		
 		add (myOval);
 		myOval.setFilled(true);
-		myOval.setColor(Color.YELLOW);
+		myOval.setColor(Color.yellow);
 		
-		GLine myGLine=new GRect (270,270);
-		add (myGLine,200,330);
+		GLine myGLine=new GLine(250,270,200,270);
+		add (myGLine,200,270);
 	
 	}
 

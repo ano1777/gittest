@@ -32,6 +32,10 @@ public class Graphics12 extends GraphicsProgram{
         /*draws windows*/
         GRect GRect1=new GRect(70,100);
         add (GRect1,270,220);
+        add(GRect1);
+        GRect1.setFilled(true);
+        GRect.setColor(Color.YELLOW);
+        
         
         GRect GRect2=new GRect(70,100);
         add (GRect2,360,220);
@@ -52,9 +56,17 @@ public class Graphics12 extends GraphicsProgram{
         GRect Door=new GRect(90,160);
         add (Door,305,340);
         
+       add(Door);
+       Door.setFilled(true);;
+       Door.setColor(Color.RED);
+        
         /*draws chimney*/
         GRect chimney=new GRect(20,40);
         add (chimney,380,130);
+        
+        add(chimney);
+        chimney.setFilled(true);
+        chimney.setColor(Color.ORANGE);
 	
 	}
 	

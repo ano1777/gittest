@@ -34,7 +34,7 @@ public class Graphics12 extends GraphicsProgram{
         add (GRect1,270,220);
         add(GRect1);
         GRect1.setFilled(true);
-        GRect.setColor(Color.YELLOW);
+        GRect1.setColor(Color.YELLOW);
         
         
         GRect GRect2=new GRect(70,100);

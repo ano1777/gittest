@@ -48,6 +48,9 @@ public class Graphics12 extends GraphicsProgram{
         GLine GLine5=new GLine(395,220,395,320);
         add (GLine5,395,220);
         
+        /*draws door*/
+        GRect Door=new GRect(90,260);
+        add (Door,305,310);
         
        
 	

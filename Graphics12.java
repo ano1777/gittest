@@ -17,7 +17,7 @@ public class Graphics12 extends GraphicsProgram{
 		
 		add(myRect);
 		myRect.setFilled(true);;
-		myRect.setColor(Color.ORANGE);
+		myRect.setColor(Color.GRAY);
 		/*sun*/
 		GOval myOval =new GOval (100,100);
 		add (myOval,100,100);

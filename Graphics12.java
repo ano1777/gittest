@@ -22,7 +22,7 @@ public class Graphics12 extends GraphicsProgram{
 		myOval.setColor(Color.yellow);
 		
         GLine myGLine=new GLine(200,250,250,350);
-        add (myGLine,200,400);
+        add (myGLine,0,0);
 	
 	}
 	

@@ -40,6 +40,10 @@ public class Graphics12 extends GraphicsProgram{
         GRect GRect2=new GRect(70,100);
         add (GRect2,360,220);
         
+        add(GRect2);
+        GRect2.setFilled(true);
+        GRect2.setColor(Color.YELLOW);
+        
         GLine GLine2=new GLine(305,220,305,320);
         add (GLine2,305,220);
 

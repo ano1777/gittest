@@ -11,8 +11,7 @@ import acm.program.GraphicsProgram;
 
 public class Graphics12 extends GraphicsProgram{
 	public void run(){
-		GRect myRect = new GRect (200,300);
-		add (myRect,200,300);
+		GRect myRect = new GRect (200,400);
 		add(myRect,250,270);
 		
 		GOval myOval =new GOval (100,100);

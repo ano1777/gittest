@@ -39,7 +39,7 @@ public class Graphics12 extends GraphicsProgram{
         GLine GLine2=new GLine(305,220,305,320);
         add (GLine2,305,220);
 
-        GLine GLine4=new GLine(270,270,305,270);
+        GLine GLine4=new GLine(270,270,340,270);
         add (GLine4,270,270);
         
         GLine GLine3=new GLine(360,270,430,270);

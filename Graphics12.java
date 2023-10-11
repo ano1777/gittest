@@ -36,7 +36,7 @@ public class Graphics12 extends GraphicsProgram{
         GRect GRect2=new GRect(70,100);
         add (GRect2,360,220);
         
-        GLine GLine2=new GLine(305,220,305,290);
+        GLine GLine2=new GLine(305,220,305,320);
         add (GLine2,305,220);
 
         GLine GLine4=new GLine(270,255,305,255);
@@ -45,7 +45,7 @@ public class Graphics12 extends GraphicsProgram{
         GLine GLine3=new GLine(360,255,430,255);
         add (GLine3,305,220);
         
-        GLine GLine5=new GLine(395,220,395,290);
+        GLine GLine5=new GLine(395,220,395,320);
         add (GLine5,395,220);
         
         

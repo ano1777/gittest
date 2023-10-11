@@ -11,8 +11,6 @@ import acm.program.GraphicsProgram;
 
 public class Graphics12 extends GraphicsProgram{
 	public void run(){
-		GLine GLine1=new GLine(-400,350,400,350);
-		add(GLine1,350,400);
 		GRect myRect = new GRect (200,400);
 		add(myRect,250,200);
 		
@@ -23,7 +21,7 @@ public class Graphics12 extends GraphicsProgram{
 		myOval.setFilled(true);
 		myOval.setColor(Color.yellow);
 		
-		GLine myGLine=new GLine(250,270,200,270);
+        GLine myGLine=new GLine(250,270,200,300);
 		add (myGLine,200,270);
 	
 	}

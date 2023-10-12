@@ -4,6 +4,7 @@ public class multiplying extends SuperKarel{
 	public void run(){
 		move();
 		while(beepersPresent()){
+			pickBeeper();
 			move();
 			backUpBeeperOnTheNextPill();
 		}

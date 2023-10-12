@@ -38,7 +38,9 @@ public class multiplying extends SuperKarel{
 		putBeeper();
 		move();
 		putBeeper();
-		turnLeft();	
+		turnRight();
+		move();
+		turnAround();	
 	}
 	
 

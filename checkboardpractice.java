@@ -9,7 +9,7 @@ public class checkboardpractice extends SuperKarel {
 			turnLeft();
 			move();
 			putBeeper();
-			turnLeft();
+			turnRight();
 			move();
 		}
 	}

@@ -11,6 +11,8 @@ public class checkboardpractice extends SuperKarel {
 			putBeeper();
 			turnRight();
 			move();
+			turnLeft();
+			move();
 		}
 	}
 

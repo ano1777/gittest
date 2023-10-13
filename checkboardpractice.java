@@ -4,74 +4,52 @@ public class checkboardpractice extends SuperKarel {
 	public void run(){
 		
 		
-		fillTheLine();
-		goBack();
-		goUpToTheNextLine1();
-		fillTheLine2();
-		goBack();
-		
+		  putBeeper();
+		    while(frontIsClear()){
+		    if(frontIsClear()){
+			   move();
+		    }
+		    if(frontIsClear()){
+			   move();
+		    }
+		    
+		      if(frontIsBlocked()){
+		    	checkIfBeepersPresentOnThePreviousPile();
+		    	}
+			
+			   goBackAndUpToTheNextLine();
 	
 
 }
-
-	private void goUpToTheNextLine1() {
-		// TODO Auto-generated method stub
-		while(rightIsClear()){
-		turnRight();
-		}
-		move();
-		turnLeft();
-		fillTheLine2();
-		}
-
-	private void fillTheLine2() {
-		// TODO Auto-generated method stub
-		while(frontIsClear()){
-			move();
-			putBeeper();
-			if(frontIsClear()){
-				move();
-			}
-			if(frontIsClear()){
-				move();
-			    putBeeper();
-			}
-			while(leftIsClear()){
-			  if(frontIsBlocked()){
-				goBack();
-			  }
-		    }
-	  }
 	}
 
-	private void fillTheLine() {
+	private void goBackAndUpToTheNextLine() {
 		// TODO Auto-generated method stub
-		while(frontIsClear()){
-			putBeeper();
-			if (frontIsClear()){
+		 turnAround();
+			while(frontIsClear()){
 				move();
+				if (frontIsBlocked()){
+					turnRight();
+					move();
+					turnRight();
+					
+				}
 			}
-			if(frontIsClear()){
-				move();
+					
 			}
-			while(leftIsClear()){
-			  if(frontIsBlocked()){
-				goBack();
-			 }
-			}
-		}
-	}
+	
 
-	private void goBack() {
+	private void checkIfBeepersPresentOnThePreviousPile() {
 		// TODO Auto-generated method stub
 		turnAround();
-		while(frontIsClear()){
-			move();
-			if(frontIsBlocked()){
-				goUpToTheNextLine1();
-			}
-		}
-		
+    	move();
+    	while(noBeepersPresent()){
+    		turnAround();
+    		move();
+    		putBeeper();
 	}
-}
+	}
+	
+	
+	}
 

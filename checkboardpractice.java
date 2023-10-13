@@ -3,14 +3,14 @@ import stanford.karel.SuperKarel;
 public class checkboardpractice extends SuperKarel {
 	public void run(){
 		
-		while(leftIsClear()){
+		
 		fillTheLine();
 		goBack();
 		goUpToTheNextLine1();
 		fillTheLine2();
 		goBack();
 		
-	}
+	
 
 }
 
@@ -50,7 +50,6 @@ public class checkboardpractice extends SuperKarel {
 			putBeeper();
 			if (frontIsClear()){
 				move();
-				
 			}
 			if(frontIsClear()){
 				move();

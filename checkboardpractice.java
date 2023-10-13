@@ -13,6 +13,7 @@ public class checkboardpractice extends SuperKarel {
 			move();
 			turnLeft();
 			move();
+			turnRight();
 		}
 	}
 

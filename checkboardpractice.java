@@ -21,6 +21,12 @@ import stanford.karel.SuperKarel;
 				turnRight();
 			    fillOneLine();
 		     }
+			if(frontIsBlocked()){
+				turnLeft();
+				if(frontIsBlocked()){
+					turnRight();
+				}
+			}
 		  }
 		 }
  
@@ -121,14 +127,14 @@ import stanford.karel.SuperKarel;
 			
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
-			}
+			
 				while(leftIsClear()){
 					
 		           goBackAndUpToTheNextLine2();	        
 		       }
 		      }
 		}
-		      
+	}    
 		
 	
 	
@@ -147,13 +153,13 @@ import stanford.karel.SuperKarel;
 		
 		    if(frontIsBlocked()){
 		    	checkIfBeepersPresentOnThePreviousPile();
-		    }
+		    
 			while(leftIsClear()){
 		        goBackAndUpToTheNextLine();
 			} 
 		
 			}
-			
+		}
 		}
 		
 	

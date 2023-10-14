@@ -51,7 +51,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
-		if(rightIsClear()){
+		if(leftIsClear()){
 	       goBack();
 		}
 		}

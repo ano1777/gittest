@@ -2,25 +2,24 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
-		while(frontIsClear()){
+		
 		  fillTheLine();
-		  if(frontIsClear()){
 		  fillTheSecondLine();
-		  }
+		  
 		
 		
-		if(frontIsBlocked()){
+		  if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
 				turnRight();
 			    fillOneLine();
 		     }
 			
-			
+		
 		}
 	}
 		
-	}
+	
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
 	

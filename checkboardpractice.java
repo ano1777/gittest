@@ -4,6 +4,7 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
+		goBaack();
 	}
 		if(frontIsBlocked()){
 			turnAround();

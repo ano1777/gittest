@@ -5,7 +5,7 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 	}
-		if(frontIsBlocked()){
+		while(frontIsBlocked()){
 			fillOneLine();
 		}
 	}

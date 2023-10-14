@@ -4,7 +4,11 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(leftIsClear()){
 		  fillTheLine();
+		  checkIfBeepersPresentOnThePreviousPile();
+		  goBackAndUpToTheNextLine();
 		  fillTheSecondLine();
+		  checkIfBeepersPresentOnThePreviousPile();
+		  goBackAndUpToTheNextLine();
 		  
 		
 		}

@@ -26,7 +26,7 @@ import stanford.karel.SuperKarel;
 	private void goBack() {
 		
 		/*goes back to the first column*/
-		turnLeft();
+		turnAround();
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){

@@ -110,18 +110,13 @@ import stanford.karel.SuperKarel;
 			
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
-				turnLeft();
 				
-			    if(frontIsClear()){
-				   turnRight();
 		           goBackAndUpToTheNextLine2();	        
-		       } else {
-		    	   turnRight();
-			   
+		       } 
 		}
 		      }
-		}
-	}
+		
+	
 	
 	
 	private void fillTheLine() {

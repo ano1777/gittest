@@ -26,7 +26,7 @@ import stanford.karel.SuperKarel;
 	private void goBack() {
 		
 		/*goes back to the first column*/
-		
+		turnAround();
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
@@ -71,6 +71,8 @@ import stanford.karel.SuperKarel;
 			checkIfBeepersPresentOnThePreviousPile();
 		
 		}
+		turnLeft();
+		goBack();
 		
 		
 		}

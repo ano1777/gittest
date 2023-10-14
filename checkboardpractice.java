@@ -41,9 +41,9 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
-		
-	       goBack();
 		}
+	       goBack();
+		
 		}
 
 	private void fillOneLine() {

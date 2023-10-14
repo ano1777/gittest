@@ -18,13 +18,26 @@ import stanford.karel.SuperKarel;
          }
 		}
 		if(frontIsBlocked()){
-			turnLeft();
-			
+			fillOneLine();
 			}
 		}
+
+	private void fillOneLine() {
+		
+		/* one line in 1x8 world*/
+		turnLeft();
+		while(frontIsClear()){
+			putBeeper();
+			if(frontIsClear()){
+			move();
+			if(frontIsClear()){
+				move();
+			}
+		}
+	}
 		
 		
 	}
 		
-
+ }
  

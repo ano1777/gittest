@@ -68,7 +68,8 @@ import stanford.karel.SuperKarel;
 		if(leftIsClear()){
 		turnAround();
 		while(frontIsClear()){
-			move();}
+			move();
+			}
 			if(frontIsBlocked()){
 				turnRight();
 				if(frontIsClear()){
@@ -77,12 +78,14 @@ import stanford.karel.SuperKarel;
 				fillTheSecondLine();
 			}
 			}
-		}
+		}else{turnRight();
+	}
 	}
 	
 	private void goBackAndUpToTheNextLine2(){
 		if(leftIsClear()){
-		turnAround();}
+		turnAround();
+		
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
@@ -94,7 +97,11 @@ import stanford.karel.SuperKarel;
 			}
 			}
 		}
-	}
+		}else { 
+		     turnRight();
+		}
+		}
+	
 	
 
 	private void fillTheSecondLine() {

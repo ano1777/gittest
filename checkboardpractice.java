@@ -84,6 +84,7 @@ import stanford.karel.SuperKarel;
 			checkIfBeepersPresentOnThePreviousPile();
 			if(leftIsClear()){
 			goBackAndUpToTheNextLine();
+			fillTheSecondLine();
 			}
 		}
 		}

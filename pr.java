@@ -63,3 +63,40 @@ private void checkBeepers() {
 	}
 }
 }
+
+
+
+
+putBeeper();
+while(frontIsClear()){
+	move();
+	if(frontIsBlocked()){
+		putBeeper();
+		turnAround();
+		while(noBeepersPresent()){
+			move();
+			if(beepersPresent()){
+				turnAround();
+				while(noBeepersPresent()){
+				  move();
+			}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

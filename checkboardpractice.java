@@ -24,13 +24,21 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
-				turnRight();
-				move();
-				turnLeft();
+				goUp();
 			}
 			
 		}
 	}
+	private void goUp() {
+		/* goes up to the next line*/
+		turnRight();
+		move();
+		turnLeft();
+	}
+
+
+
+
 	private void fillTheLine() {
 		/*goes to the last pile and puts beeper on one pile from to
 		  */

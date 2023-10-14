@@ -32,7 +32,7 @@ import stanford.karel.SuperKarel;
 		fillTheSecondLine();
 		if(leftIsClear()){
 		goBackAndUpToTheNextLine();
-		}else
+		}
 	}
 
 

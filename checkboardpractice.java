@@ -3,13 +3,13 @@ import stanford.karel.SuperKarel;
  public class checkboardpractice extends SuperKarel {
 	public void run(){
 		while(frontIsClear()){
-			if(leftIsClear()){
+			
 		  fillTheLineAndGoBackAndUpToTheNextLine();
 			
 			
 		  fillTheSecondLineAndGoBackAndToTheNextLine();
 			}
-		}
+		
 		
 		  if(frontIsBlocked()){
 			turnAround();
@@ -30,8 +30,9 @@ import stanford.karel.SuperKarel;
 	private void fillTheSecondLineAndGoBackAndToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheSecondLine();
+		if(leftIsClear()){
 		goBackAndUpToTheNextLine();
-		
+		}
 	}
 
 
@@ -39,8 +40,9 @@ import stanford.karel.SuperKarel;
 	private void fillTheLineAndGoBackAndUpToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheLine();
+		if(leftIsClear(){
 		goBackAndUpToTheNextLine();
-
+		}
 	}
 
 

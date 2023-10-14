@@ -120,15 +120,14 @@ import stanford.karel.SuperKarel;
 				turnRight();	
 			}
 			}
-		if(leftIsClear()){
-        goBackAndUpToTheNextLine1();
+		
        
 
 		}
 	
 		}
 	
-	}
+	
 	private void fillOneLine() {
 		
 		/* fills one line in 1x8 world*/

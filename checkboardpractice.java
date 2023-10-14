@@ -2,12 +2,12 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
-		
+		while(leftIsClear()){
 		  fillTheLine();
 		  fillTheSecondLine();
 		  
 		
-		
+		}
 		  if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
@@ -65,20 +65,6 @@ import stanford.karel.SuperKarel;
 		}
 	}
 
-
-	private void goBackAndUpToTheNextLine2() {
-		/*goes back to the first column*/
-		turnAround();
-		while(frontIsClear()){
-			move();
-			if(frontIsBlocked()){
-				turnRight();
-				move();
-				turnRight();	
-		    }
-		}
-	}
-	
 
 
 

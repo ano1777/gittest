@@ -5,11 +5,14 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 	}
-		while(frontIsBlocked()){
-			fillOneLine();
+		if(frontIsBlocked()){
+			turnAround();
+			if(frontIsBlocked()){
+				turnAround();
+			    fillOneLine();
 		}
 	}
-
+	}
 	private void fillTheLine() {
 		/*goes to the last pile and puts beeper on one pile from to
 		  */

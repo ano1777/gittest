@@ -28,7 +28,7 @@ import stanford.karel.SuperKarel;
 	private void fillTheSecondLineAndGoBackAndToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheSecondLine();
-		if(leftIsClear()){
+		while(leftIsClear()){
 		goBackAndUpToTheNextLine();
 		}
 	}

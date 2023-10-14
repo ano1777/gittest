@@ -3,12 +3,12 @@ import stanford.karel.SuperKarel;
  public class checkboardpractice extends SuperKarel {
 	public void run(){
 		while(frontIsClear()){
-			
+			if(leftIsClear()){
 		  fillTheLineAndGoBackAndUpToTheNextLine();
 			
 			
 		  fillTheSecondLineAndGoBackAndToTheNextLine();
-			
+			}
 		}
 		
 		  if(frontIsBlocked()){
@@ -109,10 +109,9 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
 				turnLeft();
-	
-		
-			if(frontIsClear()){
-				turnRight();
+				
+			    if(frontIsClear()){
+				   turnRight();
 		           goBackAndUpToTheNextLine2();	        
 		       } else {
 		    	   turnRight();
@@ -123,10 +122,6 @@ import stanford.karel.SuperKarel;
 	}
 	
 	
-	
-
-
-
 	private void fillTheLine() {
 		/*goes to the last pile and puts beeper on one pile from two
 		  */
@@ -141,15 +136,20 @@ import stanford.karel.SuperKarel;
 		
 		if(frontIsBlocked()){
 			checkIfBeepersPresentOnThePreviousPile();
-		    
-			if(leftIsClear()){
+			turnLeft();
+	   
+			if(frontIsClear()){
+				turnRight();
 		        goBackAndUpToTheNextLine();
+			} else{
+		        	turnRight();
+			}
 		
 			}
 			}
 		}
 		
-	}
+	
 	
 	
 	private void fillOneLine() {
@@ -167,7 +167,11 @@ import stanford.karel.SuperKarel;
 			
 			}
 		}
+	
+	
+	
 	}
+	
 		
 		
 	

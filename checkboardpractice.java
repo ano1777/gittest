@@ -18,6 +18,9 @@ import stanford.karel.SuperKarel;
 			    fillOneLine();
 		     }
 		}
+		  if(leftIsBlocked()){
+			 
+		  }
 		 
 	}
 		
@@ -106,9 +109,9 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
 				turnLeft();
-				
+				}
 			
-		       if(frontIsClear()){
+			if(frontIsClear()){
 		    	   turnRight();
 		           goBackAndUpToTheNextLine2();	        
 		       } else {
@@ -119,7 +122,7 @@ import stanford.karel.SuperKarel;
 		}
 		
 	
-	}
+	
 	
 
 
@@ -139,6 +142,7 @@ import stanford.karel.SuperKarel;
 		if(frontIsBlocked()){
 			checkIfBeepersPresentOnThePreviousPile();
 			turnLeft();
+		}
 			if(frontIsClear()){
 				turnRight();
 		        goBackAndUpToTheNextLine();
@@ -148,7 +152,7 @@ import stanford.karel.SuperKarel;
 			}
 			}
 		}
-		}
+		
 		
 	
 	

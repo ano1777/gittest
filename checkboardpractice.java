@@ -47,7 +47,7 @@ import stanford.karel.SuperKarel;
 
 
 	private void fillTheSecondLine() {
-		/*moves and puts beeper on  one pile from two*/
+		/*moves and puts beeper on one pile from two*/
 		move();
 		fillTheLine();
 	}
@@ -68,34 +68,12 @@ import stanford.karel.SuperKarel;
          }
 		}
 		if(frontIsBlocked()){
-			checkIfBeepersPresentOnThePreviousPile();
-		
+			goBack();		
 		}
-		
-		goBack();
-		
-		
-		}
-	
-	
-	
-	
-	
-	
-	
-	private void checkIfBeepersPresentOnThePreviousPile() {
-		/* goes back on the previous pile and if beeper is not present puts 
-		*beeper on the next pile*/
-		turnAround();
-		move();
-		if(noBeepersPresent()){
-			turnAround();
-			move();
-			putBeeper();
-		}
-		
 	}
-
+	
+	
+	
 
 
 

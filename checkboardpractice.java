@@ -122,7 +122,7 @@ import stanford.karel.SuperKarel;
 			}
 		if(leftIsClear()){
         goBackAndUpToTheNextLine1();
-        if()
+       
 
 		}
 	

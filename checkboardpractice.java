@@ -12,7 +12,7 @@ import stanford.karel.SuperKarel;
 			    fillOneLine();
 		}
 	}
-	
+	   
 	}
 	
 	
@@ -27,6 +27,7 @@ import stanford.karel.SuperKarel;
 				move();
 				turnLeft();
 			}
+			goBack();
 		}
 	}
 	private void fillTheLine() {
@@ -41,7 +42,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
-		goBack();
+	       goBack();
 		
 		}
 

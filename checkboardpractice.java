@@ -83,10 +83,8 @@ import stanford.karel.SuperKarel;
 			turnLeft();
 			if(frontIsClear()){
 				turnRight();
-				goBack();
-				
-			}else{
-				turnRight();
+				goBack();	
+			}
 			}
 
 		}

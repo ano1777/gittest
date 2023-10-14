@@ -9,6 +9,21 @@ import stanford.karel.SuperKarel;
 			if(leftIsClear()){
 		  fillTheSecondLineAndGoBackAndToTheNextLine();
 			}
+			if(leftIsBlocked()){
+			while(frontIsClear()){
+				 putBeeper();
+				    if(frontIsClear()){
+					move();
+				}
+				    if (frontIsClear()){
+					move();
+		         }
+				
+				    if(frontIsBlocked()){
+				    	checkIfBeepersPresentOnThePreviousPile();
+					    
+			}
+			}
 		}
 		
 		  if(frontIsBlocked()){

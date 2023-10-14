@@ -2,7 +2,7 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
-		while(rightIsClear()){
+		while(frontIsClear()){
 		  fillTheLine();
 		  goBackAndUpToTheNextLine1();
 		  fillTheSecondLine();

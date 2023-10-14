@@ -17,13 +17,22 @@ import stanford.karel.SuperKarel;
 				turnRight();
 			    fillOneLine();
 		     }
-			
-		
 		}
+		  finishWork();
 	}
 		
 	
 	
+	private void finishWork() {
+		// TODO Auto-generated method stub
+		turnRight();
+		while(frontIsClear()){
+			move();
+		}
+	}
+
+
+
 	private void fillTheSecondLineAndGoBackAndToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheSecondLine();

@@ -5,7 +5,7 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 	
-		
+		}
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
@@ -16,7 +16,7 @@ import stanford.karel.SuperKarel;
 			
 		}
 	}
-		} 
+		
 	
 	
 	

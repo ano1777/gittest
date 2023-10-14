@@ -81,8 +81,6 @@ import stanford.karel.SuperKarel;
 				turnRight();
 				move();
 				turnRight();
-		    
-			fillTheLine();
 		    }
 		}
 	}

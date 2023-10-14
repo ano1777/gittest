@@ -5,6 +5,8 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 		goBack();
+		fillTheSecondLine();
+		goBack2();
 	
 		}
 		if(frontIsBlocked()){

@@ -7,7 +7,7 @@ import stanford.karel.SuperKarel;
 		  if(frontIsClear()){
 		  fillTheSecondLine();
 		  }
-		}
+		
 		
 		if(frontIsBlocked()){
 			turnAround();
@@ -20,7 +20,7 @@ import stanford.karel.SuperKarel;
 		}
 	}
 		
-	
+	}
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
 	

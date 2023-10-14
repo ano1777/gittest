@@ -5,14 +5,13 @@ import stanford.karel.SuperKarel;
 		
 		while(frontIsClear()){
 			
-			if(leftIsClear()){
-		  fillTheLineAndGoBackAndUpToTheNextLine();
-			}
-			if(leftIsClear()){
-		  fillTheSecondLineAndGoBackAndToTheNextLine();
-			}
 			
-			}
+		  fillTheLineAndGoBackAndUpToTheNextLine();
+			
+		
+		  fillTheSecondLineAndGoBackAndToTheNextLine();
+			
+		}
 		
 		
 		
@@ -122,14 +121,14 @@ import stanford.karel.SuperKarel;
 			
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
-				
+			}
 				while(leftIsClear()){
 					
 		           goBackAndUpToTheNextLine2();	        
 		       }
-		       }
-		}
 		      }
+		}
+		      
 		
 	
 	
@@ -148,13 +147,13 @@ import stanford.karel.SuperKarel;
 		
 		    if(frontIsBlocked()){
 		    	checkIfBeepersPresentOnThePreviousPile();
-			    
+		    }
 			while(leftIsClear()){
 		        goBackAndUpToTheNextLine();
 			} 
 		
 			}
-			}
+			
 		}
 		
 	

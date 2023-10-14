@@ -68,7 +68,7 @@ import stanford.karel.SuperKarel;
 		if(leftIsClear()){
 		turnAround();
 		while(frontIsClear()){
-			move();
+			move();}
 			if(frontIsBlocked()){
 				turnRight();
 				if(frontIsClear()){
@@ -79,10 +79,10 @@ import stanford.karel.SuperKarel;
 			}
 		}
 	}
-	}
+	
 	private void goBackAndUpToTheNextLine2(){
 		if(leftIsClear()){
-		turnAround();
+		turnAround();}
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
@@ -95,7 +95,7 @@ import stanford.karel.SuperKarel;
 			}
 		}
 	}
-	}
+	
 
 	private void fillTheSecondLine() {
 		/*moves and puts beeper on one pile from two*/

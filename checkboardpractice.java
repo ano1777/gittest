@@ -2,7 +2,12 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
+		while(frontIsClear()){
 		fillTheLine();
+	}
+		if(frontIsBlocked()){
+			fillOneLine();
+		}
 	}
 
 	private void fillTheLine() {
@@ -17,9 +22,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
-		if(frontIsBlocked()){
-			fillOneLine();
-			}
+		
 		}
 
 	private void fillOneLine() {
@@ -27,20 +30,20 @@ import stanford.karel.SuperKarel;
 		/* one line in 1x8 world*/
 		turnLeft();
 		while(frontIsClear()){
+			putBeeper();
 			if(frontIsClear()){
 			move();
 			}
 			if(frontIsClear()){
 				move();
 			}
-			if(frontIsClear()){
-			putBeeper();
+			
 			}
 		}
 	}
 		
 		
-	}
-		
+	
+	
  
  

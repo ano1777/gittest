@@ -27,7 +27,7 @@ import stanford.karel.SuperKarel;
 				move();
 				turnLeft();
 			}
-			goBack();
+			
 		}
 	}
 	private void fillTheLine() {
@@ -41,9 +41,9 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
-		}
-	       goBack();
 		
+	       goBack();
+		}
 		}
 
 	private void fillOneLine() {

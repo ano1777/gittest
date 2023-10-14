@@ -83,7 +83,7 @@ import stanford.karel.SuperKarel;
 	}
 	
 	private void goBackAndUpToTheNextLine2(){
-		if(leftIsClear()){
+		while(leftIsClear()){
 		turnAround();
 		
 		while(frontIsClear()){
@@ -97,8 +97,7 @@ import stanford.karel.SuperKarel;
 			}
 			}
 		}
-		}else { 
-		     turnRight();
+		
 		}
 		}
 	
@@ -135,17 +134,17 @@ import stanford.karel.SuperKarel;
 		/*goes to the last pile and puts beeper on one pile from two
 		  */
 		while(frontIsClear()){
-		putBeeper();
-		if(frontIsClear()){
+		    putBeeper();
+		    if(frontIsClear()){
 			move();
 		}
-		if (frontIsClear()){
+		    if (frontIsClear()){
 			move();
          }
 		
-		if(frontIsBlocked()){
-			checkIfBeepersPresentOnThePreviousPile();
-			turnLeft();
+		    if(frontIsBlocked()){
+		    	checkIfBeepersPresentOnThePreviousPile();
+			    turnLeft();
 			if(frontIsClear()){
 				turnRight();
 		        goBackAndUpToTheNextLine();

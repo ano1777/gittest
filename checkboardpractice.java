@@ -6,11 +6,10 @@ import stanford.karel.SuperKarel;
 		fillTheLine();
 	}
 		
-		
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
-				turnAround();
+				turnRight();
 			    fillOneLine();
 		}else{
 			goBack();
@@ -63,7 +62,7 @@ import stanford.karel.SuperKarel;
 		
 		/* fills one line in 1x8 world*/
 		
-		turnLeft();
+		
 		while(frontIsClear()){
 			putBeeper();
 			if(frontIsClear()){

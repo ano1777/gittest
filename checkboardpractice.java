@@ -20,6 +20,8 @@ import stanford.karel.SuperKarel;
 		if(frontIsBlocked()){
 			turnLeft();
 			fillTheLine();
+			if(frontIsBlocked());
+			turnRight();
 		}
 		
 		

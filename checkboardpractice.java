@@ -2,13 +2,13 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
-		
+		while(frontIsClear()){
 		fillTheLine();
 		goBack();
 		fillTheSecondLine();
 		goBack2();
 	
-		
+		}	
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){

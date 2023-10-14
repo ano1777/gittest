@@ -13,7 +13,7 @@ import stanford.karel.SuperKarel;
 			
 		}
 		
-		
+		turnRight();
 		
 		    if(frontIsBlocked()){
 			turnAround();

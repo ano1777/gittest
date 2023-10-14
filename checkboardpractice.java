@@ -66,6 +66,9 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
+		if(frontIsBlocked()){
+			checkIfBeepersPresentOnThePreviousPile();
+		}
 		}
 		
 		
@@ -77,6 +80,16 @@ import stanford.karel.SuperKarel;
 	
 	
 	
+	private void checkIfBeepersPresentOnThePreviousPile() {
+		/* goes back on the previous pile and if beeper is not present puts 
+		*beeper on the next pile*/
+		turnAround();
+		
+	}
+
+
+
+
 	private void fillOneLine() {
 		
 		/* fills one line in 1x8 world*/

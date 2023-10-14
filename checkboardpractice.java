@@ -22,16 +22,20 @@ import stanford.karel.SuperKarel;
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
 		// TODO Auto-generated method stub
+		if(frontIsBlocked()){
 		turnAround();
 		move();
 		if(noBeepersPresent()){
 			turnAround();
 			move();
 			putBeeper();
+		}else{
+			turnAround();
+			move();
 		}
 	}
 
-
+	}
 
 
 	private void goBack() {

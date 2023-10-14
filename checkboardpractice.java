@@ -32,6 +32,8 @@ import stanford.karel.SuperKarel;
 		fillTheSecondLine();
 		if(leftIsClear()){
 		goBackAndUpToTheNextLine();
+		}else{
+			turnRight();
 		}
 	}
 
@@ -42,6 +44,8 @@ import stanford.karel.SuperKarel;
 		fillTheLine();
 		if(leftIsClear()){
 		goBackAndUpToTheNextLine();
+		}else{
+			turnRight();
 		}
 	}
 

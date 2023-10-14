@@ -108,9 +108,11 @@ import stanford.karel.SuperKarel;
 			
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
+				turnLeft();
 	
-				
-			if(leftIsClear()){
+		
+			if(frontIsClear()){
+				turnRight();
 		           goBackAndUpToTheNextLine2();	        
 		       } else {
 		    	   turnRight();
@@ -142,9 +144,7 @@ import stanford.karel.SuperKarel;
 		    
 			if(leftIsClear()){
 		        goBackAndUpToTheNextLine();
-			
-			} else{
-				turnRight();
+		
 			}
 			}
 		}

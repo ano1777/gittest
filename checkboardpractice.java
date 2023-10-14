@@ -51,7 +51,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		
-		if(rightsClear()){
+		if(rightIsClear()){
 	       goBack();
 		}
 		}

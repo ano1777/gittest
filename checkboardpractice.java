@@ -6,9 +6,9 @@ import stanford.karel.SuperKarel;
 		fillTheLine();
 		goBack();
 		fillTheSecondLine();
-		goBack2();
+		goBackAndUpToTheNextLine();
 	
-		}	
+			
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
@@ -20,7 +20,7 @@ import stanford.karel.SuperKarel;
 		}
 	}
 		
-	
+	}
 	
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
@@ -41,28 +41,25 @@ import stanford.karel.SuperKarel;
 	}
 
 
-	private void goBack() {
+	private void goBackandUpToTheNextLine1() {
 		
 		/*goes back to the first column*/
 		turnAround();
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
-				goUp();
+				turnRight();
+				move();
+				turnRight();
+				
+			}
+			while(frontIsClear()){
+				fillTheSecondLine();
 			}
 			
 		}
 	}
-	private void goUp() {
-		/* goes up to the next line*/
-		turnRight();
-		move();
-		turnRight();
-		fillTheSecondLine();
-	}
-
-
-
+	
 
 	private void fillTheSecondLine() {
 		/*moves and puts beeper on one pile from two*/
@@ -70,31 +67,26 @@ import stanford.karel.SuperKarel;
 		move();
 		fillTheLine();
 		if(frontIsBlocked()){
-			goBack2();
+			goBackAndUpToTheNextLine2();
 		}
 	}
 
 	}
 
 
-	private void goBack2() {
+	private void goBackAndUpToTheNextLine2() {
 		/*goes back to the first column*/
 		turnAround();
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
-				goUp2();
+				turnRight();
+				move();
+				turnRight();
 			}
+			fillTheLine();
 			
 		}
-	}
-	
-	private void goUp2() {
-		// TODO Auto-generated method stub
-		turnRight();
-		move();
-		turnRight();
-		fillTheLine();
 	}
 	
 

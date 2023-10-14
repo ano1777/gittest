@@ -42,8 +42,9 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
+		if(rightIsClear()){
 	       goBack();
-		
+		}
 		}
 
 	private void fillOneLine() {

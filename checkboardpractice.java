@@ -85,6 +85,8 @@ import stanford.karel.SuperKarel;
 				turnRight();
 				goBack();
 				
+			}else{
+				turnRight();
 			}
 
 		}

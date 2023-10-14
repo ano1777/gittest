@@ -5,15 +5,20 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 		if(leftIsClear()){
-		goBackAndUpToTheNextLine1();
+			turnAround();
+			if(rightIsClear()){
+		    goBackAndUpToTheNextLine1();
+		    fillTheSecondLine();
 		}
 		}
-		while(frontIsClear()){
-		fillTheSecondLine();
 		if(leftIsClear()){
-		goBackAndUpToTheNextLine2();
+			turnAround();
+			if(rightIsClear()){
+				turnAround();
+		        goBackAndUpToTheNextLine2();
 		}
 		}	
+		}
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
@@ -25,7 +30,7 @@ import stanford.karel.SuperKarel;
 		}
 	}
 		
-	
+ 
 	
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
@@ -115,12 +120,15 @@ import stanford.karel.SuperKarel;
 				turnRight();	
 			}
 			}
+		if(leftIsClear()){
+        goBackAndUpToTheNextLine1();
+        if()
 
 		}
 	
 		}
 	
-
+	}
 	private void fillOneLine() {
 		
 		/* fills one line in 1x8 world*/

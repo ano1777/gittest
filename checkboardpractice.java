@@ -5,12 +5,15 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		fillTheLine();
 	}
-		goBack();
+		
+		
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
 				turnAround();
 			    fillOneLine();
+		}else{
+			goBack();
 		}
 	}
 	   
@@ -35,7 +38,7 @@ import stanford.karel.SuperKarel;
 		/* goes up to the next line*/
 		turnRight();
 		move();
-		turnLeft();
+		turnRight();
 	}
 
 
@@ -52,9 +55,7 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
-		
-		
-	       goBack();
+		  goBack();
 		}
 		}
 	

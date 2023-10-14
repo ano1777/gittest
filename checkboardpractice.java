@@ -11,13 +11,13 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				turnRight();
 			    fillOneLine();
-		     }
+		     }else{
             turnRight();
             if(frontIsClear()){
 			goBack();
 		}
 	}
-	   
+		} 
 	}
 	
 	
@@ -71,7 +71,7 @@ import stanford.karel.SuperKarel;
 			checkIfBeepersPresentOnThePreviousPile();
 		
 		}
-		turnLeft();
+		
 		goBack();
 		
 		

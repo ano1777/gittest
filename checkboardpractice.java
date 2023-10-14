@@ -50,12 +50,12 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
-		}
-		if(leftIsClear()){
+		
+		if(rightsClear()){
 	       goBack();
 		}
 		}
-
+	}
 	private void fillOneLine() {
 		
 		/* one line in 1x8 world*/

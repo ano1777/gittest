@@ -38,7 +38,7 @@ import stanford.karel.SuperKarel;
 	private void fillTheLineAndGoBackAndUpToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheLine();
-		if(leftIsClear()){
+		while(leftIsClear()){
 		goBackAndUpToTheNextLine();
 		}
 	}
@@ -65,7 +65,7 @@ import stanford.karel.SuperKarel;
 	private void goBackAndUpToTheNextLine() {
 		
 		/*goes back to the first column*/
-		if(leftIsClear()){
+		while(leftIsClear()){
 		turnAround();
 		while(frontIsClear()){
 			move();
@@ -78,7 +78,7 @@ import stanford.karel.SuperKarel;
 				fillTheSecondLine();
 			}
 			}
-		}else{turnRight();
+		
 	}
 	}
 	

@@ -12,6 +12,22 @@ import stanford.karel.SuperKarel;
 			    fillOneLine();
 		}
 	}
+	
+	}
+	
+	
+	
+	
+	private void goBack() {
+		// TODO Auto-generated method stub
+		while(frontIsClear()){
+			move();
+			if(frontIsBlocked()){
+				turnRight();
+				move();
+				turnLeft();
+			}
+		}
 	}
 	private void fillTheLine() {
 		/*goes to the last pile and puts beeper on one pile from to
@@ -25,6 +41,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
+		goBack();
 		
 		}
 

@@ -5,12 +5,12 @@ import stanford.karel.SuperKarel;
 		
 		while(frontIsClear()){
 			
-			
+			if(leftIsClear()){
 		  fillTheLineAndGoBackAndUpToTheNextLine();
-			
-		
+			}
+		if(leftIsClear()){
 		  fillTheSecondLineAndGoBackAndToTheNextLine();
-			
+		}
 		}
 		
 	

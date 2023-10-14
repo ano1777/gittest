@@ -4,6 +4,7 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
+		
 	
 		}
 		if(frontIsBlocked()){
@@ -65,7 +66,35 @@ import stanford.karel.SuperKarel;
 		/*moves and puts beeper on one pile from two*/
 		move();
 		fillTheLine();
+		if(frontIsBlocked()){
+			goBack2();
+		}
 	}
+
+
+
+
+	private void goBack2() {
+		// TODO Auto-generated method stub
+		/*goes back to the first column*/
+		turnAround();
+		while(frontIsClear()){
+			move();
+			if(frontIsBlocked()){
+				goUp2();
+			}
+			
+		}
+	}
+	
+	private void goUp2() {
+		// TODO Auto-generated method stub
+		turnRight();
+		move();
+		turnRight();
+		fillTheLine();
+	}
+	
 
 
 

@@ -4,7 +4,7 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
-		
+		goBack();
 	
 		}
 		if(frontIsBlocked()){
@@ -115,8 +115,7 @@ import stanford.karel.SuperKarel;
 			checkIfBeepersPresentOnThePreviousPile();
 			turnLeft();
 			if(frontIsClear()){
-				turnRight();
-				goBack();	
+				turnRight();	
 			}
 			}
 

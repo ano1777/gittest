@@ -2,6 +2,20 @@ import stanford.karel.SuperKarel;
 
  public class checkboardpractice extends SuperKarel {
 	public void run(){
+		   if(leftIsBlocked()){
+			
+			while(frontIsClear()){
+				putBeeper();
+				if(frontIsClear()){
+					move();
+				}
+				if(frontIsClear()){
+					move();
+				}
+	
+			}
+		}
+	
 		
 		while(frontIsClear()){
 			

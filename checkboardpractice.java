@@ -14,7 +14,10 @@ import stanford.karel.SuperKarel;
 			move();
 		}
 		if (frontIsClear()){
-			move();
+         }
+		while(frontIsBlocked()){
+			turnLeft();
+			fillTheLine();
 		}
 		
 		

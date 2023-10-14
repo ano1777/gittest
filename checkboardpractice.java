@@ -85,6 +85,12 @@ import stanford.karel.SuperKarel;
 		/* goes back on the previous pile and if beeper is not present puts 
 		*beeper on the next pile*/
 		turnAround();
+		move();
+		if(noBeepersPresent()){
+			turnAround();
+			move();
+			putBeeper();
+		}
 		
 	}
 

@@ -14,6 +14,7 @@ import stanford.karel.SuperKarel;
 			move();
 		}
 		if (frontIsClear()){
+			move();
          }
 		if(frontIsBlocked()){
 			turnLeft();

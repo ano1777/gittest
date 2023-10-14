@@ -15,7 +15,6 @@ import stanford.karel.SuperKarel;
 		}
 		if (frontIsClear()){
 			move();
-			putBeeper();
 		}
 		
 		

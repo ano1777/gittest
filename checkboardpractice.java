@@ -12,8 +12,8 @@ import stanford.karel.SuperKarel;
 				turnRight();
 			    fillOneLine();
 		     }
-            turnLeft();
-            if(frontIsBlocked()){
+            turnRight();
+            if(frontIsClear()){
 			goBack();
 		}
 	}
@@ -26,7 +26,7 @@ import stanford.karel.SuperKarel;
 	private void goBack() {
 		
 		/*goes back to the first column*/
-		turnAround();
+		turnLeft();
 		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){

@@ -53,9 +53,9 @@ import stanford.karel.SuperKarel;
 				turnRight();
 				
 			}
-			while(frontIsClear()){
+			
 				fillTheSecondLine();
-			}
+			
 			
 		}
 	}

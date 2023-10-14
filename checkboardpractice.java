@@ -33,7 +33,9 @@ import stanford.karel.SuperKarel;
 			if(frontIsClear()){
 				move();
 			}
+			if(frontIsClear()){
 			putBeeper();
+			}
 		}
 	}
 		

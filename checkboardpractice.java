@@ -40,7 +40,7 @@ import stanford.karel.SuperKarel;
 	private void fillTheLineAndGoBackAndUpToTheNextLine() {
 		// TODO Auto-generated method stub
 		fillTheLine();
-		if(leftIsClear(){
+		if(leftIsClear()){
 		goBackAndUpToTheNextLine();
 		}
 	}

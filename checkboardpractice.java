@@ -47,7 +47,7 @@ import stanford.karel.SuperKarel;
 		turnAround();
 		while(frontIsClear()){
 			move();
-			if(frontIsBlocked()){
+			while(frontIsBlocked()){
 				goUp();
 			}
 			
@@ -69,7 +69,7 @@ import stanford.karel.SuperKarel;
 		while(frontIsClear()){
 		move();
 		fillTheLine();
-		if(frontIsBlocked()){
+		while(frontIsBlocked()){
 			goBack2();
 		}
 	}

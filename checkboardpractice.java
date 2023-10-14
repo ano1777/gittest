@@ -16,6 +16,7 @@ import stanford.karel.SuperKarel;
 		if (frontIsClear()){
 			move();
          }
+		
 		if(frontIsBlocked()){
 			turnLeft();
 			fillTheLine();
@@ -25,4 +26,4 @@ import stanford.karel.SuperKarel;
 	}
 		
 }
- }
+ 

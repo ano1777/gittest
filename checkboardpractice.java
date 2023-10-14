@@ -27,12 +27,13 @@ import stanford.karel.SuperKarel;
 		/* one line in 1x8 world*/
 		turnLeft();
 		while(frontIsClear()){
-			putBeeper();
 			if(frontIsClear()){
 			move();
+			}
 			if(frontIsClear()){
 				move();
 			}
+			putBeeper();
 		}
 	}
 		

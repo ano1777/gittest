@@ -126,7 +126,7 @@ import stanford.karel.SuperKarel;
 		}
 		      }
 		
-	}
+	
 	
 	
 	private void fillTheLine() {

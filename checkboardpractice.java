@@ -21,14 +21,10 @@ import stanford.karel.SuperKarel;
 				turnRight();
 			    fillOneLine();
 		     }
-			if(frontIsBlocked()){
-				turnLeft();
-				if(frontIsBlocked()){
-					turnRight();
-				}
+			
 			}
 		  }
-		 }
+		 
  
  
 		

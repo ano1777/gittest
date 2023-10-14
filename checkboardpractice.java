@@ -11,7 +11,9 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				turnRight();
 			    fillOneLine();
-		}else{
+		     }
+            turnLeft();
+            if(frontIsBlocked()){
 			goBack();
 		}
 	}

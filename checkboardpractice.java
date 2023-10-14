@@ -18,18 +18,9 @@ import stanford.karel.SuperKarel;
 			    fillOneLine();
 		     }
 		}
-		  finishWork();
+		 
 	}
 		
-	
-	
-	private void finishWork() {
-		// TODO Auto-generated method stub
-		turnRight();
-		while(frontIsClear()){
-			move();
-		}
-	}
 
 
 
@@ -76,11 +67,12 @@ import stanford.karel.SuperKarel;
 			move();
 			if(frontIsBlocked()){
 				turnRight();
+				if(frontIsClear()){
 				move();
 				turnRight();
 				fillTheSecondLine();
 			}
-			
+			}
 		}
 	}
 	private void goBackAndUpToTheNextLine2(){
@@ -89,11 +81,12 @@ import stanford.karel.SuperKarel;
 			move();
 			if(frontIsBlocked()){
 				turnRight();
+				if(frontIsClear()){
 				move();
 				turnRight();
 				fillTheLine();
 			}
-			
+			}
 		}
 	}
 	

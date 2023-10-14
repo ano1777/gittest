@@ -67,6 +67,7 @@ import stanford.karel.SuperKarel;
 	private void goBackAndUpToTheNextLine() {
 		
 		/*goes back to the first column*/
+		if(leftIsClear()){
 		turnAround();
 		while(frontIsClear()){
 			move();
@@ -80,7 +81,9 @@ import stanford.karel.SuperKarel;
 			}
 		}
 	}
+	}
 	private void goBackAndUpToTheNextLine2(){
+		if(leftIsClear()){
 		turnAround();
 		while(frontIsClear()){
 			move();
@@ -94,7 +97,7 @@ import stanford.karel.SuperKarel;
 			}
 		}
 	}
-	
+	}
 
 	private void fillTheSecondLine() {
 		/*moves and puts beeper on one pile from two*/

@@ -109,7 +109,7 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
 				turnLeft();
-				}
+				
 			
 			if(frontIsClear()){
 		    	   turnRight();
@@ -120,7 +120,7 @@ import stanford.karel.SuperKarel;
 		}
 		      }
 		}
-		
+	}
 	
 	
 	
@@ -142,7 +142,7 @@ import stanford.karel.SuperKarel;
 		if(frontIsBlocked()){
 			checkIfBeepersPresentOnThePreviousPile();
 			turnLeft();
-		}
+		
 			if(frontIsClear()){
 				turnRight();
 		        goBackAndUpToTheNextLine();
@@ -153,7 +153,7 @@ import stanford.karel.SuperKarel;
 			}
 		}
 		
-		
+	}
 	
 	
 	private void fillOneLine() {

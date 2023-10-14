@@ -12,6 +12,7 @@ import stanford.karel.SuperKarel;
 				turnRight();
 			    fillOneLine();
 		     }
+			turnAround();
 			
 		}
 	}

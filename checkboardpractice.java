@@ -4,10 +4,15 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
+		if(leftIsClear()){
 		goBackAndUpToTheNextLine1();
+		}
+		}
+		while(frontIsClear()){
 		fillTheSecondLine();
+		if(leftIsClear()){
 		goBackAndUpToTheNextLine2();
-	
+		}
 		}	
 		if(frontIsBlocked()){
 			turnAround();

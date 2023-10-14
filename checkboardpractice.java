@@ -21,7 +21,6 @@ import stanford.karel.SuperKarel;
 		}
 	}
 		
- 
 	
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {
@@ -38,14 +37,12 @@ import stanford.karel.SuperKarel;
 			move();
 		}
 	}
-
 	}
 
 
 	private void goBackAndUpToTheNextLine1() {
 		
 		/*goes back to the first column*/
-		turnRight();
 		turnAround();
 		while(frontIsClear()){
 			move();
@@ -69,7 +66,7 @@ import stanford.karel.SuperKarel;
 			turnLeft();
 			if(frontIsClear()){
 				turnRight();
-			    
+				goBackAndUpToTheNextLine2();
 		}
 	}
 		}
@@ -84,8 +81,7 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				turnRight();
 				move();
-				turnRight();
-				
+				turnRight();	
 		    }
 		}
 	}
@@ -107,24 +103,16 @@ import stanford.karel.SuperKarel;
          }
 		
 		if(frontIsBlocked()){
-			checkIfBeepersPresentOnThePreviousPile();
-			turnLeft();
+			checkIfBeepersPresentOnThePreviousPile();		
+			}
 			
-				
-			}
-			}
-		
-       
-
 		}
-	
-		
+		}
 	
 	
 	private void fillOneLine() {
 		
 		/* fills one line in 1x8 world*/
-		
 		
 		while(frontIsClear()){
 			putBeeper();

@@ -16,9 +16,7 @@ import stanford.karel.SuperKarel;
 		}
 	}
 		} 
-	}
 	
-	}
 	
 	
 	private void checkIfBeepersPresentOnThePreviousPile() {

@@ -80,12 +80,12 @@ import stanford.karel.SuperKarel;
 				turnRight();
 				move();
 				turnRight();
-			}
+		    while(frontIsClear()){
 			fillTheLine();
-			
+		    }
 		}
 	}
-	
+	}
 
 
 

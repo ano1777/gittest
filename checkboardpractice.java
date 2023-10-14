@@ -20,8 +20,10 @@ import stanford.karel.SuperKarel;
 	
 	
 	private void goBack() {
-		// TODO Auto-generated method stub
-		while(frontIsClear()){
+		
+		/*goes back to the first colmn*/
+		
+		while(rightIsClear()){
 			move();
 			if(frontIsBlocked()){
 				goUp();
@@ -51,14 +53,15 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		
-		if(rightIsClear()){
+		
 	       goBack();
 		}
 		}
-	}
+	
 	private void fillOneLine() {
 		
-		/* one line in 1x8 world*/
+		/* fills one line in 1x8 world*/
+		
 		turnLeft();
 		while(frontIsClear()){
 			putBeeper();

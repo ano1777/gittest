@@ -4,8 +4,8 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
-		goBack();
 	}
+		goBack();
 		if(frontIsBlocked()){
 			turnAround();
 			if(frontIsBlocked()){
@@ -21,7 +21,7 @@ import stanford.karel.SuperKarel;
 	
 	private void goBack() {
 		
-		/*goes back to the first colmn*/
+		/*goes back to the first column*/
 		
 		while(rightIsClear()){
 			move();

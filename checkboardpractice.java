@@ -104,7 +104,7 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
 				turnLeft();
-				}
+				
 			
 		       if(frontIsClear()){
 		    	   turnRight();
@@ -117,7 +117,7 @@ import stanford.karel.SuperKarel;
 		}
 		
 	
-
+	}
 	
 
 

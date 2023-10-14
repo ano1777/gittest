@@ -4,7 +4,7 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		fillTheLine();
-	}
+	
 		
 		if(frontIsBlocked()){
 			turnAround();
@@ -14,6 +14,7 @@ import stanford.karel.SuperKarel;
 		     }
 			if(frontIsClear()){
             turnRight();
+        
             if(frontIsClear()){
 			goBack();
 		}
@@ -21,9 +22,17 @@ import stanford.karel.SuperKarel;
 		} 
 	}
 	
+	}
 	
 	
-	
+	private void checkIfBeepersPresentOnThePreviousPile() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
 	private void goBack() {
 		
 		/*goes back to the first column*/

@@ -74,6 +74,19 @@ import stanford.karel.SuperKarel;
 			
 		}
 	}
+	private void goBackAndUpToTheNextLine2(){
+		turnAround();
+		while(frontIsClear()){
+			move();
+			if(frontIsBlocked()){
+				turnRight();
+				move();
+				turnRight();
+				fillTheLine();
+			}
+			
+		}
+	}
 	
 
 	private void fillTheSecondLine() {
@@ -82,7 +95,7 @@ import stanford.karel.SuperKarel;
 		fillTheLine();
 		if(leftIsClear()){
 		
-		goBackAndUpToTheNextLine();
+		goBackAndUpToTheNextLine2();
 		fillTheLine();
 	
 		}

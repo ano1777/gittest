@@ -51,12 +51,13 @@ import stanford.karel.SuperKarel;
 				turnRight();
 				move();
 				turnRight();
+				while(frontIsClear()){
 				fillTheSecondLine();
 			}
 			
 		}
 	}
-	
+	}
 
 	private void fillTheSecondLine() {
 		/*moves and puts beeper on one pile from two*/

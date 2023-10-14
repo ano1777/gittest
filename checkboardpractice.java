@@ -23,7 +23,7 @@ import stanford.karel.SuperKarel;
 		
 		/*goes back to the first column*/
 		
-		while(rightIsClear()){
+		while(frontIsClear()){
 			move();
 			if(frontIsBlocked()){
 				goUp();

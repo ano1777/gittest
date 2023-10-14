@@ -117,12 +117,11 @@ import stanford.karel.SuperKarel;
 			
 			if(frontIsBlocked()){
 				checkIfBeepersPresentOnThePreviousPile();
-				turnLeft();
-				if(frontIsClear()){
-					turnRight();
+				
+				if(leftIsClear()){
+					
 		           goBackAndUpToTheNextLine2();	        
-		       } else{
-		    	   turnRight();
+		       }
 		       }
 		}
 		      }
@@ -144,13 +143,11 @@ import stanford.karel.SuperKarel;
 		
 		    if(frontIsBlocked()){
 		    	checkIfBeepersPresentOnThePreviousPile();
-			    turnLeft();
-			if(frontIsClear()){
-				turnRight();
+			    
+			if(leftIsClear()){
+				
 		        goBackAndUpToTheNextLine();
-			} else{
-		        	turnRight();
-			}
+			} 
 		
 			}
 			}

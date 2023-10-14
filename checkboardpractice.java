@@ -20,6 +20,9 @@ import stanford.karel.SuperKarel;
 					if(frontIsClear()){
 						move();
 					}
+					if(frontIsBlocked()){
+						checkIfBeepersPresentOnThePreviousPile();
+					}
 				}
 			}
 		

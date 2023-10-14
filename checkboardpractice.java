@@ -11,7 +11,8 @@ import stanford.karel.SuperKarel;
 			if(frontIsBlocked()){
 				turnRight();
 			    fillOneLine();
-		     }else{
+		     }
+			if(frontIsClear()){
             turnRight();
             if(frontIsClear()){
 			goBack();
@@ -67,8 +68,7 @@ import stanford.karel.SuperKarel;
 			move();
          }
 		}
-		if(frontIsBlocked()){
-			goBack();		
+			
 		}
 	}
 	

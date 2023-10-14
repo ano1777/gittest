@@ -4,8 +4,9 @@ import stanford.karel.SuperKarel;
 	public void run(){
 		while(frontIsClear()){
 		  fillTheLine();
+		  if(frontIsClear()){
 		  fillTheSecondLine();
-		  
+		  }
 		}
 		
 		if(frontIsBlocked()){

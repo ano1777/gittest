@@ -3,9 +3,12 @@ import stanford.karel.SuperKarel;
  public class checkboardpractice extends SuperKarel {
 	public void run(){
 		while(frontIsClear()){
+			if(leftIsClear()){
 		  fillTheLineAndGoBackAndUpToTheNextLine();
+			}
+			if(leftIsClear()){
 		  fillTheSecondLineAndGoBackAndToTheNextLine();
-		  
+			}
 		}
 		
 		  if(frontIsBlocked()){

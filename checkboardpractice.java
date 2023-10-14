@@ -38,6 +38,16 @@ import stanford.karel.SuperKarel;
 		turnRight();
 		move();
 		turnRight();
+		fillTheSecondLine();
+	}
+
+
+
+
+	private void fillTheSecondLine() {
+		/*moves and puts beeper on  one pile from two*/
+		move();
+		fillTheLine();
 	}
 
 

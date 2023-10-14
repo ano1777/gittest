@@ -56,7 +56,6 @@ import stanford.karel.SuperKarel;
          }
 		}
 		
-		  goBack();
 		
 		}
 	

@@ -10,7 +10,9 @@ public class pr extends SuperKarel {
 	   * on the number of columns in the world. in 1x1 world it just puts beeper, in 2x2
 	   *  it moves and puts beeper on 2x1.
 	   */
-	
+   	if(frontIsClear()){
+		 checkTheWorld2x2();
+	}
 		
 	  
 	  if(frontIsBlocked()){
@@ -19,7 +21,7 @@ public class pr extends SuperKarel {
 		  }
    
 	  }else{
-		  checkTheWorld2x2();
+		 
 	     putTwoBeepersMirroringEachOther();
 	     standOnTheMiddlePoint();
 	

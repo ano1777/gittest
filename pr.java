@@ -8,17 +8,18 @@ public class pr extends SuperKarel {
 	putTwoBeepersMirroringEachOther();
 	standOnTheMiddlePoint();
 	
-}
+  
 
 
+  }
    private void checkIfFrontAndLeftIsClear() {
 			turnLeft();
 			if(frontIsBlocked()){
 				putBeeper();
 			}
 		}
-}
 
+  
 
 private void standOnTheMiddlePoint() {
 	// TODO Auto-generated method stub

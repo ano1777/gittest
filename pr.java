@@ -28,9 +28,10 @@ public void run(){
   */
 
     private void fillTheRowAndMoveToTheMiddlePoint() {
-    	while(frontIsClear()){
-    	move();
-    	putBeeper();
+    	if(beepersPresent()){
+    	   move();
+    	   putBeeper();
+    	   move();
     	while(noBeepersPresent()){
     		move();
     		if(beepersPresent()){

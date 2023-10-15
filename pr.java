@@ -86,6 +86,7 @@ public class pr extends SuperKarel {
  * move and put beeper. with this function the robot carries beepers from West to the East and
  * it works on the West side of the middle point. this method is in the "while" cycle, which means that it will be 
  * repeated until it reaches the middle point of the row.
+ * after this action, karel will be facing East, standing on the diamond.
  */
 	private void carryBeeperToTheNextPile() {		
 		pickBeeper();
@@ -96,7 +97,10 @@ public class pr extends SuperKarel {
    
 	
 /*
- * 
+ * this function is done after karel carries the beeper on the next pile towards the East.
+ * karel is facing East and beeper is present, so it must move towards the other beeper,
+ * which is present on the East side of the row. when the robot reaches the beeper, it takes it,
+ * turns around and carries it to the next pile towards the West. after this method karel is standing on the o
  */
 
 	private void moveForwards() {

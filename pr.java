@@ -53,7 +53,7 @@ public void run(){
     		    		}
     		    	}
     		    }     
-    			    while(frontIsClear()){
+    			    while(noBeepersPresent()){
     			    	move();
     			    	if(beepersPresent()){
     			    		turnAround();

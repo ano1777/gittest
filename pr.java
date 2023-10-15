@@ -48,7 +48,7 @@ public void run(){
     		    			turnAround();
     		    			move();
     		    			move();
-    		    			turnAround();
+    		    			
     		    		}
     		    		}
     		    	}

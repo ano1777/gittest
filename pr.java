@@ -34,9 +34,23 @@ public void run(){
     	  while(frontIsClear()){ 
     	    	move();
     		    if(beepersPresent()){
-    		     	turnAround();
-    			    move();
-    			    putBeeper();
+    		    	turnAround(); 
+    		    	move();
+    		    	putBeeper();
+    		    	if(beepersPresent()){
+    		    		move();
+    		    		if(noBeepersPresent()){
+    		    			move();
+    		    		
+    		    		if(noBeepersPresent()){
+    		    			turnAround();
+    		    			move();
+    		    			move();
+    		    			turnAround();
+    		    		}
+    		    		}
+    		    	}
+ 
     			    while(frontIsClear()){
     			    	move();
     			    	if(beepersPresent()){

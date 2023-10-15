@@ -3,7 +3,7 @@ import stanford.karel.SuperKarel;
 public class pr extends SuperKarel {
 public void run(){
 	putBeepersOnTheSides();
-	fillTheRowAnMoveToTheMiddlePoint();
+	fillTheRowAndMoveToTheMiddlePoint();
 	pickBeepersExceptTheMiddle();
 	
 }
@@ -19,7 +19,7 @@ public void run(){
 	      if(frontIsBlocked()){
 	     	 putBeeper();
 	    	 turnAround();
-	    	 
+	    	 fillTheRowAndMoveToTheMiddlePoint();
 	     }
 	}
 }
@@ -27,8 +27,7 @@ public void run(){
   * 
   */
 
-    private void fillTheRowAnMoveToTheMiddlePoint() {
- 
+    private void fillTheRowAndMoveToTheMiddlePoint() {
     	move();
     	putBeeper();
     	while(noBeepersPresent()){

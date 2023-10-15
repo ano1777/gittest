@@ -10,47 +10,37 @@ public class pr extends SuperKarel {
 	   * on the number of columns in the world. in 1x1 world it just puts beeper, in 2x2
 	   *  it moves and puts beeper on 2x1.
 	   */
-   	if(frontIsClear()){
-		 checkTheWorld2x2();
-	}
-		
-	  
-	  if(frontIsBlocked()){
-		  if(leftIsBlocked()){
+   	if(frontIsClear()) {
+		checkTheWorld2x2();
+	}	  
+	  if(frontIsBlocked()) {
+		  if(leftIsBlocked()) {
 			  putBeeper();
 		  }
    
-	  }else{
-		 
+	  }else {
 	     putTwoBeepersMirroringEachOther();
 	     standOnTheMiddlePoint();
-	
-	  }
-	  
-  
-
+	   }
   }
   
+/*
+ * the function helps karel to solve the middle point finding problem in 2x2 world.
+ *  it makes the robot move and put  the diamond on 2x1 pile.
+ */
 
-  
-
-private void checkTheWorld2x2() {
-	// TODO Auto-generated method stub
-	  move();
-	  if(frontIsBlocked()){
+    private void checkTheWorld2x2() {
+	    move();
+	    if(frontIsBlocked()){
 		  putBeeper();
-	  }
-}
+	    }
+    }
 
-
-
-
-private void standOnTheMiddlePoint() {
-	// TODO Auto-generated method stub
-	   
-	turnAround();
-	move();
-	pickBeeper();
+    
+    private void standOnTheMiddlePoint() {
+	    turnAround();
+	    move();
+	    pickBeeper();
 }
    
 /*

@@ -28,7 +28,7 @@ public void run(){
   */
 
     private void fillTheRowAnMoveToTheMiddlePoint() {
-    	while(frontIsClear()){
+ 
     	move();
     	putBeeper();
     	while(noBeepersPresent()){
@@ -41,8 +41,7 @@ public void run(){
     		}
     	}
 	
-    	}
-
+    	
 
     private void pickBeepersExceptTheMiddle() {
 	

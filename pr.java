@@ -4,12 +4,12 @@ public class pr extends SuperKarel {
   public void run(){
 	  if(frontIsBlocked()){
     checkIfFrontAndLeftIsClear();
-	  }
+	  
 	putTwoBeepersMirroringEachOther();
 	standOnTheMiddlePoint();
 	
   
-
+  }
 
   }
    private void checkIfFrontAndLeftIsClear() {

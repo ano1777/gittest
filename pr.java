@@ -11,12 +11,12 @@ public class pr extends SuperKarel {
 
    private void standOnTheMiddlePoint() {
 	// TODO Auto-generated method stub
-	   if(frontIsClear()){
+	   
 	turnAround();
 	move();
 	pickBeeper();
 }
-   }
+   
 /*
  * 
  */
@@ -26,7 +26,7 @@ public class pr extends SuperKarel {
 	
 	 putBeepersOnTheSides();
 	 while(beepersPresent()){
-		 if(frontIsClear()){
+		 
 		
 		carryBeeperToTheNextPile();
 	
@@ -34,7 +34,7 @@ public class pr extends SuperKarel {
 		carryBeeperToTheNextPile2();
 	}
 }
-   }
+   
 
  /*
   * 

@@ -38,7 +38,7 @@ private void putTwoBeepersMirroringEachOther() {
 	private void carryBeeperToTheNextPile() {
 	// TODO Auto-generated method stub
 	pickBeeper();
-	turnAround();
+	
 	move();
 	putBeeper();
 }
@@ -49,6 +49,7 @@ private void putTwoBeepersMirroringEachOther() {
 		move();
 	while(noBeepersPresent()){
 		move();
+		turnAround();
 		if(beepersPresent()){
 		carryBeeperToTheNextPile();
 		}

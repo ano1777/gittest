@@ -2,7 +2,9 @@ import stanford.karel.SuperKarel;
 
 public class pr extends SuperKarel {
   public void run(){
+	  if(frontIsBlocked()){
     checkIfFrontAndLeftIsClear();
+	  }
 	putTwoBeepersMirroringEachOther();
 	standOnTheMiddlePoint();
 	
@@ -10,8 +12,6 @@ public class pr extends SuperKarel {
 
 
    private void checkIfFrontAndLeftIsClear() {
-
-	   if(frontIsBlocked()){
 			turnLeft();
 			if(frontIsBlocked()){
 				putBeeper();

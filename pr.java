@@ -18,54 +18,44 @@ public void run(){
 	      move();
 	      if(frontIsBlocked()){
 	     	 putBeeper();
-	    	 turnAround();
 	    	
-	    	 fillTheRowTowardsTheMiddlePoint();
+	      }
+	  
 	     
 	}
 	     }
-}
+
  /*
   * 
   */
 
     private void fillTheRowTowardsTheMiddlePoint() {
-	  
-    	  while(frontIsClear()){ 
-    	    	move();
-    		    if(beepersPresent()){
-    		    	turnAround(); 
-    		    	move();
-    		    	if(noBeepersPresent()){
-    		    	putBeeper();
-    		    }
-    		    	if(beepersPresent()){
+    	while(beepersPresent()){
+    		turnAround();
+    		if(frontIsClear()){
+    		move();
+    		putBeeper();
+    		if(frontIsClear()){
+    		move();
+    		}
+    		while(noBeepersPresent()){
+    			move();
+    			if(beepersPresent()){
+    				turnAround();
+    				if(frontIsClear()){
     		    		move();
-    		    		if(noBeepersPresent()){
-    		    			move();
-    		    		
-    		    		if(noBeepersPresent()){
-    		    			turnAround();
-    		    			move();
-    		    			move();
-    		    			
+    		    		putBeeper();
+    		    		if(frontIsClear()){
+    		    		move();
     		    		}
-    		    		}
-    		    	}
-    		    }     
-    			    while(noBeepersPresent()){
-    			    	move();
-    			    	if(beepersPresent()){
-    			    		turnAround();
-    			    		move();
-    			    		if(noBeepersPresent()){
-    			    		putBeeper();
-    			    		}
-    			    	}
-    			    }
     			}
-    		    
     		
+    		}
+    	}
+	  
+    		}
+    		    
+    	}	
     }
 	
     

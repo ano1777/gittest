@@ -26,7 +26,7 @@ public class pr extends SuperKarel {
   
 /*
  * the function helps karel to solve the middle point finding problem in 2x2 world.
- *  it makes the robot move to the East and put  the diamond on 2x1 pile.
+ * it makes the robot move to the East and put the diamond on 2x1 pile.
  */
 
     private void checkTheWorld2x2() {
@@ -100,44 +100,45 @@ public class pr extends SuperKarel {
  * this function is done after karel carries the beeper on the next pile towards the East.
  * karel is facing East and beeper is present, so it must move towards the other beeper,
  * which is present on the East side of the row. when the robot reaches the beeper, it takes it,
- * turns around and carries it to the next pile towards the West. after this method karel is standing on the o
+ * turns around and carries it to the next pile towards the West. after this method karel is facing West.
  */
 
-	private void moveForwards() {
+	private void moveForwards() {		
 		move();
-	    while(noBeepersPresent()){
-		move();
-		if(beepersPresent()){
-		carryBeeperToTheNextPile2();
-		}
-	}
- }
-   
-   
+	    while(noBeepersPresent()){    	
+		    move();		    
+		    if(beepersPresent()){	    	
+		        carryBeeperToTheNextPile2();
+		    }
+	    }
+    }
    
  /*
-  * 
+  * this method is done when karel reaches the beeper on the East side of the middle point.
+  * before executing this action, it is facing East, standing on the diamond. the robot takes 
+  * the beeper, turns around and carries it towards the West on the next pile.it puts the 
+  * beeper there and moves to the next empty pile to be ready to repeat the cycle again.  finally, 
+  * after the "while" cycle ends, karel is standing on the left side of the last, middle beepers, facing West.
   */
 
-    private void carryBeeperToTheNextPile2() {
+    private void carryBeeperToTheNextPile2() {   	
+	    pickBeeper();
+	    turnAround();
+	    move();
+	    putBeeper();
+	    move();
+    }
 
-	pickBeeper();
-	turnAround();
-	move();
-	putBeeper();
-	move();
-}
-
-
-
+/*
+ * before this function, karel stands on the left side of the middle beepers, facing west. 
+ * it must turn around, move and pick one beeper to finish the action.
+ */
 	
-	
-	 
     private void standOnTheMiddlePoint() {
 	    turnAround();
 	    move();
 	    pickBeeper();
-}
+    }
 }
     
     

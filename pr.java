@@ -1,7 +1,7 @@
 import stanford.karel.SuperKarel;
 
 public class pr extends SuperKarel {
-public void run(){
+  public void run(){
 
 	putTwoBeepersMirroringEachOther();
 	standOnTheMiddlePoint();
@@ -9,33 +9,49 @@ public void run(){
 }
 
 
-private void standOnTheMiddlePoint() {
+   private void standOnTheMiddlePoint() {
 	// TODO Auto-generated method stub
+	   if(frontIsClear()){
 	turnAround();
 	move();
 	pickBeeper();
 }
+   }
+/*
+ * 
+ */
 
 
-private void putTwoBeepersMirroringEachOther() {
-	// TODO Auto-generated method stub
-	putBeepersOnTheSides();
-	while(beepersPresent()){
+   private void putTwoBeepersMirroringEachOther() {
+	
+	 putBeepersOnTheSides();
+	 while(beepersPresent()){
+		 if(frontIsClear()){
+		
 		carryBeeperToTheNextPile();
 	
 		moveForwards();
 		carryBeeperToTheNextPile2();
 	}
 }
+   }
+
+ /*
+  * 
+  */
+
     private void carryBeeperToTheNextPile2() {
-	// TODO Auto-generated method stub
+
 	pickBeeper();
 	turnAround();
 	move();
 	putBeeper();
 	move();
 }
-
+    
+/*
+ * 
+ */
 
 	private void putBeepersOnTheSides() {
 	// TODO Auto-generated method stub
@@ -54,7 +70,10 @@ private void putTwoBeepersMirroringEachOther() {
     		
     	}
 }
-
+	
+/*
+ */
+ 
 
 	private void carryBeeperToTheNextPile() {
 	// TODO Auto-generated method stub
@@ -63,7 +82,10 @@ private void putTwoBeepersMirroringEachOther() {
 	move();
 	putBeeper();
 }
-
+	
+/*
+ * 
+ */
 
 	private void moveForwards() {
 	// TODO Auto-generated method stub

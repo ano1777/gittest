@@ -1,19 +1,25 @@
 import stanford.karel.SuperKarel;
 
 public class pr extends SuperKarel {
+
   public void run(){
-	  if(frontIsClear()){
-		  move();
-		  if(frontIsBlocked()){
-			  putBeeper();
-		  }
-	  }
+	  /*
+	   * this methods make karel move to the middle point of the first row, 
+	   * put beeper on it and stay there. it should work in any world, that is shaped like a square.
+	   * at first karel stands on 1x1, facing East. the robots final orientation is depended 
+	   * on the number of columns in the world. in 1x1 world it just puts beeper, in 2x2
+	   *  it moves and puts beeper on 2x1.
+	   */
+	
+		
+	  
 	  if(frontIsBlocked()){
 		  if(leftIsBlocked()){
 			  putBeeper();
 		  }
    
 	  }else{
+		  checkTheWorld2x2();
 	     putTwoBeepersMirroringEachOther();
 	     standOnTheMiddlePoint();
 	
@@ -22,14 +28,20 @@ public class pr extends SuperKarel {
   
 
   }
-   private void checkIfLeftIsClear() {
-			turnLeft();
-			if(frontIsBlocked()){
-				putBeeper();
-			}
-		}
+  
 
   
+
+private void checkTheWorld2x2() {
+	// TODO Auto-generated method stub
+	  move();
+	  if(frontIsBlocked()){
+		  putBeeper();
+	  }
+}
+
+
+
 
 private void standOnTheMiddlePoint() {
 	// TODO Auto-generated method stub

@@ -30,33 +30,32 @@ public void run(){
   */
 
     private void fillTheRowTowardsTheMiddlePoint() {
-    	while(beepersPresent()){
-    		turnAround();
-    		if(frontIsClear()){
+    	while(frontIsClear()){
     		move();
+    	if(frontIsBlocked()){
     		putBeeper();
-    		if(frontIsClear()){
-    		move();
-    		}
-    		while(noBeepersPresent()){
+    		turnAround();
+    		while(frontIsClear()){
     			move();
-    			if(beepersPresent()){
-    				turnAround();
-    				if(frontIsClear()){
-    		    		move();
-    		    		putBeeper();
-    		    		if(frontIsClear()){
-    		    		move();
-    		    		}
+    			if(frontIsBlocked()){
+    				putBeeper();
     			}
-    		
     		}
     	}
-	  
+    	while(beepersPresent()){
+    		pickBeeper();
+    		turnAround();
+    		move();
+    		if(noBeepersPresent()){
+    			move();
+    		}else{
+    		putBeeper();
     		}
-    		    
-    	}	
-    }
+    	}
+    	}
+    			}
+    		
+    	
 	
     
 

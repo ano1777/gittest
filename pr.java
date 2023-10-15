@@ -37,6 +37,7 @@ public void run(){
     		    	turnAround(); 
     		    	move();
     		    	putBeeper();
+    		    }
     		    	if(beepersPresent()){
     		    		move();
     		    		if(noBeepersPresent()){
@@ -61,7 +62,7 @@ public void run(){
     			    }
     			}
     		    
-    		}
+    		
     	
 	
     

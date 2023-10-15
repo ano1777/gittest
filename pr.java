@@ -30,18 +30,23 @@ public void run(){
   */
 
     private void fillTheRowAndMoveToTheMiddlePoint() {
-    
-    	 
-    	while(frontIsClear()){ 
-    		move();
- 	        putBeeper();
-  	 
-    		move();
-    		if(beepersPresent()){
-    			turnAround();
-    			move();
-    			putBeeper();
+	  
+    	  while(frontIsClear()){ 
+    	    	move();
+    		    if(beepersPresent()){
+    		     	turnAround();
+    			    move();
+    			    putBeeper();
+    			    while(frontIsClear()){
+    			    	move();
+    			    	if(beepersPresent()){
+    			    		turnAround();
+    			    		move();
+    			    		putBeeper();
+    			    	}
+    			    }
     			}
+    		    
     		}
     	}
 	
@@ -55,7 +60,7 @@ public void run(){
     			if(frontIsBlocked()){
     				pickBeeper();
     				turnAround();
-    				goToTheOtherHalf():
+    				goToTheOtherHalf();
     			}
     		}
     	}

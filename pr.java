@@ -50,9 +50,9 @@ public void run(){
     		    		}
     		    		}
     		    	}
-                       move();
+    		    }     
     			    while(frontIsClear()){
-    			    	
+    			    	move();
     			    	if(beepersPresent()){
     			    		turnAround();
     			    		move();
@@ -62,7 +62,7 @@ public void run(){
     			}
     		    
     		}
-    	}
+    	
 	
     
 

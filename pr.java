@@ -13,10 +13,22 @@ private void putTwoBeepersMirroringEachOther() {
 	putBeepersOnTheSides();
 	while(beepersPresent()){
 		carryBeeperToTheNextPile();
+	
 		moveForwards();
+		carryBeeperToTheNextPile2();
 	}
 }
-    private void putBeepersOnTheSides() {
+    private void carryBeeperToTheNextPile2() {
+	// TODO Auto-generated method stub
+	pickBeeper();
+	turnAround();
+	move();
+	putBeeper();
+	move();
+}
+
+
+	private void putBeepersOnTheSides() {
 	// TODO Auto-generated method stub
     	while(frontIsClear()){
     		move();
@@ -38,7 +50,7 @@ private void putTwoBeepersMirroringEachOther() {
 	private void carryBeeperToTheNextPile() {
 	// TODO Auto-generated method stub
 	pickBeeper();
-	
+	turnAround();
 	move();
 	putBeeper();
 }
@@ -49,9 +61,8 @@ private void putTwoBeepersMirroringEachOther() {
 		move();
 	while(noBeepersPresent()){
 		move();
-		turnAround();
 		if(beepersPresent()){
-		carryBeeperToTheNextPile();
+		carryBeeperToTheNextPile2();
 		}
 	}
  }

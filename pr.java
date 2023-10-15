@@ -19,9 +19,11 @@ public void run(){
 	      if(frontIsBlocked()){
 	     	 putBeeper();
 	    	 turnAround();
+	    	 while(frontIsClear()){
 	    	 fillTheRowAndMoveToTheMiddlePoint();
 	     }
 	}
+	     }
 }
  /*
   * 

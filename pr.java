@@ -2,6 +2,12 @@ import stanford.karel.SuperKarel;
 
 public class pr extends SuperKarel {
   public void run(){
+	  if(frontIsClear()){
+		  move();
+		  if(frontIsBlocked()){
+			  putBeeper();
+		  }
+	  }
 	  if(frontIsBlocked()){
     checkIfFrontAndLeftIsClear();
 	  }else{
@@ -9,6 +15,7 @@ public class pr extends SuperKarel {
 	standOnTheMiddlePoint();
 	
 	  }
+	  
   
 
   }

@@ -31,10 +31,11 @@ public void run(){
 
     private void fillTheRowAndMoveToTheMiddlePoint() {
     
-    	   move();
-    	   putBeeper();
     	 
-    	while(frontIsClear()){
+    	while(frontIsClear()){ 
+    		move();
+ 	        putBeeper();
+  	 
     		move();
     		if(beepersPresent()){
     			turnAround();

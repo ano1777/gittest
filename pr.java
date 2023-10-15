@@ -2,14 +2,26 @@ import stanford.karel.SuperKarel;
 
 public class pr extends SuperKarel {
   public void run(){
-
+    checkIfFrontAndLeftIsClear();
+    if
 	putTwoBeepersMirroringEachOther();
 	standOnTheMiddlePoint();
 	
 }
 
 
-   private void standOnTheMiddlePoint() {
+   private void checkIfFrontAndLeftIsClear() {
+
+	   if(frontIsBlocked()){
+			turnLeft();
+			if(frontIsBlocked()){
+				putBeeper();
+			}
+		}
+}
+
+
+private void standOnTheMiddlePoint() {
 	// TODO Auto-generated method stub
 	   
 	turnAround();
@@ -25,9 +37,7 @@ public class pr extends SuperKarel {
    private void putTwoBeepersMirroringEachOther() {
 	
 	 putBeepersOnTheSides();
-	 while(beepersPresent()){
-		 
-		
+	 while(beepersPresent()){	
 		carryBeeperToTheNextPile();
 	
 		moveForwards();

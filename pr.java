@@ -3,8 +3,16 @@ import stanford.karel.SuperKarel;
 public class pr extends SuperKarel {
 public void run(){
 	putTwoBeepersMirroringEachOther();
+	standOnTheMiddlePoint();
 	
-	
+}
+
+
+private void standOnTheMiddlePoint() {
+	// TODO Auto-generated method stub
+	turnAround();
+	move();
+	pickBeeper();
 }
 
 

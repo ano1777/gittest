@@ -9,17 +9,20 @@ public class pr extends SuperKarel {
 		  }
 	  }
 	  if(frontIsBlocked()){
-    checkIfFrontAndLeftIsClear();
+		  if(leftIsBlocked()){
+			  putBeeper();
+		  }
+   
 	  }else{
-	putTwoBeepersMirroringEachOther();
-	standOnTheMiddlePoint();
+	     putTwoBeepersMirroringEachOther();
+	     standOnTheMiddlePoint();
 	
 	  }
 	  
   
 
   }
-   private void checkIfFrontAndLeftIsClear() {
+   private void checkIfLeftIsClear() {
 			turnLeft();
 			if(frontIsBlocked()){
 				putBeeper();

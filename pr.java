@@ -37,7 +37,7 @@ public void run(){
     		     	turnAround();
     			    move();
     			    putBeeper();
-    			    if(frontIsClear()){
+    			    while(frontIsClear()){
     			    	move();
     			    	if(beepersPresent()){
     			    		turnAround();

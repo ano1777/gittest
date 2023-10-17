@@ -5,9 +5,9 @@ import acm.program.GraphicsProgram;
 
 public class problem extends GraphicsProgram {
 	private static final double FACE_WIDTH = 80;
-	private static final int FACE_HEIGHT = 120;
-	private static final int EYES_WIDTH=15;
-	private static final int EYES_HEIGHT=30;
+	private static final double FACE_HEIGHT = 120;
+	private static final double EYES_WIDTH=15;
+	private static final double EYES_HEIGHT=30;
 	public void run (){
 
 		addRobotFace();
@@ -29,8 +29,8 @@ public class problem extends GraphicsProgram {
 		GRect eye1= new GRect(x1, y1,width, height);
 		add (eye1);
 		
-		double x2 = getWidth()/2 + 40 ;
-		double y2 = getHeight()/2 + 60 ;
+		double x2 = getWidth()/2 + 40-20 ;
+		double y2 = getHeight()/2 + 60-20 ;
 		double width1 = EYES_WIDTH;
 		double height1 = EYES_HEIGHT;
 		GRect eye2= new GRect(x2, y2, width1, height1);

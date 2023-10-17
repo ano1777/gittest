@@ -38,7 +38,7 @@ public class problem extends GraphicsProgram {
 	
 	private void addRightEye() {
 		double x1 = getWidth()/2 + 20 ;
-		double y1 = getHeight()/2 + 40 ;
+		double y1 = getHeight()/2 - 40 ;
 		double width1 = EYES_WIDTH;
 		double height1 = EYES_HEIGHT;
 		GRect eye2= new GRect(x1, y1, width1, height1);

@@ -8,11 +8,7 @@ public class concsolepr extends ConsoleProgram {
 		int average =(num1+num2)/2;
 		print(average);
 		
-		double averageInDoubles = (double)(num1+num2)/2;
-		double d1 = readInt("Enter first number):");
-		double d2 = readInt("Enter seconnd number");
-		double averageDouble = (d1+d2)/2;
-		print(averageInDoubles);
+		
 		
 	}
 

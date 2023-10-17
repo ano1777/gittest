@@ -60,6 +60,8 @@ public class problem extends GraphicsProgram {
 		double height = EYES_WIDTH;
 		GRect mouth = new GRect(x1, y1, width, height);
 		add(mouth);
+		mouth.setFilled(true);
+		mouth.setColor(MOUTH_COLOR);
 		
 	}
 	
@@ -72,7 +74,10 @@ public class problem extends GraphicsProgram {
 		double height = FACE_HEIGHT;
 		GRect myGRect = new GRect(x1,y1, width, height);
 		add (myGRect);
+		myGRect.setFilled(true);
+		myGRect.setColor(FACE_COLOR);
 	}
+	
 	
 
 	

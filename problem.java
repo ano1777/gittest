@@ -9,7 +9,7 @@ public class problem extends GraphicsProgram {
 	private static final int EYES_WIDTH=15;
 	private static final int EYES_HEIGHT=30;
 	public void run (){
-		addLine();
+
 		addRobotFace();
 	
  }
@@ -17,7 +17,7 @@ public class problem extends GraphicsProgram {
 	private void addRobotFace() {
 		addFace();
 		addEyes();
-		addMouth();
+		
 	}
 
 	private void addEyes() {

@@ -10,12 +10,15 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		int kids = readInt();
-		
-		
-		println("")
+		println ("this program counts the average harmonic for three integers");
+		int a = readInt ("Enter a =");
+		int b = readInt ("Enter b =");
+		int c = readInt ("Enter c =");
+		double avrgHarm = (double)(1/((1/a)+(1/b)+(1/c)));
+		print (avrgHarm);
+	 
 	}
-		// You fill this in
+	
 	
 
 }

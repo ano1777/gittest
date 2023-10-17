@@ -6,8 +6,11 @@ public class task6 extends ConsoleProgram{
 		println(i);
 		
 	}
-		int addNumbers = (0+n)*n/2;
-		print (addNumbers);
+	
+	    println ("Enter sum:");
+		int sum = (0+n)*n/2;
+		print (sum);
+		
 	
 	
 	}

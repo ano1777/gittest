@@ -6,6 +6,8 @@ import acm.program.GraphicsProgram;
 public class problem extends GraphicsProgram {
 	private static final double FACE_WIDTH = 80;
 	private static final int FACE_HEIGHT = 120;
+	private static final int EYES_WIDTH=15;
+	private static final int EYES_HEIGHT=30;
 	public void run (){
 		addLine();
 		addRobotFace();
@@ -13,6 +15,23 @@ public class problem extends GraphicsProgram {
  }
 
 	private void addRobotFace() {
+		addFace();
+		addEyes();
+		addMouth();
+	}
+
+	private void addEyes() {
+		// TODO Auto-generated method stub
+		double x1 = getWidth()/2 -40 + 20;
+		double y1 = getHeight()/2 -60 +20;
+		double width = EYES_WIDTH;
+		double height = EYES_HEIGHT;
+		GRect grect= new GRect(x1, y1,width, height);
+		add (grect);
+	}
+
+	private void addFace() {
+		// TODO Auto-generated method stub
 		double x1 = getWidth()/2 - 40;
 		double y1 = getHeight()/2 - 60;
 		double width = FACE_WIDTH;
@@ -20,14 +39,8 @@ public class problem extends GraphicsProgram {
 		GRect myGRect = new GRect(x1,y1, width, height);
 		add (myGRect);
 	}
+	
 
-	private void addLine() {
-		double x1 = getWidth()/2;
-		double y1 = 0;
-		double x2 = x1;
-		double y2 = getHeight();
-		GLine midLine = new GLine(x1,y1,x2,y2);
-		add (midLine);
-	}
+	
 	 
 }

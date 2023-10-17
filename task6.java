@@ -1,29 +1,12 @@
-import stanford.karel.SuperKarel;
-public class task6 extends SuperKarel{
+import acm.program.ConsoleProgram;
+public class task6 extends ConsoleProgram{
 	public void run(){
-		putBeeper();
-		while(frontIsClear()){
-			move();
-			putBeeper();
-		
-		while(frontIsBlocked()){
-			turnAround();
-			goBack();
-			turnRight();
-			move();
-			turnRight();
-			putBeeper();
-		}
-		}
-		
-	}
-
-	private void goBack() {
-		while(frontIsClear()){
-			move();
-		}
-	}
+	int n = readInt("Enter n:");
+	for (int i=0; i<n+1; i++){
+		println(i);
 	}
 	
+	}
+}	
 
 

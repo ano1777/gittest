@@ -4,6 +4,8 @@ public class task6 extends ConsoleProgram{
 	int n = readInt("Enter n:");
 	for (int i=0; i<n+1; i++){
 		println(i);
+		int addNumbers = (0+n)*n/2;
+		print (addNumbers);
 	}
 	
 	}

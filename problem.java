@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.GLine;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
@@ -8,6 +10,9 @@ public class problem extends GraphicsProgram {
 	private static final double FACE_HEIGHT = 120;
 	private static final double EYES_WIDTH=15;
 	private static final double EYES_HEIGHT=30;
+	private static final Color FACE_COLOR = Color.YELLOW;
+	private static final Color EYES_COLOR = Color.BLACK;
+	private static final Color MOUTH_COLOR = Color.RED;
 	public void run (){
 
 		addRobotFace();
@@ -17,7 +22,7 @@ public class problem extends GraphicsProgram {
 	private void addRobotFace() {
 		addFace();
 		addEyes();
-		
+		drawMouth();
 	}
 
 	private void addEyes() {
@@ -44,6 +49,14 @@ public class problem extends GraphicsProgram {
 		GRect eye2= new GRect(x1, y1, width1, height1);
 		add (eye2);
 		
+	}
+	private void drawMouth(){
+		double x1 = getWidth()/2 - EYES_WIDTH;
+		double y1 = getHeight()/2 + EYES_WIDTH+10;
+		double width = EYES_WIDTH + EYES_WIDTH;
+		double height = EYES_WIDTH;
+		GRect mouth = new GRect(x1, y1, width, height);
+		add(mouth);
 	}
 	
 

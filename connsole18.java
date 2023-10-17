@@ -11,7 +11,7 @@ public class connsole18 extends ConsoleProgram {
 		if (num2 > num1) {
 			print ("num2");
 		}
-		println(Math.max) (num1, num2);
+		
 	}
 
 }

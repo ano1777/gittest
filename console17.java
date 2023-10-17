@@ -11,7 +11,7 @@ public class console17 extends ConsoleProgram{
 	private void calculateBigDecimal( double a) {
 	bigDecimal decimal = new BigDecimal{"" +a);
 	
-	int integer
+	int integer=
 	}
 			
 	

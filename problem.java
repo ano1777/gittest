@@ -39,6 +39,8 @@ public class problem extends GraphicsProgram {
 		double height = EYES_HEIGHT;
 		GRect eye1= new GRect(x1, y1,width, height);
 		add (eye1);
+		eye1.setFilled(true);
+		eye1.setColor(EYES_COLOR);
 	}
 	
 	private void addRightEye() {
@@ -48,7 +50,8 @@ public class problem extends GraphicsProgram {
 		double height1 = EYES_HEIGHT;
 		GRect eye2= new GRect(x1, y1, width1, height1);
 		add (eye2);
-		
+		eye2.setFilled(true);
+		eye2.setColor(EYES_COLOR);
 	}
 	private void drawMouth(){
 		double x1 = getWidth()/2 - EYES_WIDTH;
@@ -57,6 +60,7 @@ public class problem extends GraphicsProgram {
 		double height = EYES_WIDTH;
 		GRect mouth = new GRect(x1, y1, width, height);
 		add(mouth);
+		
 	}
 	
 

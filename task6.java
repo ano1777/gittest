@@ -8,7 +8,7 @@ public class task6 extends ConsoleProgram{
 	}
 	
 	    println ("sum:");
-		int sum = (0+n)*n/2;
+		int sum = ((0+n)*n)/2;
 		print (sum);
 		
 	

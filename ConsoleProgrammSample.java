@@ -14,7 +14,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		int a = readInt ("Enter a =");
 		int b = readInt ("Enter b =");
 		int c = readInt ("Enter c =");
-		double avrgHarm = (double)(1/((1/a)+(1/b)+(1/c)));
+		double avrgHarm = (double) 1/((1/a)+(1/b)+(1/c));
 		print (avrgHarm);
 	 
 	}

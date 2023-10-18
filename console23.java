@@ -6,6 +6,9 @@ public class console23 extends ConsoleProgram {
 		for (int i=1; i<n+1;i++){
 			print(i);
 		}
+		println("sum:");
+		int addSum = ((1+n)*n)/2;
+		print(addSum);
 	}
 
 }

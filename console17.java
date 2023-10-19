@@ -9,7 +9,7 @@ public class console17 extends ConsoleProgram{
 	println("Fraction part:" + "Fraction part:");
 	
 	private void calculateBigDecimal( double a) {
-	bigDecimal decimal = new BigDecimal{"" +a);
+	BigDecimal decimal = new BigDecimal{"" +a);
 	
 	
 			

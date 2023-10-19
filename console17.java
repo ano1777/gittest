@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 import acm.program.ConsoleProgram;
 
 public class console17 extends ConsoleProgram {
@@ -5,7 +7,7 @@ public class console17 extends ConsoleProgram {
 	
 	private void calculateBigDecimal(double a) {
 	BigDecimal decimal = new BigDecimal{"" +a);
-	
+	}
 			
 	
 

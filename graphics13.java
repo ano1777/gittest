@@ -22,6 +22,11 @@ public class graphics13 extends GraphicsProgram{
 		drawDoor();
 		drawWindows();
 	}
+	private void drawDoor() {
+		// TODO Auto-generated method stub
+		
+		
+	}
 	private void drawRoof() {
 		double x1 = (int) (getWidth() /2 - HOUSE_WIDTH / 2);
 		double y1 = getHeight() - HOUSE_HEIGHT;

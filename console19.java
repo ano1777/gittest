@@ -12,7 +12,7 @@ public class console19 extends ConsoleProgram {
 	
 
   private boolean isBlue(){
-	return true;
+	return ;
 
 }
   i++

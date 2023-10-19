@@ -9,6 +9,6 @@ public class console23 extends ConsoleProgram {
 	
 		println("sum:");
 		int addSum = ((1+n)*n)/2;
-		print(addSum);
+		println(addSum);
 	}
 }

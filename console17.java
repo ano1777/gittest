@@ -4,9 +4,16 @@ import acm.program.ConsoleProgram;
 
 public class console17 extends ConsoleProgram {
 	public void run() {
-	int x = 7;
-	double y = x/2;
+	calculateInDoubles();
+}
 
-}	
+	private void calculateInDoubles() {
+		double a= readDouble ("Enter real number:");
+		int integerPart = (int)a;
+		double fractionPart = a - integerPart;
+		println ("integer part:" + integerPart);
+		println ("fraction Part:" + fractionPart);
+		
+	}	
 
 }

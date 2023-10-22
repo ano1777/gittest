@@ -14,7 +14,6 @@ public class checkerboardgraphics extends GraphicsProgram{
 				int y = j * squareSize;
 				GRect square = new GRect(x, y,squareSize, squareSize );
 				square.setFilled(((i*j) % 2) == 1);
-				square.setColor(Color.BLACK);
 				add(square);
 				
 			}

@@ -13,7 +13,7 @@ public class checkerboardgraphics extends GraphicsProgram{
 				int x = i * squareSize;
 				int y = j * squareSize;
 				GRect square = new GRect(x, y,squareSize, squareSize );
-				square.setFilled(((i+j) % 2) == 1);
+				square.setFilled(((i+j) % 2) == 0);
 				add(square);
 				
 			}

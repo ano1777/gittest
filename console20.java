@@ -5,7 +5,7 @@ public class console20 extends ConsoleProgram {
 	 int n = readInt("Enter number:");
 	 int sum = 0;
 	 for (int i=0; i < n+1; i++){
-	     int number = readInt("Enter number:" + i + ":" );
+	     int number = readInt("Enter number" + i + ":" );
 	     sum = sum + number;
    }
 	 println( "sum" +sum);

@@ -15,9 +15,4 @@ public class console19 extends ConsoleProgram {
 	return ;
 
 }
-  i++
-  i=i+1
   
-  i+=1
-
-  ]

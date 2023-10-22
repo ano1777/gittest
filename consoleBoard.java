@@ -5,7 +5,9 @@ public class consoleBoard extends GraphicsProgram{
 	private static final int NUM_LINES = 11;
 	
     public void run() {
-	
+	/*
+	 * this program creates a net 10x10 on canvas.
+	 */
 	for (int i=0; i< NUM_LINES; i++) {
         addVerticalLine(i);
 		addHorizontalLine(i);

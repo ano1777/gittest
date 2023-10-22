@@ -5,7 +5,14 @@ import acm.program.ConsoleProgram;
 public class console17 extends ConsoleProgram {
 	public void run() {
 	calculateInDoubles();
+	calculateInBigDecimal();
 }
+
+	private void calculateInBigDecimal() {
+		double x = readDouble("Enter real Number:");
+		
+		
+	}
 
 	private void calculateInDoubles() {
 		double a= readDouble ("Enter real number:");

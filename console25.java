@@ -6,7 +6,7 @@ import com.sun.prism.paint.Color;
 
  
 public class console25 extends ConsoleProgram{
-	 private static final double NUMBER = 12;
+	 private static final double NUMBER = 5;
 	 
 	 public void run() {
 		 int n = readInt("enter number :");
@@ -20,7 +20,7 @@ public class console25 extends ConsoleProgram{
 	private double factorial(int n) {
 		int result = 1;
 		for (int i=1; i<NUMBER; i++){
-	    result *= i;
+	    result = i*result;
 		} 
 		return result;
 	}

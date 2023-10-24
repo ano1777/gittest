@@ -9,7 +9,7 @@ public class console25 extends ConsoleProgram{
 	 private static final double NUMBER = 12;
 	 
 	 public void run() {
-		 int n = readInt();
+		 int n = readInt("enter number :");
 	 
 		 for(int i=0; i <= NUMBER; i++){
 			 println(i + "!=" + factorial(i));

@@ -27,4 +27,3 @@ public class console25 extends ConsoleProgram{
 
 }
 	
-}

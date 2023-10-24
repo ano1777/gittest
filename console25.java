@@ -5,6 +5,8 @@ public class console25 extends ConsoleProgram{
 		double x = 16;
 		double y = Math.sqrt(x);
 		double z = Math.pow(x,y);
+		println(x);
+		println(y);
 	}
 
 }

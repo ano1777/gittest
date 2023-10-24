@@ -6,7 +6,7 @@ import com.sun.prism.paint.Color;
 
  
 public class console25 extends ConsoleProgram{
-	 private static final double NUMBER = 5;
+	 private static final int NUMBER = 5;
 	 
 	 public void run() {
 		

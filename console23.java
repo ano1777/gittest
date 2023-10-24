@@ -8,7 +8,17 @@ public class console23 extends ConsoleProgram {
 		}
 	
 		println("sum:");
-		int addSum = ((1+n)*n)/2;
+		int addSum = calculateSum(n);
 		println(addSum);
+	}
+
+	private int calculateSum(int n) {
+		int sum = 0;
+		for (int i=1; i<=n; i++){
+			sum += i;
+			
+		}		
+
+		return sum;
 	}
 }

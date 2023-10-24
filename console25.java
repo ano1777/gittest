@@ -10,7 +10,6 @@ public class console25 extends ConsoleProgram{
 	 
 	 public void run() {
 		 int n = readInt("enter number :");
-	 
 		 for(int i=0; i <= NUMBER; i++){
 			 println(i + "!=" + factorial(i));
 		 }

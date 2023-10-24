@@ -16,7 +16,7 @@ public class console25 extends ConsoleProgram{
 
 	}
 
-	private double factorial(int n) {
+	private int factorial(int n) {
 		int result = 1;
 		for (int i=1; i<=n; i++){
 	        result = i*result;

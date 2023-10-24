@@ -7,6 +7,7 @@ public class console25 extends ConsoleProgram{
 		double z = Math.pow(x,y);
 		println(x);
 		println(y);
+		println(z);
 	}
 
 }

@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class console24 extends ConsoleProgram {
 	public void run(){
 		int n = readInt("Enter n:");
-		
+		int a = numberOfDivisors(n);
 	}
 	private int numberOfDivisors (int n){
 		int number = 0;

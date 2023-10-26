@@ -7,7 +7,7 @@ public class console25 extends ConsoleProgram{
 	public void run() {
 		int n = readPositiveInt(" Enter n:");
 		int m = readPositiveInt("Enter m:");
-		for (int i = Math.min(n, m); i >=1; i--){
+		for (int i = Math.min(n, m); i >= 1; i--){
 			if ( n % i == 0 && m % i ==0){
 				println(i);
 				break;
@@ -21,7 +21,7 @@ public class console25 extends ConsoleProgram{
 			println ("Enter positive number");
 			n = readInt(text);
 		}
-		return 0;
+		return n;
 	}
 	
 

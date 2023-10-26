@@ -5,15 +5,13 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class assignment2 extends GraphicsProgram{
+	private static final double RECT_WIDTH = label.getWidth + 15;
+	private static final double RECT_HEIGHT = label.getAscent + 15;
 	public void run() {
-		GLabel label = new GLabel("Hello, world!", 30,30);
-		add (label);
-		label.setColor(Color.BLUE);
+		GRect myRect = new GRect(getWidth() /2 - RECT_WIDTH, getHeight() / 2 - RECT_HEIGHT, RECT_WIDTH,RECT_HEIGHT);
+		add (myRect);
+		
 	
-		GRect frame = new GRect (25, 15, label.getWidth()+10, label.getAscent()+10);
-		add (frame);
-		frame.setFilled(false);
-		frame.setColor(Color.RED);
 	}
 
 }

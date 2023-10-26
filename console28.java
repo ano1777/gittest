@@ -10,6 +10,7 @@ public class console28 extends ConsoleProgram {
 			}
 		}
 		int EvenNumbers = numberOfEvenNumbers();
+		println(EvenNumbers);
 		
 	}
 
@@ -19,7 +20,6 @@ public class console28 extends ConsoleProgram {
 			total += 1;
 		}
 		
-
 		return total;
 	}
 

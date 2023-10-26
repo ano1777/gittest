@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 public class assignment2 extends GraphicsProgram{
 	public void run() {
 		add (new GLabel("hello, world!"), 30,30);
-		GRect frame = new GRect (20, 10,20,20);
+		GRect frame = new GRect (20,10,100,30);
 		add (frame);
 		frame.setFilled(false);
 		frame.setColor(Color.RED);

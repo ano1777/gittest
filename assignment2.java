@@ -9,7 +9,7 @@ public class assignment2 extends GraphicsProgram{
 		GLabel label = new GLabel("Hello, world1", 30,30);
 		add (label);
 	
-		GRect frame = new GRect (20,10, label.getWidth(),label.getAscent());
+		GRect frame = new GRect (20,20, label.getWidth(),label.getAscent());
 		add (frame);
 		frame.setFilled(false);
 		frame.setColor(Color.RED);

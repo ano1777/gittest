@@ -1,3 +1,4 @@
+package ann;
 import stanford.karel.SuperKarel;
 public class karel5 extends SuperKarel{
 	public void run(){

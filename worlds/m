@@ -1,22 +1,4 @@
-Dimension: (9, 10)
-Wall: (3, 1) west
-Wall: (3, 2) west
-Wall: (3, 3) west
-Wall: (6, 1) west
-Wall: (6, 2) west
-Wall: (6, 3) west
-Wall: (6, 4) west
-Wall: (6, 5) west
-Wall: (6, 6) west
-Wall: (6, 7) west
-Wall: (8, 1) west
-Wall: (8, 2) west
-Wall: (8, 3) west
-Wall: (8, 4) west
-Wall: (8, 5) west
-Wall: (8, 6) west
-Wall: (8, 7) west
-Wall: (8, 8) west
+Dimension: (2, 2)
 Karel: (1, 1) east
 BeeperBag: INFINITE
 Speed: 0.00

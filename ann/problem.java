@@ -1,26 +1,12 @@
-import stanford.karel.*;
-public class problem extends Karel {
-	void turnRight() {
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	}
-	
- public void run(){
-	 move();
-	 move();
-	 move();
-	 move();
-	 for(int i=0; i<10; i++){
-		 pickBeeper();
-	 }
-	 move();
-	 for(int i=0; i<10; i++){
-		 putBeeper();
-	 }
-		
-	 move();
-	 turnRight();
+import acm.program.*;
+
+public class problem extends ConsoleProgram {
+	public void run(){
+		int n = readInt ("Enter n:");
+		for(int j=1; j<n+1; j++){
+			int addSum = ((1+(n+1))*n/2);
+			print(addSum);
+		}
    
  }
 	 

@@ -10,7 +10,6 @@ public class console25 extends ConsoleProgram{
 		for (int i = 1; i <= Math.min (n, m); i++){
 			if ( n % i == 0 && m % i ==0){
 				println(i);
-				break;
 			}
 		}
 	}

@@ -9,7 +9,7 @@ public class console28 extends ConsoleProgram {
 				break;
 			}
 		}
-		int EvenNumbers = numberOfEvenNumbers();
+		int EvenNumbers = numberOfEvenNumbers(n);
 		println(EvenNumbers);
 		
 	}

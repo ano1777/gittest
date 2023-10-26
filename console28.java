@@ -6,7 +6,7 @@ public class console28 extends ConsoleProgram {
 		int EvenNumbers = 0;
 		while(n != -1){
 			n = readInt(" Enter num: ");
-			EvenNumbers = numberOfEvenNumbers(n);
+			EvenNumbers = EvenNumbers + numberOfEvenNumbers(n);
 		}
 		println(EvenNumbers);
 		

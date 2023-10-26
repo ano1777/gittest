@@ -11,7 +11,7 @@ public class assignment2 extends GraphicsProgram{
 		GLabel label = new GLabel ("program",getWidth()/2, getHeight() / 2 -30);
 		add (label);
 		
-		GRect myRect = new GRect(getWidth() /2 - label.getWidth()/2, getHeight() / 2 - label.getHeight(), RECT_WIDTH,RECT_HEIGHT);
+		GRect myRect = new GRect(getWidth() /2 - label.getWidth()/2, getHeight()  - label.getHeight(), RECT_WIDTH,RECT_HEIGHT);
 		add (myRect);
 		
 	

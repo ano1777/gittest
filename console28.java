@@ -3,13 +3,11 @@ import acm.program.ConsoleProgram;
 public class console28 extends ConsoleProgram {
 	public void run() {
 		int n = readInt(" Enter num: ");
-		for (int i=0; i>=0; i++){
-			println(n);
-			if (n == -1){
-				break;
-			}
+		int EvenNumbers = 0;
+		while(n != -1){
+			n = readInt(" Enter num: ");
+			EvenNumbers = numberOfEvenNumbers(n);
 		}
-		int EvenNumbers = numberOfEvenNumbers(n);
 		println(EvenNumbers);
 		
 	}

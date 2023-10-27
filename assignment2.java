@@ -37,8 +37,8 @@ public class assignment2 extends GraphicsProgram {
 		double y = getHeight()/3 + RECT_HEIGHT/2;
 		double x1 = getWidth()/2;
 		double y1 = getHeight()/3 + 120;
-		double x2 = getWidth()/2 - 210;
-		double x3 = getWidth()/2 + 210;
+		double x2 = getWidth()/2 - RECT_WIDTH - 60;
+		double x3 = getWidth()/2 + RECT_WIDTH + 60;
 		
 		GLine middleLine = new GLine(x, y, x1, y1);
 		add (middleLine);
@@ -61,7 +61,7 @@ public class assignment2 extends GraphicsProgram {
 	}
 	
 	private void addThirdRect() {
-		double x = getWidth()/2 + 135;
+		double x = getWidth()/2 + RECT_WIDTH/2 +60;
 	    double y = getHeight()/3 + 120;
 	    GRect thirdRect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(thirdRect);
@@ -75,7 +75,7 @@ public class assignment2 extends GraphicsProgram {
 	}
 	
 	private void addFirstRect() {
-		double x = getWidth()/2 - 285;
+		double x = getWidth()/2 - RECT_WIDTH - RECT_WIDTH/2 - 60;
 		double y = getHeight()/3 + 120;
 		GRect firstRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(firstRect);

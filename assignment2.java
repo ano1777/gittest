@@ -45,12 +45,24 @@ public class assignment2 extends GraphicsProgram{
 	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(thirdRect);
 		
+		GLabel label = new label("DialogProgram");
+		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
+	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
+	    GLabel thirdWord = new GLabel("DialogProgram", x1,y1);
+		add (thirdWord);
+		
 	}
 	private void addFirstRect() {
 		double x = getWidth()/2 - 285;
 		double y = getHeight()/3 + 120;
 		GRect firstRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(firstRect);
+		
+		GLabel label = new GLabel("GraphicsProgram");
+		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
+		double y1 = y + RECT_HEIGHT/2 + label.getAscent()/3;
+		GLabel firstWord = new GLabel("GraphicsProgram", x1,y1);
+		add (firstWord);
 	
 		
 	}
@@ -59,6 +71,13 @@ public class assignment2 extends GraphicsProgram{
 		double y = getHeight()/3 + 120;
 		GRect secondRect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(secondRect);
+		
+		GLabel label = new GLabel("ConsoleProgram");
+		double x1 = x + RECT_WIDTH/2 -label.getWidth()/2;	
+	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
+	    GLabel secondWord = new GLabel("ConsoleProgram", x1, y1);
+		add(secondWord);
+		
 				
 	
 		

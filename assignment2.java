@@ -45,7 +45,7 @@ public class assignment2 extends GraphicsProgram{
 	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(thirdRect);
 		
-		GLabel label = new label("DialogProgram");
+		GLabel label = new GLabel("DialogProgram");
 		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
 	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
 	    GLabel thirdWord = new GLabel("DialogProgram", x1,y1);

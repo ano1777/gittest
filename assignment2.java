@@ -68,6 +68,7 @@ public class assignment2 extends GraphicsProgram{
 		add(thirdRect);
 		
 		GLabel label = new GLabel("DialogProgram");
+		label.setFont("sansSerif-20");
 		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
 	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
 	    GLabel thirdWord = new GLabel("DialogProgram", x1,y1);
@@ -84,7 +85,7 @@ public class assignment2 extends GraphicsProgram{
 		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
 		double y1 = y + RECT_HEIGHT/2 + label.getAscent()/3;
 		GLabel firstWord = new GLabel("GraphicsProgram", x1,y1);
-		label.setFont("London -36");
+		label.setFont("sanSerif-20");
 		add (firstWord);
 	
 		

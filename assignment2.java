@@ -64,17 +64,18 @@ public class assignment2 extends GraphicsProgram{
 	private void addThirdRect() {
 		double x = getWidth()/2 + 135;
 	    double y = getHeight()/3 + 120;
-	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
+	    GRect thirdRect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(thirdRect);
 		
 		GLabel label = new GLabel("DialogProgram");
 		label.setFont("sansSerif-20");
 		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
-	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
+	    double y1 = y + RECT_HEIGHT/2 + label.getAscent()/3;
 	    GLabel thirdWord = new GLabel("DialogProgram", x1,y1);
 		add (thirdWord);
 		
 	}
+	
 	private void addFirstRect() {
 		double x = getWidth()/2 - 285;
 		double y = getHeight()/3 + 120;

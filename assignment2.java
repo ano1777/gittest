@@ -5,8 +5,8 @@ import acm.graphics.GLine;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
-public class assignment2 extends GraphicsProgram{
-	private static final double RECT_WIDTH = 200;
+public class assignment2 extends GraphicsProgram {
+	private static final double RECT_WIDTH = 130;
 	private static final double RECT_HEIGHT =60;
 
 	public void run() {

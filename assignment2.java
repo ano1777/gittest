@@ -57,11 +57,11 @@ public class assignment2 extends GraphicsProgram{
 	private void addThreeRects() {
 		addFirstRect();
 		addSSecondRect();
-		adThirdRect();
+		addThirdRect();
 		
 	}
 	
-	private void adThirdRect() {
+	private void addThirdRect() {
 		double x = getWidth()/2 + 135;
 	    double y = getHeight()/3 + 120;
 	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);

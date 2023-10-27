@@ -1,6 +1,7 @@
 import java.awt.Color;
 
 import acm.graphics.GLabel;
+import acm.graphics.GLine;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
@@ -29,7 +30,28 @@ public class assignment2 extends GraphicsProgram{
 		
 	}
 	private void addTwoLines() {
+		addLeftLine();
+		addMiddleLine();
+		addRightLine();
+		
+		
+	}
+	private void addRightLine() {
 		// TODO Auto-generated method stub
+		
+	}
+	private void addLeftLine() {
+		// TODO Auto-generated method stub
+		
+	}
+	private void addMiddleLine() {
+		double x = getWidth()/2;
+		double y = getHeight()/3;
+		double x1 = getWidth()/2;
+		double y1 = getHeight()/3 +120;
+		GLine middleLine = new GLine(x, y, x1, y1);
+		add (middleLine);
+	
 		
 	}
 	private void addThreeRects() {

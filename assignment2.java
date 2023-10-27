@@ -7,7 +7,7 @@ import acm.program.GraphicsProgram;
 
 public class assignment2 extends GraphicsProgram {
 	private static final double RECT_WIDTH = 200;
-	private static final double RECT_HEIGHT =404;
+	private static final double RECT_HEIGHT =100;
 
 	public void run() {
 		

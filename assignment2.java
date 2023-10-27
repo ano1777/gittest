@@ -5,8 +5,8 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class assignment2 extends GraphicsProgram{
-	private static final double RECT_WIDTH = 130;
-	private static final double RECT_HEIGHT =  50;
+	private static final double RECT_WIDTH = 150;
+	private static final double RECT_HEIGHT = 60;
 	private static final double FONT_SIZE = 20;
 	public void run() {
 		
@@ -40,15 +40,15 @@ public class assignment2 extends GraphicsProgram{
 	}
 	
 	private void adThirdRect() {
-		double x = getWidth()/2 + 225;
-	    double y = getHeight()/3 + 60;
+		double x = getWidth()/2 + 210;
+	    double y = getHeight()/3 + 120;
 	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(thirdRect);
 		
 	}
 	private void addFirstRect() {
-		double x = getWidth()/2 - 225;
-		double y = getHeight()/3 + 60;
+		double x = getWidth()/2 - 285;
+		double y = getHeight()/3 + 120;
 		GRect firstRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
 		add(firstRect);
 	
@@ -56,7 +56,7 @@ public class assignment2 extends GraphicsProgram{
 	}
 	private void addSSecondRect() {
 		double x = getWidth()/2 - RECT_WIDTH/2;
-		double y = getHeight()/3 + 60;
+		double y = getHeight()/3 + 120;
 		GRect secondRect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(secondRect);
 				

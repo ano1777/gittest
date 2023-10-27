@@ -26,34 +26,33 @@ public class assignment2 extends GraphicsProgram{
 		
 		addThreeRects ();
 		
-		addTwoLines();
+		addThreeLines();
 		
 	}
-	private void addTwoLines() {
-		addLeftLine();
-		addMiddleLine();
-		addRightLine();
+	
 		
-		
-	}
-	private void addRightLine() {
-		// TODO Auto-generated method stub
-		
-	}
-	private void addLeftLine() {
-		// TODO Auto-generated method stub
-		
-	}
-	private void addMiddleLine() {
+	
+	private void addThreeLines() {
 		double x = getWidth()/2;
 		double y = getHeight()/3 + RECT_HEIGHT/2;
 		double x1 = getWidth()/2;
-		double y1 = getHeight()/3 +120;
+		double y1 = getHeight()/3 + 120;
+		double x2 = getWidth()/2 - 210;
+		double x3 = getWidth()/2 + 210;
+		
 		GLine middleLine = new GLine(x, y, x1, y1);
 		add (middleLine);
-	
 		
+		GLine leftLine = new GLine(x, y, x2, y1);
+		add(leftLine);
+		
+		GLine rightLine = new GLine(x, y, x3, y1);
+		add(rightLine);
 	}
+	
+	
+	
+	
 	private void addThreeRects() {
 		addFirstRect();
 		addSSecondRect();

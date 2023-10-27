@@ -8,13 +8,17 @@ import acm.program.GraphicsProgram;
 public class assignment2 extends GraphicsProgram {
 	private static final double RECT_WIDTH = 150;
 	private static final double RECT_HEIGHT = 60;
+	private static final Color FRAME_COLOR = Color.RED;
+	private static final Color FONT_COLOR = Color.BLUE;
 
 	public void run() {
 		
 		double x = getWidth()/2- RECT_WIDTH/2;
 		double y = getHeight()/3 - RECT_HEIGHT/2;
-		GRect myRect = new GRect(x, y, RECT_WIDTH,RECT_HEIGHT);
-		add (myRect);
+		GRect frame = new GRect(x, y, RECT_WIDTH,RECT_HEIGHT);
+	
+		frame.setColor(FRAME_COLOR);
+		add (frame);
 
 		
 		GLabel label = new GLabel ("program");

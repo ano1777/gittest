@@ -6,8 +6,8 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class assignment2 extends GraphicsProgram{
-	private static final double RECT_WIDTH = 200;
-	private static final double RECT_HEIGHT = 100;
+	private static final double RECT_WIDTH = 150;
+	private static final double RECT_HEIGHT =60;
 	private static final double FONT_SIZE = 20;
 	public void run() {
 		

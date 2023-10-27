@@ -10,8 +10,8 @@ public class assignment2 extends GraphicsProgram{
 	private static final double FONT_SIZE = 20;
 	public void run() {
 		
-		double x = getWidth()/2 - RECT_WIDTH/2;
-		double y = getHeight()/2 - RECT_HEIGHT/2;
+		double x = getWidth()/2- RECT_WIDTH/2;
+		double y = getHeight()/3 - RECT_HEIGHT/2;
 		GRect myRect = new GRect(x, y, RECT_WIDTH,RECT_HEIGHT);
 		add (myRect);
 
@@ -23,21 +23,48 @@ public class assignment2 extends GraphicsProgram{
 	    GLabel label1 = new GLabel ("program",x1 , y1);
 		add (label1);
 		
+		addThreeRects ();
 		
 		addTwoLines();
 		
 	}
 	private void addTwoLines() {
-		addLeftLine();
-		addRightLine();
+		// TODO Auto-generated method stub
+		
+	}
+	private void addThreeRects() {
+		addFirstRect();
+		addSSecondRect();
+		adThirdRect();
 		
 	}
 	
-	private void addLeftLine() {
-		GLine leftLine = new Gline(getWidth()/2, )
+	private void adThirdRect() {
+		double x = getWidth()/2 + 225;
+	    double y = getHeight()/3 + 60;
+	    GRect thirdRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
+		add(thirdRect);
 		
 	}
+	private void addFirstRect() {
+		double x = getWidth()/2 - 225;
+		double y = getHeight()/3 + 60;
+		GRect firstRect = new GRect(x,y, RECT_WIDTH, RECT_HEIGHT);
+		add(firstRect);
+	
 		
 	}
+	private void addSSecondRect() {
+		double x = getWidth()/2 - RECT_WIDTH/2;
+		double y = getHeight()/3 + 60;
+		GRect secondRect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
+		add(secondRect);
+				
+	
+		
+
+	}
+		
+}
 
 

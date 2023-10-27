@@ -46,7 +46,7 @@ public class assignment2 extends GraphicsProgram{
 	}
 	private void addMiddleLine() {
 		double x = getWidth()/2;
-		double y = getHeight()/3;
+		double y = getHeight()/3 + RECT_HEIGHT/2;
 		double x1 = getWidth()/2;
 		double y1 = getHeight()/3 +120;
 		GLine middleLine = new GLine(x, y, x1, y1);

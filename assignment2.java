@@ -8,7 +8,7 @@ import acm.program.GraphicsProgram;
 public class assignment2 extends GraphicsProgram{
 	private static final double RECT_WIDTH = 150;
 	private static final double RECT_HEIGHT =60;
-	private static final double FONT_SIZE = 20;
+
 	public void run() {
 		
 		double x = getWidth()/2- RECT_WIDTH/2;
@@ -18,6 +18,7 @@ public class assignment2 extends GraphicsProgram{
 
 		
 		GLabel label = new GLabel ("program");
+		label.setFont("sansSerif - 20");
 		double x1 = x+RECT_WIDTH/2- label.getWidth()/2;
 	    double y1 = y + RECT_HEIGHT/2 + label.getAscent()/3;
 		
@@ -83,6 +84,7 @@ public class assignment2 extends GraphicsProgram{
 		double x1 = x + RECT_WIDTH/2 - label.getWidth()/2;
 		double y1 = y + RECT_HEIGHT/2 + label.getAscent()/3;
 		GLabel firstWord = new GLabel("GraphicsProgram", x1,y1);
+		label.setFont("London -36");
 		add (firstWord);
 	
 		
@@ -97,6 +99,7 @@ public class assignment2 extends GraphicsProgram{
 		double x1 = x + RECT_WIDTH/2 -label.getWidth()/2;	
 	    double y1 = y + RECT_HEIGHT/2 +label.getAscent()/3;
 	    GLabel secondWord = new GLabel("ConsoleProgram", x1, y1);
+	    secondWord.setFont("sansSerif-20");
 		add(secondWord);
 		
 				

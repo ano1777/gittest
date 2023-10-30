@@ -5,7 +5,7 @@ public class ConsoleSample extends ConsoleProgram {
 
 	public void run() {
 		double f = readInt(" Enter degree in farenheit : ");
-		double c = 5/9(f-32);
+		double c = 5/9*(f-32);
 		println (c);
 	}
 }

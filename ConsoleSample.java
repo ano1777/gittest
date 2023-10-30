@@ -1,14 +1,12 @@
 import acm.program.ConsoleProgram;
 
 public class ConsoleSample extends ConsoleProgram {
-	
+	private static final double PI = 3.14;
+
 	public void run() {
-		int n = readInt("starting balance : ");
-		double m = readDouble("annual percentage :");
-		double finalBalance = (n + n*m/100);
-		double final2 = (finalBalance + finalBalance*m/100);
-		println (finalBalance);
-		println(final2);
-	
+		double r = readInt(" Enter radius : ");
+		double calculate = PI * r*r;
+		println(calculate);
+
 	}
 }

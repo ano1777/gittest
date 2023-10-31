@@ -11,7 +11,7 @@ public class ConsoleSample extends ConsoleProgram {
 		
 		}
 		m = m +a(n);
-		println ("number of evens are :" + a);
+		println ("number of evens are :" + m);
 	}
 
 	private int a(int n) {

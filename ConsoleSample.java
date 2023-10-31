@@ -17,6 +17,6 @@ public class ConsoleSample extends ConsoleProgram {
 		while (n % 2 == 0){
 			total += 1;
 		}
-		return total ;
+		return m ;
 	}
 }

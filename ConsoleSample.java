@@ -4,12 +4,15 @@ public class ConsoleSample extends ConsoleProgram {
 	private static final int SENTINEL = 1;
 
 	public void run() {
+		while(true){
 		int n = readInt("enter number : ");
+		
 		int fibN = fib(n);
+		
 		println(fibN);
 		
 		
-
+		}
 	}
 
 	// indices: 0 1 2 3 4 5 6

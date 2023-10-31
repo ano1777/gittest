@@ -18,7 +18,7 @@ public class ConsoleProgram30 extends ConsoleProgram{
 			reversedNum = reversedNum *10 +lastDigit;
 		}
 			
-		return 0;
+		return reversedNum;
 	}
 
 }

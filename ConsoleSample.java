@@ -1,25 +1,36 @@
 import acm.program.ConsoleProgram;
 
 public class ConsoleSample extends ConsoleProgram {
+	private static final int SENTINEL = 1;
 
 	public void run() {
 		int n = readInt("enter number : ");
-		int m = 0;
-		int a = 0;
-		while (n != -1) {
-			n = readInt("enter number : ");
+		int fibN = fib(n);
+		println(fibN);
+		
+		
 
-			m = m + a(n);
-		}
-		println("number of evens are :" + m);
 	}
 
-	private int a(int n) {
-		int total = 0;
-		while (n % 2 == 0) {
-			total += 1;
+	// indices: 0 1 2 3 4 5 6
+	// values:  0 1 1 2 3 5 8
+	private int fib(int n) {
+		if (n == 0 || n == 1){
+			return n;
 		}
-		return total;
-
+		int prev2 = 0;
+		int prev1 = 1;
+		
+		//loop
+		for (int i = 2; i<=n; i++){
+			int current = prev2 +prev1;
+			prev2 = prev1;
+			prev1 = current;
+			
+		}
+		
+		
+		return prev1 ;
+		
 	}
 }

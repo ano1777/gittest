@@ -15,7 +15,7 @@ public class ConsoleSample extends ConsoleProgram {
 	}
 
 	private int a(int n) {
-		double total = 0;
+		int total = 0;
 		while (n % 2 == 0){
 			total += 1;
 		}

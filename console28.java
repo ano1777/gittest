@@ -8,7 +8,7 @@ public class console28 extends ConsoleProgram {
 			n = readInt(" Enter num: ");
 			EvenNumbers = EvenNumbers + numberOfEvenNumbers(n);
 		}
-		println(EvenNumbers);
+		println("the number of evens are :" +EvenNumbers);
 
 	}
 

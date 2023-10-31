@@ -3,15 +3,15 @@ import acm.program.ConsoleProgram;
 public class ConsoleSample extends ConsoleProgram {
 
 	public void run() {
-		int n = readInt ("enter number");
+		int n = readInt ("enter number : ");
 		int m = 0;
 		int a = 0;
 		while (n != -1){
-			n = readInt("enter number");
+			n = readInt("enter number : ");
 		
 		}
 		m = m +a(n);
-		println ("number of evens are :" + n);
+		println ("number of evens are :" + a);
 	}
 
 	private int a(int n) {
@@ -20,5 +20,6 @@ public class ConsoleSample extends ConsoleProgram {
 			total += 1;
 		}
 		return total ;
+		
 	}
 }

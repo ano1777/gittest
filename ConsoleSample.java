@@ -9,8 +9,9 @@ public class ConsoleSample extends ConsoleProgram {
 		while (n != -1){
 			n = readInt("enter number : ");
 		
-		}
+		
 		m = m +a(n);
+		}
 		println ("number of evens are :" + m);
 	}
 

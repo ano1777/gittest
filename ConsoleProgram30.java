@@ -10,10 +10,12 @@ public class ConsoleProgram30 extends ConsoleProgram{
 	}
 
 	private int reverse(int n) {
+		int reversedNum = 1;
 		while( n != 0){
 			int lastDigit = n %10;
 			n /= 10;
-			print(lastDigit);
+//			print(lastDigit);
+			reversedNum = reversedNum *10 +lastDigit;
 		}
 			
 		return 0;

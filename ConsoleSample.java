@@ -1,27 +1,21 @@
 import acm.program.ConsoleProgram;
 
 public class ConsoleSample extends ConsoleProgram {
-	
 
 	public void run() {
-		int n =  readInt("Enter n :");
-		while( n != 1){
-			n = readInt("Enter n :");
-			if (n == 1){
-				addNumberOfEvenNumbers();
-				
-			}
-			
+		int n = readInt ("enter number");
+		int m = 0;
+		while (n != -1){
+			n = readInt("enter number");
+			m = m +a(n);
 		}
-		
-	
 	}
 
-	private void addNumberOfEvenNumbers(n) {
-		int total = 0;
-		if ( n % 2 == 0){
+	private int a(int n) {
+		double total = 0;
+		while (n % 2 == 0){
 			total += 1;
 		}
-		return total;
+		return n ;
 	}
 }

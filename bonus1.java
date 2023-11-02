@@ -15,8 +15,8 @@ public class bonus1 extends ConsoleProgram{
 			println (n);
 			
 		}
-		int prev1 = 1;
-		int prev2 = 0;
+		int prev1 = 0;
+		int prev2 = 1;
 		
 	for( int i = 2; i<=n; i++){				
 		int current = prev1 + prev2;

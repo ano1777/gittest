@@ -1,7 +1,7 @@
 import acm.program.ConsoleProgram;
 
 public class ConsoleSample extends ConsoleProgram {
-	private static final int SENTINEL = 1;
+
 
 	public void run() {
 		while(true){
@@ -30,7 +30,7 @@ public class ConsoleSample extends ConsoleProgram {
 	for (int i = 2; i<=n; i++){
 			int current = prev2 + prev1; //0+1
 			prev1 = current;         //
-			prev = current + prev1;
+			prev2 = current + prev2;
 			
 		}
 		

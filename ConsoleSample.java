@@ -27,7 +27,7 @@ public class ConsoleSample extends ConsoleProgram {
 		
 		//loop
 		int current = 0;
-	for (int i = 2; i<=n; i++){
+	for (int i = 3; i<=n; i++){
 			 current = prev2 + prev1;
 			prev2 = current;
 			prev1 = prev2;

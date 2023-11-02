@@ -11,7 +11,7 @@ public class bonus1 extends ConsoleProgram{
 	}
 
 	private int fin(int n) {
-		while (n == 1 || n == 0){
+		if (n == 1 || n == 0){
 			println (n);
 			
 		}

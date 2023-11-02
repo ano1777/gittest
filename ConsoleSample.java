@@ -35,7 +35,7 @@ public class ConsoleSample extends ConsoleProgram {
 		}
 		
 		
-		return prev1 ;
+		return prev2 ;
 		
 	}
 }

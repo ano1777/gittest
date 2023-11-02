@@ -23,7 +23,7 @@ public class ConsoleSample extends ConsoleProgram {
 			return n;
 		}
 		int prev2 = 1;
-		int prev1 = 0;
+		int prev1 = 1;
 		
 		//loop
 		int current = 0;

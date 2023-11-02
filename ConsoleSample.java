@@ -26,16 +26,16 @@ public class ConsoleSample extends ConsoleProgram {
 		int prev1 = 0;
 		
 		//loop
-		
+		int current = 0;
 	for (int i = 2; i<=n; i++){
-			int current = prev2 + prev1;
+			 current = prev2 + prev1;
 			prev2 = current;
 			prev1 = prev2;
 			
 		}
 		
 		
-		return prev2 ;
+		return current ;
 		
 	}
 }

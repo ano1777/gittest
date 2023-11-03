@@ -17,9 +17,9 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	}
 
 	private void addBase() {
-		while (newRow) {
+		
 			
-		}
+	
 		for (int j = 1; j <=BRICKS_IN_BASE; j++) {
 		
 			double x1 = getWidth()/2 - (BRICKS_IN_BASE/2) + j*(BRICK_WIDTH/2);
@@ -42,14 +42,10 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	private int numBricks(int numOfBricksInBase) {
 		int total = 14;
 		for (int i = 0; i <= 14; i++) {
-			boolean ifNewRow (int num) {
-				if (ifNewRow){
-					total--;
-				}
-				return num;
+			total--;
 			}	
 				
-		}
+		
 		return total;
 	}
 

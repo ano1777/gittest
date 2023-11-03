@@ -17,13 +17,13 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	}
 	private void addBase() {
       for (int i=0; i<=BRICKS_IN_BASE; i++) {
-    	  double x = getWidth()/2 - (i/2)*BRICK_WIDTH;
+    	  double x = getWidth()/2 - i*BRICK_WIDTH;
     	  double y = getHeight()- BRICK_HEIGHT;
     	  GRect brick = new GRect (x,y,BRICK_WIDTH, BRICK_HEIGHT);
     	  add (brick);
     	  for (int j=0; j<=14; j++) {
     		  numBricks();
-    		  double x1 = getWidth()/2- (i/2)* BRICK_WIDTH;
+    		  double x1 = getWidth()/2- i* BRICK_WIDTH;
     		  double y1 = getHeight() - i * BRICK_HEIGHT;
     		  GRect newRow = new GRect(x1,y1, BRICK_WIDTH, BRICK_HEIGHT);
     		  add(newRow);

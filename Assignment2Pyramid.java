@@ -13,7 +13,7 @@ int bricksInRow = BRICKS_IN_BASE;
 
 	private void addBase() {
 		
-	for (int i = bricksInRow; i >= 1; i--) {
+	for (int i = 0; i < bricksInRow; i++) {
 		for (int j = 1; j<=BRICKS_IN_BASE; j++) {   	
 				int x = getWidth()/2 -( BRICK_WIDTH * bricksInRow/2) + (i * BRICK_WIDTH)+ (j*BRICK_WIDTH)  ;
 				int y = getHeight() - j* BRICK_HEIGHT;

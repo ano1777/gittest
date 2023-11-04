@@ -14,7 +14,8 @@ public class practice2 extends GraphicsProgram {
 			
 		}
 	
-	}
+	
 		numBricks--;
+		}
 }
 }

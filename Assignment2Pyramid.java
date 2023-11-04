@@ -24,7 +24,7 @@ public class Assignment2Pyramid extends GraphicsProgram {
 				
 			}
 		bricksInRow--;
-		x1 = getWidth()/2 - BRICK_WIDTH* bricksInRow/2;
+		
 		}
 	}
 

@@ -7,7 +7,7 @@ public class practice2 extends GraphicsProgram {
 		int numBricks = 14;
 		for( int j=1; j<=numBricks; j++){
 		for (int i=1; i<=14; i++) {
-			double x = getWidth()/2 - (14/2)*30 + i*30;
+			double x = getWidth()/2 - (numBricks/2)*30 + i*30;
 			double y = getHeight() - j * 12;
 			GRect myRect = new GRect(x, y, 30, 12);
 			add(myRect);

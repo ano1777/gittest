@@ -7,7 +7,6 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	private static final int BRICK_HEIGHT = 12;
 
 	public void run() {
-		int numOfBricksiNBase = 14;
 
 		addBase();
 	}
@@ -25,15 +24,6 @@ public class Assignment2Pyramid extends GraphicsProgram {
 
 		}
 
-	}
-
-	private int numBricks(int numOfBricksInBase) {
-		int total = 14;
-		for (int i = 0; i <= 14; i++) {
-			total--;
-		}
-
-		return total;
 	}
 
 }

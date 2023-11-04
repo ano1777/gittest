@@ -23,11 +23,8 @@ public class Assignment2Pyramid extends GraphicsProgram {
 			}
 
 		}
-
-	
-	private double bricksInNewRow(i) {
-		int bricksInRow = 14;
-		
 	}
+	
+
 
 }

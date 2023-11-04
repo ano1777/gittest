@@ -30,7 +30,7 @@ public class Assignment2Pyramid extends GraphicsProgram {
 			}
 
 		}
-	}
+	
 
 	private int numBricks(int numOfBricksInBase) {
 		int total = 14;

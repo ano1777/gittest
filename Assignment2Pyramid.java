@@ -12,8 +12,8 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	}
 
 	private void addBase() {
-	for (int i = 0; i < BRICKS_IN_BASE; i++) {
-		for (int j = BRICKS_IN_BASE; j>=1; j--) {
+	for (int i = BRICKS_IN_BASE; i >1; i++) {
+		for (int j = 1; j<=BRICKS_IN_BASE; j++) {
 	     	
 				double x = getWidth()/2 - (BRICK_WIDTH * BRICKS_IN_BASE/2) +(i * BRICK_WIDTH ) + j * (BRICK_WIDTH/2) ;
 				double y = getHeight() - j* BRICK_HEIGHT;

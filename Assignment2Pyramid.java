@@ -15,7 +15,7 @@ int bricksInRow = BRICKS_IN_BASE;
 		
 	for (int i = 0; i < bricksInRow; i++) {
 		for (int j = 1; j<=BRICKS_IN_BASE; j++) {   	
-				int x = getWidth()/2 -( BRICK_WIDTH * bricksInRow/2) + (i * BRICK_WIDTH)+ (j*BRICK_WIDTH)  ;
+				int x = getWidth()/2 -( BRICK_WIDTH * BRICKS_IN_BASE/2) + (bricksInRow * BRICK_WIDTH)+ (j*BRICK_WIDTH)  ;
 				int y = getHeight() - j* BRICK_HEIGHT;
 				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 				add(brick);

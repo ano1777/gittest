@@ -12,10 +12,11 @@ public class practice2 extends GraphicsProgram {
 			GRect myRect = new GRect(x, y, 30, 12);
 			add(myRect);
 			
-		}
+		
 	
 	
 		numBricks--;
+		}
 		}
 }
 }

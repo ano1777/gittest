@@ -11,10 +11,10 @@ public class practice2 extends GraphicsProgram {
 			double y = getHeight() - j * 12;
 			GRect myRect = new GRect(x, y, 30, 12);
 			add(myRect);
-			numBricks--;
+			
 		}
 	
 	}
-
+		numBricks--;
 }
 }

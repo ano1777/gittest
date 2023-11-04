@@ -6,6 +6,8 @@ public class Assignment2Pyramid extends GraphicsProgram {
 	private static final int BRICK_WIDTH = 30;
 	private static final int BRICK_HEIGHT = 12;
     int bricksInRow = BRICKS_IN_BASE;
+    int x1;
+    int y1;
 	public void run() {
 		addBase();
 	
@@ -22,8 +24,10 @@ public class Assignment2Pyramid extends GraphicsProgram {
 				
 			}
 		bricksInRow--;
+		x1 = getWidth()/2 - BRICK_WIDTH* bricksInRow/2;
 		}
 	}
 
 }
+
 //+j * (BRICK_WIDTH)/2)

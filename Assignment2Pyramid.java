@@ -8,13 +8,11 @@ public class Assignment2Pyramid extends GraphicsProgram {
 
 	public void run() {
 		int numOfBricksiNBase = 14;
-		addPyramid();
-	}
-
-	private void addPyramid() {
+		
 		addBase();
-
 	}
+
+
 
 	private void addBase() {
 		

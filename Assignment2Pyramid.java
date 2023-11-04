@@ -15,9 +15,9 @@ public class Assignment2Pyramid extends GraphicsProgram {
 		
 	for (int i = 0; i < bricksInRow; i++) {
 		for (int j = 1; j<=BRICKS_IN_BASE; j++) {   	
-				int x = getWidth()/2 -(BRICK_WIDTH * (BRICKS_IN_BASE/2)) + (bricksInRow * BRICK_WIDTH)+ (j*BRICK_WIDTH/2)  ;
-				int y = getHeight() - j* BRICK_HEIGHT;
-				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+				int x1 = getWidth()/2 - (BRICK_WIDTH * bricksInRow)/2 + (bricksInRow * BRICK_WIDTH) ;
+				int y1 = getHeight() - (BRICK_HEIGHT*j);
+				GRect brick = new GRect(x1, y1, BRICK_WIDTH, BRICK_HEIGHT);
 				add(brick);
 				
 			}

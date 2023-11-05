@@ -95,7 +95,7 @@ private void addSecondLabel() {
 
 	
 	GLabel label = new GLabel("ConsoleProgram");
-	double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_BETW_RECTS + (2*(RECT_WIDTH+SPACE_BETW_RECTS)) + RECT_WIDTH / 2 - label.getWidth() / 2;
+	double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_BETW_RECTS + (1*(RECT_WIDTH+SPACE_BETW_RECTS)) + RECT_WIDTH / 2 - label.getWidth() / 2;
 	double y1 = getHeight() / 3 + SPACE_BETW_RECTS * 2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
 	GLabel secondWord = new GLabel("ConsoleProgram", x1, y1);
 	add(secondWord);

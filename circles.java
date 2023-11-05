@@ -9,7 +9,7 @@ public class circles extends ConsoleProgram{
 		int min = n;
 		 
 		
-		if ( n == 0 ) {
+		if ( n == NUM ) {
 			println(" this number is not allowed. try again.");
 			n = readInt(" ? ");
 			
@@ -24,7 +24,7 @@ public class circles extends ConsoleProgram{
 				min = n;
 			}
 			
-		if ( n == 0) {
+		if ( n == NUM) {
 			addMaxAndMin(n, max, min);
 		}
 		}

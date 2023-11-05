@@ -25,7 +25,7 @@ public class circles extends ConsoleProgram {
 			}
 			}
 
-			while (n == NUM) {
+			if (n == NUM) {
 				addMaxAndMin( max, min);
 
 			}

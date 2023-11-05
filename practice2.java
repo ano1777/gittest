@@ -31,6 +31,7 @@ public class practice2 extends GraphicsProgram {
 				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 				add(brick);
 			}
+			numBricks--;
 		}
 		
 		

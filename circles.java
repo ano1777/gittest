@@ -1,15 +1,37 @@
-import java.awt.Label;
+import acm.program.ConsoleProgram;
 
-import com.sun.prism.paint.Color;
-
-import acm.graphics.GLabel;
-import acm.graphics.GRect;
-import acm.program.GraphicsProgram;
-
-public class circles extends GraphicsProgram{
+public class circles extends ConsoleProgram{
+	private static final int NUM =0;
 	public void run(){
+		println ('this program ')
+		int n = readInt(" ? ");
+		int max = n;
+		int min = n;
+		 
+		
+		if ( n == 0 ) {
+			println(" this number is not allowed. try again.");
+		}
+		while (n != NUM) {
+			n = readInt(" ? ");
+			if( max < n) {
+				max = n;
+			} 
+			if (min>n){
+				min = n;
+			}
+		if ( n == 0) {
+			addMaxAndMin(n, max, min);
+		}
+		}
 
 
+	}
+	
+	private void addMaxAndMin(int n, int max, int min) {
+		println("smallest : " + min);
+		println("highest : " + max);
+		
 	}
 
 }

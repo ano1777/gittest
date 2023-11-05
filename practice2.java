@@ -17,7 +17,7 @@ public class practice2 extends GraphicsProgram {
 		  
 }
 	private void addPyramid() {
-		int numBricks = 14;
+		int numBricks = BRICKS_IN_BASE;
 	for(int i =0; i<BRICKS_IN_BASE; i++) {
 		for(int j=1; j<=1;j++) {
 			double x = getWidth()/2 -(i+1)* BRICK_WIDTH+numBricks*BRICK_WIDTH;

@@ -10,10 +10,16 @@ public class practice2 extends GraphicsProgram {
 	private static final int BRICK_HEIGHT = 12;
 
 /** Number of bricks in the base of the pyramid */
-	private static final int BRICKS_IN_BASE = 20;
+	private static final int BRICKS_IN_BASE = 14;
 	
 	  public void run() {
 		  addPyramid();
+
+		}
+		
+		
+
+	private void addPyramid() {
 		double initialX = 0;
 		double initialY = 0;
 		double numBricks = BRICKS_IN_BASE;
@@ -24,7 +30,7 @@ public class practice2 extends GraphicsProgram {
 		/*number of rows*/
 		for( int i = 0; i<BRICKS_IN_BASE; i++) {
 			
-		
+		/* number of columns*/
 			for( int j = 0; j<numBricks; j++) {
 				double x = initialX + i*BRICK_WIDTH + j*BRICK_WIDTH/2;
 		        double y = initialY - j* BRICK_HEIGHT;
@@ -33,13 +39,5 @@ public class practice2 extends GraphicsProgram {
 			}
 			numBricks--;
 		}
-		
-		
-
-	}
-
-	private void addPyramid() {
-	
-		
 	}
 }

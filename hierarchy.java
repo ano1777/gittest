@@ -32,7 +32,7 @@ public class hierarchy extends GraphicsProgram {
 
 		GLabel label = new GLabel("program");
 		double x1 = x + RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = y + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = y + RECT_HEIGHT / 2 + label.getAscent() / 2;
 
 		GLabel label1 = new GLabel("program", x1, y1);
 		add(label1);
@@ -104,7 +104,7 @@ public class hierarchy extends GraphicsProgram {
 		GLabel label = new GLabel("DialogProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + (2 * (RECT_WIDTH + SPACE_HORIZONTAL))
 				+ RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = getHeight() / 2 + SPACE_VERTICAL/2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL/2 + RECT_HEIGHT / 2 + label.getAscent() / 2;
 		GLabel thirdWord = new GLabel("DialogProgram", x1, y1);
 		add(thirdWord);
 	}

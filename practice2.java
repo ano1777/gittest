@@ -14,20 +14,31 @@ public class practice2 extends GraphicsProgram {
 	
 	  public void run() {
 		  addPyramid();
-		  
-}
-	private void addPyramid() {
-
-		double lx = 0;
-		int 
-	for(int i =0; i<BRICKS_IN_BASE; i++) {
-		for(int j=1; j<=1;j++) {
-			double x = getWidth()/2 -(i+1)* BRICK_WIDTH+numBricks*BRICK_WIDTH;
-			double y = getHeight() -j*BRICK_HEIGHT;
-			GRect newRect = new GRect (x, y, BRICK_WIDTH, BRICK_HEIGHT);
-			add(newRect);
+		double initialX = 0;
+		double initialY = 0;
+		double numBricks = BRICKS_IN_BASE;
+		
+		initialX = getWidth()/2 -(numBricks * BRICK_WIDTH)/2;
+		initialY = getHeight() - BRICK_HEIGHT;
+		
+		/*number of rows*/
+		for( int i = 0; i<BRICKS_IN_BASE; i++) {
 			
+		
+			for( int j = 0; j<numBricks; j++) {
+				double x = initialX + i*BRICK_WIDTH;
+		        double y = initialY - j* BRICK_HEIGHT;
+				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
+				add(brick);
+			}
 		}
+		
+		
+
 	}
+
+	private void addPyramid() {
+	
+		
 	}
 }

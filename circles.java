@@ -5,8 +5,8 @@ public class circles extends ConsoleProgram{
 	public void run(){
 		
 		int n = readInt(" ? ");
-		int max = n;
-		int min = n;
+		int maxNumber = n;
+		int minNumber = n;
 		 
 		
 		if ( n == NUM ) {
@@ -25,12 +25,9 @@ public class circles extends ConsoleProgram{
 			}
 			
 		if ( n == NUM) {
-			println("smallest : " + min);
-			println("largest : " + max);
 			addMaxAndMin(n, max, min);
 		}
 		}
-
 
 	}
 	

@@ -16,8 +16,6 @@ public class practice2 extends GraphicsProgram {
 		  addPyramid();
 
 		}
-		
-		
 
 	private void addPyramid() {
 		double initialX = 0;
@@ -38,6 +36,7 @@ public class practice2 extends GraphicsProgram {
 				add(brick);
 			}
 			numBricks--;
+			initialX = getWidth()/2 -(numBricks * BRICK_WIDTH)/2;
 		}
 	}
 }

@@ -77,7 +77,7 @@ public class hierarchy extends GraphicsProgram {
 		
 		GLabel label = new GLabel("GraphicsProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = getHeight() / 2 + SPACE_VERTICAL / 2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL / 2 + RECT_HEIGHT / 2 + label.getAscent() / 2;
 		GLabel firstWord = new GLabel("GraphicsProgram", x1, y1);
 		add(firstWord);
 	}

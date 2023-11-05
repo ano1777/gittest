@@ -26,7 +26,7 @@ public class hierarchy extends GraphicsProgram {
 
 	private void addRectOnTheTop() {
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
-		double y = getHeight() / 3 - RECT_HEIGHT / 2;
+		double y = getHeight() / 2 - RECT_HEIGHT - SPACE_VERTICAL/2;
 		GRect frame = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 		add(frame);
 
@@ -45,13 +45,12 @@ public class hierarchy extends GraphicsProgram {
 
 	private void addThreeLines() {
 		double x = getWidth() / 2;
-		double y = getHeight() / 3 + RECT_HEIGHT / 2;
-		double x1 = getWidth() / 2;
-		double y1 = getHeight() / 3 + SPACE_VERTICAL;
+		double y = getHeight() / 2 - SPACE_VERTICAL/2;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL/2;
 		double x2 = getWidth() / 2 - RECT_WIDTH - SPACE_HORIZONTAL;
 		double x3 = getWidth() / 2 + RECT_WIDTH + SPACE_HORIZONTAL;
 
-		GLine middleLine = new GLine(x, y, x1, y1);
+		GLine middleLine = new GLine(x, y, x, y1);
 		add(middleLine);
 
 		GLine leftLine = new GLine(x, y, x2, y1);
@@ -64,7 +63,7 @@ public class hierarchy extends GraphicsProgram {
 	private void addThreeRects() {
 		for (int i = 0; i < 3; i++) {
 			double x = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + (i * (RECT_WIDTH + SPACE_HORIZONTAL));
-			double y = getHeight() / 3 + SPACE_VERTICAL;
+			double y = getHeight() / 2 + SPACE_VERTICAL/2;
 			GRect rect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 			add(rect);
 		}
@@ -75,10 +74,10 @@ public class hierarchy extends GraphicsProgram {
 	 */
 
 	private void addFirstLabel() {
-
+		
 		GLabel label = new GLabel("GraphicsProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = getHeight() / 3 + SPACE_VERTICAL + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL / 2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
 		GLabel firstWord = new GLabel("GraphicsProgram", x1, y1);
 		add(firstWord);
 	}
@@ -92,7 +91,7 @@ public class hierarchy extends GraphicsProgram {
 		GLabel label = new GLabel("ConsoleProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + (1 * (RECT_WIDTH + SPACE_HORIZONTAL))
 				+ RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = getHeight() / 3 + SPACE_VERTICAL + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL/2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
 		GLabel secondWord = new GLabel("ConsoleProgram", x1, y1);
 		add(secondWord);
 	}
@@ -105,7 +104,7 @@ public class hierarchy extends GraphicsProgram {
 		GLabel label = new GLabel("DialogProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + (2 * (RECT_WIDTH + SPACE_HORIZONTAL))
 				+ RECT_WIDTH / 2 - label.getWidth() / 2;
-		double y1 = getHeight() / 3 + SPACE_VERTICAL + RECT_HEIGHT / 2 + label.getAscent() / 3;
+		double y1 = getHeight() / 2 + SPACE_VERTICAL/2 + RECT_HEIGHT / 2 + label.getAscent() / 3;
 		GLabel thirdWord = new GLabel("DialogProgram", x1, y1);
 		add(thirdWord);
 	}

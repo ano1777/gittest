@@ -101,9 +101,7 @@ public class hierarchy extends GraphicsProgram {
 	 * this function adds the rectangle on the right side of the canvas with the
 	 * label "DialogProgram" inside of it
 	 */
-
 	private void addThirdLabel() {
-
 		GLabel label = new GLabel("DialogProgram");
 		double x1 = getWidth() / 2 - (1.5 * RECT_WIDTH) - SPACE_HORIZONTAL + (2 * (RECT_WIDTH + SPACE_HORIZONTAL))
 				+ RECT_WIDTH / 2 - label.getWidth() / 2;

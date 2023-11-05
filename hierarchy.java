@@ -5,9 +5,9 @@ import acm.program.GraphicsProgram;
 
 public class hierarchy extends GraphicsProgram {
 	private static final double RECT_WIDTH = 150;
-	private static final double RECT_HEIGHT = 60;
+	private static final double RECT_HEIGHT = 50;
 	private static final double SPACE_HORIZONTAL = 60;
-	private static final double SPACE_VERTICAL = 120;
+	private static final double SPACE_VERTICAL = 100;
 
 	/* this class adds hierarchy system of programs on canvas */
 	public void run() {

@@ -4,8 +4,8 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class hierarchy extends GraphicsProgram {
-	private static final double RECT_WIDTH = 200;
-	private static final double RECT_HEIGHT = 100;
+	private static final double RECT_WIDTH = 150;
+	private static final double RECT_HEIGHT = 60;
 	private static final double SPACE_BETW_RECTS = 20;
 
 	/* this class adds hierarchy system of programs on canvas */
@@ -67,7 +67,6 @@ public class hierarchy extends GraphicsProgram {
 			GRect rect = new GRect(x, y, RECT_WIDTH, RECT_HEIGHT);
 			add(rect);
 		}
-
 	}
 	/*
 	 * this method adds the rectangle on the left side of canvas with the label

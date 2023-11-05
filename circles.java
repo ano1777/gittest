@@ -11,7 +11,7 @@ public class circles extends ConsoleProgram {
 
 		if (n == NUM) {
 			println(" this number is not allowed. try again.");
-			n = readInt(" ? ");
+			
 		}
 
 		while (n != NUM) {

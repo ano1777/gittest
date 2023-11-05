@@ -16,9 +16,9 @@ public class circles extends ConsoleProgram {
 
 		while (n != NUM) {
 			n = readInt(" ? ");
+			
 			if (max < n) {
 				max = n;
-			
 
 			if (min > n) {
 				min = n;

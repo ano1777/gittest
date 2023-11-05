@@ -10,8 +10,8 @@ public class practice2 extends GraphicsProgram {
 	private static final int BRICK_HEIGHT = 12;
 
 /** Number of bricks in the base of the pyramid */
-	private static final int BRICKS_IN_BASE = 20;
-	
+	private static final int BRICKS_IN_BASE = 15;
+
 	  public void run() {
 		  addPyramid();
 

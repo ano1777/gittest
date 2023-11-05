@@ -11,7 +11,7 @@ public class circles extends ConsoleProgram {
 
 		if (n == NUM) {
 			println(" this number is not allowed. try again.");
-			
+			n = readInt(" ? ");
 		}
 
 		while (n != NUM) {
@@ -26,14 +26,14 @@ public class circles extends ConsoleProgram {
 			}
 
 			if (n == NUM) {
-				addMaxAndMin(n, max, min);
+				addMaxAndMin( max, min);
 
 			}
 		}
 
 	}
 
-	private void addMaxAndMin(int n, int max, int min) {
+	private void addMaxAndMin( int max, int min) {
 		println("smallest : " + min);
 		println("largest : " + max);
 

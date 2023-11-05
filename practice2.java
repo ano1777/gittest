@@ -11,32 +11,14 @@ public class practice2 extends GraphicsProgram {
 
 /** Number of bricks in the base of the pyramid */
 	private static final int BRICKS_IN_BASE = 15;
-
-	  public void run() {
-		  addPyramid();
-
-		}
-
-	private void addPyramid() {
-		double initialX = 0;
-		double initialY = 0;
-		double numBricks = BRICKS_IN_BASE;
-		
-		initialX = getWidth()/2 -(numBricks * BRICK_WIDTH)/2;
-		initialY = getHeight() - BRICK_HEIGHT;
-		
-		/*number of rows*/
-		for( int i = 0; i<BRICKS_IN_BASE; i++) {
-			
-		/* number of columns*/
-			for( int j = 0; j<numBricks; j++) {
-				double x = initialX + i*BRICK_WIDTH + j*BRICK_WIDTH/2;
-		        double y = initialY - j* BRICK_HEIGHT;
-				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
-				add(brick);
-			}
-			numBricks--;
-			
-		}
+	public void run() {
+		calculateSqrt();	
+	}
+	
+	private void calculateSqrt() {
+        int a = readInt("a : ");
+		int b = readInt("b : ");
+		double c = Math.sqrt(a * a + b * b);
+		println("c = " + c);
 	}
 }

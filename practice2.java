@@ -30,7 +30,7 @@ public class practice2 extends GraphicsProgram {
 			
 		/* number of columns*/
 			for( int j = 0; j<numBricks; j++) {
-				double x = initialX + i*BRICK_WIDTH + j*BRICK_WIDTH/2;
+				double x = initialX + i*BRICK_WIDTH ;
 		        double y = initialY - j* BRICK_HEIGHT;
 				GRect brick = new GRect(x, y, BRICK_WIDTH, BRICK_HEIGHT);
 				add(brick);

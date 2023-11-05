@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class circles extends ConsoleProgram{
 	private static final int NUM =0;
 	public void run(){
-		println ('this program ')
+		
 		int n = readInt(" ? ");
 		int max = n;
 		int min = n;

@@ -25,6 +25,8 @@ public class circles extends ConsoleProgram{
 			}
 			
 		if ( n == NUM) {
+			println("smallest : " + min);
+			println("largest : " + max);
 			addMaxAndMin(n, max, min);
 		}
 		}

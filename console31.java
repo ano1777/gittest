@@ -5,7 +5,52 @@ import acm.program.ConsoleProgram;
 import acm.util.RandomGenerator;
 
 public class console31 extends ConsoleProgram{
-	private static final int MIN_RADIUS = 10;
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private static final int MAX_NUM = 1000;
+	private static final int MIN_RADIUS =10;
+	private static final int MAX_RADIUS = 30;
+	
+	public void run() {
+		for (int i = 0; i <= MAX_NUM; i++ ) {
+			double radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
+			double x = rgen.nextDouble(0, getWidth()- 2* radius);
+			double y = rgen.nextDouble(0, getHeight() - 2* radius);
+			Color color = rgen. nextColor();
+			GOval circle = new GOval(x, y, 2*radius, 2*radius);
+			circle.setFilled(true);
+			circle.setColor(color);
+			add(circle, x, y);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*private static final int MIN_RADIUS = 10;
 	private static final int MAX_RADIUS = 20;
 	private static final int NUM_CIRCLES = 1000;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
@@ -27,7 +72,8 @@ public class console31 extends ConsoleProgram{
 		circle.setColor(color);
 		
 		add(circle, x, y);
-		
-	}
+		}
+		*/
+	
 
 }

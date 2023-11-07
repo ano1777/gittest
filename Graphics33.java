@@ -1,5 +1,5 @@
 import java.awt.Color;
-import acm.graphics.GRect;
+import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
@@ -15,7 +15,7 @@ public class Graphics33 extends GraphicsProgram{
 		double radius = rgen.nextDouble(MIN_RAD, MAX_RAD);
 		Color color = rgen. nextColor();
 
-		GRect oneOval = new GRect(x, y, 2* radius, 2*radius);
+		GOval oneOval = new GOval(x, y, 2* radius, 2*radius);
 		oneOval.setFilled(true);
 		oneOval.setColor(color);
 		add(oneOval);

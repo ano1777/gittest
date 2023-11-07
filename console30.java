@@ -16,7 +16,7 @@ public class console30 extends ConsoleProgram{
 			for (int i = 0; i<=Math.sqrt(n); i++) {
 
 			}
-			return false;
+			return true;
 			
 		}
 		

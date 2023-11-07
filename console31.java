@@ -23,6 +23,7 @@ public class console31 extends GraphicsProgram{
 			circle.setColor(color);
 			add(circle, x, y);
 		}
+	
 	}
 	
 	

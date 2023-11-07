@@ -13,7 +13,7 @@ public class console31 extends ConsoleProgram{
 		int lastNum = n % 10;
 		n = n / 10 ;
 	
-		reverseNum = reverseNum * 10 + lastNum;1
+		reverseNum = reverseNum * 10 + lastNum;
 		}
 	
 		return reverseNum;

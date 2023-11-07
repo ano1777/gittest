@@ -15,10 +15,10 @@ public class Graphics33 extends GraphicsProgram{
 		double radius = rgen.nextDouble(MIN_RAD, MAX_RAD);
 		Color color = rgen. nextColor();
 
-		GRect oneRect = new GRect(x, y, 2* radius, 2*radius);
-		oneRect.setFilled(true);
-		oneRect.setColor(color);
-		add(oneRect);
+		GRect oneOval = new GRect(x, y, 2* radius, 2*radius);
+		oneOval.setFilled(true);
+		oneOval.setColor(color);
+		add(oneOval);
 		
 	}
 

@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class console30 extends ConsoleProgram{
 	//final static final int MAX_NUM = 1000000;
 	public void run() {
-		int n = readInt("ENTER NUMBER :");
+		int n = readInt("ENTER NUMBER : ");
 		if (isPrime(n)) {
 			println("this number is prime");
 		}
@@ -14,7 +14,8 @@ public class console30 extends ConsoleProgram{
 		
 		private boolean isPrime(int n) {
 			for (int i = 0; i<=Math.sqrt(n); i++) {
-
+				if(n % i == 0) {
+				}
 			}
 			return true;
 			

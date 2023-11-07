@@ -11,7 +11,7 @@ public class Graphics39 extends GraphicsProgram{
 	int initialX = 250;
 
 	while(newOval.getX() <= initialX){
-	newOval.move(10,0);
+	newOval.move(5,5);
 	pause(PAUSE_TIME);
 	}
 	

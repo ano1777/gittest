@@ -8,8 +8,9 @@ public class Graphics39 extends GraphicsProgram{
 	GOval newOval = new GOval(0, getHeight()/2 - 15 , 50, 50);
 	newOval.setFilled(true);
 	add(newOval);
+	int initialX = 250;
 
-	while(newOval.getX() <= getWidth() - 50){
+	while(newOval.getX() <= initialX){
 	newOval.move(10,0);
 	pause(PAUSE_TIME);
 	}

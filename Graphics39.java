@@ -10,7 +10,7 @@ public class Graphics39 extends GraphicsProgram{
 
 	while(x < getWidth()-30){
 	newOval.move(10,0);
-	pause(10);
+	pause(100);
 	}
 }
 }

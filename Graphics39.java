@@ -7,10 +7,10 @@ public class Graphics39 extends GraphicsProgram {
 
 	public void run() {
 
-		GOval newOval = new GOval(0, getHeight() / 2 - 15, 50, 50);
+		GOval newOval = new GOval(0, getHeight() / 2 - 25, 50, 50);
 		newOval.setFilled(true);
 		add(newOval);
-		int finalX = getWidth() - 50;
+		int finalX = getWidth() - 100;
 		int initialX = 50;
 
 		while (newOval.getX() <= finalX) {

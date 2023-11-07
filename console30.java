@@ -19,19 +19,3 @@ public class console30 extends ConsoleProgram{
     return false;//
 	}
 }
-
-
-	//	int n = readInt("ENTER NUMBER : ");
-	//if (isPrime(n)) {
-//		println("this number is prime");
-//	}
-//}
-
-	
-	
-	
-	//private boolean isPrime(int n) {
-	//	for (int i = 0; i<=Math.sqrt(n); i++) {
-		//	}			
-	//	return true;			
-	//}		}

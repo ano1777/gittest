@@ -17,7 +17,7 @@ public class console31 extends ConsoleProgram{
 			if(n % i == 0){		
 				}
 			}
-		return false;		
+		return true;		
 	}
 
 

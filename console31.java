@@ -11,8 +11,9 @@ public class console31 extends ConsoleProgram{
 		int reverseNum = 0;
 		
 		while(n != 0){
-		int lastNum = n % 10;
 		n = n / 10 ;
+
+		int lastNum = n % 10;
 	
 		reverseNum = reverseNum * 10 + lastNum;
 		}

@@ -6,7 +6,7 @@ public class Graphics39 extends GraphicsProgram{
 	GOval newOval = new GOval(0, getHeight()/2);
 	newOval.setFilled(true);
 	add(newOval);
-	newOval.move(10, 0);
+	newOval.move(1, 0);
 	pause(1);
 
 }

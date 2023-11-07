@@ -10,7 +10,7 @@ public class console31 extends GraphicsProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int MAX_NUM = 100000;
 	private static final int MIN_RADIUS =10;
-	private static final int MAX_RADIUS = 30;
+	private static final int MAX_RADIUS = 90;
 	
 	public void run() {
 		for (int i = 0; i <= MAX_NUM; i++ ) {

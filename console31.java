@@ -14,9 +14,9 @@ public class console31 extends GraphicsProgram{
 	
 	public void run() {
 		for (int i = 0; i <= MAX_NUM; i++ ) {
-			double radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
-			double x = rgen.nextDouble(0, getWidth()- 2* radius);
-			double y = rgen.nextDouble(0, getHeight() - 2* radius);
+			int radius = rgen.nextInt(MIN_RADIUS, MAX_RADIUS);
+			int x = rgen.nextInt(0, getWidth()- 2* radius);
+			int y = rgen.nextInt(0, getHeight() - 2* radius);
 			Color color = rgen. nextColor();
 			GOval circle = new GOval(x, y, 2*radius, 2*radius);
 			circle.setFilled(true);

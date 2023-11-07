@@ -13,7 +13,7 @@ public class Graphics39 extends GraphicsProgram {
 		int finalX = getWidth()-50;
 		int initialX = 50;
 
-		while (newOval.getX() <= finalX) {
+		while (newOval.getX() < finalX) {
 			newOval.move(INITIAL_VELOCITY, 0);
 			pause(PAUSE_TIME);
 		} while(true) {

@@ -6,9 +6,19 @@ public class console31 extends ConsoleProgram {
 		if (numIsPrime(n)) {
 			println("this number is prime");
 
-		} else {
+		} 
+		if(numsNotPrime(n)){
+			
 			println("this number is not prime");
 		}
+	}
+
+	private boolean numsNotPrime(int n) {
+		for (int i =2; i<=Math.sqrt(n); i++) {
+			if(n % i == 0) {
+			}
+		}
+		return false;
 	}
 
 	private boolean numIsPrime(int n) {
@@ -16,7 +26,7 @@ public class console31 extends ConsoleProgram {
 			if (n % i != 0) {
 			}
 		}
-		return false;
+		return true;
 	}
 	
 }

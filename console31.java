@@ -1,10 +1,12 @@
 import java.awt.Color;
 
-import acm.graphics.GOval;
-import acm.program.ConsoleProgram;
-import acm.util.RandomGenerator;
 
-public class console31 extends ConsoleProgram{
+import acm.graphics.GOval;
+import acm.program.GraphicsProgram;
+import acm.util.RandomGenerator;
+import acm.graphics.*;
+
+public class console31 extends GraphicsProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int MAX_NUM = 1000;
 	private static final int MIN_RADIUS =10;

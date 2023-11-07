@@ -9,7 +9,7 @@ public class Graphics39 extends GraphicsProgram{
 	newOval.setFilled(true);
 	add(newOval);
 
-	while(newOval.getX() <= getWidth()-30){
+	while(newOval.getX() <= getWidth() - 100){
 	newOval.move(10,0);
 	pause(PAUSE_TIME);
 	}

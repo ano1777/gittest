@@ -18,6 +18,6 @@ public class console32 extends ConsoleProgram {
 				println("this number is not prime");
 			}
 		}
-		return false;//
+		return false;
 	}
 }

@@ -15,7 +15,7 @@ public class Graphics39 extends GraphicsProgram {
 		
 		
    
-		while (newOval.getX() < finalX) {
+		while (newOval.getX() < finalX ||newOval.getX() < 0) {
 			newOval.move(INITIAL_VELOCITY, 0);
 			pause(PAUSE_TIME);
 		

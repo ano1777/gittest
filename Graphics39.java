@@ -14,7 +14,6 @@ public class Graphics39 extends GraphicsProgram {
 		int initialX = 50;
 		
 		
-		
    
 		while (newOval.getX() < finalX) {
 			newOval.move(INITIAL_VELOCITY, 0);

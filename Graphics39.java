@@ -12,19 +12,24 @@ public class Graphics39 extends GraphicsProgram {
 		add(newOval);
 		int finalX = getWidth()-50;
 		int initialX = 50;
-
+		
+		
+		
+   
 		while (newOval.getX() < finalX) {
 			newOval.move(INITIAL_VELOCITY, 0);
 			pause(PAUSE_TIME);
-		} while(true) {
+		} 
+	
+	while(true) {
 			if (newOval.getX() == finalX) {
-				if (newOval.getX() >= initialX) {
+				while (newOval.getX() >= initialX) {
 					newOval.move(-INITIAL_VELOCITY, 0);
 					pause(PAUSE_TIME);
 				}
 			}
 
-		}
+	}
 
 	}
 

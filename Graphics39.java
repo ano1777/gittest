@@ -22,7 +22,7 @@ public class Graphics39 extends GraphicsProgram {
 		} 
 	
 	while(true) {
-			if (newOval.getX() == finalX) {
+			if (newOval.getX() <= finalX) {
 				while (newOval.getX() >= initialX) {
 					newOval.move(-INITIAL_VELOCITY, 0);
 					pause(PAUSE_TIME);

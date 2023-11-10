@@ -1,13 +1,12 @@
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
+import acm.util.RandomGenerator;
 
 public class Graphics39 extends GraphicsProgram {
 	private static final int PAUSE_TIME = 20;
 	private static final int REVERSE_VELOCITY = -10;
 	private static final int INITIAL_VELOCITY = 10;
-
 	public void run() {
-
 		GOval newOval = new GOval(0, getHeight() / 2 - 25, 50, 50);
 		newOval.setFilled(true);
 		add(newOval);
@@ -15,18 +14,8 @@ public class Graphics39 extends GraphicsProgram {
 		int initialX = 0;
 
 		goToTheEnd(newOval, finalX, initialX);
-
-		//
-		// while(true) {
-		// if (newOval.getX() == finalX) {
-		// while (newOval.getX() >= initialX) {
-		// newOval.move(-INITIAL_VELOCITY, 0);
-		// pause(PAUSE_TIME);
-		// }
-		// }
-		// }
 	}
-
+//go to the end of the canvas
 	private void goToTheEnd(GOval newOval, int finalX, int initialX) {
 		while (true) {
 			if (newOval.getX() < finalX) {
@@ -36,25 +25,22 @@ public class Graphics39 extends GraphicsProgram {
 					changeDirection(newOval, finalX, initialX );
 				}
 			}
-
 		}
-
 	}
-
+//if the ball is on the the last coordinate of x, it starts moving backwards and gooes to the start.
+//this process lasts infinitively.
 	private void changeDirection(GOval newOval, int finalX, int initialX) {
 		while (newOval.getX() > 0) {
 			newOval.move(REVERSE_VELOCITY, 0);
 			pause(PAUSE_TIME);
 
 			if (newOval.getX() <= initialX) {
-				
+
 			while (newOval.getX() <= finalX) {
 				newOval.move(INITIAL_VELOCITY, 0);
 				pause(PAUSE_TIME);
 				}
 			}
 		}
-
 	}
-
 }

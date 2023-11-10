@@ -13,7 +13,7 @@ public class Graphics39 extends GraphicsProgram {
 		add(newOval);
 		int finalX = getWidth() - 50;
 		int initialX = 0;
-        int initialVelo = rgen.nextInt(1, 20);
+        int initialVelo = rgen.nextInt(10, 20);
 	//	goToTheEnd(newOval, finalX, initialX);
 		newOval.move(initialVelo, initialVelo);
 		pause(1);

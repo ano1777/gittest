@@ -29,23 +29,28 @@ public class Graphics39 extends GraphicsProgram {
 			}
 			if(newOval.getY() <= 0) {
 				while(newOval.getY() < getHeight())
-				newOval.move(INITIAL_VELOCITY, 10);
+				newOval.move(INITIAL_VELOCITY, 5);
 				pause(PAUSE_TIME);
-			}
+			
 			if(newOval.getY() >= getHeight()-50) {
-				while(newOval.getY() >0){
-				newOval.move(INITIAL_VELOCITY ,-10);
+				while(newOval.getY() > 0){
+				newOval.move(INITIAL_VELOCITY ,-5);
 				pause(PAUSE_TIME);
+				}
+					
+				}
 				}
 			}
 		}
-	}
+	
 
 	private void goBackwards(GOval newOval, int initialX, int finalX) {
 		while(newOval.getX() > initialX) {
-			newOval.move(REVERSE_VELOCITY, 10);
+			newOval.move(REVERSE_VELOCITY, 5);
 			pause(PAUSE_TIME);
+				
+				
+			}
 			
 		}
 	}
-}

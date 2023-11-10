@@ -21,7 +21,7 @@ public class Graphics39 extends GraphicsProgram {
 	// go to the end of the canvas
 
 	private void goToTheEnd(GOval newOval, int finalX, int initialX) {
-		while (newOval.getX() > initialX) {
+		while (newOval.getX() >= initialX) {
 			newOval.move(INITIAL_VELOCITY, 10);
 			pause(PAUSE_TIME);
 			if (newOval.getX() >= finalX) {

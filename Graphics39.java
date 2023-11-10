@@ -32,7 +32,7 @@ public class Graphics39 extends GraphicsProgram {
 				newOval.move(INITIAL_VELOCITY, 10);
 				pause(PAUSE_TIME);
 			}
-			if(newOval.getY() >= getHeight()) {
+			if(newOval.getY() >= getHeight()-50) {
 				while(newOval.getY() >0){
 				newOval.move(INITIAL_VELOCITY ,-10);
 				pause(PAUSE_TIME);

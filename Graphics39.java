@@ -22,7 +22,7 @@ public class Graphics39 extends GraphicsProgram {
 
 	private void goToTheEnd(GOval newOval, int finalX, int initialX) {
 		while (newOval.getX() >= initialX) {
-			newOval.move(INITIAL_VELOCITY, 0);
+			newOval.move(INITIAL_VELOCITY, 10);
 			pause(PAUSE_TIME);
 			if (newOval.getX() >= finalX) {
 				goBackwards(newOval, initialX, finalX);
@@ -32,8 +32,16 @@ public class Graphics39 extends GraphicsProgram {
 
 	private void goBackwards(GOval newOval, int initialX, int finalX) {
 		while(newOval.getX() > initialX) {
-			newOval.move(REVERSE_VELOCITY, 0);
+			newOval.move(REVERSE_VELOCITY, 10);
 			pause(PAUSE_TIME);
+			if(newOval.getY() == 0) {
+				newOval.move(INITIAL_VELOCITY, 10);
+				pause(PAUSE_TIME);
+			}
+			if(newOval.getY() == getHeight()) {
+				newOval.move(REVERSE_VELOCITY, -10);
+				pause(PAUSE_TIME);
+			}
 		}
 	}
 }

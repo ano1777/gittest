@@ -16,7 +16,7 @@ public class Graphics39 extends GraphicsProgram {
         int initialVelo = rgen.nextInt(1, 20);
 	//	goToTheEnd(newOval, finalX, initialX);
 		newOval.move(initialVelo, initialVelo);
-		pause(PAUSE_TIME);
+		pause(1);
 	}
 	
 //go to the end of the canvas

@@ -14,39 +14,39 @@ public class Graphics39 extends GraphicsProgram {
 		int finalX = getWidth() - 50;
 		int initialX = 0;
         int initialVelo = rgen.nextInt(-20,20);
-		goToTheEnd(newOval, finalX, initialX);
+	//	goToTheEnd(newOval, finalX, initialX);
 		newOval.move(initialVelo, initialVelo);
 		pause(PAUSE_TIME);
 	}
 	
 //go to the end of the canvas
-	private void goToTheEnd(GOval newOval, int finalX, int initialX) {
-		while (true) {
-			if (newOval.getX() < finalX) {
-				newOval.move(INITIAL_VELOCITY, 0);
-				pause(PAUSE_TIME);
-				if (newOval.getX() >= finalX) {
-					changeDirection(newOval, finalX, initialX );
-				}
-			}
-		}
-	}
-//if the ball is on the the last coordinate of x, it starts moving backwards and goes to the start.
-//this process lasts infinitively.
-	private void changeDirection(GOval newOval, int finalX, int initialX) {
-		while (newOval.getX() > 0) {
-			newOval.move(REVERSE_VELOCITY, 0);
-			pause(PAUSE_TIME);
-
-			if (newOval.getX() <= initialX) {
-
-			while (newOval.getX() <= finalX) {
-				newOval.move(INITIAL_VELOCITY, 0);
-				pause(PAUSE_TIME);
-				}
-			}
-		}
-	}
-	
-	
+//	private void goToTheEnd(GOval newOval, int finalX, int initialX) {
+//		while (true) {
+//			if (newOval.getX() < finalX) {
+//				newOval.move(INITIAL_VELOCITY, 0);
+//				pause(PAUSE_TIME);
+//				if (newOval.getX() >= finalX) {
+//					changeDirection(newOval, finalX, initialX );
+//				}
+//			}
+//		}
+//	}
+////if the ball is on the the last coordinate of x, it starts moving backwards and goes to the start.
+////this process lasts infinitively.
+//	private void changeDirection(GOval newOval, int finalX, int initialX) {
+//		while (newOval.getX() > 0) {
+//			newOval.move(REVERSE_VELOCITY, 0);
+//			pause(PAUSE_TIME);
+//
+//			if (newOval.getX() <= initialX) {
+//
+//			while (newOval.getX() <= finalX) {
+//				newOval.move(INITIAL_VELOCITY, 0);
+//				pause(PAUSE_TIME);
+//				}
+//			}
+//		}
+//	}
+//	
+//	
 }

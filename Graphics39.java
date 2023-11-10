@@ -34,7 +34,7 @@ public class Graphics39 extends GraphicsProgram {
 			}
 			if(newOval.getY() >= getHeight()) {
 				while(newOval.getY() >0){
-				newOval.move(REVERSE_VELOCITY, -10);
+				newOval.move(INITIAL_VELOCITY ,-10);
 				pause(PAUSE_TIME);
 				}
 			}

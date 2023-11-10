@@ -3,6 +3,7 @@ import acm.program.GraphicsProgram;
 
 public class Graphics39 extends GraphicsProgram {
 	private static final int PAUSE_TIME = 20;
+	private static final int REVERSE_VELOCITY = -5;
 	private static final int INITIAL_VELOCITY = 5;
 
 	public void run() {
@@ -15,11 +16,9 @@ public class Graphics39 extends GraphicsProgram {
 		
 		
    
-		while (newOval.getX() < finalX ||newOval.getX() < 0) {
-			newOval.move(INITIAL_VELOCITY, 0);
-			pause(PAUSE_TIME);
+			changeDirection(newOval, finalX, initialX);
+			
 		
-		}
 	while(true) {
 			if (newOval.getX() == finalX) {
 				while (newOval.getX() >= initialX) {
@@ -28,6 +27,21 @@ public class Graphics39 extends GraphicsProgram {
 				}
 			}
 	}
+	}
+
+	private void changeDirection(GOval newOval, int finalX, int initialX) {
+		while(true) {
+			if(newOval.getX() < finalX) {
+				newOval.move(INITIAL_VELOCITY, 0);
+				pause(PAUSE_TIME);
+				if(newOval.getX() >= finalX) {
+					newOval.move(REVERSE_VELOCITY, 0);
+					pause(PAUSE_TIME);
+				}
+				
+			}
+		}
+		
 	}
 
 	}

@@ -3,8 +3,8 @@ import acm.program.GraphicsProgram;
 
 public class Graphics39 extends GraphicsProgram {
 	private static final int PAUSE_TIME = 20;
-	private static final int REVERSE_VELOCITY = -5;
-	private static final int INITIAL_VELOCITY = 5;
+	private static final int REVERSE_VELOCITY = -10;
+	private static final int INITIAL_VELOCITY = 10;
 
 	public void run() {
 

@@ -34,11 +34,11 @@ public class Graphics39 extends GraphicsProgram {
 		while(newOval.getX() > initialX) {
 			newOval.move(REVERSE_VELOCITY, 10);
 			pause(PAUSE_TIME);
-			if(newOval.getY() == 0) {
+			if(newOval.getY() <= 0) {
 				newOval.move(INITIAL_VELOCITY, 10);
 				pause(PAUSE_TIME);
 			}
-			if(newOval.getY() == getHeight()) {
+			if(newOval.getY() >= getHeight()) {
 				newOval.move(REVERSE_VELOCITY, -10);
 				pause(PAUSE_TIME);
 			}

@@ -18,15 +18,15 @@ public class Graphics39 extends GraphicsProgram {
    
 			changeDirection(newOval, finalX, initialX);
 			
-		
-	while(true) {
-			if (newOval.getX() == finalX) {
-				while (newOval.getX() >= initialX) {
-					newOval.move(-INITIAL_VELOCITY, 0);
-					pause(PAUSE_TIME);
-				}
-			}
-	}
+//		
+//	while(true) {
+//			if (newOval.getX() == finalX) {
+//				while (newOval.getX() >= initialX) {
+//					newOval.move(-INITIAL_VELOCITY, 0);
+//					pause(PAUSE_TIME);
+//				}
+//			}
+//	}
 	}
 
 	private void changeDirection(GOval newOval, int finalX, int initialX) {
@@ -40,11 +40,12 @@ public class Graphics39 extends GraphicsProgram {
 					pause(PAUSE_TIME);
 					
 					if(newOval.getX() <= 0) {
+						while(newOval.getX() <= finalX){
 						newOval.move(INITIAL_VELOCITY, 0);
 						pause(PAUSE_TIME);
 					}
 				}
-				
+					}
 			}
 		}
 		

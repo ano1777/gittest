@@ -6,6 +6,7 @@ public class Graphicss41 extends GraphicsProgram{
 	private GOval circle;
 	
 	public void run() {
+		addMouseListeners();
 		getMouseMotionListeners();
 		
 		}

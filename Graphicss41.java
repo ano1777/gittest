@@ -13,11 +13,10 @@ public class Graphicss41 extends GraphicsProgram{
 		
 		}
 	
-	
-	@Override
+
 	
 
-     public void mouseExited(MouseEvent e){
+     public void mouseDragged(MouseEvent e){
     	 GOval circle = new GOval(20, 20);
     	 circle.setFilled(true);
     	 circle.setColor(Color.GREEN);

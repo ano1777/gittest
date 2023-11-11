@@ -6,10 +6,6 @@ public class Graphicss41 extends GraphicsProgram{
 	private GOval circle;
 	
 	public void run() {
-		GOval circle = new GOval(40,40);
-		circle.setFilled(true);
-		add(circle);
-		
 		addMouseListeners();
 		getMouseMotionListeners();
 		
@@ -19,7 +15,7 @@ public class Graphicss41 extends GraphicsProgram{
 	@Override
 	
 
-     private void mouseMoved(MouseEvent e){
+     public void mouseMoved(MouseEvent e){
     	 GOval circle = new GOval(20, 20);
     	 circle.setFilled(true);
     	 add(circle, e.getX(), e.getY());

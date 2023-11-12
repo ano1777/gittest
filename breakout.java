@@ -56,7 +56,7 @@ public class breakout extends GraphicsProgram {
 	
 	
 	public void run() {
-		
+		addMouseListeners();
 		getMouseMotionListeners();
 
 }

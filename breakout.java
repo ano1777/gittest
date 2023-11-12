@@ -1,3 +1,5 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
@@ -54,11 +56,13 @@ public class breakout extends GraphicsProgram {
 	
 	
 	public void run() {
+		
+		getMouseMotionListeners();
+
+}
+	public void mouseMoved(MouseEvent e) {
 		GOval ball  = new GOval(200,200, BALL_RADIUS*2, BALL_RADIUS*2);
 		ball.setFilled(true);
 		add(ball, getX(), getY());
-		
-		
-
-}
+	}
 }

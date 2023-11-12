@@ -58,7 +58,7 @@ public class breakout extends GraphicsProgram {
 	
 	public void run() {
 			label = new GLabel("");
-			label.setFont("Times New Roman-36");
+			label.setFont("Times New Roman-40");
 			add(label, 50, 50);
 			// Must call this method to be able to get mouse events
 			addMouseListeners();

@@ -57,17 +57,32 @@ public class breakout extends GraphicsProgram {
 	
 	
 	public void run() {
-			label = new GLabel("");
-			label.setFont("Times New Roman-40");
-			add(label, 50, 50);
-			// Must call this method to be able to get mouse events
+			GRect paddle = new GRect(50, 100, 100, 200);
+			paddle.setFilled(true);
 			addMouseListeners();
-			}
-			// This method is called everytime user moves mouse
-			public void mouseMoved(MouseEvent e) {
-			label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")");
-			}
-			/* Private instance variable */
-			private GLabel label;
-			}
+			getMouseMotionListeners();
+	}
+	public void mouseDragged(MouseEvent e) {
+		add(paddle, e.getX(), e.getY());
+		
+	}
+}
 	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

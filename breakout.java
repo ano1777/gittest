@@ -63,8 +63,8 @@ public class breakout extends GraphicsProgram {
 	public void mouseMoved(MouseEvent e) {
 		GOval ball  = new GOval(200,200, BALL_RADIUS*2, BALL_RADIUS*2);
 		ball.setFilled(true);
-		while (true) {
+	
 		add(ball,e. getX(), getHeight() - 200);
-		}
+		
 }
 }

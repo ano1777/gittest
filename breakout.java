@@ -64,8 +64,7 @@ public class breakout extends GraphicsProgram {
 		GOval ball  = new GOval(200,200, BALL_RADIUS*2, BALL_RADIUS*2);
 		ball.setFilled(true);
 		while (true) {
-		remove(ball);
-		add(ball,e. getX(), e.getY());
+		add(ball,e. getX(), getHeight() - 200);
 		}
 }
 }

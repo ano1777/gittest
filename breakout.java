@@ -1,5 +1,6 @@
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GLabel;
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
@@ -56,16 +57,17 @@ public class breakout extends GraphicsProgram {
 	
 	
 	public void run() {
-		addMouseListeners();
-		getMouseMotionListeners();
-
-}
-	public void mouseMoved(MouseEvent e) {
-
-		GOval ball  = new GOval(200,200, BALL_RADIUS*2, BALL_RADIUS*2);
-		ball.setFilled(true);
-	    remove(ball);
-		add(ball,e. getX(), getHeight() - 200);
-		
-}
-}
+			label = new GLabel("");
+			label.setFont("Times New Roman-36");
+			add(label, 50, 50);
+			// Must call this method to be able to get mouse events
+			addMouseListeners();
+			}
+			// This method is called everytime user moves mouse
+			public void mouseMoved(MouseEvent e) {
+			label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")");
+			}
+			/* Private instance variable */
+			private GLabel label;
+			}
+	

@@ -2,6 +2,7 @@ import java.awt.event.MouseEvent;
 
 import acm.graphics.GLabel;
 import acm.graphics.GOval;
+import acm.graphics.GPoint;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -55,6 +56,8 @@ public class breakout extends GraphicsProgram {
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = 3.0;
 	
+	private GPoint last;
+	private GObject gobj;
 	
 	public void run() {
 			GRect paddle = new GRect(50, 100, 100, 200);
@@ -65,7 +68,8 @@ public class breakout extends GraphicsProgram {
 	}
 	public void mouseDragged(MouseEvent e) {
 		add(paddle, e.getX(), e.getY());
-		
+		last = new GPoint(e.getPoint());
+		gobj = getElementAt(last);
 	}
 }
 	

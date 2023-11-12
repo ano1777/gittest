@@ -5,7 +5,7 @@ import acm.util.RandomGenerator;
 public class BouncingBall extends GraphicsProgram{
 		private RandomGenerator rgen = RandomGenerator.getInstance();
 		private static final int RADIUS = 20;
-		private static final int PAUSE_TIME = 10;
+		private static final int PAUSE_TIME = 5;
 		public void run() {
 			double vx = rgen.nextDouble(1.0, 3.0);
 			   
@@ -19,7 +19,7 @@ public class BouncingBall extends GraphicsProgram{
 			if ( ball.getX()>= getWidth() - 2 * RADIUS || ball.getX()<= 0) {
 				vx = - vx;
 			}
-			if(ball.getY() >= getHeight()-RADIUS || ball.getY() <=0) {
+			if(ball.getY() >= getHeight() - 2* RADIUS || ball.getY() <=0) {
 				vy = - vy;
 			}
 

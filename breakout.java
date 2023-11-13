@@ -68,7 +68,7 @@ public class breakout extends GraphicsProgram {
 	public void mouseMoved(MouseEvent e) {
 		GObject paddle = getElementAt(e.getX(), e.getY());
 		if( paddle != null) {
-			paddle.setLocation(e.getX()- 100, e.getY()- 50);
+			paddle.setLocation(e.getX()- 50, e.getY()- 100);
 
 		}
 		

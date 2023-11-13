@@ -56,8 +56,6 @@ public class breakout extends GraphicsProgram {
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = 3.0;
 	
-	private GPoint last;
-	private GObject gobj;
 	
 	public void run() {
 			GRect paddle = new GRect(50, 100, 100, 200);

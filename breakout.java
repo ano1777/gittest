@@ -1,6 +1,7 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLabel;
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.graphics.GPoint;
 import acm.graphics.GRect;
@@ -65,7 +66,8 @@ public class breakout extends GraphicsProgram {
 			getMouseMotionListeners();
 	}
 	public void mouseMoved(MouseEvent e) {
-		if(paddle != null) {
+		GObject paddle = getElementAt(e.getX(), e.getY());
+		if( paddle != null) {
 			paddle.setLocation(e.getX(), e.getY());
 
 		}

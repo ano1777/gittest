@@ -67,9 +67,8 @@ public class breakout extends GraphicsProgram {
 			getMouseMotionListeners();
 	}
 	public void mouseDragged(MouseEvent e) {
-		add(paddle, e.getX(), e.getY());
-		last = new GPoint(e.getPoint());
-		gobj = getElementAt(last);
+		paddle.setLocation(e.getX(), e.getY());
+		
 	}
 }
 	

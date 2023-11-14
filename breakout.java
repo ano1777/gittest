@@ -78,13 +78,14 @@ public class breakout extends GraphicsProgram {
 	}
 	public void mouseMoved(MouseEvent e) {
 		GObject paddle = getElementAt(e.getX(), e.getY());
+		while(paddle.getX()>0 && paddle.getX()<getWidth() - PADDLE_WIDTH) {
 		if (paddle != null) {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
 			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH >= getWidth()) {			
 			}
 		}
 		// getElementAt (x, y)(ball coordinates) and remove GRect brick.
-		
+		}
 	}
 	private void addBricks() {
 		for (int i = 0; i < 10; i++) {

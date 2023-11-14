@@ -9,7 +9,7 @@ import acm.graphics.GPoint;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
-addBricks()
+
 public class breakout extends GraphicsProgram {
 	/**
 	 * 

@@ -68,6 +68,7 @@ public class breakout extends GraphicsProgram {
 	//private boolean startAnim = false;
 	
 	public void init () {
+		setSize(WIDTH, HEIGHT);
 		addBricks();
 	}
 	

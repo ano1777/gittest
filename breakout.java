@@ -56,8 +56,10 @@ public class breakout extends GraphicsProgram {
 	private GRect paddle;
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private double vx = rgen.nextDouble(1.0, 3.0);
-	private double vy = 3.0;
+//	private double vx = rgen.nextDouble(1.0, 3.0);
+//	private double vy = 3.0 ;
+	paddle = null;
+	private GRect brick = null;
 	//private boolean startAnim = false;
 	public void init () {
 		addBricks();

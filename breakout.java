@@ -61,6 +61,8 @@ public class breakout extends GraphicsProgram {
 	
 	public void run() {
 		waitForClick();
+		GLabel start =  new GLabel("click to start");
+		start.setFont("TIMES_NEW_ROMAN - 40");
 			GRect paddle = new GRect(getWidth()/2 - PADDLE_WIDTH/2,getHeight() - PADDLE_Y_OFFSET , PADDLE_WIDTH, PADDLE_HEIGHT);
 			paddle.setFilled(true);
 			add(paddle);
@@ -72,8 +74,8 @@ public class breakout extends GraphicsProgram {
 		if (paddle != null) {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
 			startAnim = true;
-			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH>=getWidth()) {
-				break;
+			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH >= getWidth()) {
+				
 			}
 
 		}

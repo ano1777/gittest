@@ -66,16 +66,12 @@ public class breakout extends GraphicsProgram {
 
 	private GRect brick = null;
 	//private boolean startAnim = false;
-
+	
 	public void init () {
-		  start  =  new GLabel("click to start");
-			start.setFont("Times new roman - 40");
-			start.setColor(Color.RED);
-			add(start, getWidth()/2 - start.getWidth()/2, getHeight()/2 - start.getAscent()/2);
+		addBricks();
 	}
 	
-	public void run() {
-		addBricks();
+	public void run() {	
 		addPaddle();
 	}
 	
@@ -86,6 +82,7 @@ public class breakout extends GraphicsProgram {
 		addMouseListeners();
 		
 	}
+	
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		GObject paddle = getElementAt(e.getX(), e.getY());

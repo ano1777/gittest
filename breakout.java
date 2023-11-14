@@ -63,21 +63,24 @@ public class breakout extends GraphicsProgram {
 	//private boolean startAnim = false;
 	public void init () {
 		addBricks();
+		
 	}
 	public void run() {
-
+		addPaddle();
+	}
+	
+	private void addPaddle() {
 		GRect paddle = new GRect(getWidth()/2 - PADDLE_WIDTH/2,getHeight() - PADDLE_Y_OFFSET , PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		add(paddle);
 		addMouseListeners();
+		
 	}
-	
 	public void mouseMoved(MouseEvent e) {
 		GObject paddle = getElementAt(e.getX(), e.getY());
 		if (paddle != null) {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
-			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH >= getWidth()) {
-				
+			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH >= getWidth()) {			
 			}
 		}
 		// getElementAt (x, y)(ball coordinates) and remove GRect brick.

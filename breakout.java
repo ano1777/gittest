@@ -59,6 +59,7 @@ public class breakout extends GraphicsProgram {
 	
 	private GRect paddle;
 	
+	private GLabel start;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 //	private double vx = rgen.nextDouble(1.0, 3.0);
 //	private double vy = 3.0 ;
@@ -67,10 +68,14 @@ public class breakout extends GraphicsProgram {
 	//private boolean startAnim = false;
 
 	public void init () {
-		
-		
+		  start  =  new GLabel("click to start");
+			start.setFont("Times new roman - 40");
+			start.setColor(Color.RED);
+			add(start, getWidth()/2 - start.getWidth()/2, getHeight()/2 - start.getAscent()/2);
 	}
+	
 	public void run() {
+		addBricks();
 		addPaddle();
 	}
 	
@@ -95,7 +100,7 @@ public class breakout extends GraphicsProgram {
 	}
 	
 
-	public void addBricks(){
+	private void addBricks(){
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
 				double x = getWidth() / 2 - BRICK_WIDTH * NBRICKS_PER_ROW / 2 - BRICK_SEP * (NBRICKS_PER_ROW / 2 - 0.5);

@@ -93,9 +93,9 @@ public class breakout extends GraphicsProgram {
 		// getElementAt (x, y)(ball coordinates) and remove GRect brick.
 		}
 	}
-	public class  addBricks extends breakout {
+	
 
-	public void run(){
+	public void addBricks(){
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
 				double x = getWidth() / 2 - BRICK_WIDTH * NBRICKS_PER_ROW / 2 - BRICK_SEP * (NBRICKS_PER_ROW / 2 - 0.5);
@@ -122,7 +122,7 @@ public class breakout extends GraphicsProgram {
 			}
 		}
 	}
-}
+
 	
 			
 			

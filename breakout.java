@@ -9,8 +9,12 @@ import acm.graphics.GPoint;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
-
+addBricks()
 public class breakout extends GraphicsProgram {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/** Width and height of application window in pixels */
 	public static final int APPLICATION_WIDTH = 400;
 	public static final int APPLICATION_HEIGHT = 600;
@@ -61,8 +65,9 @@ public class breakout extends GraphicsProgram {
 
 	private GRect brick = null;
 	//private boolean startAnim = false;
+
 	public void init () {
-		addBricks();
+		
 		
 	}
 	public void run() {
@@ -88,7 +93,9 @@ public class breakout extends GraphicsProgram {
 		// getElementAt (x, y)(ball coordinates) and remove GRect brick.
 		}
 	}
-	private void addBricks() {
+	public class  addBricks extends breakout {
+
+	public void run(){
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
 				double x = getWidth() / 2 - BRICK_WIDTH * NBRICKS_PER_ROW / 2 - BRICK_SEP * (NBRICKS_PER_ROW / 2 - 0.5);
@@ -111,6 +118,7 @@ public class breakout extends GraphicsProgram {
 					brick.setColor(Color.CYAN);
 				}
 				add(brick);
+			}
 			}
 		}
 	}

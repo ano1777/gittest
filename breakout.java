@@ -72,7 +72,6 @@ public class breakout extends GraphicsProgram {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
 			startAnim = true;
 			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH>=getWidth()) {
-				paddle.removeMouseListener((MouseListener) e);
 				startAnim = false;
 			}
 

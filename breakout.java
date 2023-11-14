@@ -60,10 +60,7 @@ public class breakout extends GraphicsProgram {
 	//private boolean startAnim = false;
 	
 	public void run() {
-		GLabel start =  new GLabel("click to start");
-		start.setFont("TIMES_NEW_ROMAN - 40");
-		add(start);
-		waitForClick();
+		
 
 		GRect paddle = new GRect(getWidth()/2 - PADDLE_WIDTH/2,getHeight() - PADDLE_Y_OFFSET , PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);

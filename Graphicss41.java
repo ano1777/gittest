@@ -17,6 +17,6 @@ public class Graphicss41 extends GraphicsProgram{
     	 GOval circle = new GOval(2*RADIUS, 2* RADIUS);
     	 circle.setFilled(true);
     	 circle.setColor(Color.GREEN);
-    	 add(circle, e.getX(), e.getY());
+    	 add(circle, e.getX()-RADIUS, e.getY()-RADIUS);
      }
 }

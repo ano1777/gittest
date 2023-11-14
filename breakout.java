@@ -58,7 +58,7 @@ public class breakout extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 //	private double vx = rgen.nextDouble(1.0, 3.0);
 //	private double vy = 3.0 ;
-	paddle = null;
+
 	private GRect brick = null;
 	//private boolean startAnim = false;
 	public void init () {
@@ -70,7 +70,7 @@ public class breakout extends GraphicsProgram {
 	}
 	
 	private void addPaddle() {
-		GRect paddle = new GRect(getWidth()/2 - PADDLE_WIDTH/2,getHeight() - PADDLE_Y_OFFSET , PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle = new GRect(getWidth()/2 - PADDLE_WIDTH/2,getHeight() - PADDLE_Y_OFFSET , PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		add(paddle);
 		addMouseListeners();
@@ -91,7 +91,7 @@ public class breakout extends GraphicsProgram {
 			for (int j = 0; j < 10; j++) {
 				double x = getWidth() / 2 - BRICK_WIDTH * NBRICKS_PER_ROW / 2 - BRICK_SEP * (NBRICKS_PER_ROW / 2 - 0.5);
 				double y = BRICK_Y_OFFSET + (j * (BRICK_SEP + BRICK_HEIGHT));
-				GRect brick = new GRect(x + (i * (BRICK_WIDTH + BRICK_SEP)), y, BRICK_WIDTH, BRICK_HEIGHT);
+				 brick = new GRect(x + (i * (BRICK_WIDTH + BRICK_SEP)), y, BRICK_WIDTH, BRICK_HEIGHT);
 				brick.setFilled(true);
 				if (j == 0 || j == 1) {
 					brick.setColor(Color.RED);

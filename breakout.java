@@ -1,4 +1,5 @@
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import acm.graphics.GLabel;
 import acm.graphics.GObject;
@@ -69,6 +70,9 @@ public class breakout extends GraphicsProgram {
 		GObject paddle = getElementAt(e.getX(), e.getY());
 		if( paddle != null) {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
+			if (paddle.getX()<=0 || paddle.getX()+PADDLE_WIDTH>=getWidth()) {
+				paddle.removeMouseListener((MouseListener) e);
+			}
 
 		}
 		

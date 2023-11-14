@@ -67,7 +67,7 @@ public class breakout extends GraphicsProgram {
 	}
 	
 	public void mouseMoved(MouseEvent e) {
-		GObject paddle = getElementAt(e.getX(), e.getY());
+	//	GObject paddle = getElementAt(e.getX(), e.getY());
 		if( paddle != null) {
 			paddle.setLocation(e.getX()- PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET);
 			startAnim = true;

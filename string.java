@@ -6,9 +6,6 @@ public class string extends ConsoleProgram {
 		char symbol = readLine("Enter symbol : ").charAt(0);
 
 		println("count is  " + countChars(text, symbol));
-		// String symbol = readLine("Enter symbol :");
-		// char symbolChar = symbol.charAt(0);
-
 	}
 
 	private int countChars(String text, char symbol) {
@@ -18,7 +15,6 @@ public class string extends ConsoleProgram {
 				countChar++;
 			}
 		}
-
 		return countChar;
 	}
 }

@@ -7,7 +7,7 @@ public class string extends ConsoleProgram {
 		
 		String symbol = readLine("Enter symbol :");
 		char symbolChar = symbol.charAt(1);
-		println(symbolChar);
+		print(symbolChar);
 
 	
 }

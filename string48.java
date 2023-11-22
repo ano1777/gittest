@@ -4,11 +4,14 @@ public class string48 extends ConsoleProgram {
 	public void run() {
 		String str = "ani";
 		String str2 = "ani";
-		println(str);
-		print(str2);
+		String str3 = new String ("ani");
+		String str4 = readLine("Enter string");
 		
+		str = str.substring(0,1)+"a";
+		println("the changed string : " +str);
 		
-		
+		str3 = str3.substring(0, str3.length()-1) + "a";
+		println("changed str3 :" + str3);
 		
 		
 		

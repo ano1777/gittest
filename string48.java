@@ -2,55 +2,53 @@ import acm.program.ConsoleProgram;
 
 public class string48 extends ConsoleProgram {
 	public void run() {
-		String str = "ani";
-		String str2 = "ani";
-		String str3 = new String ("ani");
-		String str4 = readLine("Enter string");
-		
-		str = str.substring(0,1)+"a";
-		println("the changed string : " +str);
-		
-		str3 = str3.substring(0, str3.length()-1) + "a";
-		println("changed str3 :" + str3);
-		
-		
-		str4 = str4.toUpperCase();
-		println(str4);
-		
-		println("the number of letters :" + str4.length());
-		char firstSymbol = str2.charAt(0);
-		char lastSymbol = str2.charAt(str2.length()-1);
-		println("the first letter is : " +firstSymbol);
-		println("the last letter is :" + lastSymbol);
+	String newStr = "ania";
+	//makeStatisticks(newStr);	
+	char ch = newStr.charAt(0);
+	countSymbol(newStr, ch);
+	
 	}
-//		String text = "mariami";
-//		printCharStatics(text);
-//
-//	}
-//
-//	private void printCharStatics(String text) {
-//		for(int i=0; i<text.length(); i++) {
-//			int count = countSymbol(text, text.charAt(i));
-//			if(isFirstOccurance (text, i)){
-//				int count = countSymbol(text, currCh);
-//				println(currCh );
-//			}
-//		}
-//		
-//	}
-//	private boolean isFirstOccurance(String text, int i) {
-//		
-//		return false;
-//	}
-//
-//	private int countSymbol (String text, char symbol) {
-//		int symbolCount = 0;
-//		for(int i = 0; i < text.length(); i++) {
-//			if(text.charAt(i) ==symbol) {
-//				symbolCount++; //
-//			}
-//		}
-//		return symbolCount;
-//	}
 
+
+	//private void makeStatisticks(String newStr) {
+		private int countSymbol(String newStr,char symbol) {
+			int symbolCount = 0;
+			for(int  i = 0; i < newStr.length(); i++) {
+				if(newStr.charAt(i) == symbol) {
+					symbolCount++; // symbolCount = symbolCount + 1;
+				}
+			}
+			return symbolCount;
+		}
+		
+	}
+//	String text = "mariami";
+//	printCharStatics(text);
+//
+//}
+//
+//private void printCharStatics(String text) {
+//	for(int i=0; i<text.length(); i++) {
+//		int count = countSymbol(text, text.charAt(i));
+//		if(isFirstOccurance (text, i)){
+//			int count = countSymbol(text, currCh);
+//			println(currCh );
+//		}
+//	}
+//	
+//}
+//private boolean isFirstOccurance(String text, int i) {
+//	
+//	return false;
+//}
+//
+//private int countSymbol (String text, char symbol) {
+//	int symbolCount = 0;
+//	for(int i = 0; i < text.length(); i++) {
+//		if(text.charAt(i) ==symbol) {
+//			symbolCount++; //
+//		}
+//	}
+//	return symbolCount;
+//}
 }

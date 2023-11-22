@@ -16,7 +16,6 @@ public class string47 extends ConsoleProgram {
 			if (string.charAt(i) != string.charAt(string.length() - 1 - i)) {
 				return false;
 			}
-
 		}
 		return true;
 	}

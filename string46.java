@@ -7,26 +7,27 @@ public class string46 extends ConsoleProgram {
 	}
 
 	private char frequentSymbol(String text) {
-		char frequentChar = 0;
-		int maxCharCount = 0;
-		for (int i = 0; i < text.length(); i++) {
-			int currentCount = symbolCount(text, text.charAt(i));
-			if (currentCount > maxCharCount) {
-				maxCharCount = currentCount;
-				frequentChar = text.charAt(i);
+		int maxCount =0;
+		char mostFrequentChar = 0;
+		for (int i=0; i<text.length(); i++){
+			int count = symbolCount(text, text.charAt(i));
+			if(count > maxCount){
+				maxCount = count;
+				mostFrequentChar = text.charAt(i);
 			}
 		}
-		return frequentChar;
+		return mostFrequentChar;
 	}
 
-	private int symbolCount(String text, char symbolo) {
-		int countNum = 0;
-
-		for (int i = 0; i < text.length(); i++) {
-			if (text.charAt(i) == symbolo) {
-				countNum++;
-			}
+	private int symbolCount(String text, char charAt) {
+		int countCharNum = 0;
+		for(int i=0; i<text.length(); i++) {
+		   if(text.charAt(i) == charAt){
+			   countCharNum ++;
+		   }
 		}
-		return countNum;
+		return countCharNum;
 	}
+
+	
 }

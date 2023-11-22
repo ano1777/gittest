@@ -13,7 +13,7 @@ public class string46 extends ConsoleProgram {
 		int currentCount = symbol(text, text.charAt(i));
 		if(currentCount > maxCharCount) {
 			currentCount = maxCharCount;
-			frequentChar = text.charAt(i);
+			frequentChar = text.charAt(0);
 		}
 		}
 		return frequentChar;

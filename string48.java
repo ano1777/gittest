@@ -19,8 +19,8 @@ public class string48 extends ConsoleProgram {
 		str4 = str3.toUpperCase();
 		println(str4);
 		
-		char firstSymbol = str.charAt(0);
-		char lastSymbol = str.charAt(str.length()-1);
+		char firstSymbol = str2.charAt(0);
+		char lastSymbol = str2.charAt(str2.length()-1);
 		println("the first letter is : " +firstSymbol);
 		println("the last letter is :" + lastSymbol);
 	}

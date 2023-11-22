@@ -51,4 +51,4 @@ public class string48 extends ConsoleProgram {
 //	}
 //	return symbolCount;
 //}
-}
+

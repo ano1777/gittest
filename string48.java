@@ -5,6 +5,7 @@ public class string48 extends ConsoleProgram {
 		String str = "ani";
 		String str2 = "ani";
 		println(str);
+		println(str2);
 		
 		
 		

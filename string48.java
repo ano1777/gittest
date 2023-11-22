@@ -14,8 +14,8 @@ public class string48 extends ConsoleProgram {
 		println("changed str3 :" + str3);
 		
 		
-		
-		
+		str4 = str4.toUpperCase();
+		println(str4);
 		
 		
 		

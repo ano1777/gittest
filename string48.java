@@ -3,14 +3,18 @@ import acm.program.ConsoleProgram;
 public class string48 extends ConsoleProgram {
 	public void run() {
 	String newStr = " ania ";
-	//makeStatisticks(newStr);	
-	char ch = newStr.charAt(0);
-	countSymbol(newStr, ch);
-
+	makeStatisticks(newStr);	
+	
 	}
 
+		private void makeStatisticks(String newStr) {
+			for(int i=0; i<newStr.length(); i++) {
+				int countChar = countSymbol(newStr, newStr.charAt(i));
+				println(newStr.charAt(i) + countChar);
+			}
+		
+	}
 
-	//private void makeStatisticks(String newStr) {
 		private int countSymbol(String newStr,char symbol) {
 			int symbolCount = 0;
 			for(int  i = 0; i < newStr.length(); i++) {

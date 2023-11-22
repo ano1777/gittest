@@ -6,11 +6,15 @@ public class string46 extends ConsoleProgram {
 		println("the most frequent symbol in this text is : " + frequentSymbol(text));
 	}
 	
-
-	private String frequentSymbol(String text) {
-		
-		return null;
-	}
+//
+//	private String frequentSymbol(String text) {
+//		int frequentChar = 0;
+//		int maxCHar = 0;
+//		for(int i =0; i<text.length(); i++) {
+//		int currCount = symbol(text, text.charAt(i));
+//		
+//		return null;
+//	}
 
 
 	private int symbol(String text, char symbolo) {

@@ -10,7 +10,7 @@ public class string48 extends ConsoleProgram {
 		private void makeStatisticks(String newStr) {
 			for(int i=0; i<newStr.length(); i++) {
 				int countChar = countSymbol(newStr, newStr.charAt(i));
-				println( countChar);
+				println(newStr.charAt(i) );
 			}
 		
 	}

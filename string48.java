@@ -4,7 +4,7 @@ public class string48 extends ConsoleProgram {
 	public void run() {
 		String str = "ani";
 		String str2 = "ani";
-		
+		println(str);
 		
 		
 		

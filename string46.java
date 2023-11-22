@@ -11,8 +11,8 @@ public class string46 extends ConsoleProgram {
 		int maxCharCount = 0;
 		for(int i =0; i<text.length(); i++) {
 		int currentCount = symbol(text, text.charAt(i));
-		if(currentCount >= maxCharCount) {
-			currentCount = maxCharCount;
+		if(currentCount > maxCharCount) {
+			maxCharCount = currentCount;
 			frequentChar = text.charAt(i);
 		}
 		}
@@ -29,5 +29,4 @@ public class string46 extends ConsoleProgram {
 		}
 		return countNum;
 	}
-
 }

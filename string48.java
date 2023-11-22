@@ -2,12 +2,11 @@ import acm.program.ConsoleProgram;
 
 public class string48 extends ConsoleProgram {
 	public void run() {
-	String newStr = " ania aris lamazi ";
+	String newStr = " ania ";
 	//makeStatisticks(newStr);	
 	char ch = newStr.charAt(0);
 	countSymbol(newStr, ch);
-	newStr.trim();
-	println(newStr);
+
 	}
 
 

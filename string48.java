@@ -7,6 +7,7 @@ public class string48 extends ConsoleProgram {
 	char ch = newStr.charAt(0);
 	countSymbol(newStr, ch);
 	newStr.trim();
+	println(newStr);
 	}
 
 

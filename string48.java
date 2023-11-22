@@ -10,11 +10,21 @@ public class string48 extends ConsoleProgram {
 	private void makeStatisticks(String newStr) {
 		for (int i = 0; i < newStr.length(); i++) {
 			char currChar = newStr.charAt(i);
-
-			int countChar = countSymbol(newStr, newStr.charAt(i));
-			println(currChar  + " - " + countChar);
+			if (firstAppearance(newStr, i)) {
+				int countChar = countSymbol(newStr, newStr.charAt(i));
+				println(currChar + " - " + countChar);
+			}
 		}
 	}
+
+	private boolean firstAppearance(String newStr, int i) {
+		char ch = newStr.charAt(i);
+		int firstIndex = newStr.indexOf(ch);
+		
+		return firstIndex == i;
+	}
+
+	
 
 	private int countSymbol(String newStr, char symbol) {
 		int symbolCount = 0;

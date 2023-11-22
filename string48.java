@@ -16,6 +16,8 @@ public class string48 extends ConsoleProgram {
 		
 		str4 = str4.toUpperCase();
 		println(str4);
+		str4 = str3.toUpperCase();
+		println(str4);
 		
 		
 		

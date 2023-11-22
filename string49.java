@@ -5,6 +5,7 @@ public class string49 extends ConsoleProgram {
 		String numStr = "1234";
 		int num = stringToInt(numStr);
 	println(num);
+	println(num - 1);
 	}
 
 	private int stringToInt(String numStr) {

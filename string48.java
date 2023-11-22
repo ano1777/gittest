@@ -16,8 +16,7 @@ public class string48 extends ConsoleProgram {
 		
 		str4 = str4.toUpperCase();
 		println(str4);
-		str4 = str3.toUpperCase();
-		println(str4);
+		
 		println("the number of letters :" + str4.length());
 		char firstSymbol = str2.charAt(0);
 		char lastSymbol = str2.charAt(str2.length()-1);

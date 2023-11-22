@@ -11,7 +11,7 @@ public class string46 extends ConsoleProgram {
 		char mostFrequentChar = 0;
 		for (int i=0; i<text.length(); i++){
 			int count = symbolCount(text, text.charAt(i));
-			if(count >= maxCount){
+			if(count > maxCount){
 				maxCount = count;
 				mostFrequentChar = text.charAt(i);
 			}

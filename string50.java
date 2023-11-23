@@ -13,8 +13,10 @@ public class string50 extends ConsoleProgram {
 
 	private void printTokens(String text) {
 		StringTokenizer tokens = new StringTokenizer(text, "i");
+		while(tokens.hasMoreTokens()){
+		println(tokens.nextToken()); 
 		
-		
+	}
 	}
 	
 }

@@ -5,7 +5,7 @@ public class StringBonus17 extends ConsoleProgram {
 		String str = "ani";
 		String str2 = "an";
 		
-		str2 = str2 + "i";
+	
 		
 		if(str .equals (str2) ){
 			println ("tolia");

@@ -10,10 +10,12 @@ public class string50 extends ConsoleProgram {
 
 	private void countTokens (String text) {
 		StringTokenizer tokens = new StringTokenizer(text, "i");
+		int count = 0;
 		while (tokens.hasMoreTokens()) {
 			String newToken = tokens.nextToken();
-			println(newToken);
+			count ++;
 		
 		}
+		println(count);
 	}
 }

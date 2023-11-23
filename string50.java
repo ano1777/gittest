@@ -1,10 +1,20 @@
+import java.util.StringTokenizer;
+
 import acm.program.ConsoleProgram;
 
 public class string50 extends ConsoleProgram {
 	public void run() {
-	println((int)'7' - (int) '1');
-	println((int)('7' - '1'));
+		String text = readLine("Enter text to tokenizwe: ");
+		println("tokens: ");
+		printTokens(text);
+
 	
+	}
+
+	private void printTokens(String text) {
+		StringTokenizer tokens = new StringTokenizer(text, "i");
+		
+		
 	}
 	
 }

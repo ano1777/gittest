@@ -13,10 +13,11 @@ public class string50 extends ConsoleProgram {
 
 	private void printTokens(String text) {
 		StringTokenizer tokens = new StringTokenizer(text, "i");
+		int count = 0;
 		while(tokens.hasMoreTokens()){
-		println(tokens.nextToken()); 
-		
+		count++;
 	}
+		println(count);
 	}
 	
 }

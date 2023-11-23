@@ -5,8 +5,8 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text to tokenize: ");
-		println("tokens: ");
 		printTokens(text);
+		
 
 	
 	}

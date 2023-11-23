@@ -9,7 +9,7 @@ public class string50 extends ConsoleProgram {
 	}
 
 	private int countTokens (String text) {
-		StringTokenizer tokens = new StringTokenizer(text, " ");
+		StringTokenizer tokens = new StringTokenizer(text, "i");
 		int count = 0;
 		while (tokens.hasMoreTokens()) {
 			count++;

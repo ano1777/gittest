@@ -7,7 +7,7 @@ public class StringBonus17 extends ConsoleProgram {
 		if(1==1){
 		str2 = str2 + "i";
 		}
-		if(str == str2 ){
+		if(str .equals (str2) ){
 			println ("tolia");
 		}else {
 			println("araa");

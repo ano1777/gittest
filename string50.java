@@ -8,14 +8,13 @@ public class string50 extends ConsoleProgram {
 		countTokens(text);
 	}
 
-	private void countTokens (String text) {
+	private void countTokens(String text) {
 		StringTokenizer tokens = new StringTokenizer(text, " ");
 		int count = 0;
 		while (tokens.hasMoreTokens()) {
 			String newToken = tokens.nextToken();
-			count ++;
-		
+			count++;
 		}
-		println(count);
+		println("the number of words = " + count);
 	}
 }

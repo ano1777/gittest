@@ -5,19 +5,15 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text to tokenize: ");
-		printTokens(text);
-		
-
-	
+		countTokens(text);
 	}
 
-	private void printTokens(String text) {
-		StringTokenizer tokens = new StringTokenizer(text, "i");
+	private int countTokens (String text) {
+		StringTokenizer tokens = new StringTokenizer(text, " ");
 		int count = 0;
-		while(tokens.hasMoreTokens()){
-		count++;
+		while (tokens.hasMoreTokens()) {
+			count++;
+		}
+		return count;
 	}
-		println(count);
-	}
-	
 }

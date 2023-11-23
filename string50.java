@@ -12,7 +12,7 @@ public class string50 extends ConsoleProgram {
 		StringTokenizer tokens = new StringTokenizer(text, " ");
 		int count = 0;
 		while (tokens.hasMoreTokens()) {
-			//String newToken = tokens.nextToken();
+			String newToken = tokens.nextToken();
 			count ++;
 		
 		}

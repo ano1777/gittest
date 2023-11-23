@@ -8,12 +8,12 @@ public class string50 extends ConsoleProgram {
 		countTokens(text);
 	}
 
-	private int countTokens (String text) {
+	private void countTokens (String text) {
 		StringTokenizer tokens = new StringTokenizer(text, "i");
-		int count = 0;
 		while (tokens.hasMoreTokens()) {
-			count++;
+			String newToken = tokens.nextToken();
+			println(newToken);
+		
 		}
-		return count;
 	}
 }

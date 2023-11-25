@@ -15,9 +15,7 @@ public class StringBonus17 extends ConsoleProgram {
 	    if(index == -1){
 	    	return false;
 	    } else {
-	    str2 = str2.substring(index + 1);
-	    
-	    
+	    str2 = str2.substring(index + 1); 
 	    	}
 		}
 		return true;

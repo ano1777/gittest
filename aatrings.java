@@ -4,7 +4,7 @@ public class aatrings extends ConsoleProgram {
 	public void run() {
 	int num1 = readInt("Enter number: ");
 	int num2 = readInt("Enter second number: ");
-	double answer = log(num1, num2);
+	int answer = log(num1, num2);
 	println(log(num1,num2));
 	}
 

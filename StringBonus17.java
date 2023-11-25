@@ -4,7 +4,7 @@ public class StringBonus17 extends ConsoleProgram {
 	public void run() {
 		String str = readLine("Enter text : ");
 		String str2 = readLine("Enter text : ");
-		checkIfItsAnagram(str, str2);
+		println(checkIfItsAnagram(str, str2));
 
 	}
 

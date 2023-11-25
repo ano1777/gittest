@@ -7,5 +7,4 @@ public class aatrings extends ConsoleProgram {
 			System.out.println(text.charAt(i));
 		}
 	}
-
 }

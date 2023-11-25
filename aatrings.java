@@ -8,7 +8,7 @@ public class aatrings extends ConsoleProgram {
 		for (int i=0; i <  text.length(); i++ ){
 			char current = text.charAt(i);
 		 
-			str = current  +  str;
+			str = str + current;
 		}
 	}
 }

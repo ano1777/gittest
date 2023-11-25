@@ -11,7 +11,7 @@ public class aatrings extends ConsoleProgram {
 	private int log(int num1, int num2) {
 		int ans = 0;
 		int k = num1;
-		while(num1<=num2) {
+		while(num1 <= num2) {
 			num1 *= k;
 			ans++;
 		}

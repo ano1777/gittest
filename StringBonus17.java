@@ -11,15 +11,15 @@ public class StringBonus17 extends ConsoleProgram {
 		for (int i = 0; i < str.length(); i++) {
 			for(int j=0; j<str2.length(); j++){
 			
-				if (str.charAt(i) == str2.charAt(j)) {
+				if (str.charAt(i) != str2.charAt(j)) {
 						
-				return true;
+				return false;
 				}
 			}			
 
 		}
 
-		return false;
+		return true;
 	}
 
 }

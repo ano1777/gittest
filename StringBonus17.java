@@ -10,16 +10,11 @@ public class StringBonus17 extends ConsoleProgram {
 	private boolean checkIfItsAnagram(String str, String str2) {
 		for (int i = 0; i < str.length(); i++) {
 	    char ch = str.charAt(i);
-	    for(int j= 0; j < str2.length(); j++ ){
-	    	if(ch != str2.charAt(j)){
-	    		return false;
-	    	}
-	    }
-			}			
-
-		
-
+	    int index = str2.indexOf(ch);
+	    if(index == -1){
+	    	return false;
+	    	} 		
+		}
 		return true;
 	}
-
 }

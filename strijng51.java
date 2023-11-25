@@ -5,7 +5,8 @@ public class strijng51 extends ConsoleProgram {
 		String str = readLine(" Enter text : ");
 		removeDuplicates(str);
 	}
-
+//anhoiselnlo
+//hello
 	private void removeDuplicates(String str) {
 		for (int i= 0; i<str.length(); i++) {
 		char ch = str.charAt(i);

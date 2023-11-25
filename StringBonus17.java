@@ -8,9 +8,8 @@ public class StringBonus17 extends ConsoleProgram {
 	}
 
 	private boolean checkIfItsAnagram(String str, String str2) {
-		for (int i = 0; i < str.length(); i++) {
-			for (int j = 0; j < str2.length(); j++) {
-				if (str.charAt(i) != str2.charAt(j)) {
+		for (int i = 0; i < str.length(); i++) {{
+				if (str.charAt(i) != str2.charAt(i)) {
 				}					return false;
 
 			}			

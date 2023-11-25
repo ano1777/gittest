@@ -6,9 +6,9 @@ public class aatrings extends ConsoleProgram {
 		String str = "";
 		for (int i=0; i <  text.length(); i++ ){
 			str += text.charAt(i);
-			println(str);
 
 			
-		}
+		}			println(str);
+
 	}
 }

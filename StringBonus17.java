@@ -14,7 +14,9 @@ public class StringBonus17 extends ConsoleProgram {
 	    int index = str2.indexOf(ch);
 	    if(index == -1){
 	    	return false;
-	    	} 		
+	    } else {
+	    		
+	    	}
 		}
 		return true;
 	}

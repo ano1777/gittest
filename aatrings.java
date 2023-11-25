@@ -5,6 +5,7 @@ public class aatrings extends ConsoleProgram {
 	int num1 = readInt("Enter number: ");
 	int num2 = readInt("Enter second number: ");
 	int answer = log(num1, num2);
+	println(log(num1,num2));
 	}
 
 	private int log(int num1, int num2) {

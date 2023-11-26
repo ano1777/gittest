@@ -11,31 +11,36 @@ import acm.util.RandomGenerator;
 public class Graphics42 extends GraphicsProgram {
 	private GObject selectedObject = null;
 	private GOval circle;
-	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private RandomGenerator rgen;
 	private static final int CIRCLE_D = 100;
 	private static final int DELAY = 10;
 
-	public void run() {
+	public void init() {
 		addMouseListeners();
-		while(true) {
-		if (selectedObject != null) {
-			while (selectedObject.getColor() != Color.GREEN) {
-				Color color = myRandomColor();
-				selectedObject.setColor(color);				
-				pause(DELAY);
+		rgen = RandomGenerator.getInstance();
+	}
+
+	public void run() {
+		while (true) {
+			if (selectedObject != null) {
+				while (selectedObject.getColor() != Color.GREEN) {
+					Color color = myRandomColor();
+					selectedObject.setColor(color);
+					pause(DELAY);
+				}
+				selectedObject = null;
 			}
-			selectedObject= null;
 		}
 	}
-	}
+
 	public void mousePressed(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
 		GObject object = getElementAt(x, y);
-		
+
 		if (object == null) {
 			Color color = rgen.nextColor();
-		 circle = new GOval(x - CIRCLE_D/2, y - CIRCLE_D/2, CIRCLE_D, CIRCLE_D);
+			circle = new GOval(x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			circle.setFilled(true);
 			circle.setColor(color);
 			add(circle);

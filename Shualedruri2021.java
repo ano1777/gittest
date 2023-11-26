@@ -6,9 +6,9 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-	double a = 12;
+	double a = 12.0;
 	double b = 2.4;
-	double c = 2;
+	double c = 2.0;
 	double k = a/5 + b/2 + c/5;
 	println(k);
 }

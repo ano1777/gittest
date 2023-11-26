@@ -39,4 +39,4 @@ public class strijng51 extends ConsoleProgram {
 	// return false;
 	// }
 
-}
+

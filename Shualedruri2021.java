@@ -6,10 +6,8 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		double o = 12.5;
-		double a = 1.5;
-		double c = a+o;
-		println(c);
+		int a = 'd'+ 1 - 'a' + 'E' +3 + 2  +'b';
+		println(a);
 
 }
 	

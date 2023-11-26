@@ -16,10 +16,10 @@ public class Shualedruri2021 extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 	    int x = 0;
 	    int y =0;
-		GLine line = new GLine(x , y , e.getX(), e.getY());
+		GLine line = new GLine(x , y , x, y);
 		add(line);
-		x=e.getX();
-		y=e.getY();
+		x = e.getX();
+		y = e.getY();
 		GLine lines = new GLine(x, y, e.getX(), e.getY());
 		add(lines);
 	}

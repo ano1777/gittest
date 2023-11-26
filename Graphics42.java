@@ -13,7 +13,7 @@ public class Graphics42 extends GraphicsProgram {
 	private GOval circle;
 	private RandomGenerator rgen;
 	private static final int CIRCLE_D = 100;
-	private static final int DELAY = 10;
+	private static final int DELAY = 100;
 
 	public void init() {
 		addMouseListeners();

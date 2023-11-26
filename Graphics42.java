@@ -30,7 +30,7 @@ public class Graphics42 extends GraphicsProgram {
 				}
 				selectedObject = null;
 			}
-			println("E");
+		//	println("E");
 		}
 	}
 
@@ -86,8 +86,7 @@ public class Graphics42 extends GraphicsProgram {
 //		if (object == null) {
 //			circle = new GOval(x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 //			circle.setFilled(true);
-//			Color color = myRandomColor();
-//			circle.setColor(color);
+//			circle.setColor(myRandomColor());
 //			add(circle);
 //		} else {
 //			selectedObject = object;

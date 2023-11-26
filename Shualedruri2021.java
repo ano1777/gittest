@@ -8,7 +8,6 @@ public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
 		int a = 'd'+ 1 - 'a' + 'E' +3 + 2  +'b';
 		println(a);
-
 }
 	
 	

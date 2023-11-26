@@ -31,6 +31,7 @@ public class Graphics42 extends GraphicsProgram {
 				}
 				selectedObject = null;
 			}
+			println("E");
 		}
 	}
 

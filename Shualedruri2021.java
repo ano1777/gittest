@@ -24,7 +24,7 @@ public class Shualedruri2021 extends GraphicsProgram {
 		line.setEndPoint(e.getX(), e.getY());
 	}
 	@Override
-	public void mouseClicked(MouseEvent e) {
+	public void mouseReleased(MouseEvent e) {
 		x = e.getX();
 		y= e.getY();
 	}

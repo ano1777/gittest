@@ -20,8 +20,7 @@ public class Graphics42 extends GraphicsProgram {
 		if (selectedObject != null) {
 			while (selectedObject.getColor() != Color.GREEN) {
 				Color color = myRandomColor();
-				selectedObject.setColor(color);
-				
+				selectedObject.setColor(color);				
 				pause(DELAY);
 			}
 		}
@@ -34,7 +33,7 @@ public class Graphics42 extends GraphicsProgram {
 		
 		if (object == null) {
 			Color color = rgen.nextColor();
-			GOval circle = new GOval(x - CIRCLE_D, y - CIRCLE_D, CIRCLE_D, CIRCLE_D);
+		 circle = new GOval(x - CIRCLE_D, y - CIRCLE_D, CIRCLE_D, CIRCLE_D);
 			circle.setFilled(true);
 			circle.setColor(color);
 			add(circle);
@@ -55,5 +54,4 @@ public class Graphics42 extends GraphicsProgram {
 			return Color.BLACK;
 		return Color.BLUE;
 	}
-
 }

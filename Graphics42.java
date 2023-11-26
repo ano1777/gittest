@@ -21,9 +21,10 @@ public class Graphics42 extends GraphicsProgram {
 		if (selectedObject != null) {
 			while (selectedObject.getColor() != Color.GREEN) {
 				Color color = myRandomColor();
-				circle.setColor(color);				
+				selectedObject.setColor(color);				
 				pause(DELAY);
 			}
+			selectedObject= null;
 		}
 	}
 	}

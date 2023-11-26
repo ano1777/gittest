@@ -14,8 +14,8 @@ private GRect square;
 		addMouseListeners();
 	}
 		public void mouseMoved(MouseEvent e) {
-			int x = e.getX() -  40/2;
-			int y = e.getY() - 40/2;
+			int x = 10;
+			int y = 10;
 			square.move(x, y);
 		}
 

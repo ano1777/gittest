@@ -17,6 +17,7 @@ public class Graphics42 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
+		while(true) {
 		if (selectedObject != null) {
 			while (selectedObject.getColor() != Color.GREEN) {
 				Color color = myRandomColor();
@@ -25,7 +26,7 @@ public class Graphics42 extends GraphicsProgram {
 			}
 		}
 	}
-
+	}
 	public void mousePressed(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();

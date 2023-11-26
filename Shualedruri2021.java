@@ -1,12 +1,17 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
+import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
-public class Shualedruri2021 extends GraphicsProgram {
+public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		
-	}
+	int a = 12;
+	double b = 2.4;
+	int c = 2;
+	double k = a/5+ b/2 + c/5;
+	println(k);
+}
 	
 	
 //	private GLine line;

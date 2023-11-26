@@ -11,8 +11,10 @@ public class Shualedruri2021 extends ConsoleProgram {
 	double c = 2.0;
 	double k = a/5;
 	double d = b/2;
+	println(d);
 	double e = c/5;
-	int ab = (int) (k+d+e);
+	println(e);
+	double ab = k+d+e;
 	println(ab);
 }
 	

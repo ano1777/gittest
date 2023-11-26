@@ -23,6 +23,5 @@ public class Shualedruri2021 extends GraphicsProgram {
 	
 	public void mouseDragged(MouseEvent e) {
 		GLine line1 = new GLine(0,0 , e.getX(), e.getY());
-		add(line1);
 	}
 }

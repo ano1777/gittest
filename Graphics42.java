@@ -44,7 +44,7 @@ public class Graphics42 extends GraphicsProgram {
 			circle.setFilled(true);
 			circle.setColor(color);
 			add(circle);
-		} else {
+		} else  if (object != null) {
 			selectedObject = object;
 		}
 	}

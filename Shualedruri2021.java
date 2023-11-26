@@ -5,30 +5,28 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends GraphicsProgram {
 	private GLine line;
-	private GLine lines;
+	int x =0;
+	int y = 0;
+
 	public void run() {
-		//addFirstPoint();
-		line= new GLine (0,0,0, 0);
-		add(line);
+		x =0;
+		y = 0;
 		addMouseListeners();
 	}
 
-
-
+	@Override
+	public void mousePressed(MouseEvent e) {
+		line = new GLine(x, y, e.getX(), e.getY());
+		add(line);
+	}
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		line.setEndPoint(e.getX(), e.getY());
+	}
 	@Override
 	public void mouseClicked(MouseEvent e) {
-	line.setEndPoint(e.getX(), e.getY());	
-	    int x = e.getX();
-	    int y = e.getY();
-	lines = new GLine (x, y, e.getX(), e.getY());
-		add(lines);
-	}
-	
-	public void mouseDragged(MouseEvent e) {
-//		int x = 0;
-//		int y = 0;
-		GLine line1 = new GLine(0 , 0 , e.getX(), e.getY());
-		add(line1);
+		x = e.getX();
+		y= e.getY();
 	}
 
 }

@@ -28,11 +28,11 @@ public class Graphics42 extends GraphicsProgram {
 	
 		add(circle, e.getX() - CIRCLE_D/2, e.getY()-CIRCLE_D/2);
 	}
-	@Override 
-	public void mouseClicked(MouseEvent e) {
-		Color color = rgen.nextColor();
-		for(int i=0; i<5; i++) {
-			circle.setColor(color);
-		}
-	}
+	//@Override 
+//	public void mouse(MouseEvent e) {
+//		Color color = rgen.nextColor();
+//		for(int i=0; i<5; i++) {
+//			circle.setColor(color);
+//		}
+//	}
 }

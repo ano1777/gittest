@@ -39,12 +39,12 @@ public class Graphics42 extends GraphicsProgram {
 		GObject object = getElementAt(x, y);
 
 		if (object == null) {
-			Color color = rgen.nextColor();
 			circle = new GOval(x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			circle.setFilled(true);
+			Color color = myRandomColor();
 			circle.setColor(color);
 			add(circle);
-		} else  if (object != null) {
+		} else {
 			selectedObject = object;
 		}
 	}

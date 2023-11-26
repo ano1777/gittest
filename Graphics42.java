@@ -19,46 +19,92 @@ public class Graphics42 extends GraphicsProgram {
 		addMouseListeners();
 		rgen = RandomGenerator.getInstance();
 	}
-
 	public void run() {
 		while (true) {
 			if (selectedObject != null) {
 				while (selectedObject.getColor() != Color.GREEN) {
 					Color color = myRandomColor();
 					selectedObject.setColor(color);
+					println(selectedObject);
 					pause(DELAY);
 				}
 				selectedObject = null;
 			}
+			println("E");
 		}
 	}
 
-	public void mousePressed(MouseEvent e) {
+	@Override
+	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
-		GObject object = getElementAt(x, y);
 
+		GObject object = getElementAt(x, y);
+		println(object);
 		if (object == null) {
-			circle = new GOval(x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
-			circle.setFilled(true);
-			Color color = myRandomColor();
-			circle.setColor(color);
-			add(circle);
+			GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
+			add(oval, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
+			oval.setFilled(true);
+			oval.setColor(myRandomColor());
 		} else {
 			selectedObject = object;
 		}
 	}
 
 	private Color myRandomColor() {
-		int randNum = rgen.nextInt(5);
-		if (randNum == 0)
+		int randomNum = rgen.nextInt(5);
+		if (randomNum == 0)
 			return Color.GREEN;
-		if (randNum == 1)
-			return Color.YELLOW;
-		if (randNum == 2)
+		if (randomNum == 1)
 			return Color.RED;
-		if (randNum == 3)
+		if (randomNum == 2)
+			return Color.BLUE;
+		if (randomNum == 3)
 			return Color.BLACK;
-		return Color.BLUE;
+		return Color.YELLOW;
 	}
 }
+//
+//	public void run() {
+//		while (true) {
+//			if (selectedObject != null) {
+//				while (selectedObject.getColor() != Color.GREEN) {
+//					Color color = myRandomColor();
+//					selectedObject.setColor(color);
+//					pause(DELAY);
+//				}
+//				selectedObject = null;
+//			}
+//		}
+//	}
+//
+//	public void mousePressed(MouseEvent e) {
+//		double x = e.getX();
+//		double y = e.getY();
+//		GObject object = getElementAt(x, y);
+//
+//		if (object == null) {
+//			circle = new GOval(x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
+//			circle.setFilled(true);
+//			Color color = myRandomColor();
+//			circle.setColor(color);
+//			add(circle);
+//		} else {
+//			selectedObject = object;
+//		}
+//	}
+//
+//	private Color myRandomColor() {
+//		int randNum = rgen.nextInt(5);
+//		if (randNum == 0)
+//			return Color.GREEN;
+//		if (randNum == 1)
+//			return Color.YELLOW;
+//		if (randNum == 2)
+//			return Color.RED;
+//		if (randNum == 3)
+//			return Color.BLACK;
+//		return Color.BLUE;
+//	}
+//}
+	

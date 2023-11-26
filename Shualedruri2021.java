@@ -9,7 +9,7 @@ public class Shualedruri2021 extends ConsoleProgram {
 	int a = 12;
 	double b = 2.4;
 	int c = 2;
-	double k = a/5+ b/2 + c/5;
+	double k = a/5
 	println(k);
 }
 	

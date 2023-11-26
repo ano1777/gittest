@@ -21,7 +21,7 @@ public class Graphics42 extends GraphicsProgram {
 			while (selectedObject.getColor() != Color.GREEN) {
 				Color color = myRandomColor();
 				selectedObject.setColor(color);
-				println(selectedObject);
+				
 				pause(DELAY);
 			}
 		}

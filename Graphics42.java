@@ -33,7 +33,7 @@ public class Graphics42 extends GraphicsProgram {
 		
 		if (object == null) {
 			Color color = rgen.nextColor();
-		 circle = new GOval(x - CIRCLE_D, y - CIRCLE_D, CIRCLE_D, CIRCLE_D);
+		 circle = new GOval(x - CIRCLE_D/2, y - CIRCLE_D/2, CIRCLE_D, CIRCLE_D);
 			circle.setFilled(true);
 			circle.setColor(color);
 			add(circle);

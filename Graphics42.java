@@ -13,7 +13,7 @@ public class Graphics42 extends GraphicsProgram {
 	private GOval circle;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int CIRCLE_D = 100;
-	private static final int DELAY = 100;
+	private static final int DELAY = 10;
 
 	public void run() {
 		addMouseListeners();
@@ -31,7 +31,7 @@ public class Graphics42 extends GraphicsProgram {
 		double x = e.getX();
 		double y = e.getY();
 		GObject object = getElementAt(x, y);
-		println(object);
+		
 		if (object == null) {
 			Color color = rgen.nextColor();
 			GOval circle = new GOval(x - CIRCLE_D, y - CIRCLE_D, CIRCLE_D, CIRCLE_D);

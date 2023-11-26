@@ -2,24 +2,20 @@ import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
 import acm.graphics.GOval;
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class Graphics42 extends GraphicsProgram{
+	
+private GRect square;
 	public void run() {
-		addMouseListeners();
-		getMouseMotionListeners();
+		 square = new GRect (0,0, 40,40);
+		add(square);
 	}
-	
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		GLine line = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
-		add(line);
+		public void mouseMoved(MouseEvent e) {
+			int x = e.getX() -  40/2;
+			int y = e.getY() - 40/2;
+			square.setLocation(x, y);
 		}
-	
-	public void mouseDragged(MouseEvent e) {
-		line.setEndPoint
-	}
-	}
-	
 
-
+}

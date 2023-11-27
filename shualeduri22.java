@@ -18,5 +18,4 @@ public class shualeduri22 extends GraphicsProgram {
 		}
 		return result;
 	}
-
 }

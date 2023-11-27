@@ -2,8 +2,8 @@ import acm.program.ConsoleProgram;
 
 public class stringleetcode extends ConsoleProgram {
 	public void run() {
-		String haystack = "sadbutsad";
-		String needle = "sad";
+		String haystack = readLine("Enter text : ") ;
+		String needle = readLine ("Enter text: ");
 		int result = returnInt(haystack, needle);
 		println(result);
 	}
@@ -13,6 +13,8 @@ public class stringleetcode extends ConsoleProgram {
 			String sub = haystack.substring(i, i + 1);
 			if (sub.equals(needle)) {
 				return (i);
+			} else {
+				return (-1);
 			}
 
 		}

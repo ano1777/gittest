@@ -5,10 +5,11 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text to tokenize: ");
-		println(reverse(text));
+		String reversed = reverse(text);
+		simulateTokens(reversed);
 	}
 
-	private void countTokens(String text) {
+	private void simulateTokens(String text) {
 		StringTokenizer tokens = new StringTokenizer(text, " ");
 		int count = 0;
 		while (tokens.hasMoreTokens()) {

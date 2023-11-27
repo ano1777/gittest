@@ -14,7 +14,7 @@ public class string50 extends ConsoleProgram {
 		String answer = "";
 		while (tokens.hasMoreTokens()) {
 			String newToken = tokens.nextToken();
-			String reversed = reverse(newToken);
+	//		String reversed = reverse(newToken);
 			answer += reversed + " ";
 		}
 		return answer;

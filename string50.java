@@ -13,8 +13,8 @@ public class string50 extends ConsoleProgram {
 		int count = 0;
 		while (tokens.hasMoreTokens()) {
 			String newToken = tokens.nextToken();
-			count++;
+			println( newToken);
 		}
-		println("the number of words = " + count);
+	
 	}
 }

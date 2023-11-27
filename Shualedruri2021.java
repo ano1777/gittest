@@ -6,9 +6,16 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		if(5 % 2 == 0 && 4 > 5-6);
-		println(true);
+		String a = "iyo arabets rostevan";
+		String b = "iyo rets rostevan";
+		println(manipulation(a,b));
+
 	
+	}
+
+	private boolean manipulation(String a, String b) {
+		
+		return true;
 	}
 	}
 

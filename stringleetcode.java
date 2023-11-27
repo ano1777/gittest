@@ -10,17 +10,13 @@ public class stringleetcode extends ConsoleProgram {
 
 	private int returnInt(String haystack, String needle) {
 		for (int i = 0; i < (haystack.length() - 1); i++) {
-			String sub = haystack.substring(i, i + 1);
+			String sub = haystack.substring(i,i +1);
 			if (sub.equals(needle)) {
 				return (i);
-			} else {
-				return (-1);
 			}
-
 		}
 
 		return -1;
-
 	}
 
 }

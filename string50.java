@@ -14,8 +14,8 @@ public class string50 extends ConsoleProgram {
 		int count = 0;
 		while (tokens.hasMoreTokens()) {
 			String newToken = tokens.nextToken();
-			String reversed = reverse(newToken);
-			println(reversed);
+		//	String reversed = reverse(newToken);
+			println(newToken);
 		}
 	
 	}

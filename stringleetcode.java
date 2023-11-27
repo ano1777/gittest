@@ -9,14 +9,13 @@ public class stringleetcode extends ConsoleProgram {
 	}
 
 	private int returnInt(String haystack, String needle) {
-		for (int i = 0; i < (haystack.length() - 1); i++) {
-			String sub = haystack.substring(i,i +1);
-			if (sub.equals(needle)) {
-				return i;
-			}
-		}
-
-		return -1;
+		for (int i = 0; i < haystack.length(); i++) {
+	        String sub = haystack.substring(i, i + 1);
+	        if (sub.equals(needle)) {
+	            return i;
+	        }
+	    }
+	    return -1;
 	}
 
 }

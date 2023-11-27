@@ -17,7 +17,7 @@ public class stringleetcode extends ConsoleProgram{
 				}
 			}
 		}
-		return -1;
+		return (-1);
 	}
 
 }

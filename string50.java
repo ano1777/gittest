@@ -6,7 +6,7 @@ public class string50 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text to tokenize: ");
 		String reversed = reverse(text);
-		println(simulateTokens(reverse));
+		println(simulateTokens(reversed));
 	}
 
 	private String simulateTokens(String text) {

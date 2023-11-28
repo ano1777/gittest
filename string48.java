@@ -10,7 +10,7 @@ public class string48 extends ConsoleProgram {
 		for (int i = 0; i < newStr.length(); i++) {
 			char current = newStr.charAt(i);
 			if (firstOccurance(newStr, i)) {
-				int count = countSymbols(newStr, newStr.charAt(i));
+				int count = countSymbols(newStr, current);
 				println(current + ": " + count);
 			}
 		}
@@ -19,13 +19,12 @@ public class string48 extends ConsoleProgram {
 	private boolean firstOccurance(String newStr, int i) {
 		char ch = newStr.charAt(i);
 		int firstindex  = newStr.indexOf(ch);
-		
 		return firstindex == i;
 	}
 
 	private int countSymbols(String string, char symb) {
 		int count = 0;
-
+		
 		for (int i = 0; i < string.length(); i++) {
 			if (string.charAt(i) == symb) {
 				count++;

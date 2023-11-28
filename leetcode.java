@@ -18,11 +18,11 @@ public class leetcode extends ConsoleProgram {
 						if(Prime(i)){
 							maxDivisor = i;
 		
-		            }
-				}
-				}
+		                }
+				    }
+			    }
 			return maxDivisor;
-				
+		
 		}
 		private boolean Prime (int n) {
 			for(int i=2; i<n; i++) {
@@ -30,11 +30,8 @@ public class leetcode extends ConsoleProgram {
 				return false;
 				}
 			}
-		return true;	
-
-		
-		}
-		
+		return true;		
+		}		
 }	
 		
 		

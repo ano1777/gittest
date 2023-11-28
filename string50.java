@@ -18,7 +18,8 @@ public class string50 extends ConsoleProgram {
 		for(int i=0; i<str.length(); i++){
 		
 			
-			if(str.charAt(i) == ' '){
+			while(str.charAt(i) == ' '){
+	
 				String sub1 = str.substring(0, i);
 				String sub2 = str.substring(i+1);
 				println(sub1);

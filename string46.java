@@ -22,16 +22,17 @@ public class string46 extends ConsoleProgram {
 		return frequentchar;
 	}
 
-	private int countSymbols(String str, char symbol) {
+	private int countSymbols(String text, char symbol) {
 		int count = 0;
-		for(int i = 0; i < str.length(); i++){
-			if(symbol == str.charAt(i)){
+		for(int i = 0; i < text.length(); i++){
+			if(text.charAt(i)== symbol){
 				count++;
 			}
-		
-		return 0;
-	}
+		}
+		return count;
 	
+	}
+}
 //		String text = readLine("Enter text: ");
 //		println("the most frequent symbol in this text is : " + frequentSymbol(text));
 //	}
@@ -60,4 +61,4 @@ public class string46 extends ConsoleProgram {
 //	}
 
 	
-}
+

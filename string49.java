@@ -3,8 +3,9 @@ import acm.program.ConsoleProgram;
 public class string49 extends ConsoleProgram {
 	public void run() {
 		String str = "1234";
-		println(stringToInt(str));
-		
+		int num = stringToInt(str);
+		println(num);
+		println(num-8);
 	}
 
 

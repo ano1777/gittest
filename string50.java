@@ -14,10 +14,10 @@ public class string50 extends ConsoleProgram {
 	private String reverseWords(String str) {
 		
 		String answer = "";
-		while(true){
+	
 		for(int i=0; i<str.length(); i++){
 		
-			
+			while(true){
 			if(str.charAt(i) == ' '){
 	
 				String sub1 = str.substring(0, i);
@@ -25,13 +25,13 @@ public class string50 extends ConsoleProgram {
 				println(sub1);
 				println(sub2);
 				answer = sub2 + ' ' + sub1; 
-				
+			}
 			}
 		}
 		return answer;
 	}
 	}
-}
+
 
 		// String str = readLine("Enter string: ");
 		// StringTokenizer newtokens = new StringTokenizer(str, " ");

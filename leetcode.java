@@ -16,16 +16,17 @@ public class leetcode extends ConsoleProgram {
 				for(int i=1; i<=n; i++) {
 					if(n % i == 0) {
 						if(Prime(n)){
-						maxDivisor = i;
+							maxDivisor = i;
+							return maxDivisor;
 		            }
 				}
-			}
+				}
 			return maxDivisor;
-			
+				
 		}
 		private boolean Prime (int n) {
 			for(int i=2; i<n; i++) {
-				if(n%i ==0){
+				if(n % i ==0){
 				return false;
 				}
 			}

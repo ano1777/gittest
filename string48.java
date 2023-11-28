@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class string48 extends ConsoleProgram {
 	public void run() {
-		String newStr = "annnia";
+		String newStr = readLine("Enter text: ");
 		makeStatisticks(newStr);
 	}
 

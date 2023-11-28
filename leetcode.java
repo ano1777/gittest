@@ -15,9 +15,9 @@ public class leetcode extends ConsoleProgram {
 			int maxDivisor = 0;
 				for(int i=1; i<=n; i++) {
 					if(n % i == 0) {
-						if(Prime(n)){
+						if(Prime(i)){
 							maxDivisor = i;
-							return maxDivisor;
+		
 		            }
 				}
 				}
@@ -26,12 +26,12 @@ public class leetcode extends ConsoleProgram {
 		}
 		private boolean Prime (int n) {
 			for(int i=2; i<n; i++) {
-				if(n % i ==0){
+				if(n % i == 0){
 				return false;
 				}
 			}
 		return true;	
-		
+
 		
 		}
 		

@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 	public void run() {
 		String str = readLine("Enter string: ");
-		StringTokenizer newtokens = new StringTokenizer(str, " ");
+		StringTokenizer newtokens = new StringTokenizer(str, ",");
 		while(newtokens.hasMoreTokens()){
 		String newTok = newtokens.nextToken();
 		println(newTok);

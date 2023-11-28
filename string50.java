@@ -12,6 +12,7 @@ public class string50 extends ConsoleProgram {
 	}
 
 	private String reverseWords(String str) {
+		while(true){
 		String answer = "";
 		for(int i=0; i<str.length(); i++){
 			if(str.charAt(i) == ' '){
@@ -21,6 +22,7 @@ public class string50 extends ConsoleProgram {
 			}
 		}
 		return answer;
+	}
 	}
 }
 		// String str = readLine("Enter string: ");

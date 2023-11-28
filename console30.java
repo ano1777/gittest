@@ -18,7 +18,7 @@ public class console30 extends ConsoleProgram{
 		}
 	
 		return reverseNum;
-	}
+	}     
 }
 	
 	

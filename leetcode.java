@@ -4,33 +4,70 @@ import acm.program.ConsoleProgram;
 //ამოცანა შეასრულეთ BiggestDivisor.java ფაილში. 
 
 public class leetcode extends ConsoleProgram {
-	boolean prime = false;
 
 	public void run() {
-		int n = readInt("enter number: ");
-		FindDivisors(n);
-		println(biggestDivisor(n));
+		int n = readInt();
+		println(primeDivisors(n));
+		
 	}
-
-	private int FindDivisors(int n) {
-		for (int i = 1; i <= n; i++) {
-			if (n % i == 0) {
-				int divisor = i;
-
-				println(divisor);
+	
+		private int primeDivisors(int  n) {
+			int maxDivisor = 0;
+				for(int i=1; i<=n; i++) {
+					if(n % i == 0) {
+						if(Prime(n)){
+						maxDivisor = i;
+		            }
+				}
 			}
+			return maxDivisor;
+			
 		}
-		return divisor;
-	}
-
-	// private int biggestDivisor(int n) {
-	// int bigDiv = 0;
-	// for(int i=0; i < Math.sqrt(n); i++){
-	// if(n % i != 0){
-	// prime = true;
-	// }
-	// }
-	// return null;
-	// }
-
-}
+		private boolean Prime (int n) {
+			for(int i=2; i<n; i++) {
+				if(n%i ==0){
+				return false;
+				}
+			}
+		return true;	
+		
+		
+		}
+		
+}	
+		
+		
+		
+		
+		
+		
+//		
+//		
+//		
+//		int n = readInt("enter number: ");
+//		FindDivisors(n);
+//		println(biggestDivisor(n));
+//	}
+//
+//	private int FindDivisors(int n) {
+//		for (int i = 1; i <= n; i++) {
+//			if (n % i == 0) {
+//				int divisor = i;
+//
+//				println(divisor);
+//			}
+//		}
+//		return divisor;
+//	}
+//
+//	// private int biggestDivisor(int n) {
+//	// int bigDiv = 0;
+//	// for(int i=0; i < Math.sqrt(n); i++){
+//	// if(n % i != 0){
+//	// prime = true;
+//	// }
+//	// }
+//	// return null;
+//	// }
+//
+//}

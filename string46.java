@@ -14,7 +14,7 @@ public class string46 extends ConsoleProgram {
 			int count = countSymbols(str, str.charAt(i));
 			if (count > maxNum) {
 				maxNum = count;
-				frequentchar = str.charAt(i);
+				frequentchar = str.charAt(i+1);
 
 			}
 		}

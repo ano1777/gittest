@@ -31,7 +31,7 @@ public class string50 extends ConsoleProgram {
 //}
 
  String str = readLine("Enter string: ");
- StringTokenizer newtokens = new StringTokenizer(str);
+ StringTokenizer newtokens = new StringTokenizer(str, " ,?.");
  int count = 0;
  		while(newtokens.hasMoreTokens()){
  			String newTok = newtokens.nextToken();

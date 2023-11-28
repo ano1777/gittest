@@ -33,6 +33,7 @@ private String simulate (String newSt){
            char ch = s.charAt(i);
            result += ch;
        }
+       return result;
 
     }
 }
@@ -60,4 +61,4 @@ private String simulate (String newSt){
 	// }
 	// return s;
 
-}
+

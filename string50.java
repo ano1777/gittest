@@ -26,7 +26,5 @@ public class string50 extends ConsoleProgram {
 			s += text.charAt(i);
 		}
 		return s;
-
 	}
-
 }

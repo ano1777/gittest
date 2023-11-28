@@ -36,11 +36,11 @@ public class console31 extends ConsoleProgram {
 
 	private boolean isPrime(int k) {
 		for(int i=2; i<Math.sqrt(k); i++){
-			if(k%i == 0){
-				return true;
+			if(k%i != 0){
+				return false;
 			}
 		}
 	
-		return false;
+		return true;
 	}
 }

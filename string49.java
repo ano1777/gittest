@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class string49 extends ConsoleProgram {
 	public void run() {
 		String str = "1234";
-		stringToInt(str);
+		println(stringToInt(str));
 		
 	}
 

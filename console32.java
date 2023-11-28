@@ -1,7 +1,7 @@
 import acm.program.ConsoleProgram;
 
 public class console32 extends ConsoleProgram {
-	private static final int MAX_NUM = 1000000;
+	private static final int MAX_NUM = 1000;
 
 	public void run() {
 		for (int i = 0; i<MAX_NUM; i++){

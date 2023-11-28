@@ -21,7 +21,10 @@ public class string50 extends ConsoleProgram {
 			if(str.charAt(i) == ' '){
 				String sub1 = str.substring(0, i);
 				String sub2 = str.substring(i+1);
+				println(sub1);
+				println(sub2);
 				answer = sub2 + ' ' + sub1; 
+				
 			}
 		}
 		return answer;

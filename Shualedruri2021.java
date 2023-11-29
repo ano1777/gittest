@@ -6,18 +6,32 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		String a = "iyo arabets rostevan";
-		String b = "iyo rets rostevan";
-		println(manipulation(a,b));
-
-	
+		String haystack = "sadbutsad";
+		String  needle = "sad";
+		int str = strStr(haystack, needle);
+		println(str);
 	}
+		public int strStr(String haystack, String needle) {
+	        int index = haystack.indexOf(needle);
+	    
+	            return index;
 
-	private boolean manipulation(String a, String b) {
+	        }
 		
-		return true;
-	}
-	}
+		
+		
+//		String a = "iyo arabets rostevan";
+//		String b = "iyo rets rostevan";
+//		println(manipulation(a,b));
+//
+//	
+//	}
+//
+//	private boolean manipulation(String a, String b) {
+//		
+//		return true;
+//	}
+	
 
 	// private GLine line;
 	// int x =0;

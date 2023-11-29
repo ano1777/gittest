@@ -6,7 +6,7 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		String haystack = "butsad";
+		String haystack = "buts";
 		String  needle = "sad";
 		int str = strStr(haystack, needle);
 		println(str);

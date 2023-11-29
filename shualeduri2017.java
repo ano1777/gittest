@@ -6,7 +6,7 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class shualeduri2017 extends GraphicsProgram {
-
+	
 	public void run() {
 		int x = getWidth()-SQUARE_LENGTH;
 		int y = getHeight()-SQUARE_LENGTH;

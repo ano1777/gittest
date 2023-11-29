@@ -10,7 +10,7 @@ public class Shualedruri2021 extends ConsoleProgram {
 		println(lengthOfLastWord(str));
 	}
 		 private int lengthOfLastWord(String s) {
-		        int n;
+		        int n = 0;
 		        int count=0;
 		        for(int i=0; i<s.length(); i++){
 		            char ch = s.charAt(i);
@@ -27,12 +27,13 @@ public class Shualedruri2021 extends ConsoleProgram {
 		              
 		                }
 		            }
-		        }  
 		        
+		        }
 		        return n;
 		        
 		    }
-	}
+}
+
 //		String haystack = "buts";
 //		String  needle = "sad";
 //		int str = strStr(haystack, needle);
@@ -86,4 +87,3 @@ public class Shualedruri2021 extends ConsoleProgram {
 	// y= e.getY();
 	// }
 
-}

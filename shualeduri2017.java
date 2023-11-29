@@ -1,35 +1,29 @@
-import acm.program.ConsoleProgram;
 
-public class shualeduri2017 extends ConsoleProgram {
+import java.awt.event.MouseEvent;
+
+import acm.graphics.GLabel;
+import acm.graphics.GRect;
+import acm.program.GraphicsProgram;
+
+public class shualeduri2017 extends GraphicsProgram {
+
 	public void run() {
-		String str = readLine();
-		String str2 = readLine();
-		println(spellWord(str, str2));
-	}
-
-	private boolean spellWord(String str, String str2) {
-		int a ;
-		int b ;
-		for(char i=0; i<156; i++){
-			a=0;
-			b=0;
-			for(int f=0; f<str.length(); i++){
-			if(str.charAt(f) == i) {
-				a++;
-			}
-		}
-			for(int j=0; j<str2.length(); j++){
-				if(str2.charAt(j) == i) {
-					b++;
-				}
-			}
-			if(b>a) {
-				return false;
-			}
-		
-	}
-		return true;
-
+		int x = getWidth()-SQUARE_LENGTH;
+		int y = getHeight()-SQUARE_LENGTH;
+		GRect square = new GRect(x, y, SQUARE_LENGTH, SQUARE_LENGTH);
+		add(square);
+		GLabel score = new GLabel("0");
+		add(score, x + SQUARE_LENGTH/2 - score.getWidth()/2, y + SQUARE_LENGTH/2 -score.getAscent()/2);
+		addMouseListeners();
 }
+	public void mouseDragged (MouseEvent e){
+		double x = e.getX();
+		double y = e.getY();
+	    //if x1>x2  marjvnidan marcxnivaa da unda daiklos
+		//if x2>x1 marcxnidan marjvnivaa da unda gaizardos
+		if(score != 0){
+			
+		}
+	}
 }
 

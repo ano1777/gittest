@@ -24,8 +24,11 @@ public class Shualedruri2021 extends ConsoleProgram {
 		                if(count == 0){
 		                    String lastWord = s.substring(j+1);
 		                     n = lastWord.length();
-		              
+		                     if(j == s.length()-1){
+		                    	 String last = s.substring(beginIndex)
+		                     }
 		                }
+		               
 		            }
 		        
 		        }

@@ -8,9 +8,11 @@ public class shualeduri2017 extends ConsoleProgram {
 	}
 
 	private boolean spellWord(String str, String str2) {
-		int a = 0;
-		int b = 0;
+		int a ;
+		int b ;
 		for(char i=0; i<200; i++){
+			a=0;
+			b=0;
 			for(int f=0; f<str.length(); i++){
 			if(str.charAt(f) == i) {
 				a++;

@@ -6,17 +6,44 @@ import acm.program.GraphicsProgram;
 
 public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
-		String haystack = "buts";
-		String  needle = "sad";
-		int str = strStr(haystack, needle);
-		println(str);
+		String str = readLine();
+		println(lengthOfLastWord(str));
 	}
-		public int strStr(String haystack, String needle) {
-	        int index = haystack.indexOf(needle);
-	    
-	            return index;
-
-	        }
+		 private int lengthOfLastWord(String s) {
+		        int n;
+		        int count=0;
+		        for(int i=0; i<s.length(); i++){
+		            char ch = s.charAt(i);
+		            if(ch == ' '){
+		                count++;
+		            }
+		        }
+		        for(int j= 0; j<s.length(); j++) {
+		            if(s.charAt(j) == ' '){
+		                count--;
+		                if(count == 0){
+		                    String lastWord = s.substring(j+1);
+		                     n = lastWord.length();
+		              
+		                }
+		            }
+		        }  
+		        
+		        return n;
+		        
+		    }
+	}
+//		String haystack = "buts";
+//		String  needle = "sad";
+//		int str = strStr(haystack, needle);
+//		println(str);
+//	}
+//		public int strStr(String haystack, String needle) {
+//	        int index = haystack.indexOf(needle);
+//	    
+//	            return index;
+//
+//	        }
 		
 		
 		

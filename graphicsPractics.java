@@ -22,25 +22,25 @@ public class graphicsPractics extends GraphicsProgram {
 
 		addMouseListeners();
 		addBall();
-	
-while(true) {
-	
-	if(ball.getX()- ball.getWidth() > getWidth() || ball.getX()< 0){
-		vx= -vx;
-	}
-	if(ball.getY() - ball.getHeight() > getHeight() || ball.getY() < 0){
-		vy = -vy;
-	}
-	ball.move(vx, vy);
-	pause(DELAY);
-}
+
+		while (true) {
+
+			if (ball.getX() < 0 || ball.getX() - ball.getWidth() > getWidth() ) {
+				vx = -vx;
+			}
+			if ( ball.getY() < 0 || ball.getY() - ball.getHeight() > getHeight() ) {
+				vy = -vy;
+			}
+			ball.move(vx, vy);
+			pause(DELAY);
+		}
 	}
 
 	private void addBall() {
 		double radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
 		double x = rgen.nextDouble(0, getWidth() - 2 * radius);
 		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
-		ball = new GOval(x, y, radius *2, radius*2);
+		ball = new GOval(x, y, radius * 2, radius * 2);
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		add(ball);
@@ -48,14 +48,14 @@ while(true) {
 
 	public void mousePressed(MouseEvent e) {
 		ball.setColor(rgen.nextColor());
-		}
+	}
 
 }
-//	private void moveBall() {
-//		// TODO Auto-generated method stub
+// private void moveBall() {
+// // TODO Auto-generated method stub
 //
-//	}
-//}
+// }
+// }
 
 // int x = 0;
 // int y = 0;

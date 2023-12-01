@@ -19,7 +19,7 @@ public class randomSpeed extends ConsoleProgram {
 				char symb = first.charAt(i);
 				 n = countChars(first, symb);
 				 num1 += (int) symb;
-				 
+				 println(num1);
 			}
 		for(int j=0; j<sec.length(); j++){
 			  char cha = sec.charAt(j);

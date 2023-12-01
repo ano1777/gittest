@@ -17,7 +17,7 @@ public class shualedurebi  extends ConsoleProgram{
 				}
 			}
 		}
-		return maxLength > father.length()/2;
+		return maxLength > father.length()/2.0;
 	}
 
 }

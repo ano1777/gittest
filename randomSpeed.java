@@ -26,7 +26,7 @@ public class randomSpeed extends ConsoleProgram {
 		if(n == m){
 		return true;
 		}
-		return true;
+		return false;
 	}
 
 	private int countChars(String text, char ch) {

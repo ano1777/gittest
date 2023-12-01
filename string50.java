@@ -5,7 +5,8 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 	public void run() {
 		String str = readLine();
-		println(addAmount(str));
+		String newStr = addAmount(str);
+		println(newStr);
 	}
 
 	private String addAmount(String str) {

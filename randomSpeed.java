@@ -16,12 +16,12 @@ public class randomSpeed extends ConsoleProgram {
 			for(int i=0; i<first.length(); i++){
 				char symb = first.charAt(i);
 				 n = countChars(first, symb);
-				 println(n);
+				 
 			}
 		for(int j=0; j<sec.length(); j++){
 			  char cha = sec.charAt(j);
 			   m = countChars(sec, cha);
-			   println(m);
+			   
 		}
 		if(n == m){
 		return true;

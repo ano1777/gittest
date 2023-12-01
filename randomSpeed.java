@@ -8,8 +8,7 @@ public class randomSpeed extends ConsoleProgram {
 	}
 
 	private boolean isAnagram(String first, String sec) {
-		int m =0;
-		int n =0;
+	
 		int num1 =0;
 		int num2 =0;
 		if(first.length() != sec.length())
@@ -17,7 +16,6 @@ public class randomSpeed extends ConsoleProgram {
 		else
 			for(int i=0; i<first.length(); i++){
 				char symb = first.charAt(i);
-				 n = countChars(first, symb);
 				 num1 += (int) symb;
 			}
 		 println(num1);
@@ -25,7 +23,6 @@ public class randomSpeed extends ConsoleProgram {
 
 		for(int j=0; j<sec.length(); j++){
 			  char cha = sec.charAt(j);
-			   m = countChars(sec, cha);
 			   num2+= (int)cha;
 		}
 		println(num2);
@@ -35,15 +32,15 @@ public class randomSpeed extends ConsoleProgram {
 		return true;
 	}
 
-	private int countChars(String text, char ch) {
-		int number = 0;
-
-		for (int i = 0; i < text.length(); i++) {
-			if(ch == text.charAt(i)){
-				number ++;
-			}
-
-		}
-		return number;
-	}
+//	private int countChars(String text, char ch) {
+//		int number = 0;
+//
+//		for (int i = 0; i < text.length(); i++) {
+//			if(ch == text.charAt(i)){
+//				number ++;
+//			}
+//
+//		}
+//		return number;
+//	}
 }

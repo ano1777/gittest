@@ -6,73 +6,70 @@ public class string50 extends ConsoleProgram {
 	public void run() {
 		String str = readLine();
 		println(addAmount(str));
-		
-		
-		
-		
-		
 	}
 
 	private String addAmount(String str) {
 		String newStr = "";
-		for(int i=0; i < str.length(); i++) {
+		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
 			int amount = countSumbols(str, ch, i);
-			 newStr += amount + ch;
-			 
-
-}
-		
-		
+			if (amount == 1) {
+				newStr += ch;
+			} else
+				newStr += newStr + amount + ch;
+				i = i + amount - 1;
+		}
 		return newStr;
 	}
 
 	private int countSumbols(String str, char ch, int i) {
 		int count = 0;
-		for (int j =0; j < str.length(); j++) {
-			if(ch == str.charAt(j)){
+		for (int j = 0; j < str.length(); j++) {
+			if (str.charAt(j) == ch) {
 				count++;
+			} else {
+				break;
 			}
 		}
 		return count;
 	}
 }
-//		String str = readLine("enter text: ");
-//		String str2 = reverseWords(str);
-//		println(str2);
+// String str = readLine("enter text: ");
+// String str2 = reverseWords(str);
+// println(str2);
 //
-//	}
+// }
 //
-//	private String reverseWords(String str) {
+// private String reverseWords(String str) {
 //
-//		String answer = "";
+// String answer = "";
 //
-//		for (int i = 0; i < str.length(); i++) {
+// for (int i = 0; i < str.length(); i++) {
 //
-//			if (str.charAt(i) == ' ') {
+// if (str.charAt(i) == ' ') {
 //
-//				String sub1 = str.substring(0, i);
-//				String sub2 = str.substring(i + 1);
-//				println(sub1);
-//				println(sub2);
-//				answer = sub2 + ' ' + sub1;
+// String sub1 = str.substring(0, i);
+// String sub2 = str.substring(i + 1);
+// println(sub1);
+// println(sub2);
+// answer = sub2 + ' ' + sub1;
 //
-//			}
-//		}
-//		return answer;
-//	}
-//}
+// }
+// }
+// return answer;
+// }
+// }
 
 // String str = readLine("Enter string: ");
 // StringTokenizer newtokens = new StringTokenizer(str, " ,?.");
 // int count = 0;
-// 		while(newtokens.hasMoreTokens()){
-// 			String newTok = newtokens.nextToken();
-// 			count++;
-// 		}
+// while(newtokens.hasMoreTokens()){
+// String newTok = newtokens.nextToken();
+// count++;
+// }
 // println(count);
 // }
-//}
+// }
 
 // String s = readLine("enter text: ");
 // String newSt = reversed(s);

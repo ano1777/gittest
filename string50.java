@@ -18,7 +18,7 @@ public class string50 extends ConsoleProgram {
 				newStr += ch;
 			} else
 				newStr += newStr + amount + ch;
-				i = i + amount - 1;
+				i += amount - 1;
 		}
 		return newStr;
 	}
@@ -35,6 +35,8 @@ public class string50 extends ConsoleProgram {
 		return count;
 	}
 }
+
+
 // String str = readLine("enter text: ");
 // String str2 = reverseWords(str);
 // println(str2);

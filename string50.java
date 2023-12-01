@@ -16,11 +16,13 @@ public class string50 extends ConsoleProgram {
 			int amount = countSumbols(str, ch, i);
 			if (amount == 1) {
 				newStr += ch;
-			} else
+			} else{
 				newStr += newStr + amount + ch;
 				i += amount - 1;
 		}
+		}
 		return newStr;
+	
 	}
 
 	private int countSumbols(String str, char ch, int i) {

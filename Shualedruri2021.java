@@ -24,7 +24,8 @@ public class Shualedruri2021 extends ConsoleProgram {
 		                if(count == 0){
 		                    String lastWord = s.substring(j+1);
 		                     n = lastWord.length();
-		                     if(j == s.length()-1){
+		                }
+		                     else  if(j == s.length()-1){
 		                    	 for(int k=s.length(); k>=0; k--) {
 		                    		 if(s.charAt(k) == ' '){
 		                    			String lastWord1 =  s.substring(k, s.length());
@@ -36,7 +37,7 @@ public class Shualedruri2021 extends ConsoleProgram {
 		               
 		            }
 		        
-		        }
+		        
 		        return n;
 		        
 		    }

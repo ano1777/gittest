@@ -1,74 +1,71 @@
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
+import acm.graphics.GOval;
 import acm.graphics.GPoint;
 import acm.program.GraphicsProgram;
 
-public class graphicsPractics extends GraphicsProgram {
-	int x = 0;
-	int y = 0;
-	GLine newLine;
-	GPoint prevPoint;
+import acm.util.RandomGenerator;
 
-//	public void run() {
-//		addMouseListeners();
-//		newLine = new GLine(0, 0, 0, 0);
-//	}
+public class graphicsPractics extends GraphicsProgram {
+	GOval ball;
+	private RandomGenerator rgen = new RandomGenerator();
+	double vx = rgen.nextDouble(1, 3);
+	double vy = rgen.nextDouble(1, 3);
+	private static final double RADIUS_MIN = 10;
+	private static final double RADIUS_MAX = 50;
+	private static final int V_MIN = 1;
+	private static final int V_MAX = 5;
+	private static final int DELAY = 80;
+
+	public void run() {
+
+		addMouseListeners();
+		addBall();
+	}
+
+	private void addBall() {
+		double radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
+		double x = rgen.nextDouble(0, getWidth() - 2 * radius);
+		double y = rgen.nextDouble(0, getHeight() - 2 * radius);
+		ball = new GOval(x, y, radius *2, radius*2);
+		ball.setFilled(true);
+		ball.setColor(rgen.nextColor());
+		add(ball);
+		
+	}
+
+	public void mousePressed(MouseEvent e) {
+		while (true) {
+			ball.move(vx, vy);
+		}
+	}
+
+//	private void moveBall() {
+//		// TODO Auto-generated method stub
 //
-//	public void mousePressed(MouseEvent e) {
-//		newLine = new GLine(prevPoint.getX(), prevPoint.getY(), e.getX(), e.getY());
-//		add(newLine);
-//		prevPoint = new GPoint(e.getX(), e.getY());
-//	}
-//
-//	public void mouseDragged(MouseEvent e) {
-//		newLine.setEndPoint(e.getX(), e.getY());
-//		prevPoint = new GPoint(e.getX(), e.getY());
 //	}
 //}
 
- public void run() {
- addMouseListeners();
- }
- public void mousePressed(MouseEvent e){
- newLine = new GLine(x, y, e.getX(), e.getY());
- add(newLine);
- }
- public void mouseDragged(MouseEvent e) {
- newLine.setEndPoint(e.getX(), e.getY());
- add(newLine);
- }
- public void mouseReleased(MouseEvent e) {
- x= e.getX();
- y=e.getY();
- }
-}
-
-
-
-
-// private GLine line;
-// int x =0;
+// int x = 0;
 // int y = 0;
+// GLine newLine;
+// GPoint prevPoint;
+//
 //
 // public void run() {
-// x =0;
-// y = 0;
 // addMouseListeners();
 // }
-//
-// @Override
-// public void mousePressed(MouseEvent e) {
-// line = new GLine(x, y, e.getX(), e.getY());
-// add(line);
-//
+// public void mousePressed(MouseEvent e){
+// newLine = new GLine(x, y, e.getX(), e.getY());
+// add(newLine);
 // }
-// @Override
 // public void mouseDragged(MouseEvent e) {
-// line.setEndPoint(e.getX(), e.getY());
+// newLine.setEndPoint(e.getX(), e.getY());
+// add(newLine);
 // }
-// @Override
 // public void mouseReleased(MouseEvent e) {
-// x = e.getX();
-// y= e.getY();
+// x= e.getX();
+// y=e.getY();
+// }
 // }

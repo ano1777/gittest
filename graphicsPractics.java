@@ -36,10 +36,10 @@ public class graphicsPractics extends GraphicsProgram {
 	}
 
 	public void mousePressed(MouseEvent e) {
-		while (true) {
+		
 			ball.move(vx, vy);
 		}
-	}
+	
 }
 //	private void moveBall() {
 //		// TODO Auto-generated method stub

@@ -9,14 +9,16 @@ public class shualedurebi  extends ConsoleProgram{
 
 	private boolean iAmYourFather(String father, String child) {
 		int maxLength = 0;
-		for (int i=0; i<child.length()-1; i++) {
-			for(int j=1; j < father.length(); j++) {
-				String sub = father.substring(i,j);
-				if(sub.equals(child)){
-					maxLength = sub.length();
+		for (int i=0; i<child.length(); i++) {
+			for(int j=i+1; j < father.length()+1; j++) {
+				String currsub = father.substring(i,j);
+				if(father.indexOf(currsub) == -1){
+					break;
+				}
+					maxLength = Math.max(maxLength, currsub.length());
 				}
 			}
-		}
+		
 		return maxLength > father.length()/2.0;
 	}
 

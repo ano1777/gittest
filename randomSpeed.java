@@ -29,7 +29,7 @@ public class randomSpeed extends ConsoleProgram {
 			   num2+= (int)cha;
 		}
 		println(num2);
-		if(n == m && num1==num2){
+		if(num1==num2){
 		return true;
 		}
 		return true;

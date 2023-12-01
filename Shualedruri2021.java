@@ -15,7 +15,7 @@ public class Shualedruri2021 extends ConsoleProgram {
 			int lastIndOfSpace = s.lastIndexOf(' ');
 	        	if (lastIndOfSpace == s.length() - 1) {
 						s = s.substring(0, s.length() - 1);
-						lastIndOfSpace = s.lastIndexOf(' ');
+						//lastIndOfSpace = s.lastIndexOf(' ');
 					}
 					String lastWord = s.substring(lastIndOfSpace + 1);
 					n = lastWord.length();

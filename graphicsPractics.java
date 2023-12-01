@@ -22,10 +22,7 @@ public class graphicsPractics extends GraphicsProgram {
 
 		addMouseListeners();
 		addBall();
-		ballMove();
-	}
-
-	private void ballMove() {
+	
 while(true) {
 	ball.move(vx, vy);
 	pause(DELAY);

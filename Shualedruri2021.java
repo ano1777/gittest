@@ -12,32 +12,27 @@ public class Shualedruri2021 extends ConsoleProgram {
 
 	private int lengthOfLastWord(String s) {
 		int n = 0;
-		int count = 0;
-		for (int i = 0; i < s.length(); i++) {
-			char ch = s.charAt(i);
-			if (ch == ' ') {
-				count++;
-			}
-		}
-		for (int j = 0; j < s.length(); j++) {
 			int lastIndOfSpace = s.lastIndexOf(' ');
-			if (s.charAt(j) == ' ') {
-				count--;
-				
-				if (count == 0) {
-					
-						if (lastIndOfSpace == s.length() - 1) {
+	        	if (lastIndOfSpace == s.length() - 1) {
 						s = s.substring(0, s.length() - 1);
-						}
-						String lastWord = s.substring(j + 1);
+						lastIndOfSpace = s.lastIndexOf(' ');
+					}
+					String lastWord = s.substring(lastIndOfSpace + 1);
 					n = lastWord.length();
-				}
-			}
+				
 			
-		}
-		return n;
-	}
+
+	return n;
 }
+}
+
+
+
+
+
+
+
+
 
 // String haystack = "buts";
 // String needle = "sad";

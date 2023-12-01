@@ -9,93 +9,78 @@ public class Shualedruri2021 extends ConsoleProgram {
 		String str = readLine();
 		println(lengthOfLastWord(str));
 	}
-		 private int lengthOfLastWord(String s) {
-		        int n = 0;
-		        int count=0;
-		        for(int i=0; i<s.length(); i++){
-		            char ch = s.charAt(i);
-		            if(ch == ' '){
-		                count++;
-		            }
-		        }
-		        for(int j= 0; j<s.length(); j++) {
-		            if(s.charAt(j) == ' '){
-		                count--;
-		                if(count == 0){
-		                    String lastWord = s.substring(j+1);
-		                     n = lastWord.length();
-		                }
-		            }
-//		                       if(j == s.length()-1){
-//		                    	 for(int k = s.length(); k>=0; k--) {
-//		                    		 if(s.charAt(k) == ' '){
-//		                    			String lastWord1 =  s.substring(k, s.length());
-//		                    			n = lastWord1.length();
-//		                    		 }
-//		                    	 }
-		                    // }
-		                }
-		               
-		            
-		        
-		        
-		        return n;
-		        
-		    }
-		 }
 
+	private int lengthOfLastWord(String s) {
+		int n = 0;
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			if (ch == ' ') {
+				count++;
+			}
+		}
+		for (int j = 0; j < s.length(); j++) {
+			if (s.charAt(j) == ' ') {
+				if (j == s.length() - 1) {
+					s = s.substring(0, s.length() - 1);
+				}
+				count--;
+				if (count == 0) {
+					String lastWord = s.substring(j + 1);
+					n = lastWord.length();
+				}
+			}
+		}
+		return n;
+	}
+}
 
-		    
-//		String haystack = "buts";
-//		String  needle = "sad";
-//		int str = strStr(haystack, needle);
-//		println(str);
-//	}
-//		public int strStr(String haystack, String needle) {
-//	        int index = haystack.indexOf(needle);
-//	    
-//	            return index;
+// String haystack = "buts";
+// String needle = "sad";
+// int str = strStr(haystack, needle);
+// println(str);
+// }
+// public int strStr(String haystack, String needle) {
+// int index = haystack.indexOf(needle);
 //
-//	        }
-		
-		
-		
-//		String a = "iyo arabets rostevan";
-//		String b = "iyo rets rostevan";
-//		println(manipulation(a,b));
+// return index;
 //
-//	
-//	}
+// }
+
+// String a = "iyo arabets rostevan";
+// String b = "iyo rets rostevan";
+// println(manipulation(a,b));
 //
-//	private boolean manipulation(String a, String b) {
-//		
-//		return true;
-//	}
-	
+//
+// }
+//
+// private boolean manipulation(String a, String b) {
+//
+// return true;
+// }
 
-	// private GLine line;
-	// int x =0;
-	// int y = 0;
-	//
-	// public void run() {
-	// x =0;
-	// y = 0;
-	// addMouseListeners();
-	// }
-	//
-	// @Override
-	// public void mousePressed(MouseEvent e) {
-	// line = new GLine(x, y, e.getX(), e.getY());
-	// add(line);
-	//
-	// }
-	// @Override
-	// public void mouseDragged(MouseEvent e) {
-	// line.setEndPoint(e.getX(), e.getY());
-	// }
-	// @Override
-	// public void mouseReleased(MouseEvent e) {
-	// x = e.getX();
-	// y= e.getY();
-	// }
-
+// private GLine line;
+// int x =0;
+// int y = 0;
+//
+// public void run() {
+// x =0;
+// y = 0;
+// addMouseListeners();
+// }
+//
+// @Override
+// public void mousePressed(MouseEvent e) {
+// line = new GLine(x, y, e.getX(), e.getY());
+// add(line);
+//
+// }
+// @Override
+// public void mouseDragged(MouseEvent e) {
+// line.setEndPoint(e.getX(), e.getY());
+// }
+// @Override
+// public void mouseReleased(MouseEvent e) {
+// x = e.getX();
+// y= e.getY();
+// }

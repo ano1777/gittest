@@ -22,6 +22,14 @@ public class graphicsPractics extends GraphicsProgram {
 
 		addMouseListeners();
 		addBall();
+		ballMove();
+	}
+
+	private void ballMove() {
+while(true) {
+	ball.move(vx, vy);
+	
+}
 	}
 
 	private void addBall() {
@@ -32,7 +40,6 @@ public class graphicsPractics extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		add(ball);
-		
 	}
 
 	public void mousePressed(MouseEvent e) {

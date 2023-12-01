@@ -24,14 +24,15 @@ public class graphicsPractics extends GraphicsProgram {
 		addBall();
 	
 while(true) {
-	ball.move(vx, vy);
-	pause(DELAY);
+	
 	if(ball.getX()- ball.getWidth() > getWidth() || ball.getX()< 0){
 		vx= -vx;
 	}
 	if(ball.getY() - ball.getHeight() > getHeight() || ball.getY() < 0){
 		vy = -vy;
 	}
+	ball.move(vx, vy);
+	pause(DELAY);
 }
 	}
 

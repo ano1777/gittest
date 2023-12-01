@@ -48,8 +48,6 @@ while(true) {
 
 	public void mousePressed(MouseEvent e) {
 		ball.setColor(rgen.nextColor());
-
-			ball.move(vx, vy);
 		}
 
 }

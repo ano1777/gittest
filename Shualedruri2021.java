@@ -25,8 +25,9 @@ public class Shualedruri2021 extends ConsoleProgram {
 		                    String lastWord = s.substring(j+1);
 		                     n = lastWord.length();
 		                }
-		                     else  if(j == s.length()-1){
-		                    	 for(int k=s.length(); k>=0; k--) {
+		            }
+		                       if(j == s.length()-1){
+		                    	 for(int k = s.length(); k>=0; k--) {
 		                    		 if(s.charAt(k) == ' '){
 		                    			String lastWord1 =  s.substring(k, s.length());
 		                    			n = lastWord1.length();
@@ -35,14 +36,16 @@ public class Shualedruri2021 extends ConsoleProgram {
 		                     }
 		                }
 		               
-		            }
+		            
 		        
 		        
 		        return n;
 		        
 		    }
-}
+		 }
 
+
+		    
 //		String haystack = "buts";
 //		String  needle = "sad";
 //		int str = strStr(haystack, needle);

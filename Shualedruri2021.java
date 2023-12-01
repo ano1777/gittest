@@ -26,14 +26,14 @@ public class Shualedruri2021 extends ConsoleProgram {
 		                     n = lastWord.length();
 		                }
 		            }
-		                       if(j == s.length()-1){
-		                    	 for(int k = s.length(); k>=0; k--) {
-		                    		 if(s.charAt(k) == ' '){
-		                    			String lastWord1 =  s.substring(k, s.length());
-		                    			n = lastWord1.length();
-		                    		 }
-		                    	 }
-		                     }
+//		                       if(j == s.length()-1){
+//		                    	 for(int k = s.length(); k>=0; k--) {
+//		                    		 if(s.charAt(k) == ' '){
+//		                    			String lastWord1 =  s.substring(k, s.length());
+//		                    			n = lastWord1.length();
+//		                    		 }
+//		                    	 }
+		                    // }
 		                }
 		               
 		            

@@ -11,7 +11,7 @@ public class BouncingBall extends GraphicsProgram{
 			   
 			double vy = rgen.nextDouble(1.0, 3.0);
 			GOval ball = new GOval (getWidth()/2 - RADIUS, getHeight()/2-RADIUS, 2*RADIUS, 2*RADIUS);
-			ball.setFilled(true);;
+			ball.setFilled(true);
 			add(ball);
 			while(true) {
 			ball.move(vx, vy);

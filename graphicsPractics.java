@@ -49,7 +49,11 @@ public class graphicsPractics extends GraphicsProgram {
 	public void mousePressed(MouseEvent e) {
 		ball.setColor(rgen.nextColor());
 	}
-
+	private int randomSpeed() {
+		int v = rgen.nextInt(V_MIN, V_MAX);
+		
+	return 	;
+	}
 }
 // private void moveBall() {
 // // TODO Auto-generated method stub

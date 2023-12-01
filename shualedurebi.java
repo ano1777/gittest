@@ -10,8 +10,8 @@ public class shualedurebi  extends ConsoleProgram{
 	private boolean iAmYourFather(String father, String child) {
 		int maxLength = 0;
 		for (int i=0; i<child.length(); i++) {
-			for(int j=i+1; j < father.length()+1; j++) {
-				String currsub = father.substring(i,j);
+			for(int j=i+1; j < child.length()+1; j++) {
+				String currsub = child.substring(i,j);
 				if(father.indexOf(currsub) == -1){
 					break;
 				}

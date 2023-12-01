@@ -8,7 +8,7 @@ public class Shualedruri2021 extends ConsoleProgram {
 	public void run() {
 
 		String a = "iyo arabets rostevan";
-		String b = "iyo res rostevan";
+		String b = "iyo rets rostevn";
 		println(manipulation(a, b));
 
 	}

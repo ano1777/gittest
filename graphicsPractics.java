@@ -40,7 +40,7 @@ public class graphicsPractics extends GraphicsProgram {
 			ball.move(vx, vy);
 		}
 	}
-
+}
 //	private void moveBall() {
 //		// TODO Auto-generated method stub
 //

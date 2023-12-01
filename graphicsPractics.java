@@ -28,7 +28,7 @@ public class graphicsPractics extends GraphicsProgram {
 	private void ballMove() {
 while(true) {
 	ball.move(vx, vy);
-	
+	pause(DELAY);
 }
 	}
 
@@ -47,7 +47,7 @@ while(true) {
 
 			ball.move(vx, vy);
 		}
-	
+
 }
 //	private void moveBall() {
 //		// TODO Auto-generated method stub

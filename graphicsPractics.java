@@ -22,7 +22,7 @@ public void mousePressed(MouseEvent e) {
 
 public void mouseDragged(MouseEvent e) {
 	newLine.setEndPoint(e.getX(), e.getY());
-	add(newLine);
+	prevPoint = new GPoint (e.getX(), e.getY());
 }
 }
 

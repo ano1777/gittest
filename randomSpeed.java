@@ -25,6 +25,7 @@ public class randomSpeed extends ConsoleProgram {
 			  char cha = sec.charAt(j);
 			   m = countChars(sec, cha);
 			   num2+= (int)cha;
+			   println(num2);
 		}
 		if(n == m && num1==num2){
 		return true;

@@ -21,14 +21,16 @@ public class Shualedruri2021 extends ConsoleProgram {
 		}
 		for (int j = 0; j < s.length(); j++) {
 			if (s.charAt(j) == ' ') {
+				count--;
 				if (j == s.length() - 1) {
 					s = s.substring(0, s.length() - 1);
-				}
-				count--;
+				
+				
 				if (count == 0) {
 					String lastWord = s.substring(j + 1);
 					n = lastWord.length();
 				}
+			}
 			}
 		}
 		return n;

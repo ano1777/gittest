@@ -1,3 +1,5 @@
+import java.awt.event.MouseEvent;
+
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -6,12 +8,13 @@ public class BouncingBall extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int RADIUS = 20;
 	private static final int PAUSE_TIME = 5;
-
+GOval ball;
 	public void run() {
+		addMouseListeners();
 		double vx = rgen.nextDouble(1.0, 3.0);
 
 		double vy = rgen.nextDouble(1.0, 3.0);
-		GOval ball = new GOval(getWidth() / 2 - RADIUS, getHeight() / 2 - RADIUS, 2 * RADIUS, 2 * RADIUS);
+		 ball = new GOval(getWidth() / 2 - RADIUS, getHeight() / 2 - RADIUS, 2 * RADIUS, 2 * RADIUS);
 		ball.setFilled(true);
 		add(ball);
 		while (true) {
@@ -26,5 +29,9 @@ public class BouncingBall extends GraphicsProgram {
 
 		}
 
+	}
+	public void mouseDragged(MouseEvent e){
+		ball.setLocation(e.getX()-RADIUS, e.getY()- RADIUS);
+		
 	}
 }

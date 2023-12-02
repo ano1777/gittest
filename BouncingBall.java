@@ -1,5 +1,6 @@
 import java.awt.event.MouseEvent;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
@@ -31,7 +32,9 @@ GOval ball;
 
 	}
 	public void mouseDragged(MouseEvent e){
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj != null) {
 		ball.setLocation(e.getX()-RADIUS, e.getY()- RADIUS);
-		
+		}
 	}
 }

@@ -5,13 +5,21 @@ import acm.program.ConsoleProgram;
 public class string50 extends ConsoleProgram {
 
 	public void run() {
+		boolean impossible = true;
 		String str = readLine();
 		String result = readLine();
 		for (int i = 1; i < str.length(); i++) {
 			String str1 = str.substring(0, i);
 			String str2 = str.substring(i);
 //			println(str1 + " " + str2);
-			println(manipulation(str1, str2, result));
+			if (manipulation(str1, str2, result) && impossible) {
+				println(manipulation(str1, str2, result));
+				impossible = false;
+				break;
+			}
+		}
+		if (impossible) {
+			println("false");
 		}
 	}
 

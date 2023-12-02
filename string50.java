@@ -3,40 +3,62 @@ import java.util.StringTokenizer;
 import acm.program.ConsoleProgram;
 
 public class string50 extends ConsoleProgram {
-	public void run() {
-		String str = readLine();
-		String newStr = addAmount(str);
-		println(newStr);
-	}
-
-	private String addAmount(String str) {
-		String newStr = "";
-		for (int i = 0; i < str.length(); i++) {
-			char ch = str.charAt(i);
-			int amount = countSumbols(str, ch, i);
-			if (amount == 1) {
-				newStr += ch;
-			} else{
-				newStr += newStr + amount + ch;
-				i += amount - 1;
-		}
-		}
-		return newStr;
 	
+	public void run() {
+		int a = readInt();
+		int b = reverse(a);
+		if (a == b) {
+			println("Palindrome");
+		} else {
+			println("Not a palindrom");
+		}
 	}
 
-	private int countSumbols(String str, char ch, int i) {
-		int count = 0;
-		for (int j = 0; j < str.length(); j++) {
-			if (str.charAt(j) == ch) {
-				count++;
-			} else {
-				break;
-			}
+	private int reverse(int a) {
+		int c = 0;
+		int i = 0;
+		while(a > 0) {
+			c *= 10;
+			c += a % 10;
+			a /= 10;
 		}
-		return count;
+		return c;
 	}
 }
+//	public void run() {
+//		String str = readLine();
+//		String newStr = addAmount(str);
+//		println(newStr);
+//	}
+//
+//	private String addAmount(String str) {
+//		String newStr = "";
+//		for (int i = 0; i < str.length(); i++) {
+//			char ch = str.charAt(i);
+//			int amount = countSumbols(str, ch, i);
+//			if (amount == 1) {
+//				newStr += ch;
+//			} else{
+//				newStr += newStr + amount + ch;
+//				i += amount - 1;
+//		}
+//		}
+//		return newStr;
+//	
+//	}
+//
+//	private int countSumbols(String str, char ch, int i) {
+//		int count = 0;
+//		for (int j = 0; j < str.length(); j++) {
+//			if (str.charAt(j) == ch) {
+//				count++;
+//			} else {
+//				break;
+//			}
+//		}
+//		return count;
+//	}
+//}
 
 
 // String str = readLine("enter text: ");

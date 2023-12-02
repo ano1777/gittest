@@ -44,7 +44,7 @@ public class string50 extends ConsoleProgram {
 				res += str1.charAt(j);
 			}
 		}
-		println(res);
+//		println(res);
 		return res;
 	}
 }

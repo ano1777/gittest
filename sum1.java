@@ -8,8 +8,8 @@ public class sum1 extends ConsoleProgram {
 			char ch = str.charAt(i);
 		
 		Character.toUpperCase(ch);
-		println(str);
 		}
+		println(str);
 	}
 //		int x =1;
 //		int y = 2;

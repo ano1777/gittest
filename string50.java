@@ -10,8 +10,8 @@ public class string50 extends ConsoleProgram {
 		for (int i = 1; i < str.length(); i++) {
 			String str1 = str.substring(0, i);
 			String str2 = str.substring(i);
-
-			println(manipulation(str1, str2, result));
+			println(str1 + " " + str2);
+//			println(manipulation(str1, str2, result));
 		}
 	}
 

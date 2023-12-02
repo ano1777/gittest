@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 
 public class sum1 extends ConsoleProgram {
 	public void run() {
-		String str = "ania";
+		String str = readLine();
 		str.toUpperCase();
 	}
 //		int x =1;

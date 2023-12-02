@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GLine;
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.graphics.GPoint;
 import acm.graphics.GRect;
@@ -15,9 +16,10 @@ public class graphicsPractics extends GraphicsProgram {
 	
 	GOval ball;
 	public void run() {
-		int length = getWidth()/ NUM_ROW;
-		for(int i=0; i<NUM_ROW; i++){
-			for(int j=0; j< NUM_COL;i++){
+		addMouseListeners();
+		int length = Math.max(getWidth(), getHeight())/ NUM_ROW;
+		for(int i=0; i < NUM_ROW; i++){
+			for(int j = 0; j < NUM_COL; j++){
 				 double x = j*length;
 				 double y = i*length;
 				GRect cell = new GRect(y, x, length,length );
@@ -26,6 +28,10 @@ public class graphicsPractics extends GraphicsProgram {
 				add(cell);
 			}
 		}
+	}
+	public void mouseClicked(MouseEvent e) {
+		GObject obj = getElementAt(e.getX(), e.getY());
+		
 	}
 //	private RandomGenerator rgen = new RandomGenerator();
 //	

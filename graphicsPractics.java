@@ -14,7 +14,8 @@ public class graphicsPractics extends GraphicsProgram {
 	private static final int NUM_ROW =8;
 	private static final int NUM_COL =8;
 	
-	GOval ball;
+    GObject firstBlack = null;
+    GObject secondBlack = null;
 	public void run() {
 		addMouseListeners();
 		int length = Math.max(getWidth(), getHeight())/ NUM_ROW;
@@ -30,7 +31,14 @@ public class graphicsPractics extends GraphicsProgram {
 		}
 	}
 	public void mouseClicked(MouseEvent e) {
-		GObject obj = getElementAt(e.getX(), e.getY());
+		GObject object = getElementAt(e.getX(), e.getY());
+		if(object.getColor() ==  Color.WHITE) {
+			object.setColor(Color.BLACK);
+			
+		}
+		else {
+			object.setColor(Color.WHITE);
+		}
 		
 	}
 //	private RandomGenerator rgen = new RandomGenerator();

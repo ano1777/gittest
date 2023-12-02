@@ -7,10 +7,12 @@ public class sum1 extends ConsoleProgram {
 		for(int i=0; i<str.length(); i++) {
 			char ch = str.charAt(i);
 		
-		Character.toUpperCase(ch);
-		}
-		println(str);
+		String uppercase =str.toUpperCase();
+		
+		println(uppercase);
 	}
+	}
+}
 //		int x =1;
 //		int y = 2;
 //		GOval o = new GOval(2,1);
@@ -35,4 +37,4 @@ public class sum1 extends ConsoleProgram {
 //		println("The sum is :" +total+ ".");
 	
 
-}
+

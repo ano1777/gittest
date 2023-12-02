@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.event.MouseEvent;
 
 import acm.graphics.GObject;
@@ -30,11 +31,35 @@ GOval ball;
 
 		}
 
+	} public void mouseClicked(MouseEvent e) {
+		GObject object = getElementAt(e.getX(), e.getY());
+		if(object != null) {
+			object.setColor(myColor());
+			
+			
+		}
 	}
 	public void mouseDragged(MouseEvent e){
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if(obj != null) {
 		ball.setLocation(e.getX()-RADIUS, e.getY()- RADIUS);
 		}
+	}
+	private Color myColor (){
+		int num = rgen.nextInt(0,5);
+		if(num == 0 ){
+			return Color.GREEN;
+		}
+		if(num ==1) {
+			return Color.RED;
+		}
+		if(num==2 ){
+			return Color.BLACK;	
+		}
+		if( num ==3){
+		return Color.YELLOW;
+	}
+	
+		return Color.BLUE;
 	}
 }

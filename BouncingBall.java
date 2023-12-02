@@ -8,7 +8,7 @@ import acm.util.RandomGenerator;
 public class BouncingBall extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int RADIUS = 20;
-	private static final int PAUSE_TIME = 5;
+	private static final int PAUSE_TIME = 10;
 GOval ball;
 	public void run() {
 		addMouseListeners();

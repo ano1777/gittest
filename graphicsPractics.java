@@ -11,7 +11,7 @@ import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
 public class graphicsPractics extends GraphicsProgram {
-
+double radius;
      private GOval ball;
 		double vx =5.0;
 		double vy = 5.0;
@@ -42,7 +42,7 @@ public class graphicsPractics extends GraphicsProgram {
 		 }
 		
 		 private void addBall() {
-		 double radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
+		  radius = rgen.nextDouble(RADIUS_MIN, RADIUS_MAX);
 		 double x = rgen.nextDouble(0, getWidth() - 2 * radius);
 		 double y = rgen.nextDouble(0, getHeight() - 2 * radius);
 		 ball = new GOval(x, y, radius * 2, radius * 2);
@@ -52,9 +52,12 @@ public class graphicsPractics extends GraphicsProgram {
 		 }
 		
 		 public void mousePressed(MouseEvent e) {
+			 
+			 double x = e.getX()/- radius;
+			 double y = e.getY() - radius; 
+			 ball.setLocation(x, y);
 		 ball.setColor(rgen.nextColor());
-		 vx = -vx;
-		 vy=-vy;
+		
 		 }
 		 
 //		 private int randomSpeed() {

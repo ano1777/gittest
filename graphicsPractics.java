@@ -18,7 +18,9 @@ public class graphicsPractics extends GraphicsProgram {
 		int length = getWidth()/ NUM_ROW;
 		for(int i=0; i<NUM_ROW; i++){
 			for(int j=0; j< NUM_COL;i++){
-				GRect cell = new GRect(j, i, length,length );
+				 double x = j*length;
+				 double y = i*length;
+				GRect cell = new GRect(x, y, length,length );
 			
 				cell.setFillColor(Color.WHITE);
 				add(cell);

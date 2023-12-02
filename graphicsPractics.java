@@ -33,8 +33,9 @@ public class graphicsPractics extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		GRect object = (GRect)getElementAt(e.getX(), e.getY());
 		while(true) {
+		GRect object = (GRect)getElementAt(e.getX(), e.getY());
+		
 		if(object == null){
 			return;
 		}else{

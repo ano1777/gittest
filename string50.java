@@ -40,7 +40,7 @@ public class string50 extends ConsoleProgram {
 	private String manipulate(String str1, char ch) {
 		String res = "";
 		for (int j = 0; j < str1.length(); j++) {
-			if (str1.charAt(j) != ch) {
+			if (ch != str1.charAt(j)) {
 				res += ch;
 			}
 		}

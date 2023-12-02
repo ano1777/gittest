@@ -10,8 +10,7 @@ import acm.util.RandomGenerator;
 public class graphicsPractics extends GraphicsProgram {
 	GOval ball;
 	private RandomGenerator rgen = new RandomGenerator();
-	double vx = rgen.nextDouble(1, 3);
-	double vy = rgen.nextDouble(1, 3);
+	
 	private static final double RADIUS_MIN = 10;
 	private static final double RADIUS_MAX = 50;
 	private static final int V_MIN = 1;
@@ -24,7 +23,8 @@ public class graphicsPractics extends GraphicsProgram {
 		addBall();
 
 		while (true) {
-
+			double vx = rgen.nextDouble(1, 3);
+			double vy = rgen.nextDouble(1, 3);
 			if (ball.getX() < 0 || ball.getX() - ball.getWidth() > getWidth() ) {
 				vx = -vx;
 			}

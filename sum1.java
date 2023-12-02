@@ -6,11 +6,16 @@ public class sum1 extends ConsoleProgram {
 		String str = readLine();
 		for(int i=0; i<str.length(); i++) {
 			char ch = str.charAt(i);
+			String uppercase = upperCase(str, ch);
 		
-		String uppercase =str.toUpperCase();
 		
 		println(uppercase);
+		}
 	}
+
+	private String upperCase(String str, char ch) {
+		String str2 = str.toUpperCase();
+		return str2;
 	}
 }
 //		int x =1;

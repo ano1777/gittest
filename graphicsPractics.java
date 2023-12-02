@@ -19,7 +19,7 @@ public class graphicsPractics extends GraphicsProgram {
 		for(int i=0; i<NUM_ROW; i++){
 			for(int j=0; j< NUM_COL;i++){
 				GRect cell = new GRect(j, i, length,length );
-				cell.setFilled(true);;
+			
 				cell.setFillColor(Color.WHITE);
 				add(cell);
 			}

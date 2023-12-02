@@ -20,7 +20,7 @@ public class graphicsPractics extends GraphicsProgram {
 			for(int j=0; j< NUM_COL;i++){
 				 double x = j*length;
 				 double y = i*length;
-				GRect cell = new GRect(x, y, length,length );
+				GRect cell = new GRect(y, x, length,length );
 			
 				cell.setFillColor(Color.WHITE);
 				add(cell);

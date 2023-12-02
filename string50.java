@@ -10,6 +10,7 @@ public class string50 extends ConsoleProgram {
 		for (int i = 1; i < str.length(); i++) {
 			String str1 = str.substring(0, i);
 			String str2 = str.substring(i);
+
 			println(manipulation(str1, str2, result));
 		}
 	}
@@ -17,24 +18,22 @@ public class string50 extends ConsoleProgram {
 	private boolean manipulation(String str1, String str2, String result) {
 		String substracted1 = "";
 		String substracted2 = "";
-		String last ="";
-		for(int i=0; i<str1.length(); i++){
+		String last = "";
+		for (int i = 0; i < str1.length(); i++) {
 			char ch = str1.charAt(i);
-			 substracted1 = manipulate(str1, ch );
-		
-		for(int j=0; j<str2.length(); j++){
-			char symb = str2.charAt(j);
-			 substracted2 = manipulate(str2, symb);
-			
-		}
-		 last = substracted1 + substracted2 ;
-		}
-			if(last.equals(result)){
-				return true;
+			substracted1 = manipulate(str1, ch);
+
+			for (int j = 0; j < str2.length(); j++) {
+				char symb = str2.charAt(j);
+				substracted2 = manipulate(str2, symb);
+				last = substracted1 + substracted2;
+				if (last.equals(result)) {
+					return true;
+				}
+
 			}
-	
-		
-	
+		}
+
 		return false;
 	}
 

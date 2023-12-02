@@ -34,6 +34,7 @@ public class graphicsPractics extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		GRect object = (GRect)getElementAt(e.getX(), e.getY());
+		while(true) {
 		if(object == null){
 			return;
 		}else{
@@ -71,6 +72,7 @@ public class graphicsPractics extends GraphicsProgram {
 			}
 		}
 		}
+	}
 	}
 	// private RandomGenerator rgen = new RandomGenerator();
 	//

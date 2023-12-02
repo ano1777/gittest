@@ -3,63 +3,86 @@ import java.util.StringTokenizer;
 import acm.program.ConsoleProgram;
 
 public class string50 extends ConsoleProgram {
-	
+
 	public void run() {
-		int a = readInt();
-		int b = reverse(a);
-		if (a == b) {
-			println("Palindrome");
-		} else {
-			println("Not a palindrom");
+		String str = readLine();
+		String result = readLine();
+		for (int i = 1; i < str.length(); i++) {
+			String str1 = str.substring(0, i);
+			String str2 = str.substring(i);
+			println(manipulation(str1, str2, result));
 		}
 	}
 
-	private int reverse(int a) {
-		int c = 0;
-		int i = 0;
-		while(a > 0) {
-			c *= 10;
-			c += a % 10;
-			a /= 10;
+	private boolean manipulation(String str1, String str2, String result) {
+		String substracted1 = "";
+		String substracted2 = "";
+		String last ="";
+		for(int i=0; i<str1.length(); i++){
+			char ch = str1.charAt(i);
+			 substracted1 = manipulate(str1, ch );
+		
+		for(int j=0; j<str2.length(); j++){
+			char symb = str2.charAt(j);
+			 substracted2 = manipulate(str2, symb);
+			
 		}
-		return c;
+		 last = substracted1 + substracted2 ;
+		}
+			if(last.equals(result)){
+				return true;
+			}
+	
+		
+	
+		return false;
+	}
+
+	private String manipulate(String str1, char ch) {
+		String res = "";
+		for (int j = 0; j < str1.length(); j++) {
+			if (str1.charAt(j) != ch) {
+				res += ch;
+			}
+		}
+		return res;
 	}
 }
-//	public void run() {
-//		String str = readLine();
-//		String newStr = addAmount(str);
-//		println(newStr);
-//	}
-//
-//	private String addAmount(String str) {
-//		String newStr = "";
-//		for (int i = 0; i < str.length(); i++) {
-//			char ch = str.charAt(i);
-//			int amount = countSumbols(str, ch, i);
-//			if (amount == 1) {
-//				newStr += ch;
-//			} else{
-//				newStr += newStr + amount + ch;
-//				i += amount - 1;
-//		}
-//		}
-//		return newStr;
-//	
-//	}
-//
-//	private int countSumbols(String str, char ch, int i) {
-//		int count = 0;
-//		for (int j = 0; j < str.length(); j++) {
-//			if (str.charAt(j) == ch) {
-//				count++;
-//			} else {
-//				break;
-//			}
-//		}
-//		return count;
-//	}
-//}
 
+// public void run() {
+// String str = readLine();
+// String newStr = addAmount(str);
+// println(newStr);
+// }
+//
+// private String addAmount(String str) {
+// String newStr = "";
+// for (int i = 0; i < str.length(); i++) {
+// char ch = str.charAt(i);
+// int amount = countSumbols(str, ch, i);
+// if (amount == 1) {
+// newStr += ch;
+// } else{
+// newStr += newStr + amount + ch;
+// i += amount - 1;
+// }
+// }
+// return newStr;
+//
+// }
+//
+// private int countSumbols(String str, char ch, int i) {
+// int count = 0;
+// for (int j = 0; j < str.length(); j++) {
+// if (str.charAt(j) == ch) {
+// count++;
+// } else {
+// break;
+// }
+// }
+// return count;
+// }
+// }
 
 // String str = readLine("enter text: ");
 // String str2 = reverseWords(str);

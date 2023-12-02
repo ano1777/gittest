@@ -21,7 +21,7 @@ public class GraphicsEvent  extends GraphicsProgram {
 		
 	}
 	public void keyTyped(KeyEvent e) {
-		label.setLabel("keey typed" + e.getKeyChar());
+		label.setLabel("key typed " + e.getKeyChar());
 	}
 }
 //	private GRect newRect;

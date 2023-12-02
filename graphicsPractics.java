@@ -33,7 +33,6 @@ public class graphicsPractics extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		while(true) {
 		GRect object = (GRect)getElementAt(e.getX(), e.getY());
 		
 		if(object == null){
@@ -120,7 +119,7 @@ public class graphicsPractics extends GraphicsProgram {
 	//
 	// return ;
 	// }
-}
+
 // private void moveBall() {
 // // TODO Auto-generated method stub
 //

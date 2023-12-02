@@ -41,7 +41,7 @@ public class string50 extends ConsoleProgram {
 		String res = "";
 		for (int j = 0; j < str1.length(); j++) {
 			if (ch != str1.charAt(j)) {
-				res += ch;
+				res += str1.charAt(j);
 			}
 		}
 		println(res);

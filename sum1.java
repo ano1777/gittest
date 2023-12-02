@@ -4,7 +4,11 @@ import acm.program.ConsoleProgram;
 public class sum1 extends ConsoleProgram {
 	public void run() {
 		String str = readLine();
-		str.toUpperCase();
+		for(int i=0; i<str.length(); i++) {
+			char ch = str.charAt(i);
+		
+		Character.toUpperCase(ch);
+		}
 	}
 //		int x =1;
 //		int y = 2;

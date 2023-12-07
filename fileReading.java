@@ -7,9 +7,9 @@ import acm.program.ConsoleProgram;
 
 public class fileReading extends ConsoleProgram {
 	public void run() {
-		BufferedReader reader;
+		//BufferedReader reader;
 		try {
-			reader = new BufferedReader(new FileReader("C:/Users/99559/Desktop/Practice/Practice/fileReading.java"));
+			BufferedReader reader = new BufferedReader(new FileReader("C:/Users/99559/Desktop/Practice/Practice/fileReading.java"));
 			while (true) {
 				String line = reader.readLine();
 				if (line == null) {

@@ -12,10 +12,11 @@ public class problem54 extends ConsoleProgram {
 			int number = readInt("enter number # " + i + " :");
 			if (number > maxNum) {
 				maxNum = number;
+			}
 				if (number > maxNum && number > secondMaxNum) {
 					secondMaxNum = maxNum;
 					maxNum = number;
-				}
+				
 			}
 		}
 		println(maxNum);

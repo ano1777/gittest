@@ -15,10 +15,9 @@ public class fileReading extends ConsoleProgram {
 				if (line == null) {
 					break;
 				}
-				
-				println(line);
-				
+				println(line);	
 			}
+			
 			reader.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

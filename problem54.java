@@ -8,23 +8,22 @@ public class problem54 extends ConsoleProgram {
 
 		int maxNum = 0;
 		int secondMaxNum = 0;
+		if (maxNum < secondMaxNum) {
+			int temp = maxNum;
+			maxNum = secondMaxNum;
+			secondMaxNum = temp;
+		}
 		for (int i = 1; i < n + 1; i++) {
 			int number = readInt("enter number # " + i + " :");
 			if (number > maxNum) {
 				secondMaxNum = maxNum;
 				maxNum = number;
-			}
-			else if(number > secondMaxNum) {
+			} else if (number > secondMaxNum) {
 				secondMaxNum = number;
-				
-		}
+
 			}
-		if (maxNum < secondMaxNum) {
-			int temp = maxNum;
-			maxNum = secondMaxNum;
-			secondMaxNum = temp;
-				
 		}
+
 		println(maxNum);
 		println(secondMaxNum);
 	}

@@ -33,6 +33,7 @@ public class problem53 extends ConsoleProgram {
 		println("the number of words are :" + numWords());
 		println("the number of characters are :" + numChars());
 		println("the number of sentences are :" + numSentence());
+		println("number of question marks : " + numQuestMarks());
 	}
 
 	private int numSentence() {
@@ -45,9 +46,19 @@ public class problem53 extends ConsoleProgram {
 		return num;
 	}
 
+	private int numQuestMarks() {
+		int marks = 0;
+		for (int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) == '?') {
+				marks++;
+			}
+		}
+		return marks;
+	}
+
 	private int numChars() {
 		int chars = 0;
-		for(int i=0; i < text.length(); i++){
+		for (int i = 0; i < text.length(); i++) {
 			chars++;
 		}
 

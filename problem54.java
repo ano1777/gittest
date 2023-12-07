@@ -13,11 +13,16 @@ public class problem54 extends ConsoleProgram {
 			if (number > maxNum) {
 				maxNum = number;
 			}
+		
 				if (number > maxNum && number > secondMaxNum) {
-					secondMaxNum = maxNum;
+					int temp = maxNum;
 					maxNum = number;
-				
+					secondMaxNum = temp;
+						
 			}
+				if(number > secondMaxNum && number < maxNum){
+					secondMaxNum = number;
+				}
 		}
 		println(maxNum);
 		println(secondMaxNum);

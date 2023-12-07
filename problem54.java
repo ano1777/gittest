@@ -24,7 +24,7 @@ public class problem54 extends ConsoleProgram {
 			}
 		}
 
-		println(maxNum);
-		println(secondMaxNum);
+		println("the biggest number" +maxNum);
+		println("the second biggest number" + secondMaxNum);
 	}
 }

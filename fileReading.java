@@ -9,7 +9,7 @@ public class fileReading extends ConsoleProgram {
 	public void run() {
 		BufferedReader reader;
 		try {
-			reader = new BufferedReader(new FileReader("C:/Users/99559/Desktop/Practice/Practice/fileReading.java"));
+			reader = new BufferedReader(new FileReader("C:/Users/99559/Desktop/Practice/Practice/fileReading1.java"));
 			while (true) {
 				String line = reader.readLine();
 				if (line == null) {

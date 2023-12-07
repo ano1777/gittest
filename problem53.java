@@ -57,12 +57,17 @@ public class problem53 extends ConsoleProgram {
 	}
 
 	private int numChars() {
-		int chars = 0;
-		for (int i = 0; i < text.length(); i++) {
-			chars++;
+		int numchars = 0;
+		StringTokenizer word = new StringTokenizer(text);
+		while (word.hasMoreTokens()) {
+			String sityva = word.nextToken();
+			numchars += sityva.length();
 		}
+		// for (int i = 0; i < text.length(); i++) {
+		// chars++;
+		// }
 
-		return chars;
+		return numchars;
 	}
 
 	private int numWords() {

@@ -8,7 +8,7 @@ public class problem54 extends ConsoleProgram {
 		
 	//	n[2]= n[1]+n[4];
 		int [] in = new int[8];
-		in[3] = 8 ;
+	
 		println("in is :" + Arrays.toString(in));
 	}
 

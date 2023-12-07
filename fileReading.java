@@ -16,13 +16,18 @@ public class fileReading extends ConsoleProgram {
 					break;
 				}
 				
+				println(line);
+				
 			}
+			reader.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			println("shecdomaa, faili ver moidzebna");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			println("sxva shecdoma");
 		}
 	}
 }

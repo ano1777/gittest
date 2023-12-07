@@ -4,12 +4,12 @@ import acm.program.ConsoleProgram;
 
 public class problem54 extends ConsoleProgram {
 	public void run() {
-	//	int[] n = {1,4,5,6,8};
-		
-	//	n[2]= n[1]+n[4];
-		int [] in = new int[8];
-	
-		println("in is :" + Arrays.toString(in));
+	int  n = readInt("Enter num :");
+	int sum = 0;
+	for(int i=0; i<n; i++) {
+		sum += n;
+	}
+	println(sum);
 	}
 
 }

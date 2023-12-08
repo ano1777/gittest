@@ -16,11 +16,11 @@ public class problem54 extends ConsoleProgram {
 
 	private boolean isSorted(int[] numbers) {
 		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] > numbers[i + 1]) {
-				return false;
+			if (numbers[i] < numbers[i + 1]) {
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 	// int[] num = new int[5];

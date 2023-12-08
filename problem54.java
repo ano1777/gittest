@@ -5,8 +5,8 @@ import acm.program.ConsoleProgram;
 public class problem54 extends ConsoleProgram {
 	public void run() {
 		//int n = readInt();
-		int[] num = new int[4];
-		int[] arr = {2, 5, 20, 1, 3};
+		int[] num = new int[5];
+		int[] arr = {2,5,20,1,3};
 		num[0]= 2;
 		num[1] = 5;
 		num[2] = 20;

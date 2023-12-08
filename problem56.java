@@ -8,8 +8,8 @@ public class problem56 extends ConsoleProgram {
 
 		int[] numbers = new int[n];
 		for (int j = 0; j < n; j++) {
-			int num = readInt("enter numbeer : ");
-			
+			numbers[j] = readInt("enter numbeer : ");
+		
 		}
 	
 		println(Arrays.toString(numbers));

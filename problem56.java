@@ -9,6 +9,7 @@ public class problem56 extends ConsoleProgram {
 		int[] numbers = new int[n];
 		for (int j = 0; j < n; j++) {
 			int num = numbers[j];
+			println(num);
 		}
 	
 		println(Arrays.toString(numbers));

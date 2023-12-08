@@ -11,20 +11,24 @@ public class problem54 extends ConsoleProgram {
 		}
 		println(Arrays.toString(numbers));
 		println(isSorted(numbers));
-
+		println(sorted2(numbers));
 	}
 
 	private boolean isSorted(int[] numbers) {
-		for (int i = 0; i < numbers.length; i++) {
-			if (numbers[i] < numbers[i + 1]) {
-				return true;
+		for (int i = 1; i < numbers.length; i++) {
+			if (numbers[i] < numbers[i - 1]) {
+				return false;
 			}
-		
-		return false;
 		}
-		return false;
+		return true;
 	}
-
+	 private boolean sorted2 (int [] numbers) {
+	    int[] numbersCopy = Arrays.copyOf(numbers, numbers.length); 
+	    Arrays.sort(numbersCopy);
+	    
+	    return Arrays.equals(numbers, numbersCopy);
+	 }
+}
 	// int[] num = new int[5];
 	// String[] array = new String[3];
 	// array [0] = " ";
@@ -56,7 +60,7 @@ public class problem54 extends ConsoleProgram {
 	// Arrays.sort(num);
 	// println(num);
 
-}
+
 // int n = readInt("Enter num :");
 //
 // int maxNum = 0;

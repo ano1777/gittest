@@ -6,9 +6,13 @@ public class problem54 extends ConsoleProgram {
 	public void run() {
 		int n = readInt();
 		int[] num = new int[n];
+		for(int i=0; i<num.length; i++) {
+			n = 3;
+			
+		}
 		println(num);
-	    Arrays.sort(num);
-	    println(num);
+//	    Arrays.sort(num);
+//	    println(num);
 		
 		
 		

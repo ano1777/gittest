@@ -6,7 +6,9 @@ public class problem54 extends ConsoleProgram {
 	public void run() {
 		//int n = readInt();
 		int[] num = new int[4];
-		int[] arr = new int[5];
+		int[] arr = new int[4];
+		num[0] = 5;
+		arr[0]= 2;
 		println(Arrays.equals(num,arr));
 		//for(int i=0; i<num.length; i++) {
 			// = 3;

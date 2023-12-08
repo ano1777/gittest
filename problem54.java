@@ -8,8 +8,8 @@ public class problem54 extends ConsoleProgram {
 		int[] num = new int[4];
 		int[] arr = new int[4];
 		num[0] = 5;
-		arr[0]= 2;
-		println(Arrays.equals(num,arr));
+		arr[0]= 5;
+		println("this arrays are equal" + Arrays.equals(num,arr));
 		//for(int i=0; i<num.length; i++) {
 			// = 3;
 			

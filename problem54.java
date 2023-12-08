@@ -13,6 +13,7 @@ public class problem54 extends ConsoleProgram {
 		num[3] = 19;
 		num[4] = 3;
 		println("this arrays are equal: " + Arrays.equals(num,arr));
+		Arrays.sort(num);
 		println(Arrays.toString(num));
 		Arrays.sort(arr);
 		println(Arrays.toString(arr));

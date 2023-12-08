@@ -7,6 +7,7 @@ public class problem54 extends ConsoleProgram {
 		//int n = readInt();
 		int[] num = new int[5];
 		String[] array = new String[3];
+		Arrays.toString(array);
 		println(array);
 		int[] arr = {2,5,20,1,10};
 		num[0]= 20;

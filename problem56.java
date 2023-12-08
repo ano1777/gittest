@@ -5,6 +5,7 @@ import acm.program.ConsoleProgram;
 public class problem56 extends ConsoleProgram {
 	public void run() {
 		int[] numbers = {3, 5, 9, 10, 4};
+		println(Arrays.toString(numbers));
 		int length = numbers.length;
 		
 		for(int i=0; i < length/2; i++) {

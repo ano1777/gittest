@@ -10,18 +10,18 @@ public class problem54 extends ConsoleProgram {
 			numbers[i] = readInt("enter number: ");
 		}
 		println(Arrays.toString(numbers));
-		println(isSorted(numbers));
+	//	println(isSorted(numbers));
 		println(sorted2(numbers));
 	}
-
-	private boolean isSorted(int[] numbers) {
-		for (int i = 1; i < numbers.length; i++) {
-			if (numbers[i] < numbers[i - 1]) {
-				return false;
-			}
-		}
-		return true;
-	}
+//
+//	private boolean isSorted(int[] numbers) {
+//		for (int i = 1; i < numbers.length; i++) {
+//			if (numbers[i] < numbers[i - 1]) {
+//				return false;
+//			}
+//		}
+//		return true;
+//	}
 	 private boolean sorted2 (int [] numbers) {
 	    int[] numbersCopy = Arrays.copyOf(numbers, numbers.length); 
 	    Arrays.sort(numbersCopy);

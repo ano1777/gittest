@@ -6,11 +6,11 @@ public class problem54 extends ConsoleProgram {
 	public void run() {
 		//int n = readInt();
 		int[] num = new int[5];
-		int[] arr = {2,5,20,1,3};
-		num[0]= 2;
+		int[] arr = {2,5,20,1,10};
+		num[0]= 20;
 		num[1] = 5;
-		num[2] = 20;
-		num[3] = 1;
+		num[2] = 230;
+		num[3] = 19;
 		num[4] = 3;
 		println("this arrays are equal: " + Arrays.equals(num,arr));
 		Arrays.sort(arr);

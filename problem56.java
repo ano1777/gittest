@@ -3,17 +3,22 @@ import java.util.Arrays;
 import acm.program.ConsoleProgram;
 
 public class problem56 extends ConsoleProgram {
+	int length;
 	public void run() {
 		int n = readInt();
 
 		int[] numbers = new int[n];
 		for (int j = 0; j < n; j++) {
 			numbers[j] = readInt("enter numbeer : ");
-		
 		}
 	
 		println(Arrays.toString(numbers));
-		int length = numbers.length;
+		 length = numbers.length;
+		reverseElements(numbers);
+
+	}
+
+	private void reverseElements(int[] numbers) {
 
 		for (int i = 0; i < length / 2; i++) {
 			int temp = numbers[i];
@@ -22,7 +27,7 @@ public class problem56 extends ConsoleProgram {
 		}
 
 		println(Arrays.toString(numbers));
-
+		
 	}
 
 }

@@ -9,7 +9,7 @@ public class problem54 extends ConsoleProgram {
 		int n = readInt();
 		int[] arr = new int[n];
 		for (int i = 0; i < n; i++) {
-			arr[i] = readInt();
+			arr[i] = readInt("enter number: ");
 		}
 
 		println(maxNuber(arr));

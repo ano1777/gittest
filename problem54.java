@@ -12,7 +12,8 @@ public class problem54 extends ConsoleProgram {
 		num[2] = 20;
 		num[3] = 1;
 		num[4] = 3;
-		println("this arrays are equal " + Arrays.equals(num,arr));
+		println("this arrays are equal: " + Arrays.equals(num,arr));
+		Arrays.sort(arr);
 		//for(int i=0; i<num.length; i++) {
 			// = 3;
 			

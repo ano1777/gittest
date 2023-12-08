@@ -9,6 +9,7 @@ public class problem54 extends ConsoleProgram {
 		println(num);
 	    Arrays.sort(num);
 	    Arrays.toString(num);
+	    println(num);
 		
 		
 		

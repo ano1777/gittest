@@ -45,4 +45,4 @@ public class problem54 extends ConsoleProgram {
 //		println("the biggest number" +maxNum);
 //		println("the second biggest number" + secondMaxNum);
 //	}
-}
+

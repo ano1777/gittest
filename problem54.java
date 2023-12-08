@@ -6,6 +6,8 @@ public class problem54 extends ConsoleProgram {
 	public void run() {
 		//int n = readInt();
 		int[] num = new int[5];
+		String[] array = new String[3];
+		println(array);
 		int[] arr = {2,5,20,1,10};
 		num[0]= 20;
 		num[1] = 5;
@@ -19,6 +21,7 @@ public class problem54 extends ConsoleProgram {
 		println(Arrays.toString(arr));
 		Arrays.fill(num, 3);
 		println(Arrays.toString(num));
+		
 		
 
 	

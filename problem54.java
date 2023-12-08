@@ -4,7 +4,6 @@ import acm.program.ConsoleProgram;
 
 public class problem54 extends ConsoleProgram {
 	int maxIndex = -1;
-
 	public void run() {
 		int n = readInt();
 		int[] arr = new int[n];
@@ -12,8 +11,8 @@ public class problem54 extends ConsoleProgram {
 			arr[i] = readInt("enter number: ");
 		}
 
-		println(maxNuber(arr));
-		println(secondMax(arr));
+		println("maximum number is: " + maxNuber(arr));
+		println("second maximum number: " +secondMax(arr));
 	}
 
 	private int secondMax(int[] arr) {

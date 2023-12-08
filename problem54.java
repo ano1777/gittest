@@ -19,6 +19,8 @@ public class problem54 extends ConsoleProgram {
 			if (numbers[i] < numbers[i + 1]) {
 				return true;
 			}
+		
+		return false;
 		}
 		return false;
 	}

@@ -8,7 +8,6 @@ public class problem54 extends ConsoleProgram {
 		int[] num = new int[n];
 		println(num);
 	    Arrays.sort(num);
-	    Arrays.toString(num);
 	    println(num);
 		
 		

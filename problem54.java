@@ -7,8 +7,13 @@ public class problem54 extends ConsoleProgram {
 		//int n = readInt();
 		int[] num = new int[5];
 		String[] array = new String[3];
+		array [0] = "";
+		array [1] = "ani";
+		array [2] = "kavelashvili";
+		int k = num[2];	
+		println(k);
 		println(Arrays.toString(array));
-		
+	
 		int[] arr = {2,5,20,1,10};
 		num[0]= 20;
 		num[1] = 5;

@@ -15,6 +15,7 @@ public class problem54 extends ConsoleProgram {
 		println("this arrays are equal: " + Arrays.equals(num,arr));
 		Arrays.sort(arr);
 		println(Arrays.toString(arr));
+		println(Arrays.toString(num));
 		Arrays.fill(num, 3);
 		println(num);
 	

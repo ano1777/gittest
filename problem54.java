@@ -6,10 +6,13 @@ public class problem54 extends ConsoleProgram {
 	public void run() {
 		//int n = readInt();
 		int[] num = new int[4];
-		int[] arr = new int[4];
-		num[0] = 5;
-		arr[0]= 5;
-		println("this arrays are equal" + Arrays.equals(num,arr));
+		int[] arr = {2, 5, 20, 1, 3};
+		num[0]= 2;
+		num[1] = 5;
+		num[2] = 20;
+		num[3] = 1;
+		num[4] = 3;
+		println("this arrays are equal " + Arrays.equals(num,arr));
 		//for(int i=0; i<num.length; i++) {
 			// = 3;
 			

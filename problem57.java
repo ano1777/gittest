@@ -6,17 +6,16 @@ import acm.program.ConsoleProgram;
 public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
-		ArrayList<Integer> myArrayList = new ArrayList<Integer>();
-		myArrayList.get(5);
-		println(myArrayList.size());
-		myArrayList.add(10);
-	/*	while( true) {
-			int n = readInt();
-			if (n == SENTINEL) {
-				break;
+		int[][] matrix = new int[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j=0; j < 3; j++){ 
+				matrix[i][j] = readInt("Enter a number: ");
 			}
-			myArrayList.add(n);
-		} */
+		}
+	}
+	private boolean isMagic (int[][] matrix) {
+		
+		return false;
 	}
 	
 	

@@ -10,12 +10,13 @@ public class problem57 extends ConsoleProgram{
 		myArrayList.get(5);
 		println(myArrayList.size());
 		myArrayList.add(10);
-		while( true) {
+	/*	while( true) {
 			int n = readInt();
 			if (n == SENTINEL) {
 				break;
 			}
-		}
+			myArrayList.add(n);
+		} */
 	}
 	
 	

@@ -12,7 +12,7 @@ public class problem57 extends ConsoleProgram{
 		arr.add(5);
 	arr.set(0, 5);
 	arr.set(1, 2);
-	println(arr.indexOf(2));
+	println(arr.indexOf(5));
 		for(Integer in : arr) {
 			println(in);
 		}

@@ -13,9 +13,9 @@ public class problem57 extends ConsoleProgram{
 		for(Integer in : arr) {
 			println(in);
 		}
-//		for(int i = 0; i < arr.size(); i++) {
-//			println(arr.get(i));	
-//		}
+		for(int i = 0; i < arr.size(); i++) {
+			println(arr.get(i));	
+		}
 //		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){

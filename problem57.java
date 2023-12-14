@@ -14,6 +14,7 @@ public class problem57 extends ConsoleProgram{
 	arr.set(0, 5);
 	arr.set(1, 2);
 	arr.remove(0);
+	arr.clear();
 	println(arr.indexOf(2));
 	if (arr.contains(3)) {
 		println("it contains");
@@ -27,7 +28,7 @@ public class problem57 extends ConsoleProgram{
 		for(int i = 0; i < arr.size(); i++) {
 			println(arr.get(i));	
 		}
-		arr.clear();
+		
 //		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){

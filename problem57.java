@@ -27,6 +27,7 @@ public class problem57 extends ConsoleProgram{
 		for(int i = 0; i < arr.size(); i++) {
 			println(arr.get(i));	
 		}
+		arr.clear();
 //		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){

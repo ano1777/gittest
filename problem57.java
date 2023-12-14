@@ -7,13 +7,16 @@ public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
-		for(int j = 0; j < arr.size(); j++) {
-			arr.add(2);
-		}
-		for(int i = 0; i < arr.size(); i++) {
-			println(arr.get(i));	
-		}
 		
+		arr.add(2);
+		arr.add(5);
+		for(Integer in : arr) {
+			println(in);
+		}
+//		for(int i = 0; i < arr.size(); i++) {
+//			println(arr.get(i));	
+//		}
+//		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){
 //			for(int j=0; j < 3; j++){ 

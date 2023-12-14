@@ -13,7 +13,7 @@ public class problem57 extends ConsoleProgram{
 		arr.add(2, 30);
 	arr.set(0, 5);
 	arr.set(1, 2);
-	
+	arr.remove(0);
 	println(arr.indexOf(2));
 	
 		for(Integer in : arr) {

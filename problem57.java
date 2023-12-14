@@ -22,7 +22,7 @@ public class problem57 extends ConsoleProgram{
 	else {
 		println("oh no");
 	}
-		for(Integer in : arr) {
+		for(String in : arr) {
 			println(in);
 		}
 		for(int i = 0; i < arr.size(); i++) {

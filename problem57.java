@@ -6,16 +6,22 @@ import acm.program.ConsoleProgram;
 public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
-		int[][] matrix = new int[3][3];
-		for(int i = 0; i < 3; i++){
-			for(int j=0; j < 3; j++){ 
-				matrix[i][j] = readInt("Enter a number: ");
-			}
-		}
-	}
-	private boolean isMagic (int[][] matrix) {
-		
-		return false;
+		ArrayList<Integer> arr = new ArrayList<Integer>();
+		arr.add(9);
+		arr.add(100);
+		println(arr.get(0));
+		println(arr.get(1));
+		println(arr.get(8));
+//		int[][] matrix = new int[3][3];
+//		for(int i = 0; i < 3; i++){
+//			for(int j=0; j < 3; j++){ 
+//				matrix[i][j] = readInt("Enter a number: ");
+//			}
+//		}
+//	}
+//	private boolean isMagic (int[][] matrix) {
+//		
+//		return false;
 	}
 	
 	

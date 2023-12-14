@@ -10,7 +10,7 @@ public class problem57 extends ConsoleProgram{
 		
 		arr.add(2);
 		arr.add(5);
-		arr.add(4, 30);
+		arr.add(3, 30);
 	arr.set(0, 5);
 	arr.set(1, 2);
 	

@@ -6,13 +6,13 @@ import acm.program.ConsoleProgram;
 public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
-		ArrayList<Integer> arr = new ArrayList<Integer>();
+		ArrayList<String> arr = new ArrayList<String>();
 		
-		arr.add(2);
-		arr.add(5);
-		arr.add(2, 30);
-	arr.set(0, 5);
-	arr.set(1, 2);
+		arr.add("comon");
+		arr.add("ani");
+		arr.add(2, "kava");
+	arr.set(2, "ani");
+	arr.set(1, "kava");
 	arr.remove(0);
 
 	println(arr.indexOf(2));

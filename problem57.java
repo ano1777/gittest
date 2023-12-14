@@ -11,7 +11,7 @@ public class problem57 extends ConsoleProgram{
 		arr.add(2);
 		arr.add(5);
 	arr.set(0, 5);
-	
+	arr.set(1, 2);
 		for(Integer in : arr) {
 			println(in);
 		}

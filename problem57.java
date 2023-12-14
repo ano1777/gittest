@@ -9,8 +9,9 @@ public class problem57 extends ConsoleProgram{
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		arr.add(9);
 		arr.add(100);
-		println(arr.get(0));
-		println(arr.get(1));
+		for(int i = 0; i < arr.size(); i++) {
+			println(arr.get(i));	
+		}
 		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){

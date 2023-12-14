@@ -7,8 +7,9 @@ public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
-		arr.add(9);
-		arr.add(100);
+		for(int j = 0; j < arr.size(); j++) {
+			arr.add(2);
+		}
 		for(int i = 0; i < arr.size(); i++) {
 			println(arr.get(i));	
 		}

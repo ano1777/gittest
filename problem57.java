@@ -15,7 +15,12 @@ public class problem57 extends ConsoleProgram{
 	arr.set(1, 2);
 	arr.remove(0);
 	println(arr.indexOf(2));
-	
+	if (arr.contains(2)) {
+		println("it contains");
+	}
+	else {
+		println("oh no");
+	}
 		for(Integer in : arr) {
 			println(in);
 		}

@@ -8,27 +8,28 @@ public class problem57 extends ConsoleProgram{
 	public void run() {
 		ArrayList<String> arr = new ArrayList<String>();
 		
-		arr.add("comon");
-		arr.add("ani");
-		arr.add(2, "kava");
-	arr.set(2, "ani");
-	arr.set(1, "kava");
-	arr.remove(0);
-
-	println(arr.indexOf(2));
-	if (arr.contains(3)) {
-		println("it contains");
-	}
-	else {
-		println("oh no");
-	}
-		for(String in : arr) {
-			println(in);
-		}
-		for(int i = 0; i < arr.size(); i++) {
-			println(arr.get(i));	
-		}
-		
+//		
+//		arr.add("comon");
+//		arr.add("ani");
+//		arr.add(2, "kava");
+//	arr.set(2, "ani");
+//	arr.set(1, "kava");
+//	arr.remove(0);
+//
+//	println(arr.indexOf(2));
+//	if (arr.contains(3)) {
+//		println("it contains");
+//	}
+//	else {
+//		println("oh no");
+//	}
+//		for(String in : arr) {
+//			println(in);
+//		}
+//		for(int i = 0; i < arr.size(); i++) {
+//			println(arr.get(i));	
+//		}
+//		
 //		
 //		int[][] matrix = new int[3][3];
 //		for(int i = 0; i < 3; i++){

@@ -66,12 +66,9 @@ public class problem53 extends ConsoleProgram {
 //				String sityva = word.nextToken();
 //				numchars += sityva.length();
 //			}
-
 		 }
-
 		return numchars;
 	}
-
 	private int numWords() {
 		int words = 0;
 		StringTokenizer wordsTokens = new StringTokenizer(text);
@@ -81,5 +78,4 @@ public class problem53 extends ConsoleProgram {
 		}
 		return words;
 	}
-
 }

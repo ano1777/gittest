@@ -3,6 +3,7 @@ import acm.program.ConsoleProgram;
 public class strings extends ConsoleProgram{
 	public void run() {
 		int[][] matrix = new int[3][3];
+		matrix.toString();
 		print(matrix);
 		
 	}

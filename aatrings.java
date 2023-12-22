@@ -4,7 +4,7 @@ public class aatrings extends ConsoleProgram {
 	public void run() {
 		int [][] bb = new int[4][5];
 		for(int[] num : bb) {
-			print(num);
+			print(num.toString());
 		}
 		
 	}

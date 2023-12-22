@@ -3,6 +3,13 @@ import acm.program.ConsoleProgram;
 public class aatrings extends ConsoleProgram {
 	public void run() {
 		int [][] bb = new int[4][5];
+		for (int i=0; i<  bb.length; i++) {
+			for(int j =0; j < bb[0].length; j++){
+				bb[i][j] = 4;
+			}
+		}
+		//bb[0][1] = 3;
+		
 		for(int[] num : bb) {
 			println(num.toString());
 		}

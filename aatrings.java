@@ -8,12 +8,13 @@ public class aatrings extends ConsoleProgram {
 				bb[i][j] = 4;
 			}
 		}
+		println(bb);
 		//bb[0][1] = 3;
 		
-		for(int[] num : bb) {
-			println(num.toString());
-		}
-		
+//		for(int[] num : bb) {
+//			println(num.toString());
+//		}
+//		
 	}
 		//iteratori sashualebas gvadzlevs yvela elementi moiaro nebismier setshi,
 		//tokenaizeris msgavsi funqcia aqvs.

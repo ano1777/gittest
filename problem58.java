@@ -30,7 +30,7 @@ public class problem58 extends ConsoleProgram{
 		if(height != width) {
 			return false;
 		}
-		for(int i=1; i <height*height; i++) {
+		for(int i=1; i < height*height; i++) {
 			if((!matrixContains(matrix, i))) {
 				return false;	
 			}
@@ -41,12 +41,12 @@ public class problem58 extends ConsoleProgram{
 	private boolean matrixContains(int[][] matrix, int i) {
 		for(int h = 0; h < matrix.length; h ++)/*height */ {
 			for(int w = 0; w < matrix[0].length; w ++) /* width*/ {
-				if(matrix[h][w] != i) {
-					return false;
+				if(matrix[h][w] == i) {
+					return true;
 				}
 			}
 		}
-		return true;
+		return false;
 	}
 
 	private void printMatrix(int[][] matrix) {

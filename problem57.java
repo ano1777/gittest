@@ -29,7 +29,7 @@ public class problem57 extends ConsoleProgram{
 	private int[] numberOfChars(String str1) {
 		int[] num = new int [26];
 		for(int i=0; i<str1.length(); i++) {
-			char ch = str1.charAt(0);
+			char ch = str1.charAt(i);
 			int index = ch - 'a';
 			num[index] ++;
 		}

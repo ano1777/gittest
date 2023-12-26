@@ -13,9 +13,9 @@ public class problem58 extends ConsoleProgram{
 		int[][] matrix3 = {
 				{1, 2, 3},
 				{4, 5, 6}};
-		println(matrix1);
-		println(matrix2);
-		println(matrix3);
+		println(matrix1.toString());
+		println(matrix2.toString());
+		println(matrix3.toString());
 	}
 
 }

@@ -17,8 +17,36 @@ public class problem58 extends ConsoleProgram{
 				{4, 5, 6}};
 	
 		printMatrix(matrix1);
+		println(isMagicMatrix(matrix1));	
 		printMatrix(matrix2);
+		println(isMagicMatrix(matrix2));
 		printMatrix(matrix3);
+		println(isMagicMatrix(matrix3));
+	}
+
+	private boolean isMagicMatrix(int[][] matrix) {
+		int height =  matrix.length;
+		int width = matrix[0].length;
+		if(height != width) {
+			return false;
+		}
+		for(int i=1; i <height*height; i++) {
+			if((!matrixContains(matrix, i))) {
+				return false;	
+			}
+		}
+		return true;
+	}
+
+	private boolean matrixContains(int[][] matrix, int i) {
+		for(int h = 0; h < matrix.length; h ++)/*height */ {
+			for(int w = 0; w < matrix[0].length; w ++) /* width*/ {
+				if(matrix[h][w] != i) {
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 
 	private void printMatrix(int[][] matrix) {

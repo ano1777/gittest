@@ -23,7 +23,7 @@ public class problem58 extends ConsoleProgram{
 
 	private void printMatrix(int[][] matrix) {
 		for(int[] row : matrix) {
-			println(row);
+			println(Arrays.toString(row));
 		}
 		
 	}

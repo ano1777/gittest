@@ -15,12 +15,17 @@ public class problem58 extends ConsoleProgram{
 		int[][] matrix3 = {
 				{1, 2, 3},
 				{4, 5, 6}};
-		Arrays.toString(matrix1);
-		Arrays.toString(matrix2);
-		Arrays.toString(matrix3);
-		println(matrix1);
-		println(matrix2);
-		println(matrix3);
+	
+		printMatrix(matrix1);
+		printMatrix(matrix2);
+		printMatrix(matrix3);
+	}
+
+	private void printMatrix(int[][] matrix) {
+		for(int[] row : matrix) {
+			println(row);
+		}
+		
 	}
 
 }

@@ -15,9 +15,12 @@ public class problem57 extends ConsoleProgram{
 	}
 	
 	private boolean isAnagram(String str1, String str2) {
+		if(str1.equals(str2)){
+			return false;
+		}
 		int[] count1 = numberOfChars(str1) ;
 		int[] count2 = numberOfChars(str2);
-		if(count1.equals(count2)) {
+		if(count1 == count2) {
 			return true;
 		}
 		return false;

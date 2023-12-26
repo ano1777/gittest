@@ -6,7 +6,39 @@ import acm.program.ConsoleProgram;
 public class problem57 extends ConsoleProgram{
 	private static final int SENTINEL = -1;
 	public void run() {
-		ArrayList<String> arr = new ArrayList<String>();
+		
+	String str1 = "ania";
+	String str2 = "inaa";
+	println(isAnagram(str1, str2));
+	
+	
+	}
+	
+	private boolean isAnagram(String str1, String str2) {
+		int[] count1 = numberOfChars(str1) ;
+		int[] count2 = numberOfChars(str2);
+		if(count1.equals(count2)) {
+			return true;
+		}
+		return false;
+	}
+
+	private int[] numberOfChars(String str1) {
+		int[] num = new int [26];
+		for(int i=0; i<str1.length(); i++) {
+			char ch = str1.charAt(0);
+			int index = ch - 'a';
+			num[index] ++;
+		}
+		return num;
+	}
+	
+	
+		//ArrayList<String> arr = new ArrayList<String>();
+		
+		
+		
+		
 		
 //		
 //		arr.add("comon");
@@ -41,7 +73,8 @@ public class problem57 extends ConsoleProgram{
 //	private boolean isMagic (int[][] matrix) {
 //		
 //		return false;
-	}
+	
+	
 	
 	
 	

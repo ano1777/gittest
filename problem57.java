@@ -22,7 +22,11 @@ public class problem57 extends ConsoleProgram{
 		int[] count1 = numberOfChars(str1) ;
 		int[] count2 = numberOfChars(str2);
 		
-		return Arrays.equals(count1, count2);
+		if( Arrays.equals(count1, count2)){
+		return true;
+		}
+	
+	return false;
 	}
 
 	private int[] numberOfChars(String str1) {

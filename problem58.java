@@ -30,8 +30,8 @@ public class problem58 extends ConsoleProgram{
 		if(height != width) {
 			return false;
 		}
-		for(int i=1; i < height*height; i++) {
-			if((!matrixContains(matrix, i))) {
+		for(int i = 1; i < height*height; i++) {
+			if(( !matrixContains(matrix, i) )) {
 				return false;	
 			}
 		}

@@ -20,7 +20,7 @@ import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
 
-public class assignment2 extends ConsoleProgram {
+public class assignment2 extends GraphicsProgram {
 	private JRadioButton small;
 	private JRadioButton medium;
 	private JRadioButton large;
@@ -33,6 +33,9 @@ public class assignment2 extends ConsoleProgram {
 	private GOval oval;
 	private JTextField field;
 	private JButton enter;
+	private double x = DISTANCE;
+	private double y = DISTANCE;
+	private static final int DISTANCE = 40;
 	
 	public void init() {
 		field = new JTextField(20);
@@ -63,6 +66,9 @@ public class assignment2 extends ConsoleProgram {
 		if(text.equals("")) {
 			return;
 		}
+		GLabel message = new GLabel(text);
+		add(message, x, y);
+		y += DISTANCE;
 	}
 	
 //	public void mouseClicked (MouseEvent e) {

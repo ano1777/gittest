@@ -28,8 +28,6 @@ public class assignment2 extends GraphicsProgram {
 	private static final int SMALL_SIZE = 30;
 	private static final int MED_SIZE = 50;
 	private static final int LARGE_SIZE = 70;
-	double x;
-	double y;
 	private GOval oval;
 	private JTextField field;
 	private JButton enter;

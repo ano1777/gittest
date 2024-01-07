@@ -55,16 +55,11 @@ public class assignment2 extends GraphicsProgram {
 		add(small, NORTH);
 		add(medium, NORTH);
 		add(large, NORTH);
-		
-	}
-
-	
-
-	public void run() {
 		initColorChooser();
 		addMouseListeners();
 		addActionListeners();
 	}
+
 	private void initColorChooser() {
 		colors = new JComboBox();
 		colors.addItem("Black");

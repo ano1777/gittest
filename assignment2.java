@@ -17,6 +17,8 @@ public class assignment2 extends GraphicsProgram {
 		add(button, EAST);
 		JTextField field = new JTextField(30);
 		add(field, WEST);
+		field.getText();
+		field.setText("ani");
 	}
 	
 	public void run() {

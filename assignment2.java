@@ -39,7 +39,9 @@ public class assignment2 extends ConsoleProgram {
 
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
-		println(command);
+		if(command.equals("press")) {
+		println("ano");
+		}
 	}
 
 }

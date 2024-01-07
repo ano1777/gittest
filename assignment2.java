@@ -41,6 +41,8 @@ public class assignment2 extends ConsoleProgram {
 		String command = e.getActionCommand();
 		if(command.equals("press")) {
 		println("ano");
+		} else {
+			println ("look");
 		}
 	}
 

@@ -30,90 +30,103 @@ public class assignment2 extends GraphicsProgram {
 	double x;
 	double y;
 	private GOval oval;
-
+	private JTextField field;
+	private JButton enter;
 	public void init() {
-		// JLabel label = new JLabel("ani");
-		// add(label, SOUTH);
-		// JButton button = new JButton("press");
-		// add(button, SOUTH);
-		// JCheckBox box = new JCheckBox();
-		// add(box, NORTH);
-		// JSlider slider = new JSlider();
-		// add(slider, NORTH);
-		JButton remove = new JButton("Clear");
-		add(remove, NORTH);
-		small = new JRadioButton("small");
-		medium = new JRadioButton("med");
-		large = new JRadioButton("large");
-
-		ButtonGroup size = new ButtonGroup();
-		size.add(small);
-		size.add(medium);
-		size.add(large);
-
-		medium.setSelected(true);
-		add(small, NORTH);
-		add(medium, NORTH);
-		add(large, NORTH);
-		initColorChooser();
-		addMouseListeners();
+		field = new JTextField();
+		add(field, SOUTH);
+		enter = new JButton("enter");
+		add(enter, SOUTH);
 		addActionListeners();
 	}
-
-	private void initColorChooser() {
-		colors = new JComboBox();
-		colors.addItem("Black");
-		colors.addItem("RED");
-		colors.addItem("green");
-
-		colors.setEditable(false);
-		colors.setSelectedItem("Black");
-		add(new JLabel("    color:"), NORTH);
-		add(colors, NORTH);
-	}
-
-	public void mouseListeners(MouseEvent e) {
-		GObject obj;
-		double diam = getDiamLength();
-		obj = new GOval(diam, diam);
-		x = e.getX();
-		y = e.getY();
-		obj.setColor(getCurrColor());
-		add(obj, e.getX(), e.getY());
-	}
-
-	private Color getCurrColor() {
-		String color = (String) colors.getSelectedItem();
-
-		if (color.equals("Green")) {
-			return Color.GREEN;
-		}
-		else if (color.equals("RED")) {
-			return Color.RED;
-		} else
-			return Color.BLACK;
-	}
-
-	private double getDiamLength() {
-		double length = 0;
-		if (small.isSelected()) {
-			length = SMALL_SIZE;
-		}
-		else if (medium.isSelected()) {
-			length = MED_SIZE;
-		}
-		else if (large.isSelected()) {
-			length = LARGE_SIZE;
-		}
-		return length;
-	}
-
-	public void actionPerformed(ActionEvent e) {
+	public void actionPerformed (ActionEvent e) {
 		String command = e.getActionCommand();
-		if (command.equals("Clear")) {
-			removeAll();
+		if (command.equals("eneter")) {
+			println(e.getActionCommand());
 		}
-
 	}
+	// JLabel label = new JLabel("ani");
+	// add(label, SOUTH);
+	// JButton button = new JButton("press");
+	// add(button, SOUTH);
+	// JCheckBox box = new JCheckBox();
+	// add(box, NORTH);
+	// JSlider slider = new JSlider();
+	// add(slider, NORTH);
+	// JButton remove = new JButton("Clear");
+	// add(remove, NORTH);
+	// small = new JRadioButton("small");
+	// medium = new JRadioButton("med");
+	// large = new JRadioButton("large");
+	//
+	// ButtonGroup size = new ButtonGroup();
+	// size.add(small);
+	// size.add(medium);
+	// size.add(large);
+	//
+	// medium.setSelected(true);
+	// add(small, NORTH);
+	// add(medium, NORTH);
+	// add(large, NORTH);
+	// initColorChooser();
+	// addMouseListeners();
+	// addActionListeners();
+	// }
+	//
+	// private void initColorChooser() {
+	// colors = new JComboBox();
+	// colors.addItem("Black");
+	// colors.addItem("RED");
+	// colors.addItem("green");
+	//
+	// colors.setEditable(false);
+	// colors.setSelectedItem("Black");
+	// add(new JLabel(" color:"), NORTH);
+	// add(colors, NORTH);
+	// }
+	//
+	// public void mouseListeners(MouseEvent e) {
+	// GObject obj;
+	// double diam = getDiamLength();
+	// obj = new GOval(diam, diam);
+	// x = e.getX();
+	// y = e.getY();
+	// obj.setColor(getCurrColor());
+	// add(obj, e.getX(), e.getY());
+	// }
+	//
+	// private Color getCurrColor() {
+	// String color = (String) colors.getSelectedItem();
+	//
+	// if (color.equals("Green")) {
+	// return Color.GREEN;
+	// }
+	// else if (color.equals("RED")) {
+	// return Color.RED;
+	// } else
+	// return Color.BLACK;
+	// }
+	//
+	// private double getDiamLength() {
+	// double length = 0;
+	// if (small.isSelected()) {
+	// length = SMALL_SIZE;
+	// }
+	// else if (medium.isSelected()) {
+	// length = MED_SIZE;
+	// }
+	// else if (large.isSelected()) {
+	// length = LARGE_SIZE;
+	// }
+	// return length;
+	// }
+	//
+	// public void actionPerformed(ActionEvent e) {
+	// String command = e.getActionCommand();
+	// if (command.equals("Clear")) {
+	// removeAll();
+	// }
+	//
+	// }
 
 }

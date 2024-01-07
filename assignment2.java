@@ -43,7 +43,10 @@ public class assignment2 extends GraphicsProgram {
 		String command = e.getActionCommand();
 		if (command.equals("eneter")) {
 			println(e.getActionCommand());
+			remove(field);
+			add(field,SOUTH);
 		}
+		
 	}
 	// JLabel label = new JLabel("ani");
 	// add(label, SOUTH);

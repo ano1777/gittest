@@ -36,6 +36,7 @@ public class assignment2 extends GraphicsProgram {
 //		add(box, NORTH);
 //		JSlider slider = new JSlider();
 //		add(slider, NORTH);
+	
 		
 		small = new JRadioButton("small");
 		medium = new JRadioButton("med");
@@ -54,7 +55,6 @@ public class assignment2 extends GraphicsProgram {
 	}
 
 	public void run() {
-
 		JTextField field = new JTextField(10);
 		add(field, WEST);
 		field.getText();
@@ -76,10 +76,13 @@ public class assignment2 extends GraphicsProgram {
 		} 
 		else if (command.equals("small")) {
 			oval = new GOval(SMALL_SIZE, SMALL_SIZE);
+			oval.setFilled(true);
+           
 			add(oval, x, y);
 		}
-		else if( command.equals("medium")) {
+		else if(command.equals("medium")) {
 			oval = new GOval(MED_SIZE, MED_SIZE);
+			oval.setFilled(true);
 			add(oval,x, y);
 		}
 				else {

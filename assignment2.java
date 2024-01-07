@@ -25,21 +25,23 @@ public class assignment2 extends ConsoleProgram {
 		add(slider, NORTH);
 		JRadioButton butn = new JRadioButton();
 		add(butn, NORTH);
-			}
+	}
 
 	public void run() {
-		
+
 		JTextField field = new JTextField(10);
 		add(field, WEST);
-		field.getText();	
+		field.getText();
 		field.setText("ano");
 		field.addActionListener(this);
 		addActionListeners();
 	}
-		public void actionPerformed(ActionEvent e) {
-			println(e.getActionCommand());
-			}
 
-	
+	public void actionPerformed(ActionEvent e) {
+		String command = e.getActionCommand();
+		if(command.equals("ani")) {
+		println("ano");
+	}
 
+}
 }

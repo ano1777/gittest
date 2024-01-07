@@ -103,7 +103,7 @@ public class assignment2 extends GraphicsProgram {
 	}
 
 	private double getDiamLength() {
-		int length = 0;
+		double length = 0;
 		if (small.isSelected()) {
 			length = SMALL_SIZE;
 		}

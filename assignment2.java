@@ -54,11 +54,11 @@ public class assignment2 extends GraphicsProgram {
 		
 	}
 	
-	public void mouseClicked (MouseEvent e) {
-		if() {
-			
-		}
-	}
+//	public void mouseClicked (MouseEvent e) {
+//		if() {
+//			
+//		}
+//	}
 	// JLabel label = new JLabel("ani");
 	// add(label, SOUTH);
 	// JButton button = new JButton("press");

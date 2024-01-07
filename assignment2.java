@@ -48,7 +48,7 @@ public class assignment2 extends GraphicsProgram {
 	public void actionPerformed (ActionEvent e) {
 		if (e.getSource() == field || e.getSource() == enter) {
 			String text = field.getText();
-			println(text);
+			//println(text);
 			displayMessage(text);
 			field.setText("");
 		}

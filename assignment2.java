@@ -15,7 +15,7 @@ public class assignment2 extends GraphicsProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, EAST);
-		JTextField field = new JTextField(10);
+		JTextField field = new JTextField("ani");
 		add(field, WEST);
 	}
 	

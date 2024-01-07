@@ -20,7 +20,7 @@ public class assignment2 extends ConsoleProgram {
 
 	public void run() {
 		JButton button = new JButton("press");
-		add(button, EAST);
+		add(button, SOUTH);
 		JTextField field = new JTextField(10);
 		add(field, WEST);
 		field.getText();	

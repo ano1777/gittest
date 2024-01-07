@@ -48,7 +48,7 @@ public class assignment2 extends ConsoleProgram {
 		if (command.equals("enter")) {
 			println(field.getText());
 			remove(field);
-			add(field,SOUTH);
+		
 		}
 		
 	}

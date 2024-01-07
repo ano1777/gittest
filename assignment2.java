@@ -33,7 +33,7 @@ public class assignment2 extends GraphicsProgram {
 	private JTextField field;
 	private JButton enter;
 	public void init() {
-		field = new JTextField();
+		field = new JTextField(10);
 		add(field, SOUTH);
 		enter = new JButton("enter");
 		add(enter, SOUTH);

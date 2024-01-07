@@ -32,10 +32,10 @@ public class assignment2 extends ConsoleProgram {
 		large = new JRadioButton("large");
 		
 		
-		ButtonGroup size = new ButtonGroup();
-		size.add(small);
-		size.add(medium);
-		size.add(large);
+//		ButtonGroup size = new ButtonGroup();
+//		size.add(small);
+//		size.add(medium);
+//		size.add(large);
 		
 		
 		add(small, NORTH);

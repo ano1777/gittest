@@ -2,6 +2,7 @@ import java.awt.Color;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 import acm.graphics.GLabel;
 import acm.graphics.GLine;
@@ -14,6 +15,8 @@ public class assignment2 extends GraphicsProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, EAST);
+		JTextField field = new JTextField(10);
+		add(field, WEST);
 	}
 	
 	public void run() {

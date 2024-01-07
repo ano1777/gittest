@@ -26,6 +26,7 @@ public class assignment2 extends ConsoleProgram {
 		field.getText();	
 		field.setText("ano");
 		field.addActionListener(this);
+		addActionListeners();
 	}
 		public void actionPerformed(ActionEvent e) {
 			println(e.getActionCommand());

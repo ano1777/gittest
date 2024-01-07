@@ -17,7 +17,7 @@ public class assignment2 extends ConsoleProgram {
 		add(button, EAST);
 		JTextField field = new JTextField(10);
 		add(field, WEST);
-		field.getText();
+	
 	
 	}
 

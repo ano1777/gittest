@@ -12,6 +12,7 @@ import javax.swing.JSlider;
 import javax.swing.JTextField;
 
 import acm.graphics.GCompound;
+import acm.graphics.GImage;
 import acm.graphics.GLabel;
 import acm.graphics.GLine;
 import acm.graphics.GObject;
@@ -37,75 +38,103 @@ public class assignment2 extends GraphicsProgram {
 	private double x = DISTANCE;
 	private double y = DISTANCE;
 	private static final int DISTANCE = 40;
-	
 	public void init() {
 		field = new JTextField(20);
 		add(field, SOUTH);
-		field.addActionListener(this);
 		
-		enter = new JButton("enter");
-		add(enter, SOUTH);
+		field.addActionListener(this);
 		addActionListeners();
+		
+		GImage image = new GImage("bad path");
+		double x = getWidth()/ 2 - image.getWidth() / 2;
+		double y = getHeight()/ 2 - image.getHeight() / 2;
+		add(image, x, y);
 	}
 	
-	public void actionPerformed (ActionEvent e) {
-		if (e.getSource() == field || e.getSource() == enter) {
-			String text = field.getText();
-			//println(text);
-			displayMessage(text);
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == field) {
+			try {
+				GImage image = new GImage(field.getText());
+				double x = getWidth()/ 2 - image.getWidth() / 2;
+				double y = getHeight()/ 2 - image.getHeight() / 2;
+				add(image, x, y);
+			} catch(Exception ex) {
+				removeAll();
+				add(new GLabel("Error occured"), 20, 20);
+			}
 			field.setText("");
 		}
+	}
+//	public void init() {
+//		field = new JTextField(20);
+//		add(field, SOUTH);
+//		field.addActionListener(this);
+//		
+//		enter = new JButton("enter");
+//		add(enter, SOUTH);
+//		addActionListeners();
+//	}
+//	
+//	public void actionPerformed (ActionEvent e) {
+//		if (e.getSource() == field || e.getSource() == enter) {
+//			String text = field.getText();
+//			//println(text);
+//			displayMessage(text);
+//			field.setText("");
+//		}
 //		String command = e.getActionCommand();
 //		if (command.equals("enter")) {
 //			println(field.getText());
 //			field.setText("");
 //		}
 		
-	}
-
-	private void displayMessage(String text) {
-		if(text.equals("")) {
-			return;
-		}
-		GLabel message = new GLabel(text);
-		add(message, x, y);
-		y += DISTANCE;
-		fixPositionAtLastMessage();
-
-	}
-	
-	private void fixPositionAtLastMessage() {
-		if(messages.getHeight() + DISTANCE > getHeight()) {
-			double newY = getMinY(); //getHeight() - messages.getHeight() - DISTANCE;
-			messages.setLocation(messages.getX(), newY);
-		}
-		
-	}
-	
-	private double getMinY() {
-		return getHeight() - messages.getHeight() - DISTANCE;
-	}
-	@Override
-	public void mousePressed(MouseEvent e) {
-		prevY = e.getY();
-	}
-	
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		if(messages.getHeight() + DISTANCE <= getHeight()) {
-			return;
-		}
-		messages.move(0, e.getY() - prevY);
-		prevY = e.getY();
-		
-		double minY = getMinY();
-		double maxY = 0;
-		if (messages.getY() < minY) {
-			messages.setLocation(messages.getX(), minY);
-		}else if(messages.getY() > maxY) {
-			messages.setLocation(messages.getX(), maxY);
-		}
-	}
+//	}
+//
+//	private void displayMessage(String text) {
+//		if(text.equals("")) {
+//			return;
+//		}
+//		GLabel message = new GLabel(text);
+//		add(message, x, y);
+//		y += DISTANCE;
+//		fixPositionAtLastMessage();
+//
+//	}
+//	
+//	private void fixPositionAtLastMessage() {
+//		if(messages.getHeight() + DISTANCE > getHeight()) {
+//			double newY = getMinY(); //getHeight() - messages.getHeight() - DISTANCE;
+//			messages.setLocation(messages.getX(), newY);
+//		}
+//		
+//	}
+//	
+//	private double getMinY() {
+//		return getHeight() - messages.getHeight() - DISTANCE;
+//	}
+//	@Override
+//	public void mousePressed(MouseEvent e) {
+//		prevY = e.getY();
+//	}
+//	
+//	@Override
+//	public void mouseDragged(MouseEvent e) {
+//		if(messages.getHeight() + DISTANCE <= getHeight()) {
+//			return;
+//		}
+//		messages.move(0, e.getY() - prevY);
+//		prevY = e.getY();
+//		
+//		double minY = getMinY();
+//		double maxY = 0;
+//		if (messages.getY() < minY) {
+//			messages.setLocation(messages.getX(), minY);
+//		}else if(messages.getY() > maxY) {
+//			messages.setLocation(messages.getX(), maxY);
+//		}
+//	}
 	
 //	public void mouseClicked (MouseEvent e) {
 //		if() {

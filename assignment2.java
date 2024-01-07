@@ -18,10 +18,10 @@ public class assignment2 extends ConsoleProgram {
 		JTextField field = new JTextField(10);
 		add(field, WEST);
 		field.getText();
-		field.setText("ano");
+	
 		field.addActionListener(this);
 	
-	
+		field.setText("ano");
 	}
 
 	public void run() {

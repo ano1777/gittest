@@ -14,12 +14,13 @@ public class assignment2 extends ConsoleProgram {
 	public void init() {
 		JLabel label = new JLabel("ani");
 		add(label, SOUTH);
-		JButton button = new JButton("press");
-		add(button, EAST);
+		
 		
 			}
 
 	public void run() {
+		JButton button = new JButton("press");
+		add(button, EAST);
 		JTextField field = new JTextField(10);
 		add(field, WEST);
 		field.getText();	

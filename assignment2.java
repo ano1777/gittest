@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 import javax.swing.JSlider;
@@ -12,6 +13,7 @@ import javax.swing.JTextField;
 
 import acm.graphics.GLabel;
 import acm.graphics.GLine;
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.ConsoleProgram;
@@ -21,37 +23,51 @@ public class assignment2 extends GraphicsProgram {
 	private JRadioButton small;
 	private JRadioButton medium;
 	private JRadioButton large;
+	JComboBox colors;
 	private static final int SMALL_SIZE = 30;
 	private static final int MED_SIZE = 50;
 	private static final int LARGE_SIZE = 70;
-	double x ;
+	double x;
 	double y;
 	private GOval oval;
+
 	public void init() {
-//		JLabel label = new JLabel("ani");
-//		add(label, SOUTH);
-//		JButton button = new JButton("press");
-//		add(button, SOUTH);
-//		JCheckBox box = new JCheckBox();
-//		add(box, NORTH);
-//		JSlider slider = new JSlider();
-//		add(slider, NORTH);
-	
-		
+		// JLabel label = new JLabel("ani");
+		// add(label, SOUTH);
+		// JButton button = new JButton("press");
+		// add(button, SOUTH);
+		// JCheckBox box = new JCheckBox();
+		// add(box, NORTH);
+		// JSlider slider = new JSlider();
+		// add(slider, NORTH);
+		JButton remove = new JButton("Clear");
+		add(remove, NORTH);
 		small = new JRadioButton("small");
 		medium = new JRadioButton("med");
 		large = new JRadioButton("large");
-		
-		
+
 		ButtonGroup size = new ButtonGroup();
 		size.add(small);
 		size.add(medium);
 		size.add(large);
-		
+
 		medium.setSelected(true);
 		add(small, NORTH);
 		add(medium, NORTH);
 		add(large, NORTH);
+		initColorChooser();
+	}
+
+	private void initColorChooser() {
+		colors = new JComboBox();
+		colors.addItem("Black");
+		colors.addItem("RED");
+		colors.addItem("green");
+
+		colors.setEditable(false);
+		colors.setSelectedItem("Black");
+		add(new JLabel("    color:"), NORTH);
+		add(colors, NORTH);
 	}
 
 	public void run() {
@@ -65,30 +81,47 @@ public class assignment2 extends GraphicsProgram {
 	}
 
 	public void mouseListeners(MouseEvent e) {
+		GObject obj;
+		double diam = getDiamLength();
+		obj = new GOval(diam, diam);
 		x = e.getX();
 		y = e.getY();
+		obj.setColor(getCurrColor());
+		add(obj, e.getX(), e.getY());
 	}
+
+	private Color getCurrColor() {
+		String color = (String) colors.getSelectedItem();
+
+		if (color.equals("Green")) {
+			return Color.GREEN;
+		}
+		if (color.equals("RED")) {
+			return Color.RED;
+		} else
+			return Color.BLACK;
+	}
+
+	private double getDiamLength() {
+		int length = 0;
+		if (small.isSelected()) {
+			length = SMALL_SIZE;
+		}
+		if (medium.isSelected()) {
+			length = MED_SIZE;
+		}
+		if (large.isSelected()) {
+			length = LARGE_SIZE;
+		}
+		return length;
+	}
+
 	public void actionPerformed(ActionEvent e) {
 		String command = e.getActionCommand();
-		if(command.equals("press")) {
-		println("ano");
-		
-		} 
-		else if (command.equals("small")) {
-			oval = new GOval(SMALL_SIZE, SMALL_SIZE);
-			oval.setFilled(true);
-           
-			add(oval, x, y);
+		if (command.equals("Clear")) {
+			removeAll();
 		}
-		else if(command.equals("medium")) {
-			oval = new GOval(MED_SIZE, MED_SIZE);
-			oval.setFilled(true);
-			add(oval,x, y);
-		}
-				else {
-			println ("look");
-		}
+
 	}
 
 }
-

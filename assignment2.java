@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -24,7 +25,11 @@ public class assignment2 extends ConsoleProgram {
 		field.getText();	
 		field.setText("ano");
 		field.addActionListener(this);
-
 	}
+		public void actionPerformed(ActionEvent e) {
+			println(e.getActionCommand());
+			}
+
+	
 
 }

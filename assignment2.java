@@ -15,7 +15,7 @@ public class assignment2 extends ConsoleProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, EAST);
-		JTextField field = new JTextField(30);
+		JTextField field = new JTextField(10);
 		add(field, WEST);
 		println(field.getText());
 		field.setText("ani");

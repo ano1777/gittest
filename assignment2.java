@@ -15,16 +15,15 @@ public class assignment2 extends ConsoleProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, EAST);
-		JTextField field = new JTextField(10);
-		add(field, WEST);
-		field.getText();
-	
-		field.addActionListener(this);
-	
-		field.setText("ano");
-	}
+		
+			}
 
 	public void run() {
+		JTextField field = new JTextField(10);
+		add(field, WEST);
+		field.getText();	
+		field.setText("ano");
+		field.addActionListener(this);
 
 	}
 

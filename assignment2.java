@@ -46,7 +46,7 @@ public class assignment2 extends GraphicsProgram {
 	
 	public void actionPerformed (ActionEvent e) {
 		String command = e.getActionCommand();
-		if (command.equals("eneter")) {
+		if (command.equals("enter")) {
 			println(e.getActionCommand());
 			remove(field);
 			add(field,SOUTH);

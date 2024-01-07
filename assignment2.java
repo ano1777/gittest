@@ -55,9 +55,16 @@ public class assignment2 extends GraphicsProgram {
 		add(small, NORTH);
 		add(medium, NORTH);
 		add(large, NORTH);
-		initColorChooser();
+		
 	}
 
+	
+
+	public void run() {
+		initColorChooser();
+		addMouseListeners();
+		addActionListeners();
+	}
 	private void initColorChooser() {
 		colors = new JComboBox();
 		colors.addItem("Black");
@@ -68,16 +75,6 @@ public class assignment2 extends GraphicsProgram {
 		colors.setSelectedItem("Black");
 		add(new JLabel("    color:"), NORTH);
 		add(colors, NORTH);
-	}
-
-	public void run() {
-		JTextField field = new JTextField(10);
-		add(field, WEST);
-		field.getText();
-		field.setText("ano");
-		field.addActionListener(this);
-		addActionListeners();
-		addMouseListeners();
 	}
 
 	public void mouseListeners(MouseEvent e) {

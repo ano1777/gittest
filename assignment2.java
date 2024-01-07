@@ -34,7 +34,7 @@ public class assignment2 extends ConsoleProgram {
 	private JButton enter;
 	
 	public void init() {
-		field = new JTextField(10);
+		field = new JTextField(20);
 		add(field, SOUTH);
 		field.addActionListener(this);
 		
@@ -47,8 +47,7 @@ public class assignment2 extends ConsoleProgram {
 		String command = e.getActionCommand();
 		if (command.equals("enter")) {
 			println(field.getText());
-			remove(field);
-		
+			field.setText("");
 		}
 		
 	}

@@ -11,6 +11,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JSlider;
 import javax.swing.JTextField;
 
+import acm.graphics.GCompound;
 import acm.graphics.GLabel;
 import acm.graphics.GLine;
 import acm.graphics.GObject;
@@ -25,6 +26,7 @@ public class assignment2 extends GraphicsProgram {
 	private JRadioButton medium;
 	private JRadioButton large;
 	JComboBox colors;
+	private GCompound messages;
 	private static final int SMALL_SIZE = 30;
 	private static final int MED_SIZE = 50;
 	private static final int LARGE_SIZE = 70;
@@ -67,6 +69,20 @@ public class assignment2 extends GraphicsProgram {
 		GLabel message = new GLabel(text);
 		add(message, x, y);
 		y += DISTANCE;
+		fixPositionAtLastMessage();
+
+	}
+	
+	private void fixPositionAtLastMessage() {
+		if(messages.getHeight() + DISTANCE > getHeight()) {
+			double newY = getMinY(); //getHeight() - messages.getHeight() - DISTANCE;
+			messages.setLocation(messages.getX(), newY);
+		}
+		
+	}
+	
+	private double getMinY() {
+		return getHeight() - messages.getHeight() - DISTANCE;
 	}
 	
 //	public void mouseClicked (MouseEvent e) {

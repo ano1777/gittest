@@ -19,6 +19,7 @@ import acm.graphics.GRect;
 import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
+
 public class assignment2 extends ConsoleProgram {
 	private JRadioButton small;
 	private JRadioButton medium;
@@ -44,12 +45,24 @@ public class assignment2 extends ConsoleProgram {
 	}
 	
 	public void actionPerformed (ActionEvent e) {
-		String command = e.getActionCommand();
-		if (command.equals("enter")) {
-			println(field.getText());
+		if (e.getSource() == field || e.getSource() == enter) {
+			String text = field.getText();
+			println(text);
+			displayMessage(text);
 			field.setText("");
 		}
+//		String command = e.getActionCommand();
+//		if (command.equals("enter")) {
+//			println(field.getText());
+//			field.setText("");
+//		}
 		
+	}
+
+	private void displayMessage(String text) {
+		if(text.equals("")) {
+			return;
+		}
 	}
 	
 //	public void mouseClicked (MouseEvent e) {

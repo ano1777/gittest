@@ -13,7 +13,7 @@ public class assignment2 extends GraphicsProgram {
 		JLabel label = new JLabel("ani");
 		add(label, SOUTH);
 		JButton button = new JButton("press");
-		add(button, NORTH);
+		add(button, EAST);
 	}
 	
 	public void run() {

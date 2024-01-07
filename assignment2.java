@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
+import javax.swing.JSlider;
 import javax.swing.JTextField;
 
 import acm.graphics.GLabel;
@@ -17,8 +18,10 @@ public class assignment2 extends ConsoleProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, SOUTH);
-		JCheckBox box = new JCheckBox();
-		add(box,NORTH);
+		JCheckBox box = new JCheckBox("3");
+		add(box, NORTH);
+		JSlider slider = new JSlider();
+		add(slider, NORTH);
 			}
 
 	public void run() {

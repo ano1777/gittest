@@ -96,7 +96,7 @@ public class assignment2 extends GraphicsProgram {
 		if (color.equals("Green")) {
 			return Color.GREEN;
 		}
-		if (color.equals("RED")) {
+		else if (color.equals("RED")) {
 			return Color.RED;
 		} else
 			return Color.BLACK;
@@ -107,10 +107,10 @@ public class assignment2 extends GraphicsProgram {
 		if (small.isSelected()) {
 			length = SMALL_SIZE;
 		}
-		if (medium.isSelected()) {
+		else if (medium.isSelected()) {
 			length = MED_SIZE;
 		}
-		if (large.isSelected()) {
+		else if (large.isSelected()) {
 			length = LARGE_SIZE;
 		}
 		return length;

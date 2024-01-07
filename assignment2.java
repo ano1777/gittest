@@ -11,6 +11,7 @@ public class assignment2 extends GraphicsProgram {
 	public void init() {
 		JLabel label = new JLabel("ani");
 		add(label, SOUTH);
+		add(label, NORTH);
 	}
 	
 	public void run() {

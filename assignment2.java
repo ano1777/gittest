@@ -40,7 +40,6 @@ public class assignment2 extends ConsoleProgram {
 		
 		enter = new JButton("enter");
 		add(enter, SOUTH);
-		addMouseListeners();
 		addActionListeners();
 	}
 	

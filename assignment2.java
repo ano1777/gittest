@@ -19,7 +19,7 @@ import acm.graphics.GRect;
 import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
-public class assignment2 extends GraphicsProgram {
+public class assignment2 extends ConsoleProgram {
 	private JRadioButton small;
 	private JRadioButton medium;
 	private JRadioButton large;

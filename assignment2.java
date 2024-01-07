@@ -18,7 +18,7 @@ public class assignment2 extends ConsoleProgram {
 		JTextField field = new JTextField(10);
 		add(field, WEST);
 		field.getText();
-		field.setText("o");
+	
 	}
 
 	public void run() {

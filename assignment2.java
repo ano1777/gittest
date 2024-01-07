@@ -26,6 +26,7 @@ public class assignment2 extends GraphicsProgram {
 	private JRadioButton medium;
 	private JRadioButton large;
 	JComboBox colors;
+	private double prevY;
 	private GCompound messages;
 	private static final int SMALL_SIZE = 30;
 	private static final int MED_SIZE = 50;
@@ -83,6 +84,27 @@ public class assignment2 extends GraphicsProgram {
 	
 	private double getMinY() {
 		return getHeight() - messages.getHeight() - DISTANCE;
+	}
+	@Override
+	public void mousePressed(MouseEvent e) {
+		prevY = e.getY();
+	}
+	
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		if(messages.getHeight() + DISTANCE <= getHeight()) {
+			return;
+		}
+		messages.move(0, e.getY() - prevY);
+		prevY = e.getY();
+		
+		double minY = getMinY();
+		double maxY = 0;
+		if (messages.getY() < minY) {
+			messages.setLocation(messages.getX(), minY);
+		}else if(messages.getY() > maxY) {
+			messages.setLocation(messages.getX(), maxY);
+		}
 	}
 	
 //	public void mouseClicked (MouseEvent e) {

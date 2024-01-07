@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
@@ -16,7 +17,8 @@ public class assignment2 extends ConsoleProgram {
 		add(label, SOUTH);
 		JButton button = new JButton("press");
 		add(button, SOUTH);
-		
+		JCheckBox box = new JCheckBox();
+		add(box,NORTH);
 			}
 
 	public void run() {

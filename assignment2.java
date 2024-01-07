@@ -32,13 +32,18 @@ public class assignment2 extends GraphicsProgram {
 	private GOval oval;
 	private JTextField field;
 	private JButton enter;
+	
 	public void init() {
 		field = new JTextField(10);
 		add(field, SOUTH);
+		field.addActionListener(this);
+		
 		enter = new JButton("enter");
 		add(enter, SOUTH);
+		addMouseListeners();
 		addActionListeners();
 	}
+	
 	public void actionPerformed (ActionEvent e) {
 		String command = e.getActionCommand();
 		if (command.equals("eneter")) {
@@ -47,6 +52,12 @@ public class assignment2 extends GraphicsProgram {
 			add(field,SOUTH);
 		}
 		
+	}
+	
+	public void mouseClicked (MouseEvent e) {
+		if() {
+			
+		}
 	}
 	// JLabel label = new JLabel("ani");
 	// add(label, SOUTH);
@@ -88,7 +99,7 @@ public class assignment2 extends GraphicsProgram {
 	// add(colors, NORTH);
 	// }
 	//
-	// public void mouseListeners(MouseEvent e) {
+	// public void mouseClicked (MouseEvent e) {
 	// GObject obj;
 	// double diam = getDiamLength();
 	// obj = new GOval(diam, diam);

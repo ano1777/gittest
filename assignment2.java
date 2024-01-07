@@ -37,7 +37,7 @@ public class assignment2 extends ConsoleProgram {
 		size.add(medium);
 		size.add(large);
 		
-		small.setSelected(true);
+//		small.setSelected(true);
 		add(small, NORTH);
 		add(medium, NORTH);
 		add(large, NORTH);

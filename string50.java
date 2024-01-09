@@ -134,24 +134,24 @@ public class string50 extends ConsoleProgram {
 // println(simulate(newSt));
 // }
 //
-// private String simulate(String newSt) {
-// String answer ="";
-// StringTokenizer newTokens = new StringTokenizer(newSt, " ");
-// while (newTokens.hasMoreTokens()) {
-// String token = newTokens.nextToken();
-// String rev = reversed(token);
-// answer += rev + " ";
-// }
-// return answer;
-// }
-//
-// private String reversed(String s) {
-// String result = "";
-// for (int i = s.length() - 1; i >= 0; i--) {
-// char ch = s.charAt(i);
-// result += ch;
-// }
-// return result;
+ private String simulate(String newSt) {
+ String answer ="";
+ StringTokenizer newTokens = new StringTokenizer(newSt, " ");
+ while (newTokens.hasMoreTokens()) {
+ String token = newTokens.nextToken();
+ String rev = reversed(token);
+ answer += rev + " ";
+ }
+ return answer;
+ }
+
+ private String reversed(String s) {
+ String result = "";
+ for (int i = s.length() - 1; i >= 0; i--) {
+ char ch = s.charAt(i);
+ result += ch;
+ }
+ return result;
 //
 // }
 // }

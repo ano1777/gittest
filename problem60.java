@@ -15,9 +15,8 @@ public class problem60 extends ConsoleProgram {
 			ArrayList<Integer> numList = new ArrayList<Integer>();
 			numList.add(number);
 			
-			
+			println(numList.toString());
 		}
-		println(numList.toString());
 	}
 
 }

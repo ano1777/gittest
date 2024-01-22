@@ -15,10 +15,13 @@ public class problem60 extends ConsoleProgram {
 				break;
 			}
 
-			numList.add(0,number);
+			numList.add(number);
 
 		}
 	println(numList.toString());
+		for(int i = numList.size() - 1; i > 0; i --) {
+			println(numList.get(i));
+		}
 	
 	}
 }

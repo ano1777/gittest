@@ -18,10 +18,12 @@ public class problem63to66 extends ConsoleProgram {
 
 			ArrayList<String> friendsList = names.get(person);
 			friendsList.add(friend);
+			
+			names.put(person, friendsList);
 		}
 		
 		int mostFriends = 0;
-		String popularPerson = null;
+		String popularPerson = "";
 		for (String key : names.keySet()) {
 			int friendCount = names.get(key).size();
 			if (friendCount > mostFriends) {

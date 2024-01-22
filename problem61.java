@@ -18,12 +18,14 @@ public class problem61 extends ConsoleProgram {
 
 		for (int i = 0; i < numList.size() - 1; i++) {
 			for (int j = i + 1; j < numList.size(); j++) {
-				if ((numList.get(i) + numList.get(j)) == m) {
+				if ((numList.get(i) + numList.get(j)) != m) {
+					continue;
+				}else {
 					println(numList.get(i) + " " + numList.get(j));
 				}
 			}
 		}
-		println("that numbers do not exist");
+		//println("that numbers do not exist");
 
 	}
 

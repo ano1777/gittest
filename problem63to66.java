@@ -29,7 +29,8 @@ public class problem63to66 extends ConsoleProgram {
 		for (String key : names.keySet()) {
 			int friendCount = names.get(key).size();
 			if (friendCount > mostFriends) {
-				mostFriends = friendCount;}
+				mostFriends = friendCount;
+				}
 				popularPerson = key;
 			
 		}

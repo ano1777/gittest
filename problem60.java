@@ -31,7 +31,7 @@ public class problem60 extends ConsoleProgram {
 
 	private void gotoString(ArrayList<Integer> numList) {
 		String str = "[ ";
-		for(int i = 0; i < numList.size() - 1; i ++) {
+		for(int i = 0; i < numList.size(); i ++) {
 			str +=  numList.get(i) + ", ";
 		}
 		str += " ]";

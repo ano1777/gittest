@@ -18,6 +18,7 @@ public class problem62 extends ConsoleProgram {
 			}
 			int value = namesList.get(name) + 1;
 			namesList.put(name, value);
+			namesList.put(name, value);
 		}
 		println(namesList.toString());
 	}

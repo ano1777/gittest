@@ -29,7 +29,8 @@ public class problem63to66 extends ConsoleProgram {
 				popularPerson = key;
 			}
 		}
-		println(popularPerson);
+		println(popularPerson + "has the most friends : "+ mostFriends);
+		
 
 	}
 }

@@ -25,7 +25,16 @@ public class problem60 extends ConsoleProgram {
 		      numList.set(i, num2); 
 			numList.set(numList.size() - 1 - i, num1);
 		}
-		println(numList.toString());
+		gotoString(numList);
 	
+	}
+
+	private void gotoString(ArrayList<Integer> numList) {
+		String str = "";
+		for(int i = 0; i < numList.size() - 1; i ++) {
+			str += "[" +  numList.get(i) + ", ]";
+		}
+		println(str);
+		
 	}
 }

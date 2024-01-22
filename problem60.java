@@ -34,7 +34,10 @@ public class problem60 extends ConsoleProgram {
 		for(int i = 0; i < numList.size(); i ++) {
 			if(i != numList.size() - 1) {
 				str +=  numList.get(i) + ", ";
+			}else{
+				str+= numList.get(i);
 			}
+				
 		}
 		str += "]";
 		println(str);

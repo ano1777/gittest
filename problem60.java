@@ -25,6 +25,7 @@ public class problem60 extends ConsoleProgram {
 			num1 = num2;
 			num2 =  num1;
 		}
+		println(numList.toString());
 	
 	}
 }

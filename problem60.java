@@ -30,10 +30,11 @@ public class problem60 extends ConsoleProgram {
 	}
 
 	private void gotoString(ArrayList<Integer> numList) {
-		String str = "";
+		String str = "[ ";
 		for(int i = 0; i < numList.size() - 1; i ++) {
-			str += "[" +  numList.get(i) + ", ]";
+			str +=  numList.get(i) + ", ";
 		}
+		str += " ]";
 		println(str);
 		
 	}

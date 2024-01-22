@@ -7,16 +7,17 @@ import acm.program.ConsoleProgram;
 public class problem60 extends ConsoleProgram {
 	private static final int SENTINEL = -1;
 	public void run() {
+		ArrayList<Integer> numList = new ArrayList<Integer>();
 		while (true) {
 			int number = readInt("Enter number");
 			if(number == SENTINEL) {
 				break;
 			}
-			ArrayList<Integer> numList = new ArrayList<Integer>();
+		
 			numList.add(number);
-			
-			println(numList.toString());
+				
 		}
+		println(numList.toString());
 	}
 
 }

@@ -19,8 +19,8 @@ public class problem60 extends ConsoleProgram {
 
 		}
 	println(numList.toString());
-		for(int i = numList.size() - 1; i > 0; i --) {
-			println(numList.get(i));
+		for(int i = numList.size() - 1; i >=  0; i --) {
+			print(numList.get(i));
 		}
 	
 	}

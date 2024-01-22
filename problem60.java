@@ -22,8 +22,8 @@ public class problem60 extends ConsoleProgram {
 		for(int i = 0; i < numList.size() / 2; i --) {
 			int num1 = numList.get(i);
 			int num2 = numList.get(numList.size() - 1 - i);
-			num1 = num2;
-			num2 =  num1;
+		      numList.set(i, num2); 
+			numList.set(numList.size() - 1 - i, num1);
 		}
 		println(numList.toString());
 	

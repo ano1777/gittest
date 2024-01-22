@@ -10,20 +10,22 @@ public class problem63to66 extends ConsoleProgram {
 		HashMap<String, ArrayList<String>> names = new HashMap<String, ArrayList<String>>();
 		while (true) {
 			String friend = readLine("Enter friend: ");
-			String person = readLine("Enter parson: ");
+			String person = readLine("Enter person: ");
 			if (friend.equals(SENTINEL)) {
 				break;
 			}
 			names.put(person, new ArrayList<String>());
 
-			ArrayList<String> friendsList = new ArrayList<String>();
+			ArrayList<String> friendsList = names.get(person);
 			friendsList.add(friend);
 		}
+		
 		int mostFriends = 0;
-		String popularPerson = "";
+		String popularPerson = null;
 		for (String key : names.keySet()) {
-			if (names.get(key).size() > mostFriends) {
-				mostFriends = names.get(key).size();
+			int friendCount = names.get(key).size();
+			if (friendCount > mostFriends) {
+				mostFriends = friendCount;;
 				popularPerson = key;
 			}
 		}

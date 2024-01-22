@@ -10,10 +10,11 @@ public class problem63to66 extends ConsoleProgram {
 		HashMap<String, ArrayList<String>> names = new HashMap<String, ArrayList<String>>();
 		while (true) {
 			String friend = readLine("Enter friend: ");
-			String person = readLine("Enter person: ");
 			if (friend.equals(SENTINEL)) {
 				break;
 			}
+			String person = readLine("Enter person: ");
+			
 			names.put(person, new ArrayList<String>());
 
 			ArrayList<String> friendsList = names.get(person);
@@ -31,7 +32,7 @@ public class problem63to66 extends ConsoleProgram {
 				popularPerson = key;
 			}
 		}
-		println(popularPerson + "has the most friends : "+ mostFriends);
+		println(popularPerson + " has the most friends : "+ mostFriends);
 		
 
 	}

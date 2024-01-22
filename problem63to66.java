@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import acm.program.ConsoleProgram;
 
@@ -7,7 +8,7 @@ public class problem63to66 extends ConsoleProgram {
 	private static final String SENTINEL = "";
 
 	public void run() {
-		HashMap<String, ArrayList<String>> names = new HashMap<String, ArrayList<String>>();
+		Map<String, ArrayList<String>> names = new HashMap<String, ArrayList<String>>();
 		while (true) {
 			String friend = readLine("Enter friend: ");
 			if (friend.equals(SENTINEL)) {
@@ -23,10 +24,10 @@ public class problem63to66 extends ConsoleProgram {
 			names.put(person, friendsList);
 		}
 		
-//		int mostFriends = 0;
+		int mostFriends = 0;
 		String popularPerson = "";
 		for (String key : names.keySet()) {
-			int mostFriends = 0;
+			
 			int friendCount = names.get(key).size();
 			if (friendCount > mostFriends) {
 				mostFriends = friendCount;;

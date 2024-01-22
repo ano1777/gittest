@@ -17,7 +17,7 @@ public class problem62 extends ConsoleProgram {
 				namesList.put(name, 0);
 			}
 			int value = namesList.get(name) + 1;
-			namesList.put(name, value);
+			namesList.remove(name);
 			namesList.put(name, value);
 		}
 		println(namesList.toString());

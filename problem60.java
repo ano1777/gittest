@@ -18,7 +18,7 @@ public class problem60 extends ConsoleProgram {
 			numList.add(number);
 
 		}
-		println(numList.toString());
+	//	println(numList.toString());
 		for (int i = 0; i < numList.size(); i++) {
 			int memorizedNum = numList.get(numList.size() -i);
 			numList.set(numList.size() - i, numList.get(i));

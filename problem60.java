@@ -18,12 +18,13 @@ public class problem60 extends ConsoleProgram {
 			numList.add(number);
 
 		}
-	//	println(numList.toString());
+	println(numList.toString());
 		for (int i = 0; i < numList.size(); i++) {
-			int memorizedNum = numList.get(numList.size() -i);
-			numList.set(numList.size() - i, numList.get(i));
-			numList.set(i, memorizedNum);
-			
+			int memorizedNum = numList.get(numList.size() - i);
+			println(memorizedNum);
+//			numList.set(numList.size() - i, numList.get(i));
+//			numList.set(i, memorizedNum);
+//			
 		}
 		println(numList.toString());
 	}

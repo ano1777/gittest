@@ -23,13 +23,13 @@ public class problem63to66 extends ConsoleProgram {
 			
 			for(String key : names.keySet()) {
 				int mostFriends = 0;
-				String popularPerson = "";
+				//String popularPerson = "";
 				if(names.get(key).size() > mostFriends) {
 					mostFriends = names.get(key).size();
-					popularPerson = key;
+					println(mostFriends);
 				}
 				
-				 println(popularPerson);
+				// println(popularPerson);
 			}
 		
 			

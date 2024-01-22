@@ -26,9 +26,9 @@ public class problem63to66 extends ConsoleProgram {
 				//String popularPerson = "";
 				if(names.get(key).size() > mostFriends) {
 					mostFriends = names.get(key).size();
-					println(mostFriends);
+					
 				}
-				
+				println(mostFriends);
 				// println(popularPerson);
 			}
 		

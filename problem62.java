@@ -22,5 +22,4 @@ public class problem62 extends ConsoleProgram {
 		}
 		println(namesList.toString());
 	}
-
 }

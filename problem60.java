@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 import acm.program.ConsoleProgram;
-
 //. კონსოლიდან შეგვყავს რიცხვები მანამ სანამ არ შეიყვანთ -1-ს, დაბეჭდეთ შეყვანილი
 //რიცხვები შებრუნებული მიმდევრობით.
 public class problem60 extends ConsoleProgram {
@@ -16,7 +15,6 @@ public class problem60 extends ConsoleProgram {
 			}
 
 			numList.add(number);
-
 		}
 	println(numList.toString());
 		for(int i = 0; i < numList.size() / 2; i ++) {
@@ -26,7 +24,6 @@ public class problem60 extends ConsoleProgram {
 			numList.set(numList.size() - 1 - i, num1);
 		}
 		gotoString(numList);
-	
 	}
 
 	private void gotoString(ArrayList<Integer> numList) {
@@ -36,12 +33,10 @@ public class problem60 extends ConsoleProgram {
 				str +=  numList.get(i) + ", ";
 			}else{
 				str+= numList.get(i);
-			}
-				
+			}	
 		}
 		str += "]";
 		println(str);
 		
 		}
-	
 }

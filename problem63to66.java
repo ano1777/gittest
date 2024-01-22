@@ -19,7 +19,7 @@ public class problem63to66 extends ConsoleProgram {
 		   	ArrayList<String> friendsList = new ArrayList<String>();
 			friendsList.add(friend);
 			
-			names.put(person, friendsList);
+		///	names.put(person, friendsList);
 			
 			for(String key : names.keySet()) {
 				int mostFriends = 0;

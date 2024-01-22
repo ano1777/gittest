@@ -19,7 +19,7 @@ public class problem60 extends ConsoleProgram {
 
 		}
 	println(numList.toString());
-		for(int i = 0; i < numList.size() / 2; i --) {
+		for(int i = 0; i < numList.size() / 2; i ++) {
 			int num1 = numList.get(i);
 			int num2 = numList.get(numList.size() - 1 - i);
 		      numList.set(i, num2); 

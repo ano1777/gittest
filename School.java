@@ -66,7 +66,7 @@ public class School {
 //			ArrayList<String> pupils = subjectPupil.get(subject);
 //			pupils.add(pupil);
 			subjectPupil.get(subject).add(pupil);
-			System.out.println(subjectPupil);
+			
 	//	}
 		//if (!pupilSubject.containsKey(pupil)) {
 			pupilSubject.putIfAbsent(pupil, new ArrayList<String>());

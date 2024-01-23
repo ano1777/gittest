@@ -40,7 +40,10 @@ public class problem59 extends ConsoleProgram {
 					for(int j = c; j < matrix[0].length; j ++) {
 						if(rectHasOnlyOnes(matrix, r, c, i, j)){
 							current = (i - r  + 1) * (j - c + 1); 
-								maxNum = Math.max(current, maxNum);
+							if(current > maxNum) {
+								maxNum = current;
+							}
+								//maxNum = Math.max(current, maxNum);
 							}
 						}
 					}

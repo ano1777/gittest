@@ -37,6 +37,7 @@ public class problem59 extends ConsoleProgram {
 			for (int j1 = 0; j1 < matrix1[0].length; j1 ++) {
 				for(int i2 = i1; i2 < matrix1.length; i2 ++){
 					for(int j2 = j1; j2 < matrix1[0].length; j2 ++){
+						
 						if(onlyOnes(matrix1, i1, j1, i2, j2)) {
 							currentArea = (i2 - i1 + 1 ) * (j2 - j1 + 1);
 							if(currentArea > maxArea) {
@@ -52,8 +53,8 @@ public class problem59 extends ConsoleProgram {
 
 
 	private boolean onlyOnes(int[][] matrix1, int i1, int j1, int i2, int j2) {
-		for(int a = i1; a < i2; a ++) {
-			for(int b = j1; b < j2; b ++) {
+		for(int a = i1; a <= i2; a ++) {
+			for(int b = j1; b <= j2; b ++) {
 				if(matrix1[a][b] != 1) {
 					return false;
 				}

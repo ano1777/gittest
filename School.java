@@ -90,9 +90,10 @@ public class School {
 		if (pupilSubject.containsKey(pupil)) {
 			ArrayList<String> subjects = pupilSubject.get(pupil);
 			for (String eachSubject : subjects) {
-				teachersForSubjects = subjectTeacher.get(eachSubject);
+				teachersForSubjects.addAll(subjectTeacher.get(eachSubject));
 			}
 		}
+
 		return teachersForSubjects.iterator();
 
 	}
@@ -108,12 +109,11 @@ public class School {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for (String subject : teachersSubjects) {
 
-				pupilsOnThisSubject = subjectPupil.get(subject);
+				pupilsOnThisSubject.addAll(subjectPupil.get(subject));
 			}
 		}
-				return pupilsOnThisSubject.iterator();
-				
-			
+		return pupilsOnThisSubject.iterator();
+
 	}
 
 	// მეთოდმა უნდა წაშალოს მასწავლებლის შესახებ ყველა ინფორმაცია. ამ მეთოდის

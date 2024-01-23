@@ -86,7 +86,7 @@ public class School {
 	// დამატებული(სწავლობს). თუკი pupil სახელის მოსწავლე არ გვყავს მაშინ მეთოდმა
 	// უნდა დააბრუნოს null.
 	public Iterator<String> getTeachers(String pupil) {
-		ArrayList<String> teachersForSubjects = null;
+		ArrayList<String> teachersForSubjects = new ArrayList<String>();
 		if (pupilSubject.containsKey(pupil)) {
 			ArrayList<String> subjects = pupilSubject.get(pupil);
 			for (String eachSubject : subjects) {
@@ -104,7 +104,7 @@ public class School {
 	// მქონე
 	// ლექტორი არ გვყავს მაშინ მეთოდმა უნდა დააბრუნოს null.
 	public Iterator<String> getPupils(String teacher) {
-		ArrayList<String> pupilsOnThisSubject = null;
+		ArrayList<String> pupilsOnThisSubject = new ArrayList<String>();
 		if (teacherSubject.containsKey(teacher)) {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for (String subject : teachersSubjects) {

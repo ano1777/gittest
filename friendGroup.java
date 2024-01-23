@@ -14,6 +14,7 @@ public class friendGroup {
 		}
 		ArrayList<String> friends = friendships.get(person);
 		friends.add(friend);
+		System.out.println(friendships.toString());
 	}
 	
 }

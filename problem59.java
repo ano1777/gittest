@@ -30,7 +30,7 @@ public class problem59 extends ConsoleProgram{
 		for(int r = 0; r < matrix.length; r ++){ 
 			for (int c = 0; c < matrix[0].length; c++ ) {
 				int num = matrix[r][c];
-				print(num);
+				println(num);
 			}
 		
 		}

@@ -6,7 +6,6 @@ public class friendGroup {
 
 	public friendGroup() {
 		friendships = new HashMap<String, ArrayList<String>>();
-		// System.out.println("constructor called");
 	}
 
 	public void addFriendship(String friend, String person) {
@@ -47,6 +46,7 @@ public class friendGroup {
 		ArrayList<String> friends = friendships.get(person);
 		return friends.toString();
 	}
+	
 
 	public ArrayList<String> getAllNames() {
 		ArrayList<String> allNames = new ArrayList<String>();
@@ -80,16 +80,21 @@ public class friendGroup {
 				}
 			}
 		}
-
 		return popularFriend;
 	}
 
+	
 	public int popularFriendsOccurance(String popularFriend) {
 		int maxOccurance = 0;
 		maxOccurance = occurances.get(popularFriend);
 
 		return maxOccurance;
 	}
+	
+	public 
+	
+	
+	
 
 	HashMap<String, Integer> occurances;
 

@@ -5,7 +5,6 @@ import acm.program.ConsoleProgram;
 public class SchoolTst extends ConsoleProgram {
 	
 	public void run() {
-		School sch = new School();
 		School school = new School();
 		school.addTeacher("mari");
 		school.addTeacher("nino");

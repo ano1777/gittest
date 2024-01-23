@@ -19,12 +19,23 @@ public class problem59 extends ConsoleProgram{
 				{1, 0, 1, 0, 0, 0},
 				{0, 1, 1, 1, 1, 1}};
 		
-		print(matrix1. toString());
+		printMatrix(matrix1);
 		
-		print(matrix2);
+		printMatrix(matrix2);
 		
-		print(matrix3);
+		printMatrix(matrix3);
 		}
+
+	private void printMatrix(int[][] matrix) {
+		for(int r = 0; r < matrix.length; r ++){ 
+			for (int c = 0; c < matrix[0].length; c++ ) {
+				int num = matrix[r][c];
+				print(num);
+			}
+		
+		}
+		
+	}
 		
 	
 }

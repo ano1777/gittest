@@ -16,28 +16,47 @@ import acm.program.*;
 public class frindRange extends ConsoleProgram {
 
 	public void run() {
-		ArrayList<String> arr0 = new ArrayList<String>();
-		arr0.add("ani");
-		arr0.add("Hi");
-		arr0.add("test");
+		int matrix[][] = new int [3][3];
+
 		
-		println(arr0);
-		
-		ArrayList<ArrayList<String>> arr1 = new ArrayList<ArrayList<String>>();
-		arr1.add(arr0);
-		println(arr1);
-		arr1.add(new ArrayList<String>());
-		arr1.add(new ArrayList<String>());
-		arr1.get(1).add("TEST2");
-		arr1.get(2).add("ania");
-		arr1.get(0).remove("Hi");
-		arr1.spliterator();
-		println(arr1);
-		arr1.get(1).add("TEST2");
-		arr1.get(1).remove("TEST2");
-		println(arr1);
+		int count = 1;
+		for(int i = 0; i < matrix.length; i++){
+		for(int j = 0; j < matrix[i].length; j++){
+		matrix[i][j] = count;
+		count++;
 		}
+		}
+		for(int i = 0; i < matrix.length; i++){
+			for(int j = 0; j < matrix[i].length; j++){
+			print(matrix[i][j]+" ");
+			}
+			println("");
+			}
+
 	}
+	}
+//		ArrayList<String> arr0 = new ArrayList<String>();
+//		arr0.add("ani");
+//		arr0.add("Hi");
+//		arr0.add("test");
+//		
+//		println(arr0);
+//		
+//		ArrayList<ArrayList<String>> arr1 = new ArrayList<ArrayList<String>>();
+//		arr1.add(arr0);
+//		println(arr1);
+//		arr1.add(new ArrayList<String>());
+//		arr1.add(new ArrayList<String>());
+//		arr1.get(1).add("TEST2");
+//		arr1.get(2).add("ania");
+//		arr1.get(0).remove("Hi");
+//		arr1.spliterator();
+//		println(arr1);
+//		arr1.get(1).add("TEST2");
+//		arr1.get(1).remove("TEST2");
+//		println(arr1);
+//		}
+//	}
 	
 		// REVIEW:
 

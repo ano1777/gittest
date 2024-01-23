@@ -19,7 +19,7 @@ public class problem63to66 extends ConsoleProgram {
 			names.put(person, new ArrayList<String>());
 
 			ArrayList<String> friendsList = names.get(person);
-			friendsList.add(friend);
+			friendsList.add(0, friend);
 
 		//	names.put(person, friendsList);
 		}

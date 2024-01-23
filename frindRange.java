@@ -16,6 +16,25 @@ import acm.program.*;
 public class frindRange extends ConsoleProgram {
 
 	public void run() {
+		ArrayList<String> arr0 = new ArrayList<String>();
+		arr0.add("ani");
+		arr0.add("Hi");
+		arr0.add("test");
+		
+		println(arr0);
+		
+		ArrayList<ArrayList<String>> arr1 = new ArrayList<ArrayList<String>>();
+		arr1.add(arr0);
+		arr1.add(new ArrayList<String>());
+		arr1.get(1).add("TEST2");
+		arr1.get(0).remove("Hi");
+		println(arr1);
+		arr1.get(1).add("TEST2");
+		arr1.get(1).remove("TEST2");
+		println(arr1);
+		}
+	}
+	
 		// REVIEW:
 
 		// matrixNotations();
@@ -71,6 +90,7 @@ m[r][i] = 0;
 
 for(int i = 0; i < m.length; i++){
 m[i][c] = 0;
+}
 }
 }
 }

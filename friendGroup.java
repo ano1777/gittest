@@ -21,7 +21,7 @@ public class friendGroup {
 		}
 		System.out.println(friendships);
 	}
-	
+
 	public int getAmountOfFriends(String person) {
 		return friendships.get(person).size();
 	}
@@ -62,6 +62,25 @@ public class friendGroup {
 			}
 		}
 		return allNames;
-
 	}
+
+	public String popularFriend() {
+		int maxOccurance = 0;
+		int currentOccurance = 0;
+		String popularFriend = "";
+		for (ArrayList<String> friends : friendships.values()) {
+			for (String friend : friends) {
+				if (friends.contains(friend)) {
+					currentOccurance ++;
+					if (currentOccurance > maxOccurance) {
+						maxOccurance = currentOccurance;
+						popularFriend = friend;
+					}
+				}
+			}
+		}
+
+		return popularFriend;
+	}
+
 }

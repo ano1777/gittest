@@ -36,7 +36,7 @@ public class problem59 extends ConsoleProgram {
 			for (int c = 0; c < matrix[0].length; c++) {
 				
 				// i and j are the last coordinates of the rect
-				for(int i = r; r< matrix.length; r ++) {
+				for(int i = r; i < matrix.length; i ++) {
 					for(int j = c; j < matrix[0].length; j ++) {
 						if(rectHasOnlyOnes(matrix, r, c, i, j)){
 							current = (i - r  + 1) * (j - c + 1); 

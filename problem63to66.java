@@ -23,7 +23,7 @@ public class problem63to66 extends ConsoleProgram {
 
 			names.put(person, friendsList);
 		}
-println(names.toString());
+		println(names.toString());
 		int mostFriends = 0;
 		String popularPerson = "";
 		for (String key : names.keySet()) {
@@ -33,8 +33,8 @@ println(names.toString());
 			}
 			popularPerson = key;
 		}
-		
-		println(popularPerson + " has the most friends : "+ mostFriends); // );
+
+		println(popularPerson + " has the most friends : " + mostFriends); // );
 
 	}
 }

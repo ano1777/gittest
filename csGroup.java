@@ -5,10 +5,6 @@ import java.util.Map;
 public class csGroup {
 	private Map<String, Double> studentScores;
 
-	public csGroup() {
-		studentScores = new HashMap<String, Double>();
-	}
-
 	public csGroup(ArrayList<String> students) {
 		studentScores = new HashMap<String, Double>();
 		for (String student : students) {

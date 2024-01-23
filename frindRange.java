@@ -25,9 +25,11 @@ public class frindRange extends ConsoleProgram {
 		
 		ArrayList<ArrayList<String>> arr1 = new ArrayList<ArrayList<String>>();
 		arr1.add(arr0);
+		println(arr1);
 		arr1.add(new ArrayList<String>());
 		arr1.get(1).add("TEST2");
 		arr1.get(0).remove("Hi");
+		arr1.spliterator();
 		println(arr1);
 		arr1.get(1).add("TEST2");
 		arr1.get(1).remove("TEST2");

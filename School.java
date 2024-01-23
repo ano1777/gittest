@@ -74,7 +74,7 @@ public class School {
 //			subjects.add(subject);
 			pupilSubject.get(pupil).add(subject);
 			printsForTesting();
-		}
+		
 
 	}
 

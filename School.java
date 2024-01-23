@@ -108,6 +108,7 @@ public class School {
 		if (teacherSubject.containsKey(teacher)) {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for (String subject : teachersSubjects) {
+				
 				pupilsOnThisSubject = subjectPupil.get(subject);
 				return pupilsOnThisSubject.iterator();
 				// System.out.println(pupilsOnThisSubject);

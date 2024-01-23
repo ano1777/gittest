@@ -101,10 +101,11 @@ public class School {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for(String subject : teachersSubjects) {
 			 pupilsOnThisSubject = subjectPupil.get(subject);
-				
+			 System.out.println(pupilsOnThisSubject);
 			}
 		}
 		return pupilsOnThisSubject.iterator();
+		
 	}
 
 	

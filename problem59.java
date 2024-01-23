@@ -28,10 +28,14 @@ public class problem59 extends ConsoleProgram{
 		}
 
 	private void printMatrix(int[][] matrix) {
+		int num = 0 ;
 		for(int r = 0; r < matrix.length; r ++){ 
-			
-				println(r);
+			for(int c = 0; c < matrix[0].length; c ++){
+			    num = matrix[r][c];
 			}
+			}
+		println(num);
+	
 		
 		}
 		

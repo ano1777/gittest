@@ -117,9 +117,8 @@ public class School {
 	// გამოძახების, შემდეგ getTeachers მეთოდმა არ უნდა დააბრუნოს teacher სახელი
 	// არც ერთი სტუდენტისთვის.
 	public void removeTeacher(String teacher) {
-		if (teacherSubject.containsKey(teacher)) {
 			teacherSubject.remove(teacher);
-		}
+		
 		for (ArrayList<String> teachers : subjectTeacher.values()) {
 			if (teachers.contains(teacher)) {
 				teachers.remove(teacher);

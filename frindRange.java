@@ -65,32 +65,32 @@ public class frindRange extends ConsoleProgram {
 		// }
 		// println("");
 		// }
-	}
-
-private void nullMatrix(int[][] m){
-HashMap<ArrayList<Integer>, Boolean> coords = new HashMap<ArrayList<Integer>, Boolean>();
-for(int r = 0; r < m.length; r++){
-for(int c = 0; c < m[r].length; c++){
-if(m[r][c]==0){
-ArrayList<Integer> coord = new ArrayList<Integer>();
-coord.add(r);
-coord.add(c);
-coords.put(coord, true);
-}
-}
-}
-
-for(ArrayList<Integer> coord : coords.keySet()){
-int r = coord.get(0);
-int c = coord.get(1);
-
-for(int i = 0; i < m[r].length; i++){
-m[r][i] = 0;
-}
-
-for(int i = 0; i < m.length; i++){
-m[i][c] = 0;
-}
-}
-}
-}
+//	}
+//
+//private void nullMatrix(int[][] m){
+//HashMap<ArrayList<Integer>, Boolean> coords = new HashMap<ArrayList<Integer>, Boolean>();
+//for(int r = 0; r < m.length; r++){
+//for(int c = 0; c < m[r].length; c++){
+//if(m[r][c]==0){
+//ArrayList<Integer> coord = new ArrayList<Integer>();
+//coord.add(r);
+//coord.add(c);
+//coords.put(coord, true);
+//}
+//}
+//}
+//
+//for(ArrayList<Integer> coord : coords.keySet()){
+//int r = coord.get(0);
+//int c = coord.get(1);
+//
+//for(int i = 0; i < m[r].length; i++){
+//m[r][i] = 0;
+//}
+//
+//for(int i = 0; i < m.length; i++){
+//m[i][c] = 0;
+//}
+//}
+//}
+//}

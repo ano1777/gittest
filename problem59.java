@@ -19,14 +19,14 @@ public class problem59 extends ConsoleProgram {
 							{ 0, 1, 1, 1, 1, 1 } };
 
 		printMatrix(matrix1);
-		println("");
+		println(biggestRectSize(matrix1));
 		printMatrix(matrix2);
-		println("");
+		println(biggestRectSize(matrix2));
 		printMatrix(matrix3);
-		println("");
+		println(biggestRectSize(matrix3));
 	}
 
-	private int biggestRect(int[][] matrix) {
+	private int biggestRectSize(int[][] matrix) {
 		int maxNum = 0;
 		int current = 0;
 	// r and c are the coordinates of the first point of the rect

@@ -24,6 +24,8 @@ public class problem59 extends ConsoleProgram {
 		println(biggestRectSize(matrix2));
 		printMatrix(matrix3);
 		println(biggestRectSize(matrix3));
+		int min = Integer.MAX_VALUE;
+		println(min);
 	}
 
 	private int biggestRectSize(int[][] matrix) {

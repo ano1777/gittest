@@ -31,13 +31,31 @@ public class friendGroup {
 				popular = key;
 			}
 		}
-		return popular;
-		
+		return popular;	
 	}
+	
 	public String getFriendsAsString(String person) {
 		ArrayList<String> friends = friendships.get(person);
 		
 		return friends.toString();
 	}
 	
+	public ArrayList<String> getAllNames() {
+		ArrayList<String> allNames = new ArrayList<String>();
+		for(String person: friendships.keySet()) {
+			if(!allNames.contains(person)){
+				allNames.add(person);
+			}
+		
+		ArrayList<String> friends = friendships.get(person);
+		for(String friend: friends) {
+			if(!allNames.contains(friend)) {
+				allNames.add(friend);
+			}
+		  }
+		}
+		return allNames;
+		
+		
+	}
 }

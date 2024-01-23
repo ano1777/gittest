@@ -71,7 +71,8 @@ public class friendGroup {
 		String popularFriend = "";
 		for (ArrayList<String> friends : friendships.values()) {
 			for (String friend : friends) {
-				occurances.put(friend, occurances.getOrDefault(friend, 0) + 1);
+				int value = occurances.getOrDefault(friend, 0) + 1;
+				occurances.put(friend, value);
 				currentOccurance = occurances.get(friend);
 				if (currentOccurance > maxOccurance) {
 					maxOccurance = currentOccurance;

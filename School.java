@@ -58,11 +58,13 @@ public class School {
 			subjectPupil.put(subject, new ArrayList<String>());
 			ArrayList<String> pupils = subjectPupil.get(subject);
 			pupils.add(pupil);
+			System.out.println(subjectPupil);
 		}
 		if (!pupilSubject.containsKey(pupil)) {
 			pupilSubject.put(pupil, new ArrayList<String>());
 			ArrayList<String> subjects = pupilSubject.get(pupil);
 			subjects.add(subject);
+			System.out.println(pupilSubject);
 		}
 
 	}
@@ -101,7 +103,7 @@ public class School {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for(String subject : teachersSubjects) {
 			 pupilsOnThisSubject = subjectPupil.get(subject);
-			 System.out.println(pupilsOnThisSubject);
+			// System.out.println(pupilsOnThisSubject);
 			}
 		}
 		return pupilsOnThisSubject.iterator();

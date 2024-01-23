@@ -21,7 +21,7 @@ public class problem63to66 extends ConsoleProgram {
 			ArrayList<String> friendsList = names.get(person);
 			friendsList.add(friend);
 
-			names.put(person, friendsList);
+		//	names.put(person, friendsList);
 		}
 		println(names.toString());
 		int mostFriends = 0;

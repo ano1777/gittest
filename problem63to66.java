@@ -15,14 +15,13 @@ public class problem63to66 extends ConsoleProgram {
 				break;
 			}
 			String person = readLine("Enter person: ");
-
-			
+			if (!names.containsKey(person)) {
+				names.put(person, new ArrayList<String>());
+			}
 			ArrayList<String> friendsList = names.get(person);
-			friendsList.add(0, friend);
-			
-			names.put(person, friendsList);
+			friendsList.add(friend);
 
-		//	names.put(person, friendsList);
+			// names.put(person, friendsList);
 		}
 		println(names.toString());
 		int mostFriends = 0;

@@ -30,7 +30,7 @@ public class frindRange extends ConsoleProgram {
 			for(int j = 0; j < matrix[i].length; j++){
 			print(matrix[i][j]);
 			}
-			println("");
+			//println("");
 			}
 
 	}

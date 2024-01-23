@@ -16,25 +16,158 @@ import acm.program.*;
 public class frindRange extends ConsoleProgram {
 
 	public void run() {
-		int matrix[][] = new int [3][3];
 
+private boolean inBounds(int[][] m, int r, int c){
+return Math.min(r, c) >= 0 && r < m.length && c < m[r].length;
+}
+
+private int min(ArrayList<Integer> a){
+int min = a.get(0);
+for(int i = 0; i < a.size(); i++){
+min = Math.min(min, a.get(i));
+}
+return min;
+}
+
+private ArrayList<Integer> getOnes(int[][] m, int r, int c){
+ArrayList<Integer> ones = new ArrayList<Integer>();
+
+int lengthT = 1;
+int ptrV = r;
+while(true){
+if(!inBounds(m, ptrV, c) || m[ptrV][c]==0) break;
+ptrV--;
+lengthT++;
+}
+ones.add(lengthT);
+
+ptrV = r;
+
+int lengthB = 1;
+while(true){
+if(!inBounds(m, ptrV, c) || m[ptrV][c]==0) break;
+ptrV++;
+lengthB++;
+}
+ones.add(lengthB);
+
+int ptrH = c;
+int lengthR = 1;
+while(true){
+if(!inBounds(m, r, ptrH) || m[r][ptrH]==0) break;
+ptrH++;
+lengthR++;
+}
+ones.add(lengthR);
+
+ptrH = c;
+int lengthL = 1;
+
+while(true){
+if(!inBounds(m, r, ptrH) || m[r][ptrH]==0) break;
+ptrH--;
+lengthL++;
+}
+ones.add(lengthL);
+
+return ones;
+}
+
+//IMPLEMENT THIS:
+private int biggestPlusSize(int[][] m){
+int res = 0;
+for(int r = 0; r < m.length; r++){
+for(int c = 0; c < m[0].length; c++){
+if(m[r][c]==0) continue;
+
+ArrayList<Integer> ones = getOnes(m, r, c);
+int sizeOfCurrentPlus = min(ones)-1;
+res = Math.max(res, sizeOfCurrentPlus);
+}
+}
+return res;
+}
+
+//Biggest Plus Tests: [Calls biggestPlusSize method]
+@SuppressWarnings("unused")
+private void biggestPlusTests(){
+int[][] m1 = new int[][]
+{{0, 0, 0, 0, 0, 1, 0, 0},
+{0, 0, 0, 0, 1, 1, 1, 0},
+{0, 0, 1, 0, 0, 1, 0, 0},
+{0, 1, 1, 1, 1, 1, 1, 1},
+{0, 0, 1, 0, 0, 1, 1, 0},
+{0, 0, 1, 0, 0, 1, 0, 0}};
+println("TEST 1: ");
+if(biggestPlusSize(m1) == 3){
+print("SUCCESS");
+}else{
+print("FAIL");
+}
+println("");
+
+int[][] m2 = new int[][]
+{{0, 1, 0, 1, 1, 1, 0},
+{1, 1, 1, 1, 1, 1, 0},
+{0, 1, 1, 0, 0, 1, 0},
+{0, 1, 1, 0, 1, 1, 0},
+{1, 1, 1, 1, 1, 0, 1},
+{0, 0, 1, 0, 1, 0, 1},
+{0, 0, 1, 0, 1, 0, 1},
+{0, 0, 0, 1, 1, 1, 0},
+{0, 0, 0, 1, 1, 1, 0}};
+println("TEST 2: ");
+if(biggestPlusSize(m2) == 3){
+print("SUCCESS");
+}else{
+print("FAIL");
+}
+println("");
+
+int[][] m3 = new int[][]
+   {{0, 1, 0, 1, 1},
+    {1, 1, 1, 1, 1},
+    {0, 1, 1, 1, 0},
+    {1, 1, 1, 1, 1},
+    {1, 0, 1, 1, 0},
+    {1, 1, 1, 0, 1},
+    {0, 1, 1, 1, 0}};
+
+println("TEST 3: ");
+if(biggestPlusSize(m3) == 3){
+   print("SUCCESS");
+}else{
+   print("FAIL");
+}
+println("");
+
+}
 		
-		int count = 1;
-		for(int i = 0; i < matrix.length; i++){
-		for(int j = 0; j < matrix[i].length; j++){
-		matrix[i][j] = count;
-		count++;
-		}
-		}
-		for(int i = 0; i < matrix.length; i++){
-			for(int j = 0; j < matrix[i].length; j++){
-			print(matrix[i][j] + " ");
-			}
-			println("");
-			}
-
+		
+		
+		
+		
 	}
 	}
+//		int matrix[][] = new int [3][3];
+//
+//		
+//		int count = 1;
+//		for(int i = 0; i < matrix.length; i++){
+//		for(int j = 0; j < matrix[i].length; j++){
+//		matrix[i][j] = count;
+//		count++;
+//		}
+//		}
+//		for(int i = 0; i < matrix.length; i++){
+//			for(int j = 0; j < matrix[i].length; j++){
+//			print(matrix[i][j] + " ");
+//			}
+//			println("");
+//			}
+//
+//	}
+//	}
 //		ArrayList<String> arr0 = new ArrayList<String>();
 //		arr0.add("ani");
 //		arr0.add("Hi");

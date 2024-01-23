@@ -37,7 +37,7 @@ public class problem59 extends ConsoleProgram {
 				for(int i = r; r< matrix.length; r ++) {
 					for(int j = c; j < matrix[0].length; j ++) {
 						if(rectHasOnlyOnes(matrix, r, c, i, j)){
-							current = (i - c  + 1) * (j - r + 1); 
+							current = (i - r  + 1) * (j - c + 1); 
 								maxNum = Math.max(current, maxNum);
 							}
 						}

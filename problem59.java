@@ -20,10 +20,11 @@ public class problem59 extends ConsoleProgram{
 				{0, 1, 1, 1, 1, 1}};
 		
 		printMatrix(matrix1);
-		
+		println("");
 		printMatrix(matrix2);
-		
+		println("");
 		printMatrix(matrix3);
+		println("");
 		}
 
 	private void printMatrix(int[][] matrix) {

@@ -13,9 +13,10 @@ public class GroupTesst extends ConsoleProgram {
 			}
 			String person = readLine("enter person: ");
 			friends.addFriendship(friend, person);
-			println(friends.mostPopularPerson());
+			
 		
 		}
+		println(friends.mostPopularPerson());
 		
 
 		// ArrayList<String> students = new ArrayList<>();

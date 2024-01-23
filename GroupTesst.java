@@ -17,7 +17,7 @@ public class GroupTesst extends ConsoleProgram {
 			
 		
 		}
-		println("most popular person is" + friends.mostPopularPerson() + friends.getAmountOfFriends(person));
+		println("most popular person is" + friends.mostPopularPerson() + friends.getAmountOfFriends(friends.mostPopularPerson()));
 		
 		ArrayList<String> allNames = friends.getAllNames();
 		for(String name : allNames) {

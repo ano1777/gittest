@@ -34,5 +34,10 @@ public class friendGroup {
 		return popular;
 		
 	}
+	public String getFriendsAsString(String person) {
+		ArrayList<String> friends = friendships.get(person);
+		
+		return friends.toString();
+	}
 	
 }

@@ -17,7 +17,22 @@ public class friendGroup {
 		ArrayList<String> friends = friendships.get(person);
 		friends.add(friend);
 	
-		System.out.println(friendships.toString());
+		System.out.println(friendships);
+		
+	}
+	
+	public String mostPopularPerson () {
+		int maxAmount = 0;
+		String popular = "";
+		for(String key: friendships.keySet()){
+			int currFriendsAmount = friendships.get(key).size();
+			if(currFriendsAmount > maxAmount) {
+				maxAmount = currFriendsAmount;
+				popular = key;
+			}
+		}
+		return popular;
+		
 	}
 	
 }

@@ -18,7 +18,7 @@ public class School {
 		subjectPupil = new HashMap<String, ArrayList<String>>();
 		pupilSubject = new HashMap<String, ArrayList<String>>();
 	}
-	
+
 	private void printsForTesting() {
 		System.out.println("-------");
 		System.out.println("teacherSubject: " + teacherSubject);
@@ -49,13 +49,13 @@ public class School {
 			return;
 		} else {
 			teacherSubject.get(teacher).add(subject);
-			
+
 			subjectTeacher.put(subject, new ArrayList<String>());
-			
+
 			subjectTeacher.get(subject).add(teacher);
-			
-			printsForTesting();		
-			}
+
+			printsForTesting();
+		}
 	}
 
 	// addPupil მეთოდის საშუალებით შეგიძლიათ საგანზე დაამატოთ მოსწავლე. ერთი და
@@ -64,19 +64,18 @@ public class School {
 		if (!subjectTeacher.containsKey(subject)) {
 			return;
 		}
-			subjectPupil.putIfAbsent(subject, new ArrayList<String>());
-//			ArrayList<String> pupils = subjectPupil.get(subject);
-//			pupils.add(pupil);
-			subjectPupil.get(subject).add(pupil);
-			
-	//	}
-		//if (!pupilSubject.containsKey(pupil)) {
-			pupilSubject.putIfAbsent(pupil, new ArrayList<String>());
-//			ArrayList<String> subjects = pupilSubject.get(pupil);
-//			subjects.add(subject);
-			pupilSubject.get(pupil).add(subject);
-			printsForTesting();
-		
+		subjectPupil.putIfAbsent(subject, new ArrayList<String>());
+		// ArrayList<String> pupils = subjectPupil.get(subject);
+		// pupils.add(pupil);
+		subjectPupil.get(subject).add(pupil);
+
+		// }
+		// if (!pupilSubject.containsKey(pupil)) {
+		pupilSubject.putIfAbsent(pupil, new ArrayList<String>());
+		// ArrayList<String> subjects = pupilSubject.get(pupil);
+		// subjects.add(subject);
+		pupilSubject.get(pupil).add(subject);
+		printsForTesting();
 
 	}
 
@@ -86,15 +85,15 @@ public class School {
 	// დამატებული(სწავლობს). თუკი pupil სახელის მოსწავლე არ გვყავს მაშინ მეთოდმა
 	// უნდა დააბრუნოს null.
 	public Iterator<String> getTeachers(String pupil) {
+
 		ArrayList<String> teachersForSubjects = new ArrayList<String>();
 		if (pupilSubject.containsKey(pupil)) {
 			ArrayList<String> subjects = pupilSubject.get(pupil);
 			for (String eachSubject : subjects) {
 				teachersForSubjects = subjectTeacher.get(eachSubject);
-				return teachersForSubjects.iterator();
 			}
 		}
-		return null;
+		return teachersForSubjects.iterator();
 
 	}
 
@@ -108,21 +107,21 @@ public class School {
 		if (teacherSubject.containsKey(teacher)) {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for (String subject : teachersSubjects) {
-				
+
 				pupilsOnThisSubject = subjectPupil.get(subject);
-				return pupilsOnThisSubject.iterator();
-				// System.out.println(pupilsOnThisSubject);
 			}
 		}
-		return null;
+				return pupilsOnThisSubject.iterator();
+				
+			
 	}
 
 	// მეთოდმა უნდა წაშალოს მასწავლებლის შესახებ ყველა ინფორმაცია. ამ მეთოდის
 	// გამოძახების, შემდეგ getTeachers მეთოდმა არ უნდა დააბრუნოს teacher სახელი
 	// არც ერთი სტუდენტისთვის.
 	public void removeTeacher(String teacher) {
-			teacherSubject.remove(teacher);
-		
+		teacherSubject.remove(teacher);
+
 		for (ArrayList<String> teachers : subjectTeacher.values()) {
 			if (teachers.contains(teacher)) {
 				teachers.remove(teacher);

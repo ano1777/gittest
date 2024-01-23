@@ -19,7 +19,7 @@ public class problem59 extends ConsoleProgram{
 				{1, 0, 1, 0, 0, 0},
 				{0, 1, 1, 1, 1, 1}};
 		
-		print(matrix1);
+		print(matrix1. toString());
 		
 		print(matrix2);
 		

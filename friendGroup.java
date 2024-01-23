@@ -65,22 +65,31 @@ public class friendGroup {
 	}
 
 	public String popularFriend() {
-		HashMap<String, Integer> occurances = new HashMap<String, Integer>();
+		occurances = new HashMap<String, Integer>();
 		int maxOccurance = 0;
 		int currentOccurance = 0;
 		String popularFriend = "";
 		for (ArrayList<String> friends : friendships.values()) {
 			for (String friend : friends) {
-				occurances.put(friend, occurances.getOrDefault(friend, 0)+1);
+				occurances.put(friend, occurances.getOrDefault(friend, 0) + 1);
 				currentOccurance = occurances.get(friend);
-					if (currentOccurance > maxOccurance) {
-						maxOccurance = currentOccurance;
-						popularFriend = friend;
-					}
+				if (currentOccurance > maxOccurance) {
+					maxOccurance = currentOccurance;
+					popularFriend = friend;
 				}
 			}
-		
+		}
+
 		return popularFriend;
 	}
+
+	public int popularFriendsOccurance(String popularFriend) {
+		int maxOccurance = 0;
+		maxOccurance = occurances.get(popularFriend);
+
+		return maxOccurance;
+	}
+
+	HashMap<String, Integer> occurances;
 
 }

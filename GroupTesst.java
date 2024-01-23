@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import acm.program.ConsoleProgram;
 
 public class GroupTesst extends ConsoleProgram {
+	private String person;
 	public void run() {
 
 		friendGroup friends = new friendGroup();
@@ -11,12 +12,12 @@ public class GroupTesst extends ConsoleProgram {
 			if (friend.equals("")) {
 				break;
 			}
-			String person = readLine("enter person: ");
+			 person = readLine("enter person: ");
 			friends.addFriendship(friend, person);
 			
 		
 		}
-		println("most popular person is" + friends.mostPopularPerson());
+		println("most popular person is" + friends.mostPopularPerson() + friends.getAmountOfFriends(person));
 		
 		ArrayList<String> allNames = friends.getAllNames();
 		for(String name : allNames) {

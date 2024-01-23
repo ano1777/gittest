@@ -42,10 +42,9 @@ public class School {
 			subjectTeacher.put(subject, new ArrayList<String>()); 
 				ArrayList<String> teachers  = subjectTeacher.get(subject);
 				teachers.add(teacher);
+				System.out.println(subjectTeacher);
+				System.out.println(teacherSubject);
 			}
-		
-		// TIP: you can use System.out.println() to print your structures for
-		// testing
 	}
 
 	// addPupil მეთოდის საშუალებით შეგიძლიათ საგანზე დაამატოთ მოსწავლე. ერთი და

@@ -14,6 +14,7 @@ public class GroupTesst extends ConsoleProgram {
 			String person = readLine("enter person: ");
 
 			friends.addFriendship(friend, person);
+		
 		}
 
 		// ArrayList<String> students = new ArrayList<>();

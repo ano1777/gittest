@@ -23,7 +23,7 @@ public class frindRange extends ConsoleProgram {
 		for(int i = 0; i < matrix.length; i++){
 		for(int j = 0; j < matrix[i].length; j++){
 		matrix[i][j] = count;
-		count++;
+		//count++;
 		}
 		}
 		for(int i = 0; i < matrix.length; i++){

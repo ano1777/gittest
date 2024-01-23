@@ -1,3 +1,4 @@
+
 import java.util.Iterator;
 
 import acm.program.ConsoleProgram;
@@ -8,10 +9,11 @@ public class SchoolTst extends ConsoleProgram {
 		School school = new School();
 		school.addTeacher("mari");
 		school.addTeacher("nino");
+		school.addTeacher("mari");
 
 		school.addSubject("mari", "cs");
 		school.addSubject("mari", "math");
-		school.addSubject("nino", "physics");
+		school.addSubject("ani", "physics");
 
 		school.addPupil("ana", "cs");
 		school.addPupil("ana", "physics");

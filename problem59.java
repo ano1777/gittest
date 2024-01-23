@@ -26,46 +26,44 @@ public class problem59 extends ConsoleProgram {
 		println(biggestRectSize(matrix3));
 		int min = Integer.MAX_VALUE;
 		println(min);
+	
 	}
+	
 
-	private int biggestRectSize(int[][] matrix) {
-		int maxNum = 0;
-		int current = 0;
-	// r and c are the coordinates of the first point of the rect
-		for (int r = 0; r < matrix.length; r++) {
-			for (int c = 0; c < matrix[0].length; c++) {
-				
-				// i and j are the last coordinates of the rect
-				for(int i = r; i < matrix.length; i ++) {
-					for(int j = c; j < matrix[0].length; j ++) {
-						if(rectHasOnlyOnes(matrix, r, c, i, j)){
-							current = (i - r  + 1) * (j - c + 1); 
-							if(current > maxNum) {
-								maxNum = current;
-							}
-								//maxNum = Math.max(current, maxNum);
+	private int biggestRectSize(int[][] matrix1) {
+		int maxArea = 0 ;
+		int currentArea = 0;
+		for(int i1 = 0; i1 < matrix1.length; i1 ++) {
+			for (int j1 = 0; j1 < matrix1[0].length; j1 ++) {
+				for(int i2 = i1; i2 < matrix1.length; i2 ++){
+					for(int j2 = j1; j2 < matrix1[0].length; j2 ++){
+						if(onlyOnes(matrix1, i1, j1, i2, j2)) {
+							currentArea = (i2 - i1 + 1 ) * (j2 - j1 + 1);
+							if(currentArea > maxArea) {
+								maxArea = currentArea;
 							}
 						}
 					}
 				}
-		
+			}
 		}
-		return maxNum;
+		return maxArea;
 	}
 
-	private boolean rectHasOnlyOnes(int[][] matrix, int r, int c, int i, int j) {
-		for(int a = r; a < i + 1; a ++) {
-			for(int b = c; b < j + 1; b ++) {
-				if(matrix[a][b] != 1){
+
+	private boolean onlyOnes(int[][] matrix1, int i1, int j1, int i2, int j2) {
+		for(int a = i1; a < i2; a ++) {
+			for(int b = j1; b < j2; b ++) {
+				if(matrix1[a][b] != 1) {
 					return false;
 				}
 			}
 		}
+		
 		return true;
 	}
 
-
-
+	
 	private void printMatrix(int[][] matrix) {
 		for (int[] row : matrix) {
 			println(Arrays.toString(row));

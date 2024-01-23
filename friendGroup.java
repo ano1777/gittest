@@ -5,7 +5,7 @@ public class friendGroup {
 	HashMap<String, ArrayList<String>> friendships ;
 	public friendGroup() {
 		friendships = new HashMap<String, ArrayList<String>>();
-		System.out.println("constructor called");
+		//System.out.println("constructor called");
 	}
 	
 	public void addFriendship(String friend, String person) {
@@ -16,7 +16,7 @@ public class friendGroup {
 		
 		ArrayList<String> friends = friendships.get(person);
 		friends.add(friend);
-		
+	
 		System.out.println(friendships.toString());
 	}
 	

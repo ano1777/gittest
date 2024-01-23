@@ -23,7 +23,7 @@ public class GroupTesst extends ConsoleProgram {
 		for(String name : allNames) {
 			println(name + " 's friends:  " + friends.getFriendsAsString(name));
 		}
-		println("Most popular friend is: " + friends.popularFriend());
+		println("Most popular friend is: " + friends.popularFriend() + " with " + friends.popularFriendsOccurance(friends.popularFriend()) + " friends");
 
 		// ArrayList<String> students = new ArrayList<>();
 		// students.add("sansi23");

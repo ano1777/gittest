@@ -85,14 +85,17 @@ public class School {
 	// დამატებული(სწავლობს). თუკი pupil სახელის მოსწავლე არ გვყავს მაშინ მეთოდმა
 	// უნდა დააბრუნოს null.
 	public Iterator<String> getTeachers(String pupil) {
-
+		if (!pupilSubject.containsKey(pupil)) {
+			return null;
+		}
 		ArrayList<String> teachersForSubjects = new ArrayList<String>();
-		if (pupilSubject.containsKey(pupil)) {
+		
 			ArrayList<String> subjects = pupilSubject.get(pupil);
 			for (String eachSubject : subjects) {
+				if(subjectTeacher.containsKey(eachSubject)) {
 				teachersForSubjects.addAll(subjectTeacher.get(eachSubject));
+				}
 			}
-		}
 
 		return teachersForSubjects.iterator();
 
@@ -104,12 +107,17 @@ public class School {
 	// მქონე
 	// ლექტორი არ გვყავს მაშინ მეთოდმა უნდა დააბრუნოს null.
 	public Iterator<String> getPupils(String teacher) {
+		if (!teacherSubject.containsKey(teacher)) {
+			return null;
+		}
 		ArrayList<String> pupilsOnThisSubject = new ArrayList<String>();
 		if (teacherSubject.containsKey(teacher)) {
 			ArrayList<String> teachersSubjects = teacherSubject.get(teacher);
 			for (String subject : teachersSubjects) {
+				if (subjectPupil.containsKey(subject)) {
 
-				pupilsOnThisSubject.addAll(subjectPupil.get(subject));
+					pupilsOnThisSubject.addAll(subjectPupil.get(subject));
+				}
 			}
 		}
 		return pupilsOnThisSubject.iterator();

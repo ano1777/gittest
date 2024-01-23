@@ -35,8 +35,11 @@ public class friendGroup {
 	}
 	
 	public String getFriendsAsString(String person) {
-		ArrayList<String> friends = friendships.get(person);
+		if(!friendships.containsKey(person)) {
+			return "Does not have friends";
+		}
 		
+		ArrayList<String> friends = friendships.get(person);	
 		return friends.toString();
 	}
 	
@@ -46,7 +49,6 @@ public class friendGroup {
 			if(!allNames.contains(person)){
 				allNames.add(person);
 			}
-		
 		ArrayList<String> friends = friendships.get(person);
 		for(String friend: friends) {
 			if(!allNames.contains(friend)) {

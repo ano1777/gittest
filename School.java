@@ -31,7 +31,7 @@ public class School {
 	// მასწავლებელი. მეთოდს გადაეცემა მასწავლებლის სახელი. შეგიძლიათ ჩათვალოთ,
 	// რომ მასწავლებლის სახელი უნიკალურია.
 	public void addTeacher(String teacher) {
-		teacherSubject.put(teacher, new ArrayList<String>());
+		teacherSubject.putIfAbsent(teacher, new ArrayList<String>());
 		printsForTesting();
 
 	}
@@ -48,13 +48,12 @@ public class School {
 		if (!teacherSubject.containsKey(teacher)) {
 			return;
 		} else {
-			teacherSubject.put(teacher, new ArrayList<String>());
-			ArrayList<String> subjects = teacherSubject.get(teacher);
-			subjects.add(subject);
-			subjectTeacher.put(subject, new ArrayList<String>());
-			ArrayList<String> teachers = subjectTeacher.get(subject);
+			teacherSubject.get(teacher).add(subject);
 			
-			teachers.add(teacher);
+			subjectTeacher.put(subject, new ArrayList<String>());
+			
+			subjectTeacher.get(subject).add(teacher);
+			
 			printsForTesting();		
 			}
 	}

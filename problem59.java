@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import acm.program.ConsoleProgram;
 
 public class problem59 extends ConsoleProgram{
@@ -28,15 +30,9 @@ public class problem59 extends ConsoleProgram{
 		}
 
 	private void printMatrix(int[][] matrix) {
-		int num = 0 ;
-		for(int r = 0; r < matrix.length; r ++){ 
-			for(int c = 0; c < matrix[0].length; c ++){
-			    num = matrix[r][c];
-				println(num);
-			}
-			}
-	
-	
+		for(int[] row : matrix) {
+			println(Arrays.toString(row));
+		}
 		
 		}
 		

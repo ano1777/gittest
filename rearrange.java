@@ -10,43 +10,30 @@ public class rearrange extends ConsoleProgram {
 	public void run() {
 		letters = new HashMap<String, Integer>();
 		sent = readLine("enter sentence: ");
-		if (sent.contains(" ")) {
+		if (!sent.contains(" ")) {
+			word = sent;
+			letters.put(word, word.length());
+		} else {
 			for (int i = 0; i < sent.length(); i++) {
 				if (sent.charAt(i) == ' ') {
 					word = sent.substring(0, i);
-					letters.put(word, 0);
+					letters.put(word, word.length());
 					sent = sent.substring(i + 1);
-					
 				}
-			}
-		} else {
-			word = sent;
-			letters.put(word, 0);
-		}
 
-		// ani --> 3 luka --> 4 niniko --> 6
-		for (String word : letters.keySet()) {
-			int amount = 0;
-			for (int i = 0; i < word.length(); i++) {
-				amount++;
 			}
-			letters.put(word, amount);
 		}
-
-		
 		int maxAmount = 0;
+		String newSent = "";
 		for (String key : letters.keySet()) {
-			String newSent = "";
-			int  currentAmount = letters.get(key);
+			int currentAmount = letters.get(key);
 			if (currentAmount > maxAmount) {
 				maxAmount = currentAmount;
 				newSent += " " + key;
 			} else {
-				newSent = key + " " + newSent; 
+				newSent = key + " " + newSent;
 			}
-	
-		print(newSent);
 		}
+		print(newSent);
 	}
-
 }

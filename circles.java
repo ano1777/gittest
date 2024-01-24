@@ -70,7 +70,7 @@ public class circles extends GraphicsProgram {
 		}
 	}
 
-	public void mousePresssed(MouseEvent e) {
+	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
 		GObject obj = getElementAt(x, y);

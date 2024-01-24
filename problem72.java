@@ -19,7 +19,7 @@ public class problem72 extends GraphicsProgram {
 
 	public void init() {
 		sch = new School();
-		SchoolTst test = new SchoolTst();
+		//SchoolTst test = new SchoolTst();
 		JLabel teacher = new JLabel("Teach: ");
 		add(teacher, SOUTH);
 
@@ -66,15 +66,16 @@ public class problem72 extends GraphicsProgram {
 			if(teachField.getText() != null && !teachField.getText().equals("")){
 			sch.addTeacher(teachField.getText());
 			}
-		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
-			if(subjField.getText() != null && !subjField.equals("")) {
-			sch.addSubject(subjField.getText(), teachField.getText());
-			}
-		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
-			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
-				sch.addPupil(pupilField.getText(), subjField.getText());
-			}
 		}
+//		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
+//			if(subjField.getText() != null && !subjField.equals("")) {
+//			sch.addSubject(subjField.getText(), teachField.getText());
+//			}
+//		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
+//			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
+//				sch.addPupil(pupilField.getText(), subjField.getText());
+//			}
+//		}
 //		} else if (e.getSource() == dispPupils) {
 //			removeAll();
 //			sch.getPupils(teachField.getText());
@@ -83,6 +84,6 @@ public class problem72 extends GraphicsProgram {
 //			sch.getTeachers(pupilField.getText());
 //		}
 	//}
+	}
 
-}
 }

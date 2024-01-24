@@ -10,10 +10,10 @@ public class rearrange extends ConsoleProgram {
 	public void run() {
 		letters = new HashMap<String, Integer>();
 		sent = readLine("enter sentence: ");
-		if (!sent.contains(" ")) {
-			word = sent;
-			letters.put(word, word.length());
-		} else {
+//		if (!sent.contains(" ")) {
+//			word = sent;
+//			letters.put(word, word.length());
+//		} else {
 			for (int i = 0; i < sent.length(); i ++) {
 				char ch = sent.charAt(i);
 				if (ch == ' ') {
@@ -25,7 +25,7 @@ public class rearrange extends ConsoleProgram {
 				
 				}
 			}
-		}
+		
 		println(letters);
 //		int maxAmount = 0;
 //		String newSent = "";

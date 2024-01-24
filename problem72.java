@@ -86,10 +86,10 @@ public class problem72 extends GraphicsProgram {
 			GLabel res = new GLabel("Results: ");
 			add(res, x, y);
 			while (pupilsForthisTeach.hasNext()) {
-				add(res, x, y);
+				  y += 10;
 				String pupil = pupilsForthisTeach.next();
 				GLabel pupils = new GLabel(pupil);
-			    y += 10;
+			  
 				add(pupils, x, y);
 			}
 

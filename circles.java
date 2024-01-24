@@ -109,7 +109,7 @@ public class circles extends GraphicsProgram {
 	private void removeCoins(int num) {
 		for(int i = 0; i > num ; i ++){
 		    remove(ovals.get(ovals.size()- i));
-			ovals.remove(ovals.size() - 1 - i);
+			ovals.remove(ovals.size() - 1);
 	    }
 
 	}

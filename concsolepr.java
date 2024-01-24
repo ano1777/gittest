@@ -18,7 +18,7 @@ public class concsolepr extends ConsoleProgram {
 	}
 
 	private void addSpaces(String str, int[] arr) {
-		String ne;
+		String ne = "";
 		for (int j = 0; j < arr.length; j++) {
 			for (int i = 0; i < str.length(); i ++) {
 				if (i == arr[j]) {

@@ -66,24 +66,23 @@ public class problem72 extends GraphicsProgram {
 			if(teachField.getText() != null && !teachField.getText().equals("")){
 			sch.addTeacher(teachField.getText());
 			}
+		
+		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
+			if(subjField.getText() != null && !subjField.equals("")) {
+			sch.addSubject(subjField.getText(), teachField.getText());
+			}
+		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
+			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
+				sch.addPupil(pupilField.getText(), subjField.getText());
+			}
+		} else if (e.getSource() == dispPupils) {
+			removeAll();
+			sch.getPupils(teachField.getText());
+		} else if (e.getSource() == dispTeachers) {
+			removeAll();
+			sch.getTeachers(pupilField.getText());
 		}
-//		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
-//			if(subjField.getText() != null && !subjField.equals("")) {
-//			sch.addSubject(subjField.getText(), teachField.getText());
-//			}
-//		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
-//			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
-//				sch.addPupil(pupilField.getText(), subjField.getText());
-//			}
-//		}
-//		} else if (e.getSource() == dispPupils) {
-//			removeAll();
-//			sch.getPupils(teachField.getText());
-//		} else if (e.getSource() == dispTeachers) {
-//			removeAll();
-//			sch.getTeachers(pupilField.getText());
-//		}
-	//}
+	
 	}
 
 }

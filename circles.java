@@ -80,7 +80,7 @@ public class circles extends GraphicsProgram {
 
 	}
 	
-		public void mouseClicked(MouseEvent e) {
+		public void mousePressed(MouseEvent e) {
 			GObject obj = getElementAt(e.getX(), e.getY());
 			int num = -1;
 			if (coins.size() > 0 && obj == coins.get(coins.size() - 1)) {

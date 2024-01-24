@@ -13,6 +13,7 @@ public class rearrange extends ConsoleProgram {
 		if (!sent.contains(" ")) {
 			word += sent;
 			letters.put(word, word.length());
+			
 		} else {
 			for (int i = 0; i < sent.length(); i++) {
 				if (sent.charAt(i) == ' ') {
@@ -20,10 +21,12 @@ public class rearrange extends ConsoleProgram {
 					letters.put(word, word.length());
 					sent = sent.substring(i + 1);
 					println(sent);
+				
 				}
 
 			}
 		}
+		println(letters);
 //		int maxAmount = 0;
 //		String newSent = "";
 //		for (String key : letters.keySet()) {

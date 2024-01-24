@@ -21,12 +21,14 @@ public class rearrange extends ConsoleProgram {
 					word = sent.substring(0, i);
 					sent = sent.substring(i + 1);
 					letters.put(word, word.length());
+					println(sent);
 				}
 			} else {
 				word = sent;
 				letters.put(word, word.length());
+				println(sent);
 			}
-			println(sent);
+			
 		}
 		println(letters);
 		// int maxAmount = 0;

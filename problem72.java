@@ -1,9 +1,11 @@
 import java.awt.event.ActionEvent;
+import java.util.Iterator;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+import acm.graphics.GLabel;
 import acm.program.GraphicsProgram;
 
 public class problem72 extends GraphicsProgram {
@@ -32,14 +34,12 @@ public class problem72 extends GraphicsProgram {
 		subjField = new JTextField(10);
 		subjField.addActionListener(this);
 		add(subjField, SOUTH);
-		
 
 		JLabel pupil = new JLabel("Pupil: ");
 		add(pupil, SOUTH);
 		pupilField = new JTextField(10);
 		pupilField.addActionListener(this);
 		add(pupilField, SOUTH);
-		
 
 		addTeacher = new JButton("Add Teach");
 		add(addTeacher, SOUTH);
@@ -77,7 +77,16 @@ public class problem72 extends GraphicsProgram {
 			}
 		} else if (e.getSource() == dispPupils) {
 			removeAll();
-			sch.getPupils(teachField.getText());
+			Iterator<String> pupilsForthisTeach = sch.getPupils(teachField.getText());
+			if (pupilsForthisTeach == null) {
+				return;
+			}
+			while (pupilsForthisTeach.hasNext()) {
+				String pupil = pupilsForthisTeach.next();
+				GLabel pupils = new GLabel(pupil);
+				add(pupils, 30, 30);
+			}
+
 		} else if (e.getSource() == dispTeachers) {
 			removeAll();
 			sch.getTeachers(pupilField.getText());

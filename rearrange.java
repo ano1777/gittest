@@ -31,17 +31,17 @@ public class rearrange extends ConsoleProgram {
 
 		}
 		println(letters);
-		int maxAmount = 0;
-		String newSent = "";
-		for (String key : letters.keySet()) {
-			int currentAmount = letters.get(key);
-			if (currentAmount > maxAmount) {
-				maxAmount = currentAmount;
-				newSent += " " + key;
-			} else {
-				newSent = key + " " + newSent;
-			}
-		}
-		print(newSent);
+//		int maxAmount = 0;
+//		String newSent = "";
+//		for (String key : letters.keySet()) {
+//			int currentAmount = letters.get(key);
+//			if (currentAmount > maxAmount) {
+//				maxAmount = currentAmount;
+//				newSent += " " + key;
+//			} else {
+//				newSent = key + " " + newSent;
+//			}
+//		}
+//		print(newSent);
 	}
 }

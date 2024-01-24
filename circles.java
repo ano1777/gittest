@@ -77,17 +77,17 @@ public class circles extends GraphicsProgram {
 		GObject obj = getElementAt(x, y);
 		if (obj == null) {
 			return;
-		} else if (obj == ovals.get(ovals.size() - 1)) {
+		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 1)) {
 			remove(obj);
 			ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
-		} else if (obj == ovals.get(ovals.size() - 2)) {
+		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 2)) {
 			remove(obj);
-			remove(getElementAt(obj.getX() + 70, y1));
+			remove(getElementAt(obj.getX() + 60, y1));
 			ovals.remove(ovals.size() - 2);
 			ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
-		} else if (obj == ovals.get(ovals.size() - 3)) {
+		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 3)) {
 			remove(obj);
 //			remove(getElementAt(obj.getX() + 60, y1));
 //			remove(getElementAt(obj.getX() + 120, y1));

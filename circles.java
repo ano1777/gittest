@@ -70,7 +70,14 @@ public class circles extends GraphicsProgram {
 			ovals.add(i, oval);
 		}
 	}
-	
-	
-	
+
+	public void mousePresssed(MouseEvent e) {
+		double x = e.getX();
+		double y = e.getY();
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj == null){
+			
+		}
+	}
+
 }

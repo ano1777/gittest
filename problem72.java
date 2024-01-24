@@ -85,3 +85,4 @@ public class problem72 extends GraphicsProgram {
 	//}
 
 }
+}

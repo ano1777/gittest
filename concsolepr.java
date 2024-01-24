@@ -10,6 +10,7 @@ public class concsolepr extends ConsoleProgram {
 		String text = readLine();
 		int[] arr = { 1, 5 };
 		addSpaces(text, arr);
+		println(text);
 		// int[] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
 		// println(Arrays.toString(arr));
 		// badSort(arr);

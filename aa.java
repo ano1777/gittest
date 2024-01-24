@@ -25,9 +25,9 @@ public class aa extends GraphicsProgram {
 	}
 	private void addBalls(){
 		int radius = rgen.nextInt(MIN_RADIUS, MAX_RADIUS);
-		int x = rgen.nextInt(0, getWidth() - 2 * radius);
-		int y = rgen.nextInt(0, getHeight() - 2 * radius);
 		for(int i=0; i<BALL_COUNT; i++){
+			int x = rgen.nextInt(0, getWidth() - 2 * radius);
+			int y = rgen.nextInt(0, getHeight() - 2 * radius);
 			ball = new GOval(x, y, 2 * radius , 2 * radius);
 			ball.setFilled(true);
 			add(ball);
@@ -35,7 +35,6 @@ public class aa extends GraphicsProgram {
 	}
 	public void mouseClicked  (MouseEvent e) {
 		GObject circle = getElementAt(e.getX(), e.getY());
-		int vx = 10;
 		if( circle != null) {
 			circle.setColor(rgen.nextColor());	
 			circ = ball;

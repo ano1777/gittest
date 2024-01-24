@@ -23,10 +23,7 @@ public class rearrange extends ConsoleProgram {
 					letters.put(word, word.length());
 					println(sent);
 				}
-			} else {
-				word = sent;
-				letters.put(word, word.length());
-				println(sent);
+			
 			}
 			
 		}

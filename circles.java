@@ -100,15 +100,16 @@ public class circles extends GraphicsProgram {
 //			ovals.remove(ovals.size() - 3);
 //			ovals.remove(ovals.size() - 2);
 //			ovals.remove(ovals.size() - 1);
+			System.out.println(ovals);
 		}
 	
 	}
 
 	
 	private void removeCoins(int num) {
-		for(int i = ovals.size() - 1; i > ovals.size() - num - 1 ; i --){
-		    remove(ovals.get(i));
-			ovals.remove(i);
+		for(int i = 0; i > num ; i ++){
+		    remove(ovals.get(ovals.size()- i));
+			ovals.remove(ovals.size() - i);
 	    }
 
 	}

@@ -71,14 +71,17 @@ public class problem72 extends GraphicsProgram {
 			sch.addSubject(subjField.getText(), teachField.getText());
 			}
 		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
-			sch.addPupil(pupilField.getText(), subjField.getText());
-		} else if (e.getSource() == dispPupils) {
-			removeAll();
-			sch.getPupils(teachField.getText());
-		} else if (e.getSource() == dispTeachers) {
-			removeAll();
-			sch.getTeachers(pupilField.getText());
+			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
+				sch.addPupil(pupilField.getText(), subjField.getText());
+			}
 		}
-	}
+//		} else if (e.getSource() == dispPupils) {
+//			removeAll();
+//			sch.getPupils(teachField.getText());
+//		} else if (e.getSource() == dispTeachers) {
+//			removeAll();
+//			sch.getTeachers(pupilField.getText());
+//		}
+	//}
 
 }

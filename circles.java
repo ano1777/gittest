@@ -76,10 +76,11 @@ public class circles extends GraphicsProgram {
 		GObject obj = getElementAt(x, y);
 		if (obj == null) {
 			return;
-//		} else if (obj == ovals.get(ovals.size() - 1)) {
-		}else{
-		//	ovals.remove(ovals.size() - 1);
+		} else if (obj == ovals.get(ovals.size() - 1)) {
+			ovals.remove(ovals.size() - 1);
 			remove(obj);
+			System.out.println(ovals);
+		}
 //		} else if (obj == ovals.get(ovals.size() - 2)) {
 //			ovals.remove(ovals.size() - 2);
 //			ovals.remove(ovals.size() - 1);
@@ -88,6 +89,6 @@ public class circles extends GraphicsProgram {
 //			ovals.remove(ovals.size() - 2);
 //			ovals.remove(ovals.size() - 1);
 //		}
-	}
+	
 }
 }

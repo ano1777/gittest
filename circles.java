@@ -48,7 +48,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 public class circles extends GraphicsProgram {
-	ArrayList<GOval> ovals;
+	ArrayList<GOval> coins;
 	double y1;
 
 	public void run() {
@@ -57,7 +57,7 @@ public class circles extends GraphicsProgram {
 	}
 
 	private void addCoins() {
-		ovals = new ArrayList<GOval>();
+		coins = new ArrayList<GOval>();
 		double x = (getWidth() - 11 * 50 - 10 * 10) / 2.0;
 		y1 = getHeight() / 2 - 25;
 		for (int i = 0; i < 11; i++) {
@@ -67,44 +67,34 @@ public class circles extends GraphicsProgram {
 			oval.setFillColor(Color.GRAY);
 			double xebi = x + i * (50 + 10);
 			add(oval, xebi, y1);
-			ovals.add(i, oval);
+			coins.add(i, oval);
 		}
 	}
-
-	public void mouseClicked(MouseEvent e) {
-		double x = e.getX();
-		double y = e.getY();
-		GObject obj = getElementAt(x, y);
-		int num = -1;
-	
-	 if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 1)) {
-			num = 1;
-
-			System.out.println(ovals);
-		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 2)) {
-			num = 2;
-	
-			System.out.println(ovals);
-		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 3)) {
-			num = 3;
-		
-			System.out.println(ovals);
-		}
-		else{
-			return;
-		}
-		removeCoins(num);
-	}
-
 	
 	private void removeCoins(int num) {
 		for(int i = 0; i > num ; i ++){
-		    remove(ovals.get(ovals.size()- 1));
-			ovals.remove(ovals.size() - 1);
+		    remove(coins.get(coins.size() - 1));
+			coins.remove(coins.size() - 1);
 	    }
 
 	}
 	
+		public void mouseClicked(MouseEvent E) {
+			GObject obj = getElementAt(E.getX(), E.getY());
+			int num = -1;
+			if (coins.size() > 0 && obj == coins.get(coins.size() - 1)) {
+				num = 1;
+			} else if (coins.size() > 1 && obj == coins.get(coins.size() - 2)) {
+				num = 2;
+			} else if (coins.size() > 0 && obj == coins.get(coins.size() - 3)) {
+				num = 3;
+			} else {
+				return;
+			}
+
+			removeCoins(num);
+
+
 	
 	
 	
@@ -119,5 +109,5 @@ public class circles extends GraphicsProgram {
 	
 	
 	
-	
+		}	
 }

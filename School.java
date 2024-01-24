@@ -49,11 +49,8 @@ public class School {
 			return;
 		} else {
 			teacherSubject.get(teacher).add(subject);
-
 			subjectTeacher.put(subject, new ArrayList<String>());
-
 			subjectTeacher.get(subject).add(teacher);
-
 			printsForTesting();
 		}
 	}

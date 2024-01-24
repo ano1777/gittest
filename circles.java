@@ -49,6 +49,7 @@ import java.util.ArrayList;
 
 public class circles extends GraphicsProgram {
 	ArrayList<GOval> ovals;
+	double y1;
 
 	public void run() {
 		addCoins();
@@ -58,7 +59,7 @@ public class circles extends GraphicsProgram {
 	private void addCoins() {
 		ovals = new ArrayList<GOval>();
 		double x = (getWidth() - 11 * 50 - 10 * 10) / 2.0;
-		double y = getHeight() / 2 - 25;
+		y1 = getHeight() / 2 - 25;
 		for (int i = 0; i < 11; i++) {
 			GOval oval = new GOval(50, 50);
 			oval.setFilled(true);
@@ -77,19 +78,22 @@ public class circles extends GraphicsProgram {
 		if (obj == null) {
 			return;
 		} else if (obj == ovals.get(ovals.size() - 1)) {
-			ovals.remove(ovals.size() - 1);
 			remove(obj);
+			ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
 		} else if (obj == ovals.get(ovals.size() - 2)) {
+			remove(obj);
+			remove(getElementAt(obj.getX() + 60, y1));
 			ovals.remove(ovals.size() - 2);
 			ovals.remove(ovals.size() - 1);
+			System.out.println(ovals);
+		} else if (obj == ovals.get(ovals.size() - 3)) {
 			remove(obj);
+			remove(getElementAt(obj.getX() + 60, y1));
+			remove(getElementAt(obj.getX() + 120, y1));
+			ovals.remove(ovals.size() - 3);
+			ovals.remove(ovals.size() - 2);
+			ovals.remove(ovals.size() - 1);
 		}
-		// } else if (obj == ovals.get(ovals.size() - 3)) {
-		// ovals.remove(ovals.size() - 3);
-		// ovals.remove(ovals.size() - 2);
-		// ovals.remove(ovals.size() - 1);
-		// }
-
 	}
 }

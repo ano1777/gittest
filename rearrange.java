@@ -32,9 +32,10 @@ public class rearrange extends ConsoleProgram {
 			letters.put(word, amount);
 		}
 
-		String newSent = "";
+		
 		int maxAmount = 0;
 		for (String key : letters.keySet()) {
+			String newSent = "";
 			int  currentAmount = letters.get(key);
 			if (currentAmount > maxAmount) {
 				maxAmount = currentAmount;
@@ -42,9 +43,9 @@ public class rearrange extends ConsoleProgram {
 			} else {
 				newSent = key + " " + newSent; 
 			}
-		}
+	
 		println(newSent);
-
+		}
 	}
 
 }

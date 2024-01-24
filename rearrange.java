@@ -19,17 +19,16 @@ public class rearrange extends ConsoleProgram {
 			if (!sent.contains(" ")) {
 				word = sent;
 				letters.put(word, word.length());
-			} else {
+			} 
 				char ch = sent.charAt(i);
 				if (ch == ' ') {
 					word = sent.substring(0, i);
 					sent = sent.substring(i + 1);
 					letters.put(word, word.length());
 					println(sent);
-				}
+				
 
 			}
-
 		}
 		println(letters);
 //		int maxAmount = 0;

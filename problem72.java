@@ -81,10 +81,14 @@ public class problem72 extends GraphicsProgram {
 			if (pupilsForthisTeach == null) {
 				return;
 			}
+			double x = 20;
+			double y = 20;
+			GLabel res = new GLabel("Results: ");
+			add(res, x, y);
 			while (pupilsForthisTeach.hasNext()) {
 				String pupil = pupilsForthisTeach.next();
 				GLabel pupils = new GLabel(pupil);
-				add(pupils, 30, 30);
+				add(pupils, x+10, y+10);
 			}
 
 		} else if (e.getSource() == dispTeachers) {

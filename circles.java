@@ -64,7 +64,7 @@ public class circles extends GraphicsProgram {
 			oval.setFilled(true);
 			oval.setColor(Color.BLACK);
 			oval.setFillColor(Color.GRAY);
-			double xebi = 50 + i * (50 + 10);
+			double xebi = x + i * (50 + 10);
 			add(oval, xebi, y);
 			ovals.add(i, oval);
 		}

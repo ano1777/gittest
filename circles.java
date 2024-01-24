@@ -57,7 +57,7 @@ public class circles extends GraphicsProgram {
 
 	private void addCoins() {
 		ovals = new ArrayList<GOval>();
-		double x = (getWidth() - 11 * 50 - 10*10)/2;
+		double x = (getWidth() - 11 * 50 - 10*10)/2.0;
 		double y = getHeight() / 2 - 25;
 		for (int i = 0; i < 11; i++) {
 			GOval oval = new GOval(50, 50);

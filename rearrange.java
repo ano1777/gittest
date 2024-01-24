@@ -11,13 +11,13 @@ public class rearrange extends ConsoleProgram {
 		letters = new HashMap<String, Integer>();
 		sent = readLine("enter sentence: ");
 		if (!sent.contains(" ")) {
-			word += sent;
+			word = sent;
 			letters.put(word, word.length());
 			
 		} else {
 			for (int i = 0; i < sent.length(); i++) {
 				if (sent.charAt(i) == ' ') {
-					word += sent.substring(0, i);
+					word = sent.substring(0, i);
 					letters.put(word, word.length());
 					sent = sent.substring(i + 1);
 					println(sent);

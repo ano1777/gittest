@@ -24,9 +24,9 @@ public class problem72 extends GraphicsProgram {
 		add(teacher, SOUTH);
 
 		teachField = new JTextField(10);
-		
-		add(teachField, SOUTH);
 		teachField.addActionListener(this);
+		add(teachField, SOUTH);
+		
 
 		JLabel subject = new JLabel("Subj: ");
 		add(subject, SOUTH);

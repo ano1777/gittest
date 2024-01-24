@@ -19,21 +19,22 @@ public class rearrange extends ConsoleProgram {
 					word += sent.substring(0, i);
 					letters.put(word, word.length());
 					sent = sent.substring(i + 1);
+					println(sent);
 				}
 
 			}
 		}
-		int maxAmount = 0;
-		String newSent = "";
-		for (String key : letters.keySet()) {
-			int currentAmount = letters.get(key);
-			if (currentAmount > maxAmount) {
-				maxAmount = currentAmount;
-				newSent += " " + key;
-			} else {
-				newSent = key + " " + newSent;
-			}
-		}
-		print(newSent);
+//		int maxAmount = 0;
+//		String newSent = "";
+//		for (String key : letters.keySet()) {
+//			int currentAmount = letters.get(key);
+//			if (currentAmount > maxAmount) {
+//				maxAmount = currentAmount;
+//				newSent += " " + key;
+//			} else {
+//				newSent = key + " " + newSent;
+//			}
+//		}
+//		print(newSent);
 	}
 }

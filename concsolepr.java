@@ -8,7 +8,7 @@ public class concsolepr extends ConsoleProgram {
 
 	public void run() {
 		String text = readLine();
-		int[] arr = { 1, 5 };
+		int[] arr = {1, 5};
 		addSpaces(text, arr);
 		println(text);
 		// int[] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
@@ -18,8 +18,9 @@ public class concsolepr extends ConsoleProgram {
 	}
 
 	private void addSpaces(String str, int[] arr) {
+		for (int j = 0; j < arr.length; j++) {
 		for (int i = 0; i < str.length(); i++) {
-			for (int j = 0; j < arr.length; j++) {
+		
 				if (i == arr[j]) {
 					String firstPart = str.substring(0, i);
 					String secondPart = str.substring(i);

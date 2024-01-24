@@ -16,9 +16,10 @@ public class problem72 extends GraphicsProgram {
 	JButton addPupil;
 	JButton dispPupils;
 	JButton dispTeachers;
-	
+
 	public void init() {
 		sch = new School();
+		SchoolTst test = new SchoolTst();
 		JLabel teacher = new JLabel("Teach: ");
 		add(teacher, SOUTH);
 
@@ -47,10 +48,10 @@ public class problem72 extends GraphicsProgram {
 		addPupil = new JButton("Add Pupil");
 		add(addPupil, SOUTH);
 
-		 dispPupils = new JButton("Display Pupils");
+		dispPupils = new JButton("Display Pupils");
 		add(dispPupils, SOUTH);
 
-		 dispTeachers = new JButton("Display Teachers");
+		dispTeachers = new JButton("Display Teachers");
 		add(dispTeachers, SOUTH);
 
 		addActionListeners();
@@ -59,14 +60,21 @@ public class problem72 extends GraphicsProgram {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == teachField || e.getSource() == addTeacher) {
+			if(teachField.getText() != null && !teachField.getText().equals("")){
 			sch.addTeacher(teachField.getText());
-		}else if (e.getSource() == subjField || e.getSource() == addSubject) {
+			}
+		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
+			if(subjField.getText() != null && !subjField.equals("")) {
 			sch.addSubject(subjField.getText(), teachField.getText());
-		}else if(e.getSource() == pupilField || e.getSource() == addPupil) {
+			}
+		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
 			sch.addPupil(pupilField.getText(), subjField.getText());
-		}else if (e.getSource() == dispPupils) {
+		} else if (e.getSource() == dispPupils) {
 			removeAll();
 			sch.getPupils(teachField.getText());
+		} else if (e.getSource() == dispTeachers) {
+			removeAll();
+			sch.getTeachers(pupilField.getText());
 		}
 	}
 

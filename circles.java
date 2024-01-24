@@ -75,25 +75,57 @@ public class circles extends GraphicsProgram {
 		double x = e.getX();
 		double y = e.getY();
 		GObject obj = getElementAt(x, y);
+		int num = -1;
 		if (obj == null) {
 			return;
 		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 1)) {
-			remove(obj);
-			ovals.remove(ovals.size() - 1);
+			num = 1;
+			removeCoins(num);
+//			remove(obj);
+			//ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
 		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 2)) {
-			remove(obj);
-			remove(getElementAt(obj.getX() + 60, y1));
-			ovals.remove(ovals.size() - 2);
-			ovals.remove(ovals.size() - 1);
+			num = 2;
+			removeCoins(num);
+//			remove(obj);
+//			remove(getElementAt(obj.getX() + 60, y1));
+//			ovals.remove(ovals.size() - 2);
+//			ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
-		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 3)) {
-			remove(obj);
+		} else if (ovals.size() > 2 && obj == ovals.get(ovals.size() - 3)) {
+			num = 3;
+			removeCoins(num);
 //			remove(getElementAt(obj.getX() + 60, y1));
 //			remove(getElementAt(obj.getX() + 120, y1));
-			ovals.remove(ovals.size() - 3);
-			ovals.remove(ovals.size() - 2);
-			ovals.remove(ovals.size() - 1);
+//			ovals.remove(ovals.size() - 3);
+//			ovals.remove(ovals.size() - 2);
+//			ovals.remove(ovals.size() - 1);
 		}
+	
 	}
+
+	
+	private void removeCoins(int num) {
+		for(int i = ovals.size() - 1; i > ovals.size() - num - 1 ; i --){
+		    remove(ovals.get(i));
+			ovals.remove(i);
+	    }
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -30,16 +30,16 @@ public class problem72 extends GraphicsProgram {
 		JLabel subject = new JLabel("Subj: ");
 		add(subject, SOUTH);
 		subjField = new JTextField(10);
-
-		add(subjField, SOUTH);
 		subjField.addActionListener(this);
+		add(subjField, SOUTH);
+		
 
 		JLabel pupil = new JLabel("Pupil: ");
 		add(pupil, SOUTH);
 		pupilField = new JTextField(10);
-
-		add(pupilField, SOUTH);
 		pupilField.addActionListener(this);
+		add(pupilField, SOUTH);
+		
 
 		addTeacher = new JButton("Add Teach");
 		add(addTeacher, SOUTH);

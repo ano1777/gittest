@@ -23,7 +23,7 @@ public class concsolepr extends ConsoleProgram {
 			int min = Math.min(a, b);
 
 			if (arr[max] < arr[min]) {
-				swap(arr, arr[max], arr[min]);
+				swap(arr, max, min);
 			}
 break;
 		}

@@ -75,9 +75,17 @@ public class circles extends GraphicsProgram {
 		double x = e.getX();
 		double y = e.getY();
 		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj == null){
-			
+		if (obj == null) {
+			return;
+		} else if (obj == ovals.get(ovals.size() - 1)) {
+			ovals.remove(ovals.size() - 1);
+		} else if (obj == ovals.get(ovals.size() - 2)) {
+			ovals.remove(ovals.size() - 2);
+			ovals.remove(ovals.size() - 1);
+		} else if (obj == ovals.get(ovals.size() - 3)) {
+			ovals.remove(ovals.size() - 3);
+			ovals.remove(ovals.size() - 2);
+			ovals.remove(ovals.size() - 1);
 		}
 	}
-
 }

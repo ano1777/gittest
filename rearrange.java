@@ -16,7 +16,7 @@ public class rearrange extends ConsoleProgram {
 		// } else {
 		for (int i = 0; i < sent.length(); i++) {
 			char ch = sent.charAt(i);
-			if (sent.contains("")) {
+			if (sent.contains(" ")) {
 				if (ch == ' ') {
 					word = sent.substring(0, i);
 					sent = sent.substring(i + 1);
@@ -24,6 +24,9 @@ public class rearrange extends ConsoleProgram {
 					println(sent);
 				}
 			
+			}else {
+				word = sent;
+				letters.put(word, word.length());
 			}
 			
 		}

@@ -16,17 +16,18 @@ public class rearrange extends ConsoleProgram {
 		// } else {
 		for (int i = 0; i < sent.length(); i++) {
 			
-			if (!sent.contains(" ")) {
-				word = sent;
-				letters.put(word, word.length());
-			} 
+			
 				char ch = sent.charAt(i);
 				if (ch == ' ') {
 					word = sent.substring(0, i);
 					sent = sent.substring(i + 1);
 					letters.put(word, word.length());
 					println(sent);
-				
+					
+					if (!sent.contains(" ")) {
+						word = sent;
+						letters.put(word, word.length());
+					} 
 
 			}
 		}

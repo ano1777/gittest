@@ -46,8 +46,7 @@ import acm.graphics.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.util.ArrayList;
-
-
+import java.awt.event.MouseEvent;
 public class circles extends GraphicsProgram {
 	ArrayList<GOval> coins;
 	double y1;
@@ -71,44 +70,29 @@ public class circles extends GraphicsProgram {
 			coins.add(i, oval);
 		}
 	}
-	
+
 	private void removeCoins(int num) {
-		for(int i = 0; i > num ; i ++){
-		    remove(coins.get(coins.size() - 1));
+		for (int i = 0; i > num; i++) {
+			remove(coins.get(coins.size() - 1));
 			coins.remove(coins.size() - 1);
-	    }
+		}
 
 	}
-	
-		public void mousePressed(MouseEvent e) {
-			GObject obj = getElementAt(e.getX(), e.getY());
-			int num = -1;
-			if (coins.size() > 0 && obj == coins.get(coins.size() - 1)) {
-				num = 1;
-			} else if (coins.size() > 1 && obj == coins.get(coins.size() - 2)) {
-				num = 2;
-			} else if (coins.size() > 0 && obj == coins.get(coins.size() - 3)) {
-				num = 3;
-			} else {
-				return;
-			}
 
-			removeCoins(num);
+	public void mousePressed(MouseEvent e) {
+		GObject obj = getElementAt(e.getX(), e.getY());
+		int num = -1;
+		if (coins.size() > 0 && obj == coins.get(coins.size() - 1)) {
+			num = 1;
+		} else if (coins.size() > 1 && obj == coins.get(coins.size() - 2)) {
+			num = 2;
+		} else if (coins.size() > 0 && obj == coins.get(coins.size() - 3)) {
+			num = 3;
+		} else {
+			return;
+		}
 
+		removeCoins(num);
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		}	
+	}
 }

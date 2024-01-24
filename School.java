@@ -30,9 +30,9 @@ public class School {
 	// addTeacher მეთოდის საშუალებით შეგიძლიათ სკოლას დაამატოთ ახალი
 	// მასწავლებელი. მეთოდს გადაეცემა მასწავლებლის სახელი. შეგიძლიათ ჩათვალოთ,
 	// რომ მასწავლებლის სახელი უნიკალურია.
-	public void addTeacher(String teacher) {
+	public  void addTeacher(String teacher) {
 		teacherSubject.putIfAbsent(teacher, new ArrayList<String>());
-		printsForTesting();
+	//	printsForTesting();
 
 	}
 

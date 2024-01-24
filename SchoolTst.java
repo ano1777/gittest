@@ -13,7 +13,7 @@ public class SchoolTst extends ConsoleProgram {
 
 		school.addSubject("mari", "cs");
 		school.addSubject("mari", "math");
-		school.addSubject("ani", "physics");
+		school.addSubject("nino", "physics");
 
 		school.addPupil("ana", "cs");
 		school.addPupil("ana", "physics");

@@ -18,15 +18,10 @@ public class concsolepr extends ConsoleProgram {
 	}
 
 	private void addSpaces(String str, int[] arr) {
-		String ne = "";
-		for (int j = 0; j < arr.length; j++) {
-			for (int i = 0; i < str.length(); i ++) {
-				if (i == arr[j]) {
-					String firstPart = str.substring(0, i);
-					String secondPart = str.substring(i);
-					ne += firstPart + "  " + secondPart;
-				}
-			}
+		for(int i = 0; i < arr.length; i++) {
+			int ind = arr[i] + i;
+		
+		str = str.substring(0, ind) + " " + str.substring(ind);
 		}
 	}
 

@@ -78,13 +78,14 @@ public class problem72 extends GraphicsProgram {
 		} else if (e.getSource() == dispPupils) {
 			removeAll();
 			Iterator<String> pupilsForthisTeach = sch.getPupils(teachField.getText());
-			if (pupilsForthisTeach == null) {
-				return;
-			}
+			
 			double x = 20;
 			double y = 20;
 			GLabel res = new GLabel("Results: ");
 			add(res, x, y);
+			if (pupilsForthisTeach == null) {
+				return;
+			}
 			while (pupilsForthisTeach.hasNext()) {
 				  y += 10;
 				String pupil = pupilsForthisTeach.next();

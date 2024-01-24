@@ -33,14 +33,16 @@ public class aa extends GraphicsProgram {
 			add(ball);
 		}
 	}
+	
 	public void mouseClicked  (MouseEvent e) {
 		GObject circle = getElementAt(e.getX(), e.getY());
+		double vx = -10;
 		if( circle != null) {
 			circle.setColor(rgen.nextColor());	
 			circ = ball;
-			if(circ != null && circle == null){
-				circle.move(0, vx);
-			}
+//			if(circ != null && circle == null){
+//				circle.move(0, vx);
+//			}
 		}else{
 			circ = getElementAt(e.getX(), e.getY());
 			

@@ -57,7 +57,7 @@ public class circles extends GraphicsProgram {
 
 	private void addCoins() {
 		ovals = new ArrayList<GOval>();
-		double x = (getWidth() - 11 * 50 - 10*10)/2.0;
+		double x = (getWidth() - 11 * 50 - 10 * 10) / 2.0;
 		double y = getHeight() / 2 - 25;
 		for (int i = 0; i < 11; i++) {
 			GOval oval = new GOval(50, 50);
@@ -80,15 +80,16 @@ public class circles extends GraphicsProgram {
 			ovals.remove(ovals.size() - 1);
 			remove(obj);
 			System.out.println(ovals);
+		} else if (obj == ovals.get(ovals.size() - 2)) {
+			ovals.remove(ovals.size() - 2);
+			ovals.remove(ovals.size() - 1);
+			remove(obj);
 		}
-//		} else if (obj == ovals.get(ovals.size() - 2)) {
-//			ovals.remove(ovals.size() - 2);
-//			ovals.remove(ovals.size() - 1);
-//		} else if (obj == ovals.get(ovals.size() - 3)) {
-//			ovals.remove(ovals.size() - 3);
-//			ovals.remove(ovals.size() - 2);
-//			ovals.remove(ovals.size() - 1);
-//		}
-	
-}
+		// } else if (obj == ovals.get(ovals.size() - 3)) {
+		// ovals.remove(ovals.size() - 3);
+		// ovals.remove(ovals.size() - 2);
+		// ovals.remove(ovals.size() - 1);
+		// }
+
+	}
 }

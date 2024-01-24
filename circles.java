@@ -1,3 +1,4 @@
+
 //import acm.program.ConsoleProgram;
 //
 //public class circles extends ConsoleProgram {
@@ -41,20 +42,35 @@
 
 import acm.program.*;
 import acm.graphics.*;
-import java.awt.event.*;
-public class circles extends GraphicsProgram {
-public void run() {
-label = new GLabel("");
-label.setFont("Times New Roman-36");
-add(label, 50, 50);
-// Must call this method to be able to get mouse events
-addMouseListeners();
-}
-// This method is called everytime user moves mouse
-public void mouseMoved(MouseEvent e) {
-label.setLabel("Mouse: (" + e.getX() + ", " + e.getY() + ")");
-}
-/* Private instance variable */
-private GLabel label;
-}
 
+import java.awt.Color;
+import java.awt.event.*;
+import java.util.ArrayList;
+
+public class circles extends GraphicsProgram {
+	ArrayList<GOval> ovals;
+
+	public void run() {
+		addCoins();
+		addMouseListeners();
+
+	}
+
+	private void addCoins() {
+		ovals = new ArrayList<GOval>();
+		double x = 20;
+		double y = getHeight() / 2 - 25;
+		for (int i = 0; i < 11; i++) {
+			GOval oval = new GOval(50, 50);
+			oval.setFilled(true);
+			oval.setColor(Color.BLACK);
+			oval.setFillColor(Color.GRAY);
+			y += 50 + 10;
+			add(oval, x, y);
+			ovals.add(i, oval);
+		}
+	}
+	
+	
+	
+}

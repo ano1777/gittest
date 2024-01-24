@@ -15,8 +15,9 @@ public class rearrange extends ConsoleProgram {
 				char ch = sent.charAt(i);
 				if (ch == ' ') {
 					word = sent.substring(0, i);
-					sent = sent.substring(i + 1);
+					
 					letters.put(word, word.length());
+					sent = sent.substring(i + 1);
 					println(sent);
 				}
 				}else {

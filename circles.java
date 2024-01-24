@@ -79,6 +79,7 @@ public class circles extends GraphicsProgram {
 			return;
 		} else if (obj == ovals.get(ovals.size() - 1)) {
 			ovals.remove(ovals.size() - 1);
+			remove(obj);
 		} else if (obj == ovals.get(ovals.size() - 2)) {
 			ovals.remove(ovals.size() - 2);
 			ovals.remove(ovals.size() - 1);

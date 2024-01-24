@@ -25,7 +25,7 @@ public class concsolepr extends ConsoleProgram {
 			if (arr[max] < arr[min]) {
 				swap(arr, max, min);
 			}
-break;
+
 		}
 	}
 

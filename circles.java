@@ -92,7 +92,7 @@ public class circles extends GraphicsProgram {
 //			ovals.remove(ovals.size() - 2);
 //			ovals.remove(ovals.size() - 1);
 			System.out.println(ovals);
-		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 3)) {
+		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 3)) {
 			num = 3;
 			removeCoins(num);
 //			remove(getElementAt(obj.getX() + 60, y1));

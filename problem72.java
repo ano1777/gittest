@@ -69,7 +69,7 @@ public class problem72 extends GraphicsProgram {
 		
 		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
 			if(subjField.getText() != null && !subjField.equals("")) {
-			sch.addSubject(subjField.getText(), teachField.getText());
+			sch.addSubject( teachField.getText(), subjField.getText());
 			}
 		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
 			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {

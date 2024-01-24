@@ -32,7 +32,7 @@ public class School {
 	// რომ მასწავლებლის სახელი უნიკალურია.
 	public  void addTeacher(String teacher) {
 		teacherSubject.putIfAbsent(teacher, new ArrayList<String>());
-	//	printsForTesting();
+		printsForTesting();
 
 	}
 

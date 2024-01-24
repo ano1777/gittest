@@ -17,9 +17,10 @@ public class rearrange extends ConsoleProgram {
 		} else {
 			for (int i = 0; i < sent.length(); i++) {
 				if (sent.charAt(i) == ' ') {
-					word = sent.substring(0, ' ');
-					letters.put(word, word.length());
+					word = sent.substring(0, i);
 					sent = sent.substring(i + 1);
+					letters.put(word, word.length());
+					
 					println(sent);
 				
 				}

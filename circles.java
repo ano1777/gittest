@@ -53,12 +53,11 @@ public class circles extends GraphicsProgram {
 	public void run() {
 		addCoins();
 		addMouseListeners();
-
 	}
 
 	private void addCoins() {
 		ovals = new ArrayList<GOval>();
-		double x = 10;
+		double x = (getWidth() - 11 * 50 - 10*10)/2;
 		double y = getHeight() / 2 - 25;
 		for (int i = 0; i < 11; i++) {
 			GOval oval = new GOval(50, 50);
@@ -74,7 +73,7 @@ public class circles extends GraphicsProgram {
 	public void mousePresssed(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
-		GObject obj = getElementAt(e.getX(), e.getY());
+		GObject obj = getElementAt(x, y);
 		if (obj == null) {
 			return;
 		} else if (obj == ovals.get(ovals.size() - 1)) {

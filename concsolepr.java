@@ -1,32 +1,45 @@
 import java.util.Arrays;
 
 import acm.program.ConsoleProgram;
+import acm.util.RandomGenerator;
 
 public class concsolepr extends ConsoleProgram {
+private RandomGenerator rgen;
 	public void run(){
-		int[] arr = {4, 6, 1, 9, 22, 3};
-		
+		int [] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
+		badSort(arr);
+
+}
+	
+	private void badSort(int [] arr) {
+		   rgen = RandomGenerator.getInstance();
 		while(!sorted(arr)) {
-			for(int i = 0 ; i < arr.length; i ++) {
-				for(int j = i; j < arr.length; j ++){
-					if(arr[j] < arr[i]){
-						arr[j] = arr[i];
-						arr[i] = arr[j];
-					}
-				}
+			int a =rgen.nextInt(0, arr.length - 1);
+			int b = rgen.nextInt(0, arr.length -1);
+			
+			int max = Math.max(a, b);
+			int min = Math.min(a, b);
+			
+			if(arr[max] < arr[min]){
+				swap(arr[max], arr[min]);
 			}
+			
 		}
-		println(Arrays.toString(arr));
-		
+		print(Arrays.toString(arr));
 	}
 
+	private void swap(int i, int j) {
+		int temp = i;
+		i = j;
+		j = temp;
+	}
+	
 	private boolean sorted(int[] arr) {
-		for(int i = 0; i < arr.length - 1; i ++) {
-			if(arr[i] > arr[i + 1]) {
+		for(int i = 1; i < arr.length; i ++) {
+			if(arr[i] < arr[i - 1]) {
 				return false;
 			}
 		}
 		return true;
 	}
-
-}
+} 

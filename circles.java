@@ -47,6 +47,7 @@ import java.awt.Color;
 import java.awt.event.*;
 import java.util.ArrayList;
 
+
 public class circles extends GraphicsProgram {
 	ArrayList<GOval> coins;
 	double y1;
@@ -79,8 +80,8 @@ public class circles extends GraphicsProgram {
 
 	}
 	
-		public void mouseClicked(MouseEvent E) {
-			GObject obj = getElementAt(E.getX(), E.getY());
+		public void mouseClicked(MouseEvent e) {
+			GObject obj = getElementAt(e.getX(), e.getY());
 			int num = -1;
 			if (coins.size() > 0 && obj == coins.get(coins.size() - 1)) {
 				num = 1;

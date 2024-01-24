@@ -59,13 +59,13 @@ public class circles extends GraphicsProgram {
 	private void addCoins() {
 		ovals = new ArrayList<GOval>();
 		double x = 20;
-		double y = getHeight() / 2 - 25;
+		double y = getHeight() / 2 - 10;
 		for (int i = 0; i < 11; i++) {
-			GOval oval = new GOval(50, 50);
+			GOval oval = new GOval(20, 20);
 			oval.setFilled(true);
 			oval.setColor(Color.BLACK);
 			oval.setFillColor(Color.GRAY);
-			y += 50 + 10;
+			x += 20 + 10;
 			add(oval, x, y);
 			ovals.add(i, oval);
 		}

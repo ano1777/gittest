@@ -44,7 +44,7 @@ public class rearrange extends ConsoleProgram {
 				newSent = key + " " + newSent; 
 			}
 	
-		println(newSent);
+		print(newSent);
 		}
 	}
 

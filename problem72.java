@@ -86,6 +86,7 @@ public class problem72 extends GraphicsProgram {
 			GLabel res = new GLabel("Results: ");
 			add(res, x, y);
 			while (pupilsForthisTeach.hasNext()) {
+				add(res, x, y);
 				String pupil = pupilsForthisTeach.next();
 				GLabel pupils = new GLabel(pupil);
 				add(pupils, x+10, y+10);

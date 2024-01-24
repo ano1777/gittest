@@ -23,16 +23,16 @@ public class concsolepr extends ConsoleProgram {
 			int min = Math.min(a, b);
 
 			if (arr[max] < arr[min]) {
-				swap(arr[max], arr[min]);
+				swap(arr, arr[max], arr[min]);
 			}
 break;
 		}
 	}
 
-	private void swap(int i, int j) {
+	private void swap(int[] arr, int i, int j) {
 		int temp = i;
-		i = j;
-		j = temp;
+		arr[i] =arr[j];
+		arr[j] =arr[temp];
 	}
 
 	private boolean sorted(int[] arr) {

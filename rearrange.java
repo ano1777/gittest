@@ -19,7 +19,7 @@ public class rearrange extends ConsoleProgram {
 					letters.put(word, word.length());
 					println(sent);
 				}
-			}else if (!sent.contains(" ")) {
+				}else {
 					letters.put(sent, sent.length());
 				}
 

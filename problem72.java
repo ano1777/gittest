@@ -19,26 +19,25 @@ public class problem72 extends GraphicsProgram {
 
 	public void init() {
 		sch = new School();
-		//SchoolTst test = new SchoolTst();
+		// SchoolTst test = new SchoolTst();
 		JLabel teacher = new JLabel("Teach: ");
 		add(teacher, SOUTH);
 
 		teachField = new JTextField(10);
 		teachField.addActionListener(this);
 		add(teachField, SOUTH);
-		
 
 		JLabel subject = new JLabel("Subj: ");
 		add(subject, SOUTH);
 		subjField = new JTextField(10);
-		
+
 		add(subjField, SOUTH);
 		subjField.addActionListener(this);
 
 		JLabel pupil = new JLabel("Pupil: ");
 		add(pupil, SOUTH);
 		pupilField = new JTextField(10);
-		
+
 		add(pupilField, SOUTH);
 		pupilField.addActionListener(this);
 
@@ -63,16 +62,17 @@ public class problem72 extends GraphicsProgram {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == teachField || e.getSource() == addTeacher) {
-			if(teachField.getText() != null && !teachField.getText().equals("")){
-			sch.addTeacher(teachField.getText());
+			if (teachField.getText() != null && !teachField.getText().equals("")) {
+				sch.addTeacher(teachField.getText());
 			}
-		
 		} else if (e.getSource() == subjField || e.getSource() == addSubject) {
-			if(subjField.getText() != null && !subjField.equals("")) {
-			sch.addSubject( teachField.getText(), subjField.getText());
+			if (subjField.getText() != null && !subjField.equals("") && teachField.getText() != null
+					&& !teachField.getText().equals("")) {
+				sch.addSubject(teachField.getText(), subjField.getText());
 			}
 		} else if (e.getSource() == pupilField || e.getSource() == addPupil) {
-			if(pupilField.getText() != null &&  !pupilField.getText().equals("")) {
+			if (pupilField.getText() != null && !pupilField.getText().equals("") && subjField.getText() != null
+					&& !subjField.equals("")) {
 				sch.addPupil(pupilField.getText(), subjField.getText());
 			}
 		} else if (e.getSource() == dispPupils) {
@@ -82,7 +82,13 @@ public class problem72 extends GraphicsProgram {
 			removeAll();
 			sch.getTeachers(pupilField.getText());
 		}
-	
+		clearAll();
+	}
+
+	private void clearAll() {
+		teachField.setText("");
+		pupilField.setText("");
+		subjField.setText("");
 	}
 
 }

@@ -76,30 +76,22 @@ public class circles extends GraphicsProgram {
 		double y = e.getY();
 		GObject obj = getElementAt(x, y);
 		int num = -1;
-		if (obj == null) {
-			return;
-		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 1)) {
+	
+	 if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 1)) {
 			num = 1;
-//			remove(obj);
-			//ovals.remove(ovals.size() - 1);
+
 			System.out.println(ovals);
 		} else if (ovals.size() > 1 && obj == ovals.get(ovals.size() - 2)) {
 			num = 2;
-		
-//			remove(obj);
-//			remove(getElementAt(obj.getX() + 60, y1));
-//			ovals.remove(ovals.size() - 2);
-//			ovals.remove(ovals.size() - 1);
+	
 			System.out.println(ovals);
 		} else if (ovals.size() > 0 && obj == ovals.get(ovals.size() - 3)) {
 			num = 3;
-			
-//			remove(getElementAt(obj.getX() + 60, y1));
-//			remove(getElementAt(obj.getX() + 120, y1));
-//			ovals.remove(ovals.size() - 3);
-//			ovals.remove(ovals.size() - 2);
-//			ovals.remove(ovals.size() - 1);
+		
 			System.out.println(ovals);
+		}
+		else{
+			return;
 		}
 		removeCoins(num);
 	}

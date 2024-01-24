@@ -8,19 +8,17 @@ public class concsolepr extends ConsoleProgram {
 
 	public void run() {
 		String text = readLine();
-		int[] arr = { 1, 5 };
+		int[] arr = { 1, 5 , 9};
 		println(addSpaces(text, arr));
 		// int[] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
 		// println(Arrays.toString(arr));
 		// badSort(arr);
 		// println(Arrays.toString(arr));
 	}
-
 	private String addSpaces(String str, int[] arr) {
-		for(int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			int ind = arr[i] + i;
-		
-		str = str.substring(0, ind) + " " + str.substring(ind);
+			str = str.substring(0, ind) + " " + str.substring(ind);
 		}
 		return str;
 	}

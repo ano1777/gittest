@@ -87,7 +87,7 @@ public class problem72 extends GraphicsProgram {
 				return;
 			}
 			while (pupilsForthisTeach.hasNext()) {
-				  y += 10;
+				  y += 20;
 				String pupil = pupilsForthisTeach.next();
 				GLabel pupils = new GLabel(pupil);
 			  
@@ -96,7 +96,21 @@ public class problem72 extends GraphicsProgram {
 
 		} else if (e.getSource() == dispTeachers) {
 			removeAll();
-			sch.getTeachers(pupilField.getText());
+			double x = 20;
+			double y = 20;
+			GLabel res = new GLabel("Results: ");
+			add(res, x, y);
+			
+			Iterator<String> teachers = sch.getTeachers(pupilField.getText());
+			if (teachers == null) {
+				return;
+			}
+			while(teachers.hasNext()){
+				y+= 20;
+				String teach = teachers.next();
+				GLabel teacher = new GLabel (teach);
+				add(teacher, x, y);
+			}
 		}
 		clearAll();
 	}

@@ -7,8 +7,9 @@ public class concsolepr extends ConsoleProgram {
 private RandomGenerator rgen;
 	public void run(){
 		int [] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
+		println(Arrays.toString(arr));
 		badSort(arr);
-
+		println(Arrays.toString(arr));
 }
 	
 	private void badSort(int [] arr) {
@@ -25,7 +26,6 @@ private RandomGenerator rgen;
 			}
 			
 		}
-		print(Arrays.toString(arr));
 	}
 
 	private void swap(int i, int j) {

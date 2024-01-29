@@ -39,7 +39,7 @@ public class shualedurebi extends ConsoleProgram {
 		mealIngr.put("xacha", xachas);
 		mealIngr.put("burg", burg);
 
-		println(kitchen(mealIngr, fridge));
+		//println(kitchen(mealIngr, fridge));
 	}
 
 	private ArrayList<String> kitchen(HashMap<String, ArrayList<String>> mealIngr, ArrayList<String> fridge) {

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 import acm.program.ConsoleProgram;
@@ -43,7 +44,8 @@ public class shualedurebi extends ConsoleProgram {
 		ingr.add("marili");
 		ingr.add("fqvili");
 
-		kitchen(mealIngr, fridge);
+		println(kitchen(mealIngr, fridge));
+	
 	}
 
 	private ArrayList<String> kitchen(HashMap<String, ArrayList<String>> mealIngr, ArrayList<String> fridge) {
@@ -53,6 +55,7 @@ public class shualedurebi extends ConsoleProgram {
 			for (String eachIngr : receipt) {
 				if (isElement(eachIngr)) {
 					canDo.add(meal);
+					
 				}
 			}
 		}

@@ -15,7 +15,7 @@ public class shualedurebi extends ConsoleProgram {
 
 	public void run() {
 		mealIngr = new HashMap<String, ArrayList<String>>();
-		// fridge = new ArrayList<String>();
+	    fridge = new ArrayList<String>();
 
 		fridge.add("yveli");
 		fridge.add("fqvili");
@@ -39,12 +39,11 @@ public class shualedurebi extends ConsoleProgram {
 		mealIngr.put("xacha", xachas);
 		mealIngr.put("burg", burg);
 
-		//println(kitchen(mealIngr, fridge));
+		println(kitchen(mealIngr, fridge));
 	}
 
 	private ArrayList<String> kitchen(HashMap<String, ArrayList<String>> mealIngr, ArrayList<String> fridge) {
 		ArrayList<String> canDoMeals = new ArrayList<String>();
-		fridge = new ArrayList<String>();
 
 		for (String meal : mealIngr.keySet()) {
 			ArrayList<String> receipt = mealIngr.get(meal);

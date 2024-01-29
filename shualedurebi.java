@@ -13,11 +13,9 @@ public class shualedurebi extends ConsoleProgram {
 	ArrayList<String> fridge;
 	// yveli, fqvili, marili
 
-	
-
 	public void run() {
 		mealIngr = new HashMap<String, ArrayList<String>>();
-		fridge = new ArrayList<String>();
+		// fridge = new ArrayList<String>();
 
 		fridge.add("yveli");
 		fridge.add("fqvili");
@@ -45,23 +43,31 @@ public class shualedurebi extends ConsoleProgram {
 	}
 
 	private ArrayList<String> kitchen(HashMap<String, ArrayList<String>> mealIngr, ArrayList<String> fridge) {
-		ArrayList<String> canDo = new ArrayList<String>();
+		ArrayList<String> canDoMeals = new ArrayList<String>();
+		fridge = new ArrayList<String>();
+
 		for (String meal : mealIngr.keySet()) {
 			ArrayList<String> receipt = mealIngr.get(meal);
-			for (String eachIngr : receipt) {
-				if (isElement(eachIngr)) {
-					if(!canDo.contains(meal)){
-					canDo.add(meal);
-					}
-				}
+			if (canDo(receipt, fridge)) {
+				canDoMeals.add(meal);
 			}
 		}
-		return canDo;
+//			for (String eachIngr : receipt) {
+//				if (canDo(eachIngr)) {
+//					if (!canDoMeals.contains(meal)) {
+//						canDoMeals.add(meal);
+//					}
+//				}
+//			}
+		
+			return canDoMeals;
 	}
 
-	private boolean isElement(String eachIngr) {
-		if (!fridge.contains(eachIngr)) {
-			return false;
+	private boolean canDo(ArrayList<String> receipt, ArrayList<String> fridge) {
+		for (String ing : receipt) {
+			if (!fridge.contains(ing)) {
+				return false;
+			}
 		}
 		return true;
 	}

@@ -50,8 +50,9 @@ public class shualedurebi extends ConsoleProgram {
 			ArrayList<String> receipt = mealIngr.get(meal);
 			for (String eachIngr : receipt) {
 				if (isElement(eachIngr)) {
+					if(!canDo.contains(meal)){
 					canDo.add(meal);
-
+					}
 				}
 			}
 		}

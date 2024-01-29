@@ -18,7 +18,7 @@ public class shualedurebi extends ConsoleProgram {
 	public void run() {
 		mealIngr = new HashMap<String, ArrayList<String>>();
 		fridge = new ArrayList<String>();
-		
+
 		fridge.add("yveli");
 		fridge.add("fqvili");
 		fridge.add("marili");
@@ -36,16 +36,13 @@ public class shualedurebi extends ConsoleProgram {
 		burg.add("salati");
 		burg.add("puri");
 		burg.add("yveli");
-		
+
 		mealIngr.put("puri", puris);
 		mealIngr.put("xacha", xachas);
-		
-		ingr = mealIngr.get("puri");
-		ingr.add("marili");
-		ingr.add("fqvili");
+		mealIngr.put("burg", burg);
 
 		println(kitchen(mealIngr, fridge));
-	
+
 	}
 
 	private ArrayList<String> kitchen(HashMap<String, ArrayList<String>> mealIngr, ArrayList<String> fridge) {
@@ -55,7 +52,7 @@ public class shualedurebi extends ConsoleProgram {
 			for (String eachIngr : receipt) {
 				if (isElement(eachIngr)) {
 					canDo.add(meal);
-					
+
 				}
 			}
 		}

@@ -13,7 +13,7 @@ public class shualedurebi extends ConsoleProgram {
 	ArrayList<String> fridge;
 	// yveli, fqvili, marili
 
-	ArrayList<String> ingr;
+	
 
 	public void run() {
 		mealIngr = new HashMap<String, ArrayList<String>>();
@@ -59,7 +59,7 @@ public class shualedurebi extends ConsoleProgram {
 	}
 
 	private boolean isElement(String eachIngr) {
-		if (!ingr.contains(eachIngr)) {
+		if (!fridge.contains(eachIngr)) {
 			return false;
 		}
 		return true;

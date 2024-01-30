@@ -1,26 +1,45 @@
+import java.awt.Color;
 import java.util.Arrays;
 
+import javax.swing.JButton;
+
+import acm.graphics.GOval;
 import acm.program.ConsoleProgram;
+import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
-public class concsolepr extends ConsoleProgram {
+public class concsolepr extends GraphicsProgram {
 	private RandomGenerator rgen;
-
-	public void run() {
-		String text = readLine();
-		int[] arr = { 1, 5 , 9};
-		println(addSpaces(text, arr));
-		// int[] arr = {2, 7, 3, 1, 9, 8, 5, 20, 19};
-		// println(Arrays.toString(arr));
-		// badSort(arr);
-		// println(Arrays.toString(arr));
+private JButton up;
+private JButton down;
+private static final int OVAL_SIZE = 60;
+	
+	
+	public void init() {
+		
+		up = new JButton("up");
+		up.addActionListener(this);
+		down = new JButton("down");
+		down.addActionListener(this);
+		
+		addMouseListeners();
+		addActionListeners();
 	}
-	private String addSpaces(String str, int[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-			int ind = arr[i] + i;
-			str = str.substring(0, ind) + " " + str.substring(ind);
-		}
-		return str;
+	public void run() {
+		rgen = RandomGenerator.getInstance();
+		GOval oval1 = new GOval(OVAL_SIZE, OVAL_SIZE);
+		GOval oval2 = new GOval(OVAL_SIZE, OVAL_SIZE);
+		double x = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
+		double y = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
+		oval1.setFilled(true);
+		oval1.setColor(Color.RED);
+		add(oval1, x, y);
+		
+		double a = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
+		double b = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
+		oval2.setFilled(true);
+		oval2.setColor(Color.BLUE);
+		add(oval2, a, b);
 	}
 
 	// private void badSort(int[] arr) {

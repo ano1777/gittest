@@ -12,8 +12,8 @@ public class concsolepr extends GraphicsProgram {
 	private RandomGenerator rgen;
 private JButton up;
 private JButton down;
-private double vx = 10;
-private double vy = 10;
+private double vx = 20;
+private double vy = 20;
 private static final int OVAL_SIZE = 60;
 	
 	

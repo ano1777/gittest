@@ -60,13 +60,12 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 
 	@Override
 	public void componentMoved(ComponentEvent arg0) {
-		run();
+		
 		
 	}
-
 	@Override
 	public void componentResized(ComponentEvent arg0) {
-		// TODO Auto-generated method stub
+		run();
 		
 	}
 

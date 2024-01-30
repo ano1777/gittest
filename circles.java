@@ -48,11 +48,10 @@ import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 
-//https://www.youtube.com/playlist?list=PL6qg6DlVkjd6XenORSl6px7Z_NweBs8yf
 public class circles extends GraphicsProgram {
-	private static final int N_COINS = 11; // ქვების რაოდენობა
-	private static final int COIN_SIZE = 25; // ქვის ზომა
-	private static final int COIN_STEP = 10; // ქვებს შორის მანძილი
+	private static final int N_COINS = 11; 
+	private static final int COIN_SIZE = 25; 
+	private static final int COIN_STEP = 10; 
 
 	private ArrayList<GOval> coins;
 	private int player = 0;

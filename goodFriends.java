@@ -44,10 +44,10 @@ public class goodFriends extends GraphicsProgram {
 		myOval.setColor(Color.RED);
 		add(myOval, rectSize * 4, rectSize * 4);
 
-		GRect recta = new GRect(rectSize * 0.8, rectSize * 0.8);
+		GRect recta = new GRect(rectSize * 0.6, rectSize * 0.6);
 		recta.setFilled(true);
 		recta.setColor(Color.GREEN);
-		add(recta, rectSize * 4 + rectSize/2 - rectSize*0.8/2 , rectSize * 4 + + rectSize/2 - rectSize*0.8/2);
+		add(recta, rectSize * 4 + rectSize/2 - rectSize*0.6/2 , rectSize * 4 + + rectSize/2 - rectSize*0.6/2);
 	}
 
 }

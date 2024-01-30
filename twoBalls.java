@@ -24,40 +24,42 @@ public class twoBalls extends GraphicsProgram {
 	public void init() {
 		up = new JButton("up");
 		up.addActionListener(this);
+		add(up, SOUTH);
 		down = new JButton("down");
 		down.addActionListener(this);
+		add(down, SOUTH);
 
 		addMouseListeners();
 		addActionListeners();
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if(oval1.getColor() == Color.YELLOW || oval2.getColor() == Color.YELLOW){
-		if (e.getSource() == up) {
-			vx += 2;
-			vy += 2;
-		} else if (e.getSource() == down) {
-			vx -= 2;
-			vy -= 2;
-		}
+		if (oval1.getColor() == Color.YELLOW || oval2.getColor() == Color.YELLOW) {
+			if (e.getSource() == up) {
+				vx += 2;
+				vy += 2;
+			} else if (e.getSource() == down) {
+				vx -= 2;
+				vy -= 2;
+			}
 		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		GObject obj = getElementAt(e.getX(), e.getY());
-		if(obj != null && obj == oval1){
+		if (obj != null && obj == oval1) {
 			oval1.setColor(Color.YELLOW);
 		}
-			if(oval1.getColor() == Color.YELLOW && obj != oval1){
-				oval1.setColor(Color.RED);
-			
-		}  if (obj != null && obj == oval2){
+		if (oval1.getColor() == Color.YELLOW && obj != oval1) {
+			oval1.setColor(Color.RED);
+		}
+		if (obj != null && obj == oval2) {
 			oval2.setColor(Color.YELLOW);
 		}
-			if(oval2.getColor() == Color.YELLOW && obj != oval2) {
-				oval2.setColor(Color.BLUE);
-			}
-		
+		if (oval2.getColor() == Color.YELLOW && obj != oval2) {
+			oval2.setColor(Color.BLUE);
+		}
+
 	}
 
 	public void run() {

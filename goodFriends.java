@@ -47,7 +47,7 @@ public class goodFriends extends GraphicsProgram {
 		GRect recta = new GRect(rectSize * 0.9, rectSize * 0.9);
 		recta.setFilled(true);
 		recta.setColor(Color.GREEN);
-		add(recta, rectSize * 4 + rectSize * 1.1 , rectSize * 4 + 0.1 * rectSize);
+		add(recta, rectSize * 4 + rectSize * 0.1 , rectSize * 4 + 0.1 * rectSize);
 	}
 
 }

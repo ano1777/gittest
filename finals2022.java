@@ -16,7 +16,7 @@ public class finals2022 extends ConsoleProgram {
 		for (int i = 1; i < s.length(); i++) {
 			if (Character.isDigit(i)) {
 				String integer = "" + s.charAt(i);
-				int amount = Integer.parseInt(integer);// int =2 2 a unda daematos
+				int amount = Integer.valueOf(integer);// int =2 2 a unda daematos
 				println(amount);
 				for(int j = 0; j < amount; j ++){
 					res+= s.charAt(i-1);

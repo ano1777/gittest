@@ -5,27 +5,39 @@ public class finals2022 extends ConsoleProgram {
 		String str = readLine("enter: ");
 		println(compressedStr(str));
 	}
-//aaaaaddssssiiiii
+
+	// aaaaaddssssiiiii
 	private String compressedStr(String str) {
-		int amount = 0;
+		String newPart1 = "";
 		String res = "";
-		for (int i = 0; i < str.length() - 1; i++) {
-			if (str.charAt(i) != str.charAt(i + 1)) {
-				for(int j= 0; j < i+1; j ++){
-					amount ++;
+		int amountOfRes = 0;
+		int amountOfStr = 0;
+		for (int i = 0; i < str.length(); i++) {
+			amountOfStr++;
+			char ch = str.charAt(i);
+			char ch2 = str.charAt(i + 1);
+			if (ch == str.length() - 1 && !Character.isDigit(ch)) {
+				str += 1;
+			}
+			if (ch != ch2) {
+				String part1 = str.substring(0, i + 1);
+				String part2 = str.substring(i + 1);
+				int amount = 0;
+				for (int j = 0; j < part1.length(); j++) {
+					amount++;
 				}
-				String str1 = str.substring(i+1);
-				res += str.charAt(i) + amount + str1 ;				
-			}	
+				newPart1 = ch + String.valueOf(amount);
+				res = newPart1 + part2;
+
+				for (int a = 0; a < res.length(); a++) {
+					amountOfRes++;
+				}
+				if (amountOfRes > amountOfStr) {
+					return str;
+				}
+			}
 		}
 		return res;
 	}
-
-//	private char numberOfLetters(String str) {
-//		for(int i = 0 ; i < str.length(); i++){
-//			if(str.charAt(i))
-//		}
-//		return 0;
-//	}
 
 }

@@ -23,8 +23,6 @@ public class rearrange extends ConsoleProgram {
 				}else {
 					letters.put(sent, sent.length());
 				}
-
-			
 		}
 		println(letters);
 		// int maxAmount = 0;

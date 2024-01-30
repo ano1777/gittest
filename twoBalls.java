@@ -47,12 +47,13 @@ public class twoBalls extends GraphicsProgram {
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if(obj != null && obj == oval1){
 			oval1.setColor(Color.YELLOW);
-			if(obj != oval1){
+		}
+			if(oval1.getColor() == Color.YELLOW && obj != oval1){
 				oval1.setColor(Color.RED);
-			}
+			
 		} else if (obj != null && obj == oval2){
 			oval2.setColor(Color.YELLOW);
-			if(obj != oval2) {
+			if(oval2.getColor() == Color.YELLOW && obj != oval2) {
 				oval2.setColor(Color.BLUE);
 			}
 		}

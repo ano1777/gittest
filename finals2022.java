@@ -11,9 +11,8 @@ public class finals2022 extends ConsoleProgram {
 		if(str.length() ==0){
 			return "";
 		}
-		String res = "";
 		int count = 1;
-		res = "" + str.charAt(0);
+		String res = "" + str.charAt(0);
 		for (int i = 1; i < str.length(); i++) {
 			char ch = str.charAt(i);
 			char ch2 = str.charAt(i - 1);
@@ -26,11 +25,9 @@ public class finals2022 extends ConsoleProgram {
 			}
 		}
 		res += count;
-//		if (res.length() > str.length()) {
-//			return str;
-//		}
-
-		
+		if (res.length() > str.length()) {
+			return str;
+		}
 			return res;
 	}
 }

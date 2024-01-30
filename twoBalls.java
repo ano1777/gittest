@@ -78,20 +78,20 @@ public class twoBalls extends GraphicsProgram {
 		oval2.setColor(Color.BLUE);
 		add(oval2, a, b);
 
-		 while (true) {
-		 oval1.move(vx, 0);
-		 oval1.pause(15);
-		 oval2.move(0, vy);
-		 oval2.pause(15);
-		 if(oval1.getX() <= 0 || oval1.getX() >= getWidth() - oval1.getWidth()) {
-			 vx = -vx;
-		 }
-		 if (oval2.getY() <= 0 || oval2.getY() >= getHeight() -
-		 oval2.getHeight()) {
-		 vy = -vy;
-		 }
-		 }
+		while (true) {
+			oval1.move(vx, 0);
+			oval1.pause(15);
+			oval2.move(0, vy);
+			oval2.pause(15);
+			if (oval1.getX() <= 0 || oval1.getX() >= getWidth() - oval1.getWidth()) {
+				vx = -vx;
+			}
+			if (oval2.getY() <= 0 || oval2.getY() >= getHeight() - oval2.getHeight()) {
+				vy = -vy;
+			}
+		}
 	}
+	
 }
 // private void badSort(int[] arr) {
 // // rgen = RandomGenerator.getInstance();

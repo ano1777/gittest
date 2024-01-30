@@ -57,7 +57,8 @@ public class twoBalls extends GraphicsProgram {
 			oval2.pause(5);
 		}
 	}
-
+	}
+}
 	// private void badSort(int[] arr) {
 	// // rgen = RandomGenerator.getInstance();
 	// //while (!sorted(arr)) {
@@ -94,4 +95,4 @@ public class twoBalls extends GraphicsProgram {
 	// }
 	// return true;
 	// }
-}
+

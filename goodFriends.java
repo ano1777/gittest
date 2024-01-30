@@ -25,6 +25,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 		add(nameLabel, SOUTH);
 
 		name = new JTextField(10);
+		name.addActionListener(this);
 		add(name, SOUTH);
 
 		addActionListeners();

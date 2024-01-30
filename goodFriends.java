@@ -58,6 +58,7 @@ public class goodFriends extends GraphicsProgram {
 		add(widthText, SOUTH);
 
 		add = new JButton("Add");
+		add.addActionListener(this);
 		add(add, SOUTH);
 
 		addActionListeners();

@@ -52,7 +52,7 @@ public class twoBalls extends GraphicsProgram {
 			if(oval1.getX() <= 0 && oval1.getX() >= getWidth() - oval1.getWidth()) {
 				vx = -vx;
 			}
-			if (oval2.getY() <= 0 && oval2.getY() >= oval1.getHeight()) {
+			if (oval2.getY() <= 0 && oval2.getY() >= getHeight() - oval2.getHeight()) {
 				vy = -vy;
 			}
 		}

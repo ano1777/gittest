@@ -15,6 +15,9 @@ import acm.program.GraphicsProgram;
 public class goodFriends extends GraphicsProgram implements ComponentListener {
 	private JTextField name;
 	private JLabel nameLabel;
+	GRect recta;
+	int rectSize;
+	double size;
 
 	public void init() {
 		addComponentListener(this);
@@ -30,39 +33,49 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == name) {
+			if (name.getText() == "") {
+				return;
+			}
+			if (name.getText().equals("right")) {
+				recta.setLocation(recta.getWidth() + rectSize, recta.getHeight());
+			}
+			else if(name.getText().equals("left")){
+				recta.setLocation(recta.getWidth() - rectSize, recta.getHeight());
+			}
 		}
 	}
 
 	public void run() {
-		double size = Math.min(getWidth(), getHeight());
-		int rectSize = (int) size / 8;
+		size = Math.min(getWidth(), getHeight());
+		rectSize = (int) size / 8;
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
 				GRect myRect = new GRect(rectSize, rectSize);
-				add(myRect, rectSize * i, rectSize *j);
+				add(myRect, rectSize * i, rectSize * j);
 			}
 		}
 		GOval myOval = new GOval(rectSize, rectSize);
-		myOval.setFilled(true);;
+		myOval.setFilled(true);
+		;
 		myOval.setColor(Color.RED);
 		add(myOval, rectSize * 4, rectSize * 4);
 
-		GRect recta = new GRect(rectSize * 0.6, rectSize * 0.6);
+		recta = new GRect(rectSize * 0.6, rectSize * 0.6);
 		recta.setFilled(true);
 		recta.setColor(Color.GREEN);
-		add(recta, rectSize * 4 + rectSize / 2 - rectSize*0.6 / 2 , rectSize * 4 + + rectSize / 2 - rectSize*0.6 / 2);
+		add(recta, rectSize * 4 + rectSize / 2 - rectSize * 0.6 / 2, rectSize * 4 + +rectSize / 2 - rectSize * 0.6 / 2);
 	}
 
 	@Override
 	public void componentHidden(ComponentEvent arg0) {
-		
-		
+
 	}
 
 	@Override
 	public void componentMoved(ComponentEvent arg0) {
-		run();
+
 	}
+
 	@Override
 	public void componentResized(ComponentEvent arg0) {
 		removeAll();
@@ -71,7 +84,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 
 	@Override
 	public void componentShown(ComponentEvent arg0) {
-		
+
 	}
 
 }

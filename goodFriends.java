@@ -85,11 +85,27 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 				recta.setLocation(recta.getX() + rectSize, recta.getY());
 		} 
 		}
-//		if (e.getX() < myOval.getX() + rectSize * 2 && e.getX() > myOval.getX() + rectSize && e.getY() > myOval.getY()
-//				&& e.getY() < myOval.getY() + rectSize) {
-//			
-//		}
-		
+		else if (e.getX() < myOval.getX() && e.getX() > myOval.getX() - 2* rectSize && e.getY() > myOval.getY()
+				&& e.getY() < myOval.getY() + rectSize) {
+			if (myOval.getX() > 0) {
+				myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
+				recta.setLocation(recta.getX() - rectSize, recta.getY());
+		}
+		}
+		else if(e.getX() > myOval.getX() && e.getX() < myOval.getX() + rectSize && e.getY() < myOval.getY()
+				&& e.getY() > myOval.getY() - rectSize){
+			if (myOval.getY() < rectSize * 7 ) {
+				myOval.setLocation(myOval.getX(), myOval.getY() + rectSize);
+				recta.setLocation(recta.getX(), recta.getY() + rectSize);
+			}
+		}
+			else if(e.getX() > myOval.getX() && e.getX() < myOval.getX() + rectSize && e.getY() > myOval.getY() + rectSize
+					&& e.getY() < myOval.getY() + 2 * rectSize){
+				 if (myOval.getY() > 0 ) {
+					myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
+					recta.setLocation(recta.getX(), recta.getY() - rectSize);
+			}
+			}
 	}
 
 	@Override

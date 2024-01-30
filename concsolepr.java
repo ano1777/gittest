@@ -37,6 +37,7 @@ private static final int OVAL_SIZE = 60;
 		oval1.setColor(Color.RED);
 		add(oval1, x, y);
 		oval1.move(vx, 0);
+		oval1.pause(5);
 		
 		double a = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
 		double b = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
@@ -44,6 +45,7 @@ private static final int OVAL_SIZE = 60;
 		oval2.setColor(Color.BLUE);
 		add(oval2, a, b);
 		oval2.move(0, vy);
+		oval2.pause(5);
 		
 	}
 

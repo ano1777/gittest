@@ -27,6 +27,7 @@ public class finals2022 extends ConsoleProgram {
 			if (res.length() > str.length()) {
 				return str;
 			}
+			res += count;
 		}
 		return res;
 	}

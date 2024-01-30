@@ -10,10 +10,8 @@ public class finals2022 extends ConsoleProgram {
 	private String compressedStr(String str) {
 		String newPart1 = "";
 		String res = "";
-		int amountOfRes = 0;
-		int amountOfStr = 0;
-		for (int i = 0; i < str.length(); i++) {
-			amountOfStr++;
+
+		for (int i = 0; i < str.length() - 1; i++) {
 			char ch = str.charAt(i);
 			char ch2 = str.charAt(i + 1);
 			if (ch == str.length() - 1 && !Character.isDigit(ch)) {
@@ -29,10 +27,7 @@ public class finals2022 extends ConsoleProgram {
 				newPart1 = ch + String.valueOf(amount);
 				res = newPart1 + part2;
 
-				for (int a = 0; a < res.length(); a++) {
-					amountOfRes++;
-				}
-				if (amountOfRes > amountOfStr) {
+				if (res.length() > str.length()) {
 					return str;
 				}
 			}

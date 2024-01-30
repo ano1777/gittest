@@ -27,16 +27,11 @@ public class shualedurebi extends ConsoleProgram {
 		burg.add("salati");
 		burg.add("puri");
 		burg.add("yveli");
-		
-		ArrayList<String> an = new ArrayList<String>();
-		an.add("banani");
-		an.add("puri");
 
 		mealIngr.put("puri", puris);
 		mealIngr.put("xacha", xachas);
 		mealIngr.put("burg", burg);
-		mealIngr.put("ann", an);
-
+		
 		println(kitchen(mealIngr, fridge));
 	}
 

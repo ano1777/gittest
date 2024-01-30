@@ -45,54 +45,52 @@ public class twoBalls extends GraphicsProgram {
 		add(oval2, a, b);
 
 		while (true) {
-			if (oval1.getX() > 0 && oval1.getX() < getWidth() - oval1.getWidth() && oval1.getY() > 0
-					&& oval1.getY() < oval1.getHeight()) {
-				oval1.move(vx, 0);
-				oval1.pause(5);
-
-			}
-			if (oval2.getX() > 0 && oval2.getX() < getWidth() - oval2.getWidth() && oval2.getY() > 0
-					&& oval2.getY() < oval1.getHeight()) {
+			oval1.move(vx, 0);
+			oval1.pause(5);
 			oval2.move(0, vy);
 			oval2.pause(5);
+			if(oval1.getX() >= 0 && oval1.getX() <= getWidth() - oval1.getWidth()) {
+				vx = -vx;
+			}
+			if (oval2.getY() >= 0 && oval2.getY() =< oval1.getHeight()) {
+				vy = -vy;
+			}
 		}
 	}
-	}
 }
-	// private void badSort(int[] arr) {
-	// // rgen = RandomGenerator.getInstance();
-	// //while (!sorted(arr)) {
-	//
-	// for(int i = 0; i < arr.length; i ++) {
-	// for(int )
-	// }
-	//
-	//
-	//// int a = rgen.nextInt(0, arr.length - 1);
-	//// int b = rgen.nextInt(0, arr.length - 1);
-	////
-	//// int max = Math.max(a, b);
-	//// int min = Math.min(a, b);
-	////
-	//// if (arr[max] < arr[min]) {
-	//// swap(arr, max, min);
-	//// }
-	//
-	// //}
-	// }
-	//
-	// private void swap(int[] arr, int i, int j) {
-	// int temp = arr[i];
-	// arr[i] = arr[j];
-	// arr[j] = temp;
-	// }
-	//
-	// private boolean sorted(int[] arr) {
-	// for (int i = 1; i < arr.length; i++) {
-	// if (arr[i] < arr[i - 1]) {
-	// return false;
-	// }
-	// }
-	// return true;
-	// }
-
+// private void badSort(int[] arr) {
+// // rgen = RandomGenerator.getInstance();
+// //while (!sorted(arr)) {
+//
+// for(int i = 0; i < arr.length; i ++) {
+// for(int )
+// }
+//
+//
+//// int a = rgen.nextInt(0, arr.length - 1);
+//// int b = rgen.nextInt(0, arr.length - 1);
+////
+//// int max = Math.max(a, b);
+//// int min = Math.min(a, b);
+////
+//// if (arr[max] < arr[min]) {
+//// swap(arr, max, min);
+//// }
+//
+// //}
+// }
+//
+// private void swap(int[] arr, int i, int j) {
+// int temp = arr[i];
+// arr[i] = arr[j];
+// arr[j] = temp;
+// }
+//
+// private boolean sorted(int[] arr) {
+// for (int i = 1; i < arr.length; i++) {
+// if (arr[i] < arr[i - 1]) {
+// return false;
+// }
+// }
+// return true;
+// }

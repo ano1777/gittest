@@ -1,5 +1,7 @@
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -10,7 +12,7 @@ import acm.graphics.GRect;
 import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
 
-public class goodFriends extends GraphicsProgram {
+public class goodFriends extends GraphicsProgram implements ComponentListener {
 	private JTextField name;
 	private JLabel nameLabel;
 
@@ -47,7 +49,31 @@ public class goodFriends extends GraphicsProgram {
 		GRect recta = new GRect(rectSize * 0.6, rectSize * 0.6);
 		recta.setFilled(true);
 		recta.setColor(Color.GREEN);
-		add(recta, rectSize * 4 + rectSize/2 - rectSize*0.6/2 , rectSize * 4 + + rectSize/2 - rectSize*0.6/2);
+		add(recta, rectSize * 4 + rectSize / 2 - rectSize*0.6 / 2 , rectSize * 4 + + rectSize / 2 - rectSize*0.6 / 2);
+	}
+
+	@Override
+	public void componentHidden(ComponentEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void componentMoved(ComponentEvent arg0) {
+		run();
+		
+	}
+
+	@Override
+	public void componentResized(ComponentEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void componentShown(ComponentEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

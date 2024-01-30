@@ -17,6 +17,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 	private JLabel nameLabel;
 
 	public void init() {
+		addComponentListener(this);
 		nameLabel = new JLabel("directions");
 		add(nameLabel, SOUTH);
 
@@ -60,7 +61,6 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 
 	@Override
 	public void componentMoved(ComponentEvent arg0) {
-		
 		
 	}
 	@Override

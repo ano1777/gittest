@@ -38,8 +38,8 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 			if (name.getText() == "") {
 				return;
 			}
-			if (myOval.getX() > 0 && myOval.getX() < rectSize * 7 && myOval.getY() > 0
-					&& myOval.getY() < rectSize * 7) {
+			if (myOval.getX() >= 0 && myOval.getX() <= rectSize * 7 && myOval.getY() >= 0
+					&& myOval.getY() <=  rectSize * 7) {
 				if (name.getText().equals("right")) {
 
 					myOval.setLocation(myOval.getX() + rectSize, myOval.getY());

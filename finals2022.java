@@ -18,7 +18,7 @@ public class finals2022 extends ConsoleProgram {
 			res += ch2;
 			if (ch2 == ch) {
 				count++;
-				
+				res += count;
 			} else {
 				res += count;
 				count = 1;

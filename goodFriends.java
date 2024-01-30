@@ -19,6 +19,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 	int rectSize;
 	double size;
 	GOval myOval;
+
 	public void init() {
 		addComponentListener(this);
 		nameLabel = new JLabel("directions");
@@ -37,13 +38,22 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 			if (name.getText() == "") {
 				return;
 			}
-			if (name.getText().equals("right")) {
-				myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
-				recta.setLocation(recta.getX() + rectSize, recta.getY());
-			}
-			else if(name.getText().equals("left")){
-				myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
-				recta.setLocation(recta.getX() - rectSize, recta.getY());
+			if (myOval.getX() > 0 && myOval.getX() < rectSize * 7 && myOval.getY() > 0
+					&& myOval.getY() < rectSize * 7) {
+				if (name.getText().equals("right")) {
+
+					myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
+					recta.setLocation(recta.getX() + rectSize, recta.getY());
+				} else if (name.getText().equals("left")) {
+					myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
+					recta.setLocation(recta.getX() - rectSize, recta.getY());
+				} else if (name.getText().equals("down")) {
+					myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
+					recta.setLocation(recta.getX() , recta.getY() - rectSize);
+				} else if (name.getText().equals("up")) {
+					myOval.setLocation(myOval.getX(), myOval.getY() + rectSize);
+					recta.setLocation(recta.getX(), recta.getY() + rectSize);
+				}
 			}
 		}
 	}
@@ -57,7 +67,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 				add(myRect, rectSize * i, rectSize * j);
 			}
 		}
-		 myOval = new GOval(rectSize, rectSize);
+		myOval = new GOval(rectSize, rectSize);
 		myOval.setFilled(true);
 		;
 		myOval.setColor(Color.RED);

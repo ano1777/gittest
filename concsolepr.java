@@ -12,6 +12,8 @@ public class concsolepr extends GraphicsProgram {
 	private RandomGenerator rgen;
 private JButton up;
 private JButton down;
+private double vx = 10;
+private double vy = 10;
 private static final int OVAL_SIZE = 60;
 	
 	
@@ -34,12 +36,15 @@ private static final int OVAL_SIZE = 60;
 		oval1.setFilled(true);
 		oval1.setColor(Color.RED);
 		add(oval1, x, y);
+		oval1.move(vx, 0);
 		
 		double a = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
 		double b = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
 		oval2.setFilled(true);
 		oval2.setColor(Color.BLUE);
 		add(oval2, a, b);
+		oval2.move(0, vy);
+		
 	}
 
 	// private void badSort(int[] arr) {

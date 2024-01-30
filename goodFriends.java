@@ -46,11 +46,11 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 				myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
 				recta.setLocation(recta.getX() - rectSize, recta.getY());
 			} else if (myOval.getY() < rectSize * 7 && name.getText().equals("down")) {
-				myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
-				recta.setLocation(recta.getX(), recta.getY() - rectSize);
-			} else if (myOval.getY() > 0 && name.getText().equals("up")) {
 				myOval.setLocation(myOval.getX(), myOval.getY() + rectSize);
 				recta.setLocation(recta.getX(), recta.getY() + rectSize);
+			} else if (myOval.getY() > 0 && name.getText().equals("up")) {
+				myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
+				recta.setLocation(recta.getX(), recta.getY() - rectSize);
 			}
 		}
 	}

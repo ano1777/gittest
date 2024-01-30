@@ -38,22 +38,19 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 			if (name.getText() == "") {
 				return;
 			}
-			if (myOval.getX() >= 0 && myOval.getX() <= rectSize * 7 && myOval.getY() >= 0
-					&& myOval.getY() <=  rectSize * 7) {
-				if (name.getText().equals("right")) {
 
-					myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
-					recta.setLocation(recta.getX() + rectSize, recta.getY());
-				} else if (name.getText().equals("left")) {
-					myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
-					recta.setLocation(recta.getX() - rectSize, recta.getY());
-				} else if (name.getText().equals("down")) {
-					myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
-					recta.setLocation(recta.getX() , recta.getY() - rectSize);
-				} else if (name.getText().equals("up")) {
-					myOval.setLocation(myOval.getX(), myOval.getY() + rectSize);
-					recta.setLocation(recta.getX(), recta.getY() + rectSize);
-				}
+			if (myOval.getX() <= rectSize * 7 && name.getText().equals("right")) {
+				myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
+				recta.setLocation(recta.getX() + rectSize, recta.getY());
+			} else if (myOval.getX() > 0 && name.getText().equals("left")) {
+				myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
+				recta.setLocation(recta.getX() - rectSize, recta.getY());
+			} else if (myOval.getY() < rectSize * 7 && name.getText().equals("down")) {
+				myOval.setLocation(myOval.getX(), myOval.getY() - rectSize);
+				recta.setLocation(recta.getX(), recta.getY() - rectSize);
+			} else if (myOval.getY() > 0 && name.getText().equals("up")) {
+				myOval.setLocation(myOval.getX(), myOval.getY() + rectSize);
+				recta.setLocation(recta.getX(), recta.getY() + rectSize);
 			}
 		}
 	}

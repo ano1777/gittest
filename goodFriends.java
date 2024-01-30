@@ -55,7 +55,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 
 	@Override
 	public void componentHidden(ComponentEvent arg0) {
-		run();
+		
 		
 	}
 
@@ -65,13 +65,12 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 	}
 	@Override
 	public void componentResized(ComponentEvent arg0) {
-		run();
+		
 		
 	}
 
 	@Override
 	public void componentShown(ComponentEvent arg0) {
-		run();
 		
 	}
 

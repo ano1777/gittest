@@ -2,32 +2,51 @@ import acm.program.ConsoleProgram;
 
 public class finals2022 extends ConsoleProgram {
 	public void run() {
-		String str = readLine("enter: ");
-		println(compressedStr(str));
+		String s = readLine();
+		println(blowUp(s));
 	}
 
-	// aaaaaddssssiiiii
-	private String compressedStr(String str) {
-		if(str.length() ==0){
-			return "";
-		}
-		int count = 1;
-		String res = "" + str.charAt(0);
-		for (int i = 1; i < str.length(); i++) {
-			char ch = str.charAt(i);
-			char ch2 = str.charAt(i - 1);
-			if (ch2 == ch) {
-				count++;
-			} else {
-				res += count;
-				count = 1;
-				res += ch;
+	/// a2/s6/a1/3
+	private String blowUp(String s) {
+		
+		String res = "" + s.charAt(0);
+		for (int i = 1; i < s.length(); i++) {
+			if (Character.isDigit(i)) {
+				String integer = "" + s.charAt(i);
+				int amount = Integer.parseInt(integer);// int =2 2 a unda daematos
+				for(int j =0; j < amount; j ++){
+					res+= s.charAt(i);
+				}
+				
 			}
+
 		}
-		res += count;
-		if (res.length() > str.length()) {
-			return str;
-		}
-			return res;
+		return res;
+
 	}
 }
+// aaaaaddssssiiiii
+// private String compressedStr(String str) {
+// if(str.length() ==0){
+// return "";
+// }
+// int count = 1;
+// String res = "" + str.charAt(0);
+// for (int i = 1; i < str.length(); i++) {
+// char ch = str.charAt(i);
+// char ch2 = str.charAt(i - 1);
+// if (ch2 == ch) {
+// count++;
+// } else {
+// res += count;
+// count = 1;
+// res += ch;
+// }
+// }
+// res += count;
+// if (res.length() > str.length()) {
+// return str;
+// }
+// return res;
+// }
+// }

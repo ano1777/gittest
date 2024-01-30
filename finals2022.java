@@ -5,11 +5,11 @@ public class finals2022 extends ConsoleProgram {
 		String str = readLine("enter: ");
 		println(compressedStr(str));
 	}
-
+//aaaaaddssssiiiii
 	private String compressedStr(String str) {
 		int amount = 0;
 		String res = "";
-		for (int i = 0; i < str.length(); i++) {
+		for (int i = 0; i < str.length() - 1; i++) {
 			if (str.charAt(i) != str.charAt(i + 1)) {
 				for(int j= 0; j < i+1; j ++){
 					amount ++;

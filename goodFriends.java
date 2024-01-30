@@ -18,7 +18,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 	GRect recta;
 	int rectSize;
 	double size;
-
+	GOval myOval;
 	public void init() {
 		addComponentListener(this);
 		nameLabel = new JLabel("directions");
@@ -38,10 +38,12 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 				return;
 			}
 			if (name.getText().equals("right")) {
-				recta.setLocation(recta.getWidth() + rectSize, recta.getHeight());
+				myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
+				recta.setLocation(recta.getX() + rectSize, recta.getY());
 			}
 			else if(name.getText().equals("left")){
-				recta.setLocation(recta.getWidth() - rectSize, recta.getHeight());
+				myOval.setLocation(myOval.getX() - rectSize, myOval.getY());
+				recta.setLocation(recta.getX() - rectSize, recta.getY());
 			}
 		}
 	}
@@ -55,7 +57,7 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 				add(myRect, rectSize * i, rectSize * j);
 			}
 		}
-		GOval myOval = new GOval(rectSize, rectSize);
+		 myOval = new GOval(rectSize, rectSize);
 		myOval.setFilled(true);
 		;
 		myOval.setColor(Color.RED);

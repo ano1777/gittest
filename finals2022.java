@@ -8,27 +8,27 @@ public class finals2022 extends ConsoleProgram {
 
 	// aaaaaddssssiiiii
 	private String compressedStr(String str) {
-	
+
 		String res = "";
 		int count = 1;
-
+		res = "" + str.charAt(0);
 		for (int i = 1; i < str.length(); i++) {
 			char ch = str.charAt(i);
 			char ch2 = str.charAt(i - 1);
-			res += ch2;
 			if (ch2 == ch) {
 				count++;
-				res += count;
 			} else {
 				res += count;
 				count = 1;
 				res += ch;
 			}
+		}
+			res += count;
 			if (res.length() > str.length()) {
 				return str;
 			}
-			res += count;
-		}
+
+		
 		return res;
 	}
 }

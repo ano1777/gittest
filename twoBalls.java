@@ -14,11 +14,12 @@ private JButton up;
 private JButton down;
 private double vx = 20;
 private double vy = 20;
+GOval oval1;
+GOval oval2;
 private static final int OVAL_SIZE = 60;
 	
 	
 	public void init() {
-		
 		up = new JButton("up");
 		up.addActionListener(this);
 		down = new JButton("down");
@@ -27,23 +28,22 @@ private static final int OVAL_SIZE = 60;
 		addMouseListeners();
 		addActionListeners();
 	}
+	
 	public void run() {
 		rgen = RandomGenerator.getInstance();
-		GOval oval1 = new GOval(OVAL_SIZE, OVAL_SIZE);
-		GOval oval2 = new GOval(OVAL_SIZE, OVAL_SIZE);
+		oval1 = new GOval(OVAL_SIZE, OVAL_SIZE);
+	    oval2 = new GOval(OVAL_SIZE, OVAL_SIZE);
 		double x = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
 		double y = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
 		oval1.setFilled(true);
 		oval1.setColor(Color.RED);
 		add(oval1, x, y);
 		
-		
 		double a = rgen.nextDouble(0, getWidth() - OVAL_SIZE);
 		double b = rgen.nextDouble(0, getHeight() - OVAL_SIZE);
 		oval2.setFilled(true);
 		oval2.setColor(Color.BLUE);
 		add(oval2, a, b);
-		
 		
 		while(true) {
 			oval1.move(vx, 0);

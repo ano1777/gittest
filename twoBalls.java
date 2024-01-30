@@ -1,8 +1,11 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
 import java.util.Arrays;
 
 import javax.swing.JButton;
 
+import acm.graphics.GObject;
 import acm.graphics.GOval;
 import acm.program.ConsoleProgram;
 import acm.program.GraphicsProgram;
@@ -28,6 +31,33 @@ public class twoBalls extends GraphicsProgram {
 		addActionListeners();
 	}
 
+	public void actionPerformed(ActionEvent e) {
+		if(oval1.getColor() == Color.YELLOW || oval2.getColor() == Color.YELLOW){
+		if (e.getSource() == up) {
+			vx += 2;
+			vy += 2;
+		} else if (e.getSource() == down) {
+			vx -= 2;
+			vy -= 2;
+		}
+		}
+	}
+
+	public void mouseClicked(MouseEvent e) {
+		GObject obj = getElementAt(e.getX(), e.getY());
+		if(obj != null && obj == oval1){
+			oval1.setColor(Color.YELLOW);
+			if(obj != oval1){
+				oval1.setColor(Color.RED);
+			}
+		} else if (obj != null && obj == oval2){
+			oval2.setColor(Color.YELLOW);
+			if(obj != oval2) {
+				oval2.setColor(Color.BLUE);
+			}
+		}
+	}
+
 	public void run() {
 		rgen = RandomGenerator.getInstance();
 		oval1 = new GOval(OVAL_SIZE, OVAL_SIZE);
@@ -44,18 +74,20 @@ public class twoBalls extends GraphicsProgram {
 		oval2.setColor(Color.BLUE);
 		add(oval2, a, b);
 
-		while (true) {
-			oval1.move(vx, 0);
-			oval1.pause(10);
-			oval2.move(0, vy);
-			oval2.pause(10);
-			if(oval1.getX() <= 0 && oval1.getX() >= getWidth() - oval1.getWidth()) {
-				vx = -vx;
-			}
-			if (oval2.getY() <= 0 && oval2.getY() >= getHeight() - oval2.getHeight()) {
-				vy = -vy;
-			}
-		}
+		// while (true) {
+		// oval1.move(vx, 0);
+		// oval1.pause(10);
+		// oval2.move(0, vy);
+		// oval2.pause(10);
+		// if(oval1.getX() <= 0 && oval1.getX() >= getWidth() -
+		// oval1.getWidth()) {
+		// vx = -vx;
+		// }
+		// if (oval2.getY() <= 0 && oval2.getY() >= getHeight() -
+		// oval2.getHeight()) {
+		// vy = -vy;
+		// }
+		// }
 	}
 }
 // private void badSort(int[] arr) {

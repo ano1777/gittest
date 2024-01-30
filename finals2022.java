@@ -1,8 +1,10 @@
 import acm.program.ConsoleProgram;
 
 public class finals2022 extends ConsoleProgram {
+	private int amount;
 	public void run() {
 		String s = readLine();
+		println(amount);
 		println(blowUp(s));
 	}
 
@@ -16,8 +18,8 @@ public class finals2022 extends ConsoleProgram {
 		for (int i = 1; i < s.length(); i++) {
 			if (Character.isDigit(i)) {
 				String integer = "" + s.charAt(i);
-				int amount = Integer.valueOf(integer);// int =2 2 a unda daematos
-				println(amount);
+				 amount = Integer.valueOf(integer);// int =2 2 a unda daematos
+		
 				for(int j = 0; j < amount; j ++){
 					res+= s.charAt(i-1);
 				}

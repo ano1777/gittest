@@ -30,7 +30,7 @@ public class finals2022 extends ConsoleProgram {
 //			return str;
 //		}
 
-		else
+		
 			return res;
 	}
 }

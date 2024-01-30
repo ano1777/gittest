@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class finals2022 extends ConsoleProgram {
 	public void rn() {
-		String str = readLine();
+		String str = readLine("enter: ");
 		println(compressedStr(str));
 	}
 

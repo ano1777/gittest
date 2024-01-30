@@ -46,9 +46,9 @@ public class twoBalls extends GraphicsProgram {
 
 		while (true) {
 			oval1.move(vx, 0);
-			oval1.pause(5);
+			oval1.pause(10);
 			oval2.move(0, vy);
-			oval2.pause(5);
+			oval2.pause(10);
 			if(oval1.getX() <= 0 && oval1.getX() >= getWidth() - oval1.getWidth()) {
 				vx = -vx;
 			}

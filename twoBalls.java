@@ -15,8 +15,8 @@ public class twoBalls extends GraphicsProgram {
 	private RandomGenerator rgen;
 	private JButton up;
 	private JButton down;
-	private double vx = 10;
-	private double vy = 10;
+	private double vx = 5;
+	private double vy = 5;
 	GOval oval1;
 	GOval oval2;
 	private static final int OVAL_SIZE = 60;
@@ -83,11 +83,10 @@ public class twoBalls extends GraphicsProgram {
 		 oval1.pause(15);
 		 oval2.move(0, vy);
 		 oval2.pause(15);
-		 if(oval1.getX() <= 0 && oval1.getX() >= getWidth() -
-		 oval1.getWidth()) {
-		 vx = -vx;
+		 if(oval1.getX() <= 0 || oval1.getX() >= getWidth() - oval1.getWidth()) {
+			 vx = -vx;
 		 }
-		 if (oval2.getY() <= 0 && oval2.getY() >= getHeight() -
+		 if (oval2.getY() <= 0 || oval2.getY() >= getHeight() -
 		 oval2.getHeight()) {
 		 vy = -vy;
 		 }

@@ -8,7 +8,7 @@ public class finals2022 extends ConsoleProgram {
 
 	// aaaaaddssssiiiii
 	private String compressedStr(String str) {
-		if (str.length() == 0) {
+		if(str.length() ==0){
 			return "";
 		}
 		String res = "";

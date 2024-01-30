@@ -27,7 +27,7 @@ public class finals2022 extends ConsoleProgram {
 				newPart1 = ch + String.valueOf(amount);
 				res = newPart1 + part2;
 
-				if (res.length() > str.length()) {
+				if (res.length() < str.length()) {
 					return str;
 				}
 			}

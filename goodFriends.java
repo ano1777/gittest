@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -74,6 +75,16 @@ public class goodFriends extends GraphicsProgram implements ComponentListener {
 		recta.setFilled(true);
 		recta.setColor(Color.GREEN);
 		add(recta, rectSize * 4 + rectSize / 2 - rectSize * 0.6 / 2, rectSize * 4 + +rectSize / 2 - rectSize * 0.6 / 2);
+	}
+
+	public void mouseClicked(MouseEvent e) {
+		if (e.getX() < myOval.getX() + rectSize * 2 && e.getX() > myOval.getX() + rectSize && e.getY() > myOval.getY()
+				&& e.getY() < myOval.getY() + rectSize) {
+			if (myOval.getX() < rectSize * 7 ) {
+				myOval.setLocation(myOval.getX() + rectSize, myOval.getY());
+				recta.setLocation(recta.getX() + rectSize, recta.getY());
+		}
+		}	
 	}
 
 	@Override

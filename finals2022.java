@@ -3,9 +3,13 @@ import java.util.Arrays;
 import acm.program.ConsoleProgram;
 
 public class finals2022 extends ConsoleProgram {
+	
 	private int amount;
+	//	EnTerNal sunSHiNe oF THe sPotLesS MiNd
+	
 	public void run() {
-		
+		String title = readLine();
+		println(translateToTitle(title));
 	
 		
 		String a = "gvcaja";
@@ -14,7 +18,22 @@ public class finals2022 extends ConsoleProgram {
 		String sorted = new String(arr);
 		println(sorted);
 	}
+	
+	private String translateToTitle(String title) {
+		for(int i = 0; i < title.length(); i ++){
+			char ch = title.charAt(i);
+			if(Character.isUpperCase(ch)) {
+			     Character.toLowerCase(ch);
+			}
+			
+		}
+		
+		return title;
 	}
+}
+
+
+
 //		String s = readLine();
 //		println(amount);
 //		println(blowUp(s));

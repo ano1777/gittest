@@ -24,10 +24,11 @@ public class finals2022 extends ConsoleProgram {
 			char ch = title.charAt(i);
 			if(Character.isUpperCase(ch)) {
 			     Character.toLowerCase(ch);
+			}
 			println(ch);
 			
 			     
-			}
+			
 			
 		}
 		

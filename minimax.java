@@ -6,9 +6,9 @@ public class minimax extends ConsoleProgram {
 	int  max = Integer.MIN_VALUE;
 	int min = Integer.MAX_VALUE;
 	public void run() {
-		int[][] matrix = { { 1, 2,  5,  2 },
-				           { 2, 0,  7,  2 }, 
-			               { -2, 6, 2, 4 }};
+		int[][] matrix = { { 0, 0,  0,  0 },
+				           { 0, 0,  0,  0 }, 
+			               { 0, 0, 0, 0 }};
 		println(compareMiniMax(matrix));
 	}
 
@@ -18,6 +18,7 @@ public class minimax extends ConsoleProgram {
 		for (int i = 0; i < matrix[0].length; i++) {
 			currMax = findMaxElement(matrix, i);
 			currMin = findMinElement(matrix, i);
+			
 			max = Math.max(max, currMax) ;
 			min = Math.min(min, currMin);
 		}

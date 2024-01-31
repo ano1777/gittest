@@ -23,7 +23,7 @@ public class finals2022 extends ConsoleProgram {
 		String str = "";
 		for (int i = 0; i < title.length(); i++) {
 			char ch = title.charAt(i);
-			str += Character.toLowerCase(ch);// Ugh gfyhvghvgtf gfhgvgh
+			str += Character.toLowerCase(ch);       // Ugh gfyhvghvgtf gfhgvgh
 		}
 		String res = "" + Character.toUpperCase(str.charAt(0));
 
@@ -36,7 +36,6 @@ public class finals2022 extends ConsoleProgram {
 				res += c;
 			}
 		}
-
 		return res;
 	}
 }

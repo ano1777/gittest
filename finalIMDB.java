@@ -16,17 +16,15 @@ public class finalIMDB {
 	}
 
 	public void addMovie(String title) {
-		if (!filmActors.containsKey(title)) {
-			filmActors.put(title, new HashSet<String>());
-		}
+		filmActors.putIfAbsent(title, new HashSet<String>());
+
 	}
 
 	public void addActor(String title, String actor) {
 		if (filmActors.containsKey(title)) {
 			filmActors.get(title).add(actor);
-			actorFilms.get(actor).add(title);	
+			actorFilms.get(actor).add(title);
 		}
-		
 	}
 
 	public Iterator<String> getMovies(String actor) {
@@ -50,22 +48,22 @@ public class finalIMDB {
 
 	public Iterator<String> getCast(String movie, int n) {
 		ArrayList<String> populars = new ArrayList<String>();
-		if(n < filmActors.get(movie).size()) {
+		if (n < filmActors.get(movie).size()) {
 			return filmActors.get(movie).iterator();
-		}else {
-		for (int i = 0; i < n; i++) {
-			int popular = 0;
-			for (String actor : filmActors.get(movie)) {
-				if (!populars.contains(actor)) {
-					if (actorFilms.get(actor).size() > popular) {
-						popular = actorFilms.get(actor).size();
-						populars.add(actor);
+		} else {
+			for (int i = 0; i < n; i++) {
+				int popular = 0;
+				for (String actor : filmActors.get(movie)) {
+					if (!populars.contains(actor)) {
+						if (actorFilms.get(actor).size() > popular) {
+							popular = actorFilms.get(actor).size();
+							populars.add(actor);
 
+						}
 					}
 				}
 			}
+			return populars.iterator();
 		}
-		return populars.iterator();
-	}
 	}
 }

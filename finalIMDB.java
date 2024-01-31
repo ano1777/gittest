@@ -24,9 +24,9 @@ public class finalIMDB {
 	public void addActor(String title, String actor) {
 		if (filmActors.containsKey(title)) {
 			filmActors.get(title).add(actor);
-			HashSet<String> titles = new HashSet<String>();
-			titles.add(title);
-			actorFilms.put(actor, titles);
+			
+			filmActors.get(actor).add(title);
+		
 		}
 	}
 

@@ -32,7 +32,7 @@ public class finals2022 extends ConsoleProgram {
 //			if (c != (' ') && !Character.isUpperCase(c)){
 //				res += c;
 //			}
-			if {
+			if(c==(' ')) {
 				res += " " +  Character.toUpperCase(str.charAt(j + 1));
 			}
 		}

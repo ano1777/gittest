@@ -23,17 +23,17 @@ public class finals2022 extends ConsoleProgram {
 		String str = "";
 		for (int i = 0; i < title.length(); i++) {
 			char ch = title.charAt(i);
-			str += Character.toLowerCase(ch);// ugh gfyhvghvgtf gfhgvgh
+			str += Character.toLowerCase(ch);// Ugh gfyhvghvgtf gfhgvgh
 		}
 		String res = "" + Character.toUpperCase(str.charAt(0));
 
 		for (int j = 1; j < str.length(); j++) {
-			char c = str.charAt(j);
-//			if (c != (' ') && !Character.isUpperCase(c)){
-//				res += c;
-//			}
-			if(c==(' ')) {
+			char c = str.charAt(j);	
+			if(c == (' ')) {
 				res += " " +  Character.toUpperCase(str.charAt(j + 1));
+			}
+			if (c != (' ') && str.charAt(j-1) != (' ')) {
+				res += c;
 			}
 		}
 

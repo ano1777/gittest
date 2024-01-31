@@ -5,6 +5,9 @@ import acm.program.ConsoleProgram;
 public class finals2022 extends ConsoleProgram {
 	private int amount;
 	public void run() {
+		
+	
+		
 		String a = "gvcaja";
 		char[] arr  = a.toCharArray();
 		Arrays.sort(arr);

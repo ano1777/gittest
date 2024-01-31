@@ -29,9 +29,11 @@ public class finals2022 extends ConsoleProgram {
 
 		for (int j = 1; j < str.length(); j++) {
 			char c = str.charAt(j);
-			if (c == (' ')) {
-				Character.toUpperCase(j + 1);
-				println(str);
+			if(c != (' ')) {
+				res += c;
+			}
+			else{
+				res += Character.toUpperCase(j + 1);
 			}
 		}
 

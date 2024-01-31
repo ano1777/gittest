@@ -5,7 +5,7 @@ public class minimax extends ConsoleProgram {
 	int min;
 
 	public void run() {
-		int[][] matrix = { { 1, 2, 5, -5 },
+		int[][] matrix = { { 1, 2, 5,  2 },
 				           { 2, 0, 7, 2 }, 
 			               { -2, 6, 2, 4 }};
 		println(compareMiniMax(matrix));

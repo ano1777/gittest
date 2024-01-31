@@ -7,7 +7,7 @@ public class minimax extends ConsoleProgram {
 	int min = Integer.MAX_VALUE;
 	public void run() {
 		int[][] matrix = { { 0, 0,  0,  -1 },
-				           { 0, 0,  0,  0 }, 
+				           { -1, 0,  0,  0 }, 
 			               { 0, 0, 0, 0 }};
 		println(compareMiniMax(matrix));
 	}

@@ -9,9 +9,7 @@ public class finals2022 extends ConsoleProgram {
 	
 	public void run() {
 		String title = readLine();
-//		for (int i = 0; i < title.length(); i ++){
-//			println(Character.toLowerCase(title.charAt(i)));
-//		}
+
 		println(translateToTitle(title));
 	
 		
@@ -23,19 +21,13 @@ public class finals2022 extends ConsoleProgram {
 	}
 	
 	private String translateToTitle(String title) {
-		String str ="";
+		String str = "";
 		for(int i = 0; i < title.length(); i ++){
 			char ch = title.charAt(i);
 			 str += Character.toLowerCase(ch);
-			    
-			
-			//println(Character.toLowerCase(title.charAt(i)));
-			
-			     
-			
-			
 		}
-		
+		String res = "" + Character.toUpperCase(str.charAt(0));
+		println(res);
 		return str;
 	}
 }

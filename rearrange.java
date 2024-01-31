@@ -24,7 +24,7 @@ public class rearrange extends ConsoleProgram {
 		for (String part : letters.keySet()) {
 			int curr = letters.get(part);
 			if (curr > tmp) {
-				res += part;
+				res += " " + part;
 				tmp = curr;
 			}
 			if (curr <= tmp) {

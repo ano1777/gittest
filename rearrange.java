@@ -19,6 +19,7 @@ public class rearrange extends ConsoleProgram {
 			String part = tok.nextToken();
 			letters.put(part, part.length());
 		}
+
 		String res = "";
 		int tmp = 0;
 		for (String part : letters.keySet()) {
@@ -27,15 +28,14 @@ public class rearrange extends ConsoleProgram {
 				res += " " + part;
 				tmp = curr;
 			}
-			if (curr <= tmp) {
-				res = part + " " + res;
-			}
-//			if(curr == tmp){
-//				
+//			if (curr <= tmp) {
+//				res = part + " " + res;
 //			}
+
+			// if(curr == tmp){
+			//
+			// }
 		}
-		println(res);
-		
 
 		return res;
 	}

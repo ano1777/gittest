@@ -28,7 +28,7 @@ public class rearrange extends ConsoleProgram {
 				tmp = curr;
 			}
 			if (curr <= tmp) {
-				part += " " + res;
+				res = part + " " + res;
 			}
 //			if(curr == tmp){
 //				

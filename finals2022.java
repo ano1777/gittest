@@ -3,8 +3,7 @@ import java.util.Arrays;
 import acm.program.ConsoleProgram;
 
 public class finals2022 extends ConsoleProgram {
-
-	private int amount;
+	
 	// EnTerNal sunSHiNe oF THe sPotLesS MiNd
 
 	public void run() {

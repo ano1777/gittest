@@ -58,14 +58,6 @@ public class sum1 extends ConsoleProgram {
 
 
 
-// int x =1;
-// int y = 2;
-// GOval o = new GOval(2,1);
-// println(one(x, 2, o));
-//
-//
-//
-// }
 //
 // private String one(int x, int i, GOval o) {
 // String s = "hello world";

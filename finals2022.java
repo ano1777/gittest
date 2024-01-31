@@ -26,9 +26,9 @@ public class finals2022 extends ConsoleProgram {
 		for(int i = 0; i < title.length(); i ++){
 			char ch = title.charAt(i);
 			
-			     Character.toLowerCase(title.charAt(i));
+			    
 			
-			println(ch);
+			println(Character.toLowerCase(title.charAt(i)));
 			
 			     
 			

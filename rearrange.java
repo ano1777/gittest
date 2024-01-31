@@ -7,6 +7,7 @@ public class rearrange extends ConsoleProgram {
 	HashMap<String, Integer> letters;
 
 	public void run() {
+		letters = new HashMap<String, Integer>();
 		String text = readLine();
 		println(rearrange(text));
 

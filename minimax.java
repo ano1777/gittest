@@ -1,21 +1,27 @@
 import acm.program.ConsoleProgram;
 
 public class minimax extends ConsoleProgram {
-	int max;
-	int min;
-
+	int currMax;
+	int currMin;
+	int  max = Integer.MIN_VALUE;
+	int min = Integer.MAX_VALUE;
 	public void run() {
-		int[][] matrix = { { 1, 2, 5,  2 },
-				           { 2, 0, 7, 2 }, 
+		int[][] matrix = { { 1, 2,  5,  2 },
+				           { 2, 0,  7,  2 }, 
 			               { -2, 6, 2, 4 }};
 		println(compareMiniMax(matrix));
 	}
 
 	private int compareMiniMax(int[][] matrix) {
+	
+		
 		for (int i = 0; i < matrix[0].length; i++) {
-			max = findMaxElement(matrix, i);
-			min = findMinElement(matrix, i);
+			currMax = findMaxElement(matrix, i);
+			currMin = findMinElement(matrix, i);
+			max = Math.max(max, currMax) ;
+			min = Math.min(min, currMin);
 		}
+		
 		if (min > max) {
 			return 1;
 		} else if (max > min) {

@@ -38,7 +38,6 @@ public class Shualedruri2021 extends ConsoleProgram {
 			}
 		}
 		return false;
-
 	}
 
 	private String substractString(String text, char symb) {
@@ -50,7 +49,6 @@ public class Shualedruri2021 extends ConsoleProgram {
 		}
 		return result;
 	}
-
 }
 
 // String str = readLine();

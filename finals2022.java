@@ -28,7 +28,7 @@ public class finals2022 extends ConsoleProgram {
 		}
 		String res = "" + Character.toUpperCase(str.charAt(0));
 		println(res);
-		return str;
+		return res;
 	}
 }
 
